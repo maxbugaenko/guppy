@@ -71,6 +71,7 @@
   }
 
   &:before {
+    transition: all .3s ease;
     content: "";
     width: $controls-icon-size*2.5;
     height: 100%;
@@ -79,6 +80,9 @@
     right: 0;
     top: 0;
     pointer-events: none;
+  }
+  &:hover:before {
+    transition: all .3s ease;
   }
 }
 
@@ -120,12 +124,10 @@
     }
 
     &:before {
-      transition: all .3s ease;
       background-color: lighten(nth($control-kind, 2), 5%);
     }
 
     &:hover:before {
-      transition: all .3s ease;
       background-color: lighten(nth($control-kind, 2), 10%);
     }
 

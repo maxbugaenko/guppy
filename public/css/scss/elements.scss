@@ -1,5 +1,6 @@
 @import "fonts";
 @import "variables";
+@import "layout";
 @import "typo";
 @import "dropdowns";
 @import "inputs";
@@ -15,27 +16,6 @@ body {
   font-family: $light-font;
   color: $text-color;
   font-size: $base-font-size;
-}
-
-.container {
-
-  &:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-}
-
-%span-column {
-  float: left;
-  padding: 0 .5em;
-}
-
-@for $i from 1 through 12 {
-  .span#{$i} {
-    @extend %span-column;
-    width: calc(100%/12 * #{$i});
-  }
 }
 
 .brand {

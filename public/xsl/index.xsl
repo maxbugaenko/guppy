@@ -5,9 +5,9 @@
     <title><xsl:value-of select="title"/></title>
   </xsl:template>
   <xsl:template match="page" mode="body">
-    <div class="container">
+    <div class="container vertical-padding">
       <div class="span12 center">
-        <div class="big tight">
+        <div class="large tight">
           Reusable CSS elements
         </div>
         <div class="medium tight upper lighter bolder">
@@ -15,8 +15,7 @@
         </div>
       </div>
     </div>
-
-    <div class="container">
+    <div class="container vertical-padding">
       <span class="span6">
         <div class="container">
           <span class="span8 right">

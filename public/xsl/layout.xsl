@@ -17,7 +17,7 @@
         <script src="../js/dropdown.js"></script>
       </head>
       <body>
-        <div class="nav-panel">
+        <div class="container vertical-padding">
           <span class="span12 center">
             <img src="../images/icecream.svg" width="40px"/>
             <span class="brand big">

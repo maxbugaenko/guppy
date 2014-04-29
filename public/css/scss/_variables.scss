@@ -1,7 +1,7 @@
 $main-font: "Ubuntu";
 $light-font: "Ubuntu";
 $brand-font: "Source Code Pro";
-$base-font-size: 18px;
+$base-font-size: 20px;
 
 // main variables to define the whole color scheme
 // $scheme = dark | light
@@ -34,7 +34,7 @@ $controls-text-color: #ecf0f1;
 $controls-font-size: 1em;
 $controls-icon-size: 1.3em;
 $controls-padding: 1em;
-$controls-border-radius: 10px;
+$controls-border-radius: 0px;
 $controls-text-field-background: null;
 @if $scheme == light {
   $controls-text-field-background: darken($background-color, 10%);

@@ -1,0 +1,30 @@
+.container {
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+%span-column {
+  float: left;
+  padding: 0 .5em;
+}
+
+@for $i from 1 through 12 {
+  .span#{$i} {
+    @extend %span-column;
+    width: calc(100%/12 * #{$i});
+  }
+}
+
+.vertical-padding {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.horizontal-padding {
+  padding-right: 1em;
+  padding-left: 1em;
+}

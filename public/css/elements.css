@@ -12,208 +12,6 @@
 @font-face {
   font-family: 'Aller-Light';
   src: url("http://img.twentytags.com/fonts/Aller/Aller-Lt.ttf") format("truetype"); }
-.left {
-  text-align: left; }
-
-.right {
-  text-align: right; }
-
-.center {
-  text-align: center; }
-
-.large {
-  font-size: 90px; }
-
-.big {
-  font-size: 36px; }
-
-.medium {
-  font-size: 27px; }
-
-.standard {
-  font-size: 18px; }
-
-.small {
-  font-size: 25.71429px; }
-
-.tight {
-  letter-spacing: -.05em; }
-
-.spread {
-  letter-spacing: .05em; }
-
-.upper {
-  text-transform: uppercase; }
-
-.lighter {
-  color: white; }
-
-.bolder {
-  font-weight: 600; }
-
-p {
-  margin-top: 18px;
-  margin-bottom: 18px; }
-
-.dropdown, .success, .warning, .info, .default {
-  position: relative;
-  border-radius: 10px;
-  text-align: left;
-  font-size: 1em;
-  cursor: pointer;
-  display: inline-block;
-  width: 100%; }
-  .dropdown div, .success div, .warning div, .info div, .default div {
-    padding: 1em 4em 1em 1em;
-    font-size: 1em;
-    width: 100%;
-    font-family: "Ubuntu"; }
-  .dropdown ul, .success ul, .warning ul, .info ul, .default ul {
-    width: 100%;
-    position: absolute;
-    border-radius: 0 0 10px 10px;
-    top: 100%;
-    margin: 0;
-    z-index: 2;
-    font-family: "Ubuntu";
-    opacity: 0;
-    list-style: none;
-    padding: 1em 0 1em 0;
-    white-space: nowrap;
-    pointer-events: none; }
-    .dropdown ul a, .success ul a, .warning ul a, .info ul a, .default ul a {
-      text-decoration: none;
-      color: inherit;
-      pointer-events: none; }
-    .dropdown ul li, .success ul li, .warning ul li, .info ul li, .default ul li {
-      padding: .5em 2em .5em 2em;
-      cursor: pointer;
-      transition: all .2s ease; }
-      .dropdown ul li:hover, .success ul li:hover, .warning ul li:hover, .info ul li:hover, .default ul li:hover {
-        transition: all .2s ease;
-        background-color: #88a2bd; }
-      .dropdown ul li:active, .success ul li:active, .warning ul li:active, .info ul li:active, .default ul li:active {
-        transition: all .2s ease;
-        background-color: #a8bccf; }
-      .dropdown ul li i, .success ul li i, .warning ul li i, .info ul li i, .default ul li i {
-        padding: 0 1em 0 0; }
-  .dropdown:after, .success:after, .warning:after, .info:after, .default:after {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    right: 1.3em;
-    top: 50%;
-    margin-top: -0.43333em;
-    border-top: 0.43333em solid transparent;
-    border-bottom: 0.43333em solid transparent;
-    border-left: 0.43333em solid #ecf0f1;
-    pointer-events: none; }
-  .dropdown:before, .success:before, .warning:before, .info:before, .default:before {
-    content: "";
-    width: 3.25em;
-    height: 100%;
-    position: absolute;
-    border-radius: 10px;
-    right: 0;
-    top: 0;
-    pointer-events: none; }
-
-.dropdown.active, .active.success, .active.warning, .active.info, .active.default {
-  border-radius: 10px 10px 0 0; }
-  .dropdown.active:after, .active.success:after, .active.warning:after, .active.info:after, .active.default:after {
-    margin-top: -0.325em;
-    border-left: 0.43333em solid transparent;
-    border-right: 0.43333em solid transparent;
-    border-top: 0.43333em solid #ecf0f1; }
-  .dropdown.active ul, .active.success ul, .active.warning ul, .active.info ul, .active.default ul {
-    opacity: 1;
-    pointer-events: auto; }
-
-.success {
-  background-color: #2a80b9;
-  color: #ecf0f1; }
-  .success ul {
-    background-color: #2a80b9; }
-    .success ul li:hover {
-      background-color: #2f8ece; }
-    .success ul li:active {
-      background-color: #429ad4; }
-  .success:before {
-    transition: all .3s ease;
-    background-color: #2f8ece; }
-  .success:hover:before {
-    transition: all .3s ease;
-    background-color: #429ad4; }
-
-.warning {
-  background-color: #d25400;
-  color: #ecf0f1; }
-  .warning ul {
-    background-color: #d25400; }
-    .warning ul li:hover {
-      background-color: #eb5e00; }
-    .warning ul li:active {
-      background-color: #ff6a06; }
-  .warning:before {
-    transition: all .3s ease;
-    background-color: #eb5e00; }
-  .warning:hover:before {
-    transition: all .3s ease;
-    background-color: #ff6a06; }
-
-.info {
-  background-color: #08bf55;
-  color: #ecf0f1; }
-  .info ul {
-    background-color: #08bf55; }
-    .info ul li:hover {
-      background-color: #09d760; }
-    .info ul li:active {
-      background-color: #0af06b; }
-  .info:before {
-    transition: all .3s ease;
-    background-color: #09d760; }
-  .info:hover:before {
-    transition: all .3s ease;
-    background-color: #0af06b; }
-
-.default {
-  background-color: #4f6f8f;
-  color: #ecf0f1; }
-  .default ul {
-    background-color: #4f6f8f; }
-    .default ul li:hover {
-      background-color: #587ca0; }
-    .default ul li:active {
-      background-color: #6789ab; }
-  .default:before {
-    transition: all .3s ease;
-    background-color: #587ca0; }
-  .default:hover:before {
-    transition: all .3s ease;
-    background-color: #6789ab; }
-
-.text-field {
-  border: 0;
-  padding: 1em;
-  font-size: inherit;
-  border-radius: 10px;
-  outline: none;
-  color: #ecf0f1;
-  background-color: white; }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-body {
-  background: #34495e;
-  font-family: "Ubuntu";
-  color: #ecf0f1;
-  font-size: 18px; }
-
 .container:after {
   content: "";
   display: block;
@@ -258,6 +56,211 @@ body {
 
 .span12 {
   width: calc(100%/12 * 12); }
+
+.vertical-padding {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.horizontal-padding {
+  padding-right: 1em;
+  padding-left: 1em; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.center {
+  text-align: center; }
+
+.large {
+  font-size: 100px; }
+
+.big {
+  font-size: 40px; }
+
+.medium {
+  font-size: 30px; }
+
+.standard {
+  font-size: 20px; }
+
+.small {
+  font-size: 28.57143px; }
+
+.tight {
+  letter-spacing: -.05em; }
+
+.spread {
+  letter-spacing: .05em; }
+
+.upper {
+  text-transform: uppercase; }
+
+.lighter {
+  color: white; }
+
+.bolder {
+  font-weight: 600; }
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.dropdown, .success, .warning, .info, .default {
+  position: relative;
+  border-radius: 0px;
+  text-align: left;
+  font-size: 1em;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%; }
+  .dropdown div, .success div, .warning div, .info div, .default div {
+    padding: 1em 4em 1em 1em;
+    font-size: 1em;
+    width: 100%;
+    font-family: "Ubuntu"; }
+  .dropdown ul, .success ul, .warning ul, .info ul, .default ul {
+    width: 100%;
+    position: absolute;
+    border-radius: 0 0 0px 0px;
+    top: 100%;
+    margin: 0;
+    z-index: 2;
+    font-family: "Ubuntu";
+    opacity: 0;
+    list-style: none;
+    padding: 1em 0 1em 0;
+    white-space: nowrap;
+    pointer-events: none; }
+    .dropdown ul a, .success ul a, .warning ul a, .info ul a, .default ul a {
+      text-decoration: none;
+      color: inherit;
+      pointer-events: none; }
+    .dropdown ul li, .success ul li, .warning ul li, .info ul li, .default ul li {
+      padding: .5em 2em .5em 2em;
+      cursor: pointer;
+      transition: all .2s ease; }
+      .dropdown ul li:hover, .success ul li:hover, .warning ul li:hover, .info ul li:hover, .default ul li:hover {
+        transition: all .2s ease;
+        background-color: #88a2bd; }
+      .dropdown ul li:active, .success ul li:active, .warning ul li:active, .info ul li:active, .default ul li:active {
+        transition: all .2s ease;
+        background-color: #a8bccf; }
+      .dropdown ul li i, .success ul li i, .warning ul li i, .info ul li i, .default ul li i {
+        padding: 0 1em 0 0; }
+  .dropdown:after, .success:after, .warning:after, .info:after, .default:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 1.3em;
+    top: 50%;
+    margin-top: -0.43333em;
+    border-top: 0.43333em solid transparent;
+    border-bottom: 0.43333em solid transparent;
+    border-left: 0.43333em solid #ecf0f1;
+    pointer-events: none; }
+  .dropdown:before, .success:before, .warning:before, .info:before, .default:before {
+    transition: all .3s ease;
+    content: "";
+    width: 3.25em;
+    height: 100%;
+    position: absolute;
+    border-radius: 0px;
+    right: 0;
+    top: 0;
+    pointer-events: none; }
+  .dropdown:hover:before, .success:hover:before, .warning:hover:before, .info:hover:before, .default:hover:before {
+    transition: all .3s ease; }
+
+.dropdown.active, .active.success, .active.warning, .active.info, .active.default {
+  border-radius: 0px 0px 0 0; }
+  .dropdown.active:after, .active.success:after, .active.warning:after, .active.info:after, .active.default:after {
+    margin-top: -0.325em;
+    border-left: 0.43333em solid transparent;
+    border-right: 0.43333em solid transparent;
+    border-top: 0.43333em solid #ecf0f1; }
+  .dropdown.active ul, .active.success ul, .active.warning ul, .active.info ul, .active.default ul {
+    opacity: 1;
+    pointer-events: auto; }
+
+.success {
+  background-color: #2a80b9;
+  color: #ecf0f1; }
+  .success ul {
+    background-color: #2a80b9; }
+    .success ul li:hover {
+      background-color: #2f8ece; }
+    .success ul li:active {
+      background-color: #429ad4; }
+  .success:before {
+    background-color: #2f8ece; }
+  .success:hover:before {
+    background-color: #429ad4; }
+
+.warning {
+  background-color: #d25400;
+  color: #ecf0f1; }
+  .warning ul {
+    background-color: #d25400; }
+    .warning ul li:hover {
+      background-color: #eb5e00; }
+    .warning ul li:active {
+      background-color: #ff6a06; }
+  .warning:before {
+    background-color: #eb5e00; }
+  .warning:hover:before {
+    background-color: #ff6a06; }
+
+.info {
+  background-color: #08bf55;
+  color: #ecf0f1; }
+  .info ul {
+    background-color: #08bf55; }
+    .info ul li:hover {
+      background-color: #09d760; }
+    .info ul li:active {
+      background-color: #0af06b; }
+  .info:before {
+    background-color: #09d760; }
+  .info:hover:before {
+    background-color: #0af06b; }
+
+.default {
+  background-color: #4f6f8f;
+  color: #ecf0f1; }
+  .default ul {
+    background-color: #4f6f8f; }
+    .default ul li:hover {
+      background-color: #587ca0; }
+    .default ul li:active {
+      background-color: #6789ab; }
+  .default:before {
+    background-color: #587ca0; }
+  .default:hover:before {
+    background-color: #6789ab; }
+
+.text-field {
+  border: 0;
+  padding: 1em;
+  font-size: inherit;
+  border-radius: 0px;
+  outline: none;
+  color: #ecf0f1;
+  background-color: white; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #34495e;
+  font-family: "Ubuntu";
+  color: #ecf0f1;
+  font-size: 20px; }
 
 .brand {
   font-family: "Source Code Pro";

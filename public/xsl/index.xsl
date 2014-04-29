@@ -46,7 +46,7 @@
           </ul>
         </div>
         <div class="dropdown info">
-          <div>Importnat information</div>
+          <div>Important information</div>
           <ul>
             <li>
               <a href="#">
@@ -57,14 +57,14 @@
         </div>
         <pre class="highlight vertical-padding">
 &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"dropdown info"</span>&gt;
-  &lt;div&gt;Importnat information&lt;/div&gt;
-   &lt;ul&gt;
-     &lt;li&gt;
-       &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span>&gt;
-         &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-eur"</span>&gt;&lt;/i&gt; Settings
-       &lt;/a&gt;
-     &lt;/li&gt;
-   &lt;/ul&gt;
+  &lt;div&gt;Important information&lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span>&gt;
+        &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-eur"</span>&gt;&lt;/i&gt; Settings
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;
         </pre>
       </div>

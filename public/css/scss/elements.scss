@@ -1,0 +1,52 @@
+@import "fonts";
+@import "variables";
+@import "typo";
+@import "dropdowns";
+@import "inputs";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background-color;
+  font-family: $light-font;
+  color: $text-color;
+  font-size: $base-font-size;
+}
+
+.container {
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+%span-column {
+  float: left;
+  padding: 0 .5em;
+}
+
+@for $i from 1 through 12 {
+  .span#{$i} {
+    @extend %span-column;
+    width: calc(100%/12 * #{$i});
+  }
+}
+
+.brand {
+  font-family: $brand-font;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: -.1em;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+}

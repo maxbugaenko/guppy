@@ -1,6 +1,9 @@
 require 'rubygems';
 require 'sinatra';
 
+set :erb, :content_type => 'text/xml'
+set :scss => :elements
+
 get '/' do
-  "Hello, Max Bugaenko";
+  erb :index
 end

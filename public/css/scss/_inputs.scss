@@ -1,0 +1,9 @@
+.text-field {
+  border: 0;
+  padding: $controls-padding;
+  font-size: inherit;
+  border-radius: $controls-border-radius;
+  outline: none;
+  color: $text-color;
+  background-color: $controls-text-field-background;
+}

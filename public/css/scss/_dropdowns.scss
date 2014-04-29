@@ -1,0 +1,126 @@
+.dropdown {
+  position: relative;
+  border-radius: $controls-border-radius;
+  text-align: left;
+  font-size: $controls-font-size;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+
+  div {
+    padding: $controls-padding 4em $controls-padding 1em;
+    font-size: $controls-font-size;
+    width: 100%;
+    font-family: $main-font;
+  }
+
+  ul {
+    width: 100%;
+    position: absolute;
+    border-radius: 0 0 $controls-border-radius $controls-border-radius;
+    top: 100%;
+    margin: 0;
+    z-index: 2;
+    font-family: $light-font;
+    opacity: 0;
+    list-style: none;
+    padding: 1em 0 1em 0; // padding for the whole list
+    white-space: nowrap;
+    pointer-events: none;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      pointer-events: none;
+    }
+
+    li {
+      padding: .5em 2em .5em 2em; // padding for each item
+      cursor: pointer;
+      transition: all .2s ease;
+
+      &:hover {
+        transition: all .2s ease;
+        background-color: $hover;
+      }
+
+      &:active {
+        transition: all .2s ease;
+        background-color: $active;
+      }
+
+      i {
+        padding: 0 1em 0 0;
+      }
+
+    }
+  }
+
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: $controls-icon-size;
+    top: 50%;
+    margin-top: -$controls-icon-size/3;
+    border-top: $controls-icon-size/3 solid transparent;
+    border-bottom: $controls-icon-size/3 solid transparent;
+    border-left: $controls-icon-size/3 solid $controls-text-color;
+    pointer-events: none;
+  }
+
+  &:before {
+    content: "";
+    width: $controls-icon-size*2.5;
+    height: 100%;
+    position: absolute;
+    border-radius: $controls-border-radius;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+  }
+}
+
+.dropdown.active {
+  border-radius: $controls-border-radius $controls-border-radius 0 0;
+
+  &:after {
+    margin-top: -$controls-icon-size/4;
+    border-left: $controls-icon-size/3 solid transparent;
+    border-right: $controls-icon-size/3 solid transparent;
+    border-top: $controls-icon-size/3 solid $controls-text-color;
+  }
+
+  ul {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+@each $control-kind in $controls-color-list {
+  .#{nth($control-kind, 1)} {
+    @extend .dropdown;
+    background-color: nth($control-kind, 2);
+    color: $controls-text-color;
+
+    ul {
+      background-color: #{nth($control-kind, 2)};
+
+      li {
+
+        &:hover {
+          background-color: lighten(nth($control-kind, 2), 5%);
+        }
+
+        &:active {
+          background-color: lighten(nth($control-kind, 2), 10%);
+        }
+      }
+    }
+
+    &:before {
+      background-color: lighten(nth($control-kind, 2), 5%);
+    }
+  }
+}

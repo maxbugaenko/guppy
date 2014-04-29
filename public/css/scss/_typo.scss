@@ -1,0 +1,56 @@
+.left {
+  text-align: left;
+}
+
+.right{
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.large {
+  font-size: $base-font-size*5;
+}
+
+.big {
+  font-size: $base-font-size*2;
+}
+
+.medium {
+  font-size: $base-font-size*1.5;
+}
+
+.standard {
+  font-size: $base-font-size;
+}
+
+.small {
+  font-size: $base-font-size/.7;
+}
+
+.tight {
+  letter-spacing: -.05em;
+}
+
+.spread {
+  letter-spacing: .05em;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lighter {
+  color: lighten($text-color, 15%);
+}
+
+.bolder {
+  font-weight: 600;
+}
+
+p {
+  margin-top: $base-font-size;
+  margin-bottom: $base-font-size;
+}

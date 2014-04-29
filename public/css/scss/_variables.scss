@@ -6,8 +6,8 @@ $base-font-size: 18px;
 // main variables to define the whole color scheme
 // $scheme = dark | light
 // $background-color = choose any color
-$scheme: light;
-$background-color: #ededed;
+$scheme: dark;
+$background-color: #34495e;
 $text-color: null;
 @if $scheme == light {
   $text-color: darken($background-color, 50%);
@@ -18,17 +18,23 @@ $text-color: null;
 // colors for different kinds of controls
 // used list of lists to iterate through it
 // while assigning colors to controls
+$controls-default-color: null;
+@if $scheme == light {
+  $controls-default-color: darken($background-color, 25%);
+} @else {
+  $controls-default-color: lighten($background-color, 15%);
+}
 $controls-color-list: (
   success #2a80b9,
   warning #d25400,
   info #08bf55,
-  default darken($background-color, 25%)
+  default $controls-default-color
 );
 $controls-text-color: #ecf0f1;
 $controls-font-size: 1em;
 $controls-icon-size: 1.3em;
 $controls-padding: 1em;
-$controls-border-radius: 5px;
+$controls-border-radius: 10px;
 $controls-text-field-background: null;
 @if $scheme == light {
   $controls-text-field-background: darken($background-color, 10%);

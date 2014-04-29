@@ -120,7 +120,14 @@
     }
 
     &:before {
+      transition: all .3s ease;
       background-color: lighten(nth($control-kind, 2), 5%);
     }
+
+    &:hover:before {
+      transition: all .3s ease;
+      background-color: lighten(nth($control-kind, 2), 10%);
+    }
+
   }
 }

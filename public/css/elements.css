@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 @font-face {
   font-family: 'Fira-Regular';
   src: url("http://img.teamed.io/fonts/fira/FiraSansOT-Regular.otf") format("opentype"); }
@@ -12,13 +13,174 @@
 @font-face {
   font-family: 'Aller-Light';
   src: url("http://img.twentytags.com/fonts/Aller/Aller-Lt.ttf") format("truetype"); }
+.highlight {
+  color: #faf6e4;
+  font-family: "Source Code Pro";
+  font-weight: 300; }
+
+.highlight .gl {
+  color: #dee5e7; }
+
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #6c8b9f;
+  font-style: italic; }
+
+.highlight .cp {
+  color: #b2fd6d;
+  font-weight: bold;
+  font-style: italic; }
+
+.highlight .err {
+  color: #fefeec;
+  background-color: #cc0000; }
+
+.highlight .gr {
+  color: #fefeec;
+  background-color: #cc0000; }
+
+.highlight .k, .highlight .kd, .highlight .kv {
+  color: #f6dd62;
+  font-weight: bold; }
+
+.highlight .o, .highlight .ow {
+  color: #4df4ff; }
+
+.highlight .p, .highlight .pi {
+  color: #4df4ff; }
+
+.highlight .gd {
+  color: #cc0000; }
+
+.highlight .gi {
+  color: #b2fd6d; }
+
+.highlight .ge {
+  font-style: italic; }
+
+.highlight .gs {
+  font-weight: bold; }
+
+.highlight .gt {
+  color: #dee5e7;
+  background-color: #4e5d62; }
+
+.highlight .kc {
+  color: #f696db;
+  font-weight: bold; }
+
+.highlight .kn {
+  color: #ffb000;
+  font-weight: bold; }
+
+.highlight .kp {
+  color: #ffb000;
+  font-weight: bold; }
+
+.highlight .kr {
+  color: #ffb000;
+  font-weight: bold; }
+
+.highlight .gh {
+  color: #ffb000;
+  font-weight: bold; }
+
+.highlight .gu {
+  color: #ffb000;
+  font-weight: bold; }
+
+.highlight .kt {
+  color: #b2fd6d;
+  font-weight: bold; }
+
+.highlight .no {
+  color: #b2fd6d;
+  font-weight: bold; }
+
+.highlight .nc {
+  color: #b2fd6d;
+  font-weight: bold; }
+
+.highlight .nd {
+  color: #b2fd6d;
+  font-weight: bold; }
+
+.highlight .nn {
+  color: #b2fd6d;
+  font-weight: bold; }
+
+.highlight .bp {
+  color: #b2fd6d;
+  font-weight: bold; }
+
+.highlight .ne {
+  color: #b2fd6d;
+  font-weight: bold; }
+
+.highlight .nl {
+  color: #ffb000;
+  font-weight: bold; }
+
+.highlight .nt {
+  color: #ffb000;
+  font-weight: bold; }
+
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #f696db;
+  font-weight: bold; }
+
+.highlight .ld {
+  color: #f696db;
+  font-weight: bold; }
+
+.highlight .ss {
+  color: #f696db;
+  font-weight: bold; }
+
+.highlight .s, .highlight .sb, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .sr, .highlight .s1 {
+  color: #ef7820; }
+
+.highlight .se {
+  color: #4df4ff;
+  font-weight: bold; }
+
+.highlight .sc {
+  color: #4df4ff;
+  font-weight: bold; }
+
+.highlight .si {
+  color: #4df4ff;
+  font-weight: bold; }
+
+.highlight .nb {
+  font-weight: bold; }
+
+.highlight .ni {
+  color: #999999;
+  font-weight: bold; }
+
+.highlight .w {
+  color: #BBBBBB; }
+
+.highlight .nf {
+  color: #a8e1fe; }
+
+.highlight .py {
+  color: #a8e1fe; }
+
+.highlight .na {
+  color: #a8e1fe; }
+
+.highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi {
+  color: #2a80b9; }
+
 .container:after {
   content: "";
   display: block;
   clear: both; }
 
 .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
-  float: left;
+  display: inline-block;
+  vertical-align: top;
   padding: 0 .5em; }
 
 .span1 {
@@ -65,6 +227,21 @@
   padding-right: 1em;
   padding-left: 1em; }
 
+.two-column {
+  white-space: nowrap;
+  width: 70%;
+  margin: 0 auto; }
+  .two-column > div {
+    margin: 0;
+    padding: 1em;
+    white-space: normal;
+    width: 50%;
+    float: left; }
+  .two-column:after {
+    content: "";
+    display: block;
+    clear: both; }
+
 .left {
   text-align: left; }
 
@@ -73,6 +250,9 @@
 
 .center {
   text-align: center; }
+
+.v-middle {
+  vertical-align: baseline; }
 
 .large {
   font-size: 100px; }
@@ -101,12 +281,36 @@
 .lighter {
   color: white; }
 
+.darker {
+  color: #a3b6bb; }
+
 .bolder {
   font-weight: 600; }
 
 p {
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  line-height: 26px; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+  h1 img,
+  h2 img,
+  h3 img,
+  h4 img,
+  h5 img {
+    max-width: 40px;
+    margin-right: 20px; }
+
+.lighten-background {
+  background-color: #3d566e; }
 
 .dropdown, .success, .warning, .info, .default {
   position: relative;
@@ -201,18 +405,18 @@ p {
     background-color: #429ad4; }
 
 .warning {
-  background-color: #d25400;
+  background-color: #ef7820;
   color: #ecf0f1; }
   .warning ul {
-    background-color: #d25400; }
+    background-color: #ef7820; }
     .warning ul li:hover {
-      background-color: #eb5e00; }
+      background-color: #f18638; }
     .warning ul li:active {
-      background-color: #ff6a06; }
+      background-color: #f29550; }
   .warning:before {
-    background-color: #eb5e00; }
+    background-color: #f18638; }
   .warning:hover:before {
-    background-color: #ff6a06; }
+    background-color: #f29550; }
 
 .info {
   background-color: #08bf55;
@@ -259,6 +463,7 @@ p {
 body {
   background: #34495e;
   font-family: "Ubuntu";
+  font-weight: 300;
   color: #ecf0f1;
   font-size: 20px; }
 

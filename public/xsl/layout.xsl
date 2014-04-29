@@ -17,9 +17,8 @@
         <script src="../js/dropdown.js"></script>
       </head>
       <body>
-        <div class="container vertical-padding">
+        <div class="container vertical-padding lighten-background">
           <span class="span12 center">
-            <img src="../images/icecream.svg" width="40px"/>
             <span class="brand big">
               &lt;reusable&gt;
             </span>

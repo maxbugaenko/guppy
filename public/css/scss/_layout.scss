@@ -8,7 +8,8 @@
 }
 
 %span-column {
-  float: left;
+  display: inline-block;
+  vertical-align: top;
   padding: 0 .5em;
 }
 
@@ -27,4 +28,24 @@
 .horizontal-padding {
   padding-right: 1em;
   padding-left: 1em;
+}
+
+.two-column {
+  white-space: nowrap;
+  width: 70%;
+  margin: 0 auto;
+
+  & > div {
+    margin: 0;
+    padding: 1em;
+    white-space: normal;
+    width: 50%;
+    float: left;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }

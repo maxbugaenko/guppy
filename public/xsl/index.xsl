@@ -5,73 +5,38 @@
     <title><xsl:value-of select="title"/></title>
   </xsl:template>
   <xsl:template match="page" mode="body">
-    <div class="container vertical-padding">
-      <div class="span12 center">
-        <div class="large tight">
-          Reusable CSS elements
-        </div>
-        <div class="medium tight upper lighter bolder">
-          Just import stylesheet
-        </div>
+    <div class="two-column vertical-padding">
+      <div class="right">
+        <img src="../images/cog.svg"/>
+        <h1 class="tight">dropdowns</h1>
+        <p class="darker">
+          Usually, colors with the same hue are
+          distinguished with adjectives referring to
+        </p>
       </div>
-    </div>
-    <div class="container vertical-padding">
-      <span class="span6">
-        <div class="container">
-          <span class="span8 right">
-            <h2>Usually colors</h2>
-            <p>
-              Usually, colors with the same hue are
-              distinguished with adjectives referring to
-            </p>
-            <div class="dropdown default">
-              <div>Default</div>
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-eur"></i> Settings
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <p>
-              Usually, colors with the same hue are
-              distinguished with adjectives referring to
-              Usually, colors with the same hue are
-              distinguished with adjectives referring to
-            </p>
-          </span>
-          <span class="span4">
-            <h2>Usually colors</h2>
-            <p>
-              Usually, colors with the same hue are
-              distinguished with adjectives referring to
-            </p>
-            <div class="dropdown success">
-              <div>Success</div>
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-eur"></i> Settings
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <p>
-              Usually, colors with the same hue are
-              distinguished with adjectives referring to
-            </p>
-          </span>
+      <div class="v-middle">
+        <div class="dropdown default">
+          <div>Default</div>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-eur"></i> Settings
+              </a>
+            </li>
+          </ul>
         </div>
-      </span>
-      <span class="span3">
-        <h2>Usually colors</h2>
-        <p>
-          Usually, colors with the same hue are
-          distinguished with adjectives referring to
-        </p>
+        <div class="dropdown success">
+          <div>Succesful life</div>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-eur"></i> Settings
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="dropdown warning">
-          <div>Warning</div>
+          <div>Nuclear warning</div>
           <ul>
             <li>
               <a href="#">
@@ -80,17 +45,8 @@
             </li>
           </ul>
         </div>
-      </span>
-      <span class="span3">
-        <h2>Usually colors</h2>
-        <p>
-          Usually, colors with the same hue are
-          distinguished with adjectives referring to
-          Usually, colors with the same hue are
-          distinguished with adjectives referring to
-        </p>
         <div class="dropdown info">
-          <div>Information</div>
+          <div>Importnat information</div>
           <ul>
             <li>
               <a href="#">
@@ -99,7 +55,19 @@
             </li>
           </ul>
         </div>
-      </span>
+        <pre class="highlight vertical-padding">
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"dropdown info"</span>&gt;
+  &lt;div&gt;Importnat information&lt;/div&gt;
+   &lt;ul&gt;
+     &lt;li&gt;
+       &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span>&gt;
+         &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-eur"</span>&gt;&lt;/i&gt; Settings
+       &lt;/a&gt;
+     &lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;
+        </pre>
+      </div>
     </div>
   </xsl:template>
 </xsl:stylesheet>

@@ -1,13 +1,33 @@
 $main-font: "Ubuntu";
 $light-font: "Ubuntu";
+$h-font: "Ubuntu";
 $brand-font: "Source Code Pro";
+$code-font: "Source Code Pro";
 $base-font-size: 20px;
+
+@mixin main-font() {
+  font-family: $main-font;
+  font-weight: 500;
+}
+
+@mixin light-font() {
+  font-family: $main-font;
+  font-weight: 300;
+}
+
+@mixin h-font() {
+  font-family: $h-font;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 // main variables to define the whole color scheme
 // $scheme = dark | light
 // $background-color = choose any color
 $scheme: dark;
 $background-color: #34495e;
+$lighten-background-color: lighten($background-color, 5%);
 $text-color: null;
 @if $scheme == light {
   $text-color: darken($background-color, 50%);
@@ -24,10 +44,13 @@ $controls-default-color: null;
 } @else {
   $controls-default-color: lighten($background-color, 15%);
 }
+$success: #2a80b9;
+$warning: #ef7820;
+$info: #08bf55;
 $controls-color-list: (
-  success #2a80b9,
-  warning #d25400,
-  info #08bf55,
+  success $success,
+  warning $warning,
+  info $info,
   default $controls-default-color
 );
 $controls-text-color: #ecf0f1;

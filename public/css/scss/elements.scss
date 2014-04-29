@@ -1,5 +1,6 @@
 @import "fonts";
 @import "variables";
+@import "highlight";
 @import "layout";
 @import "typo";
 @import "dropdowns";
@@ -13,7 +14,7 @@
 
 body {
   background: $background-color;
-  font-family: $light-font;
+  @include light-font();
   color: $text-color;
   font-size: $base-font-size;
 }

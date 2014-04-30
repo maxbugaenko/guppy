@@ -26,6 +26,7 @@ $base-font-size: 20px;
 // $scheme = dark | light
 // $background-color = choose any color
 $scheme: dark;
+$controls-depth: 4px;
 $background-color: #34495e;
 $lighten-background-color: lighten($background-color, 5%);
 $text-color: null;
@@ -57,7 +58,7 @@ $controls-text-color: #ecf0f1;
 $controls-font-size: 1em;
 $controls-icon-size: 1.3em;
 $controls-padding: 1em;
-$controls-border-radius: 0px;
+$controls-border-radius: 10px;
 $controls-text-field-background: null;
 @if $scheme == light {
   $controls-text-field-background: darken($background-color, 10%);

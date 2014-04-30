@@ -3,7 +3,9 @@
 @import "highlight";
 @import "layout";
 @import "typo";
+@import "controls";
 @import "dropdowns";
+@import "buttons";
 @import "inputs";
 
 * {
@@ -30,4 +32,64 @@ img {
   vertical-align: middle;
   max-width: 100%;
   max-height: 100%;
+}
+
+.menu {
+  list-style: none;
+  @include h-font();
+
+  li {
+    letter-spacing: inherit;
+    display: inline-block;
+    margin: 0 $base-font-size*2;
+
+    a {
+      transition: all .3s ease;
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        transition: all .3s ease;
+        border-bottom: 2px solid;
+      }
+    }
+  }
+}
+
+.separator-circles {
+  margin: $base-font-size*5 auto $base-font-size*5 auto;
+  border: 10px solid lighten($background-color, 15%);
+  border-radius: 50%;
+  width: $base-font-size;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -$base-font-size * 2;
+    top: -$base-font-size;
+    border: 10px solid lighten($background-color, 25%);
+    border-radius: 50%;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: $base-font-size;
+    border: 10px solid lighten($background-color, 25%);
+    border-radius: 50%;
+  }
+}
+
+.separator-squares {
+  @extend .separator-circles;
+  border-radius: 0;
+
+  &:before {
+    border-radius: 0;
+  }
+
+  &:after {
+    border-radius: 0;
+  }
 }

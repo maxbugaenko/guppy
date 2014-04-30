@@ -1,5 +1,4 @@
 .container {
-
   &:after {
     content: "";
     display: block;
@@ -10,7 +9,7 @@
 %span-column {
   display: inline-block;
   vertical-align: top;
-  padding: 0 .5em;
+  padding: .5em;
 }
 
 @for $i from 1 through 12 {

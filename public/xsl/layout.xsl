@@ -17,12 +17,29 @@
         <script src="../js/dropdown.js"></script>
       </head>
       <body>
-        <div class="container vertical-padding lighten-background">
-          <span class="span12 center">
+        <div class="container vertical-padding lighten-background center">
             <span class="brand big">
               &lt;reusable&gt;
             </span>
-          </span>
+        </div>
+        <div class="container vertical-padding lighten-background center">
+          <ul class="menu darker">
+            <li>
+              <a href="">dropdowns</a>
+            </li>
+            <li>
+              <a href="">buttons</a>
+            </li>
+            <li>
+              <a href="">tabs</a>
+            </li>
+            <li>
+              <a href="">tables</a>
+            </li>
+            <li>
+              <a href="">layouts</a>
+            </li>
+          </ul>
         </div>
         <xsl:apply-templates match="." mode="body"/>
       </body>

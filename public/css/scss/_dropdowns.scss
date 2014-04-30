@@ -1,17 +1,12 @@
 .dropdown {
-  position: relative;
-  border-radius: $controls-border-radius;
-  text-align: left;
-  font-size: $controls-font-size;
-  cursor: pointer;
-  display: inline-block;
-  width: 100%;
+  @extend %control;
 
   div {
-    padding: $controls-padding 4em $controls-padding 1em;
-    font-size: $controls-font-size;
     width: 100%;
+    padding: $controls-padding $controls-padding*5 $controls-padding $controls-padding;
+    font-size: $controls-font-size;
     font-family: $main-font;
+    display: inline-block;
   }
 
   ul {
@@ -21,10 +16,9 @@
     top: 100%;
     margin: 0;
     z-index: 2;
-    font-family: $light-font;
     opacity: 0;
     list-style: none;
-    padding: 1em 0 1em 0; // padding for the whole list
+    padding: $controls-font-size 0 $controls-font-size 0; // padding for the whole list
     white-space: nowrap;
     pointer-events: none;
 
@@ -103,13 +97,16 @@
 }
 
 @each $control-kind in $controls-color-list {
-  .#{nth($control-kind, 1)} {
+  .dropdown-#{nth($control-kind, 1)} {
     @extend .dropdown;
     background-color: nth($control-kind, 2);
+    border-bottom: $controls-depth solid darken(nth($control-kind, 2), 15%);
     color: $controls-text-color;
 
     ul {
       background-color: #{nth($control-kind, 2)};
+      border-bottom: $controls-depth solid darken(nth($control-kind, 2), 15%);
+
 
       li {
 

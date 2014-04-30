@@ -1,0 +1,24 @@
+%control {
+  position: relative;
+  border-radius: $controls-border-radius;
+  cursor: pointer;
+  border: 0;
+  width: 100%;
+  outline: none;
+  white-space: nowrap;
+}
+
+.control-medium {
+  @extend %control;
+  font-size: $controls-font-size/1.3 !important;
+}
+
+.control-small {
+  @extend %control;
+  font-size: $controls-font-size/1.7 !important;
+}
+
+.control-auto-width {
+  @extend %control;
+  width: auto;
+}

@@ -1,5 +1,5 @@
 .highlight {
-  color: #faf6e4;
+  color: $text-color;
   font-family: $code-font;
   font-weight: 300;
 }
@@ -29,7 +29,7 @@
   font-weight: bold;
 }
 .highlight .o, .highlight .ow {
-  color: #4df4ff;
+  color: $text-color;
 }
 .highlight .p, .highlight .pi {
   color: #4df4ff;

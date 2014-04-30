@@ -1,0 +1,53 @@
+.button {
+  @extend %control;
+  font-size: $controls-font-size;
+  padding: $controls-padding;
+  text-transform: uppercase;
+  transition: all .3s ease;
+
+  &:hover {
+    transition: all .3s ease;
+  }
+
+  &:active {
+    top: 2px;
+  }
+
+  i {
+    margin: 0 $base-font-size;
+    font-size: $controls-font-size*1.5;
+  }
+}
+
+@each $control-kind in $controls-color-list {
+  .button-#{nth($control-kind, 1)} {
+    @extend .button;
+    background-color: nth($control-kind, 2);
+    border-bottom: $controls-depth solid darken(nth($control-kind, 2), 15%);
+    color: $controls-text-color;
+
+    &:hover {
+      background-color: lighten(nth($control-kind, 2), 5%);
+    }
+  }
+}
+
+.button-group {
+  white-space: nowrap;
+  width: 100%;
+
+  & > button {
+    width: auto;
+    border-radius: 0;
+  }
+
+  & > button:first-child {
+    border-top-left-radius: $controls-border-radius;;
+    border-bottom-left-radius: $controls-border-radius;;
+  }
+
+  & > button:last-child {
+    border-top-right-radius: $controls-border-radius;;
+    border-bottom-right-radius: $controls-border-radius;;
+  }
+}

@@ -46,7 +46,6 @@
       i {
         padding: 0 1em 0 0;
       }
-
     }
   }
 
@@ -75,6 +74,7 @@
     top: 0;
     pointer-events: none;
   }
+
   &:hover:before {
     transition: all .3s ease;
   }
@@ -107,7 +107,6 @@
       background-color: #{nth($control-kind, 2)};
       border-bottom: $controls-depth solid darken(nth($control-kind, 2), 15%);
 
-
       li {
 
         &:hover {
@@ -127,6 +126,5 @@
     &:hover:before {
       background-color: lighten(nth($control-kind, 2), 10%);
     }
-
-  }
+ }
 }

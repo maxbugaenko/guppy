@@ -4,6 +4,26 @@
   font-size: inherit;
   border-radius: $controls-border-radius;
   outline: none;
-  color: $text-color;
-  background-color: $controls-text-field-background;
+  color: darken($controls-default-color, 20%);
+  background-color: $controls-default-color;
+}
+
+::-webkit-input-placeholder {
+  color: $background-color;
+  text-align: center;
+}
+
+::-moz-placeholder {
+  text-align: center;
+  color: $background-color;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+  color: $background-color;
+}
+
+input:-moz-placeholder {
+  text-align: center;
+  color: $background-color;
 }

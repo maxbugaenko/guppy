@@ -92,49 +92,49 @@
       <div>
         <div class="container">
           <span class="span6">
-            <button class="button button-success right">build<i class="fa fa-rub"></i></button>
+            <button class="button-success right">pound<i class="fa fa-gbp"></i></button>
           </span>
           <span class="span6">
-            <button class="button button-default">default<i class="fa fa-eur"></i></button>
+            <button class="button-default">euro<i class="fa fa-eur"></i></button>
           </span>
         </div>
         <div class="container">
           <span class="span4">
-            <button class="button button-warning">dollar</button>
+            <button class="button-warning">dollar</button>
           </span>
           <span class="span4">
-            <button class="button button-info">euro</button>
+            <button class="button-info">euro</button>
           </span>
           <span class="span4">
-            <button class="button button-success">pound</button>
+            <button class="button-success">pound</button>
           </span>
         </div>
         <div class="container">
           <span class="span8">
-            <button class="button button-warning control-medium">dollar</button>
+            <button class="button-warning control-medium">dollar</button>
           </span>
           <span class="span4">
-            <button class="button button-success control-medium">pound</button>
+            <button class="button-success control-medium">pound</button>
           </span>
         </div>
         <div class="container">
           <span class="span2">
-            <button class="button button-warning control-small"><i class="fa fa-btc"></i></button>
+            <button class="button-warning control-small"><i class="fa fa-btc"></i></button>
           </span>
           <span class="span2">
-            <button class="button button-info control-small"><i class="fa fa-dollar"></i></button>
+            <button class="button-info control-small"><i class="fa fa-dollar"></i></button>
           </span>
           <span class="span2">
-            <button class="button button-success control-small"><i class="fa fa-eur"></i></button>
+            <button class="button-success control-small"><i class="fa fa-eur"></i></button>
           </span>
           <span class="span2">
-            <button class="button button-info control-small"><i class="fa fa-gbp"></i></button>
+            <button class="button-info control-small"><i class="fa fa-gbp"></i></button>
           </span>
           <span class="span2">
-            <button class="button button-warning control-small"><i class="fa fa-jpy"></i></button>
+            <button class="button-warning control-small"><i class="fa fa-jpy"></i></button>
           </span>
           <span class="span2">
-            <button class="button button-success control-small"><i class="fa fa-try"></i></button>
+            <button class="button-success control-small"><i class="fa fa-try"></i></button>
           </span>
         </div>
         <pre class="highlight vertical-padding left">
@@ -169,6 +169,20 @@
             <i class="fa fa-gbp"></i>
           </button>
         </div>
+        <div class="button-group vertical-padding">
+          <button class="button button-success control-small">
+            <i class="fa fa-eur"></i>
+          </button>
+          <button class="button button-success control-small">
+            <i class="fa fa-rub"></i>
+          </button>
+          <button class="button button-success control-small">
+            <i class="fa fa-usd"></i>
+          </button>
+          <button class="button button-success control-small">
+            <i class="fa fa-gbp"></i>
+          </button>
+        </div>
         <pre class="highlight vertical-padding">
 &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"button-group"</span>&gt;
   &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-default"</span>&gt;
@@ -184,6 +198,44 @@
     &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-gbp"</span>&gt;&lt;/i&gt;
   &lt;/button&gt;
 &lt;/div&gt;
+        </pre>
+      </div>
+    </div>
+    <div class="two-column vertical-padding">
+      <div class="right">
+        <img src="../images/connections.svg"/>
+        <h1 class="tight">web forms</h1>
+        <p class="darker">
+          Usually, colors with the same hue are
+         distinguished with adjectives referring to
+        </p>
+      </div>
+      <div>
+        <form action="#" method="GET">
+          <input type="input" class="text-field f-span6" placeholder="name"/>
+          <input type="input" class="text-field f-span6" placeholder="lastname"/>
+          <input type="input" class="text-field f-span12" placeholder="address"/>
+          <input type="input" class="text-field f-span6" placeholder="city"/>
+          <input type="input" class="text-field f-span3" placeholder="state"/>
+          <input type="input" class="text-field f-span3" placeholder="zip"/>
+          <input type="submit" class="button-success f-span7" value="submit"></input>
+          <button class="button-warning f-span5">cancel</button>
+          <input type="checkbox" id="checkbox1"/><label for="checkbox1" class="darker">Let me know about updates</label>
+        </form>
+        <pre class="highlight vertical-padding">
+
+&lt;form <span class="nv">action</span><span class="o">=</span><span class="s2">"#" </span> <span class="nv">method</span><span class="o">=</span><span class="s2">"GET"</span>&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span6" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"name"</span>/&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span6" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"lastname"</span>/&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span12" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"address"</span>/&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span6" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"city"</span>/&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span3" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"state"</span>/&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span3" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"zip"</span>/&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"submit" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"button-success f-span7" </span> <span class="nv">value</span><span class="o">=</span><span class="s2">"submit"</span>&gt;&lt;/input&gt;
+  &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button-warning f-span5"</span>&gt;cancel&lt;/button&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"checkbox" </span> <span class="nv">id</span><span class="o">=</span><span class="s2">"checkbox1"</span>/&gt;
+  &lt;label <span class="k">for</span><span class="o">=</span><span class="s2">"checkbox1" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"darker"</span>&gt;Let me know about updates&lt;/label&gt;
+&lt;/form&gt;
         </pre>
       </div>
     </div>

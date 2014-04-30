@@ -25,10 +25,7 @@
         <div class="container vertical-padding lighten-background center">
           <ul class="menu darker">
             <li>
-              <a href="">dropdowns</a>
-            </li>
-            <li>
-              <a href="">buttons</a>
+              <a href="">controls</a>
             </li>
             <li>
               <a href="">tabs</a>
@@ -38,6 +35,9 @@
             </li>
             <li>
               <a href="">layouts</a>
+            </li>
+            <li>
+              <a href="">build own</a>
             </li>
           </ul>
         </div>

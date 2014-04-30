@@ -38,10 +38,6 @@
   color: #fefeec;
   background-color: #cc0000; }
 
-.highlight .k, .highlight .kd, .highlight .kv {
-  color: #f6dd62;
-  font-weight: bold; }
-
 .highlight .o, .highlight .ow {
   color: #ecf0f1; }
 
@@ -151,9 +147,6 @@
   color: #4df4ff;
   font-weight: bold; }
 
-.highlight .nb {
-  font-weight: bold; }
-
 .highlight .ni {
   color: #999999;
   font-weight: bold; }
@@ -173,6 +166,12 @@
 .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi {
   color: #2a80b9; }
 
+@keyframes slideLeft {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
 .container:after {
   content: "";
   display: block;
@@ -524,8 +523,100 @@ h5 {
   font-size: inherit;
   border-radius: 10px;
   outline: none;
-  color: #ecf0f1;
-  background-color: white; }
+  color: #2b3c4e;
+  background-color: #4f6f8f; }
+
+::-webkit-input-placeholder {
+  color: #34495e;
+  text-align: center; }
+
+::-moz-placeholder {
+  text-align: center;
+  color: #34495e; }
+
+:-ms-input-placeholder {
+  text-align: center;
+  color: #34495e; }
+
+input:-moz-placeholder {
+  text-align: center;
+  color: #34495e; }
+
+input[type="checkbox"] {
+  opacity: 0;
+  cursor: pointer;
+  transition: all .2s ease; }
+
+input[type="checkbox"]:checked + label:before {
+  transition: all .2s ease;
+  background-color: #34495e; }
+
+label {
+  cursor: pointer;
+  position: relative;
+  top: .5em;
+  left: 50px; }
+  label:before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #4f6f8f;
+    border: 10px solid #4f6f8f;
+    border-radius: 10px;
+    top: -10px;
+    left: -60px; }
+  label:hover:before {
+    background-color: #4f6f8f;
+    border: 10px solid #7795b4; }
+
+.f-span1 {
+  margin: 0 .5em .5em 0;
+  width: calc(100%/12 * 1 - .5em); }
+
+.f-span2 {
+  margin: 0 .5em .5em 0;
+  width: calc(100%/12 * 2 - .5em); }
+
+.f-span3 {
+  margin: 0 .5em .5em 0;
+  width: calc(100%/12 * 3 - .5em); }
+
+.f-span4 {
+  margin: 0 .5em .5em 0;
+  width: calc(100%/12 * 4 - .5em); }
+
+.f-span5 {
+  margin: 0 .5em .5em 0;
+  width: calc(100%/12 * 5 - .5em); }
+
+.f-span6 {
+  margin: 0 .5em .5em 0;
+  width: calc(100%/12 * 6 - .5em); }
+
+.f-span7 {
+  margin: 0 .5em .5em 0;
+  width: calc(100%/12 * 7 - .5em); }
+
+.f-span8 {
+  margin: 0 .5em .5em 0;
+  width: calc(100%/12 * 8 - .5em); }
+
+.f-span9 {
+  margin: 0 .5em .5em 0;
+  width: calc(100%/12 * 9 - .5em); }
+
+.f-span10 {
+  margin: 0 .5em .5em 0;
+  width: calc(100%/12 * 10 - .5em); }
+
+.f-span11 {
+  margin: 0 .5em .5em 0;
+  width: calc(100%/12 * 11 - .5em); }
+
+.f-span12 {
+  margin: 0 .5em .5em 0;
+  width: calc(100%/12 * 12 - .5em); }
 
 * {
   padding: 0;

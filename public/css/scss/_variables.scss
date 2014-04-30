@@ -58,7 +58,7 @@ $controls-text-color: #ecf0f1;
 $controls-font-size: 1em;
 $controls-icon-size: 1.3em;
 $controls-padding: 1em;
-$controls-border-radius: 10px;
+$controls-border-radius: 15px;
 $controls-text-field-background: null;
 @if $scheme == light {
   $controls-text-field-background: darken($background-color, 10%);

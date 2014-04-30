@@ -217,7 +217,7 @@
     </div>
     <div class="two-column vertical-padding">
       <div class="right">
-        <img src="../images/connections.svg"/>
+        <img src="../images/arrow.svg"/>
         <h1 class="tight">web forms</h1>
         <p class="darker">
           Usually, colors with the same hue are

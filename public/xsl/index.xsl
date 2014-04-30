@@ -155,21 +155,35 @@
         </p>
       </div>
       <div>
-        <div class="button-group">
-          <button class="button button-default">
+        <div class="button-group padding-bottom">
+          <button class="button button-info">
             <i class="fa fa-eur"></i>
           </button>
-          <button class="button button-success">
+          <button class="button button-info">
             <i class="fa fa-rub"></i>
           </button>
-          <button class="button button-warning">
+          <button class="button button-info">
             <i class="fa fa-usd"></i>
           </button>
           <button class="button button-info">
             <i class="fa fa-gbp"></i>
           </button>
         </div>
-        <div class="button-group vertical-padding">
+        <div class="button-group padding-bottom">
+          <button class="button button-warning control-medium">
+            <i class="fa fa-eur"></i>
+          </button>
+          <button class="button button-warning control-medium">
+            <i class="fa fa-rub"></i>
+          </button>
+          <button class="button button-warning control-medium">
+            <i class="fa fa-usd"></i>
+          </button>
+          <button class="button button-warning control-medium">
+            <i class="fa fa-gbp"></i>
+          </button>
+        </div>
+        <div class="button-group padding-bottom">
           <button class="button button-success control-small">
             <i class="fa fa-eur"></i>
           </button>

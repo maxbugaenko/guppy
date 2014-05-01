@@ -58,6 +58,15 @@ img {
   }
 }
 
+.menu-vertical {
+  @extend .menu;
+
+  li {
+    display: block;
+    margin: 0;
+  }
+}
+
 .separator-circles {
   margin: $base-font-size*5 auto $base-font-size*5 auto;
   border: 10px solid lighten($background-color, 15%);

@@ -648,23 +648,27 @@ img {
   max-width: 100%;
   max-height: 100%; }
 
-.menu {
+.menu, .menu-vertical {
   list-style: none;
   font-family: "Ubuntu";
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 2px; }
-  .menu li {
+  .menu li, .menu-vertical li {
     letter-spacing: inherit;
     display: inline-block;
     margin: 0 40px; }
-    .menu li a {
+    .menu li a, .menu-vertical li a {
       transition: all .3s ease;
       text-decoration: none;
       color: inherit; }
-      .menu li a:hover {
+      .menu li a:hover, .menu-vertical li a:hover {
         transition: all .3s ease;
         border-bottom: 2px solid; }
+
+.menu-vertical li {
+  display: block;
+  margin: 0; }
 
 .separator-circles, .separator-squares {
   margin: 100px auto 100px auto;

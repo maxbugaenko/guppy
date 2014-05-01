@@ -63,16 +63,16 @@
           </ul>
         </div>
         <pre class="highlight vertical-padding">
-          &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"dropdown dropdown-info"</span>&gt;
-          &lt;div&gt;Important information&lt;/div&gt;
-          &lt;ul&gt;
-          &lt;li&gt;
-          &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span>&gt;
-          &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-eur"</span>&gt;&lt;/i&gt; Settings
-          &lt;/a&gt;
-          &lt;/li&gt;
-          &lt;/ul&gt;
-          &lt;/div&gt;
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"dropdown dropdown-info"</span>&gt;
+  &lt;div&gt;Important information&lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">"#"</span>&gt;
+        &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-eur"</span>&gt;&lt;/i&gt; Settings
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
         </pre>
       </div>
     </div>
@@ -135,9 +135,9 @@
           </span>
         </div>
         <pre class="highlight vertical-padding left">
-          &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-default control-medium"</span>&gt;
-          default&lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-eur"</span>&gt;&lt;/i&gt;
-          &lt;/button&gt;
+&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-default control-medium"</span>&gt;
+  default&lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-eur"</span>&gt;&lt;/i&gt;
+&lt;/button&gt;
         </pre>
       </div>
     </div>
@@ -195,20 +195,20 @@
           </button>
         </div>
         <pre class="highlight vertical-padding">
-          &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"button-group"</span>&gt;
-          &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-default"</span>&gt;
-          &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-eur"</span>&gt;&lt;/i&gt;
-          &lt;/button&gt;
-          &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-success"</span>&gt;
-          &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-rub"</span>&gt;&lt;/i&gt;
-          &lt;/button&gt;
-          &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-warning"</span>&gt;
-          &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-usd"</span>&gt;&lt;/i&gt;
-          &lt;/button&gt;
-          &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-info"</span>&gt;
-          &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-gbp"</span>&gt;&lt;/i&gt;
-          &lt;/button&gt;
-          &lt;/div&gt;
+&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"button-group"</span>&gt;
+  &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-default"</span>&gt;
+    &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-eur"</span>&gt;&lt;/i&gt;
+  &lt;/button&gt;
+  &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-success"</span>&gt;
+    &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-rub"</span>&gt;&lt;/i&gt;
+  &lt;/button&gt;
+  &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-warning"</span>&gt;
+    &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-usd"</span>&gt;&lt;/i&gt;
+  &lt;/button&gt;
+  &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-info"</span>&gt;
+    &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-gbp"</span>&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
         </pre>
       </div>
     </div>
@@ -235,18 +235,18 @@
         </form>
         <pre class="highlight vertical-padding">
 
-          &lt;form <span class="nv">action</span><span class="o">=</span><span class="s2">"#" </span> <span class="nv">method</span><span class="o">=</span><span class="s2">"GET"</span>&gt;
-          &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span6" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"name"</span>/&gt;
-          &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span6" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"lastname"</span>/&gt;
-          &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span12" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"address"</span>/&gt;
-          &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span6" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"city"</span>/&gt;
-          &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span3" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"state"</span>/&gt;
-          &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span3" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"zip"</span>/&gt;
-          &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"submit" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"button-success f-span7" </span> <span class="nv">value</span><span class="o">=</span><span class="s2">"submit"</span>/&gt;
-          &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button-warning f-span5"</span>&gt;cancel&lt;/button&gt;
-          &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"checkbox" </span> <span class="nv">id</span><span class="o">=</span><span class="s2">"checkbox1"</span>/&gt;
-          &lt;label <span class="k">for</span><span class="o">=</span><span class="s2">"checkbox1" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"darker"</span>&gt;Let me know about updates&lt;/label&gt;
-          &lt;/form&gt;
+&lt;form <span class="nv">action</span><span class="o">=</span><span class="s2">"#" </span> <span class="nv">method</span><span class="o">=</span><span class="s2">"GET"</span>&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span6" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"name"</span>/&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span6" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"lastname"</span>/&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span12" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"address"</span>/&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span6" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"city"</span>/&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span3" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"state"</span>/&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span3" </span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"zip"</span>/&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"submit" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"button-success f-span7" </span> <span class="nv">value</span><span class="o">=</span><span class="s2">"submit"</span>/&gt;
+  &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button-warning f-span5"</span>&gt;cancel&lt;/button&gt;
+  &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"checkbox" </span> <span class="nv">id</span><span class="o">=</span><span class="s2">"checkbox1"</span>/&gt;
+  &lt;label <span class="k">for</span><span class="o">=</span><span class="s2">"checkbox1" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"darker"</span>&gt;Let me know about updates&lt;/label&gt;
+&lt;/form&gt;
         </pre>
       </div>
     </div>

@@ -1,13 +1,5 @@
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .container {
+
   &:after {
     content: "";
     display: block;
@@ -16,7 +8,7 @@
 }
 
 %span-column {
-  display: inline-block;
+  float: left;
   vertical-align: top;
   padding: .5em;
 }
@@ -28,16 +20,14 @@
   }
 }
 
-.two-column {
-  white-space: nowrap;
+%column-container {
   width: 70%;
   margin: 0 auto;
+  box-sizing: border-box;
 
   & > div {
     margin: 0;
     padding: 1em;
-    white-space: normal;
-    width: 50%;
     float: left;
   }
 
@@ -45,5 +35,21 @@
     content: "";
     display: block;
     clear: both;
+  }
+}
+
+.two-column {
+  @extend %column-container;
+
+  & > div {
+    width: 50%;
+  }
+}
+
+.three-column {
+  @extend %column-container;
+
+  & > div {
+    width: calc(100% / 3);
   }
 }

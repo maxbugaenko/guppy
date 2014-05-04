@@ -25,8 +25,36 @@
         </p>
       </div>
     </div>
-    <div class="container background-success">
-      fuck you
+    <div class="container background-success separator-arrow-up vertical-padding">
+      <div class="three-column controls-text-color">
+        <div>
+          <div class="span4">
+            <img src="../images/chick1.jpg" class="photo"/>
+          </div>
+          <div class="span8">
+            <h3 class="tight padding-bottom">Катя Осадчая, 24 года</h3>
+            Кедами довольна, очень удобные и цвет, как на фото. Доставка очень быстрая и бесплатная :)
+          </div>
+        </div>
+        <div>
+          <div class="span4">
+            <img src="../images/chick2.jpg" class="photo"/>
+          </div>
+          <div class="span8">
+            <h3 class="tight padding-bottom">Катя Осадчая, 24 года</h3>
+            Кедами довольна, очень удобные и цвет, как на фото. Доставка очень быстрая и бесплатная :)
+          </div>
+        </div>
+        <div>
+          <div class="span4">
+            <img src="../images/chick3.jpg" class="photo"/>
+          </div>
+          <div class="span8">
+            <h3 class="tight padding-bottom">Катя Осадчая, 24 года</h3>
+            Кедами довольна, очень удобные и цвет, как на фото. Доставка очень быстрая и бесплатная :)
+          </div>
+        </div>
+      </div>
     </div>
   </xsl:template>
 </xsl:stylesheet>

@@ -11,6 +11,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/>
       <link type="text/css" href="../css/elements.css" rel="stylesheet"/>
+      <link type="text/css" href="../css/tangle.css" rel="stylesheet"/>
       <script src="../js/jquery.js"></script>
       <script src="../js/dropdown.js"></script>
     </head>

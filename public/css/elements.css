@@ -177,19 +177,13 @@ $info: #08bf55;*/
 .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi {
   color: #00a2d3; }
 
-@keyframes slideLeft {
-  from {
-    opacity: 0; }
-
-  to {
-    opacity: 1; } }
 .container:after {
   content: "";
   display: block;
   clear: both; }
 
 .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
-  display: inline-block;
+  float: left;
   vertical-align: top;
   padding: .5em; }
 
@@ -229,20 +223,24 @@ $info: #08bf55;*/
 .span12 {
   width: calc(100%/12 * 12); }
 
-.two-column {
-  white-space: nowrap;
+.two-column, .three-column {
   width: 70%;
-  margin: 0 auto; }
-  .two-column > div {
+  margin: 0 auto;
+  box-sizing: border-box; }
+  .two-column > div, .three-column > div {
     margin: 0;
     padding: 1em;
-    white-space: normal;
-    width: 50%;
     float: left; }
-  .two-column:after {
+  .two-column:after, .three-column:after {
     content: "";
     display: block;
     clear: both; }
+
+.two-column > div {
+  width: 50%; }
+
+.three-column > div {
+  width: calc(100% / 3); }
 
 .left {
   text-align: left; }
@@ -359,6 +357,9 @@ h5 {
 
 .default {
   color: #bfbfbf; }
+
+.controls-text-color {
+  color: #ecf0f1; }
 
 .control-medium, .control-small, .dropdown, .dropdown-success, .dropdown-warning, .dropdown-info, .dropdown-default, .button, .button-success, .button-warning, .button-info, .button-default, .badge, .badge-success, .badge-warning, .badge-info, .badge-default {
   position: relative;

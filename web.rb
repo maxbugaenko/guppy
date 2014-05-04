@@ -11,6 +11,6 @@ get '/controls' do
   erb :controls
 end
 
-get '/getstarted' do
-  erb :getstarted
+get '/teaser' do
+  erb :teaser
 end

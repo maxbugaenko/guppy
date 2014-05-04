@@ -16,6 +16,7 @@
 
 .large {
   font-size: $base-font-size*5;
+  line-height: $base-font-size*4
 }
 
 .big {
@@ -24,6 +25,7 @@
 
 .medium {
   font-size: $base-font-size*1.5;
+  line-height: $base-font-size*1.7
 }
 
 .standard {
@@ -94,7 +96,29 @@ h5 {
   padding-top: 1em;
 }
 
+.margin-bottom {
+  margin-bottom: 1em;
+}
+
+.margin-top {
+  margin-top: 1em;
+}
+
+
 .horizontal-padding {
   padding-right: 1em;
   padding-left: 1em;
 }
+
+@each $control-kind in $controls-color-list {
+  .background-#{nth($control-kind, 1)} {
+    background-color: nth($control-kind, 2);
+  }
+}
+
+@each $control-kind in $controls-color-list {
+  .#{nth($control-kind, 1)} {
+    color: nth($control-kind, 2);
+  }
+}
+

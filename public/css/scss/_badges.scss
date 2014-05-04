@@ -1,0 +1,16 @@
+.badge {
+  @extend %control;
+  cursor: auto;
+  font-size: $controls-font-size;
+  padding: $controls-padding;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+@each $control-kind in $controls-color-list {
+  .badge-#{nth($control-kind, 1)} {
+    @extend .badge;
+    background-color: lighten(nth($control-kind, 2), 10);
+    color: $controls-text-color;
+  }
+}

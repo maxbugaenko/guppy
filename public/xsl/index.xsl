@@ -2,12 +2,27 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:include href="main.xsl"/>
   <xsl:template match="page" mode="body">
+    <div class="overlay"></div>
+    <nav class="icon-menu">
+      <li class="background-success">
+        <a href=""><i class="fa fa-gbp"></i></a>
+      </li>
+      <li class="background-warning">
+        <a href=""><i class="fa fa-jpy"></i></a>
+      </li>
+      <li class="background-info">
+        <a href=""><i class="fa fa-usd"></i></a>
+      </li>
+      <li class="background-default">
+        <a href=""><i class="fa fa-usd"></i></a>
+      </li>
+    </nav>
     <div class="two-column">
       <div>
         <img src="../images/tea.svg"/>
       </div>
       <div>
-        <div class="brand large">{reusable}</div>
+        <div class="brand large">{styled}</div>
         <ul class="menu menu-vertical darker medium vertical-padding">
           <li>
             <a href="">getting started</a>

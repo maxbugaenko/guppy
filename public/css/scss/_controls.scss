@@ -17,8 +17,3 @@
   @extend %control;
   font-size: $controls-font-size/1.7 !important;
 }
-
-.control-auto-width {
-  @extend %control;
-  width: auto;
-}

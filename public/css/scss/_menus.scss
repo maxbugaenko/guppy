@@ -1,0 +1,59 @@
+.menu {
+  list-style: none;
+  @include h-font();
+
+  li {
+    letter-spacing: inherit;
+    display: inline-block;
+    margin: 0 $base-font-size*2;
+
+    a {
+      transition: all .3s ease;
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        transition: all .3s ease;
+        border-bottom: 2px solid;
+      }
+    }
+  }
+}
+
+.menu-vertical {
+  @extend .menu;
+
+  li {
+    display: block;
+    margin: 0;
+  }
+}
+
+.icon-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  list-style: none;
+  height: 100%;
+  background-color: darken($background-color, 10);
+  overflow-y: scroll;
+
+  li {
+    cursor: pointer;
+    color: $text-color;
+    padding: $base-font-size $base-font-size*2;
+    font-size: $base-font-size*3;
+    border-bottom: 1px solid darken($background-color, 5%);
+    transition: all .3s ease;
+
+    &:hover {
+      transition: all .3s ease;
+      background-color: darken($background-color, 5);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

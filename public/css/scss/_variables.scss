@@ -25,9 +25,31 @@ $base-font-size: 20px;
 // main variables to define the whole color scheme
 // $scheme = dark | light
 // $background-color = choose any color
-$scheme: dark;
+/*$scheme: dark;
 $controls-depth: 4px;
+$controls-text-color: #ecf0f1;
+$controls-font-size: 1em;
+$controls-icon-size: 1.3em;
+$controls-padding: 1em;
+$controls-border-radius: 15px;
 $background-color: #34495e;
+$success: #2a80b9;
+$warning: #ef7820;
+$info: #08bf55;*/
+
+$scheme: light;
+$controls-depth: 3px;
+$controls-text-color: #ecf0f1;
+$controls-font-size: 1em;
+$controls-icon-size: 1.3em;
+$controls-padding: 1em;
+$controls-border-radius: 5px;
+$background-color: #fff;
+$success: #00a2d3;
+$warning: #e16b0b;
+$info: #703e9d;
+
+
 $lighten-background-color: lighten($background-color, 5%);
 $text-color: null;
 @if $scheme == light {
@@ -45,20 +67,12 @@ $controls-default-color: null;
 } @else {
   $controls-default-color: lighten($background-color, 15%);
 }
-$success: #2a80b9;
-$warning: #ef7820;
-$info: #08bf55;
 $controls-color-list: (
   success $success,
   warning $warning,
   info $info,
   default $controls-default-color
 );
-$controls-text-color: #ecf0f1;
-$controls-font-size: 1em;
-$controls-icon-size: 1.3em;
-$controls-padding: 1em;
-$controls-border-radius: 15px;
 $controls-text-field-background: null;
 @if $scheme == light {
   $controls-text-field-background: darken($background-color, 10%);

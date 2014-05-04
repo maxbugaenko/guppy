@@ -1,0 +1,37 @@
+.separator-circles {
+  margin: $base-font-size*5 auto $base-font-size*5 auto;
+  border: 10px solid lighten($background-color, 15%);
+  border-radius: 50%;
+  width: $base-font-size;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -$base-font-size * 2;
+    top: -$base-font-size;
+    border: 10px solid lighten($background-color, 25%);
+    border-radius: 50%;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: $base-font-size;
+    border: 10px solid lighten($background-color, 25%);
+    border-radius: 50%;
+  }
+}
+
+.separator-squares {
+  @extend .separator-circles;
+  border-radius: 0;
+
+  &:before {
+    border-radius: 0;
+  }
+
+  &:after {
+    border-radius: 0;
+  }
+}

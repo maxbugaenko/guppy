@@ -4,9 +4,16 @@
   font-size: inherit;
   border-radius: $controls-border-radius;
   outline: none;
-  color: darken($controls-default-color, 20%);
+  color: darken($controls-default-color, 20);
   background-color: $controls-default-color;
-  border-bottom: $controls-depth solid darken($controls-default-color, 18%);
+  border-bottom: $controls-depth solid darken($controls-default-color, 18);
+  transition: all .3s ease;
+  text-align: center;
+
+  &:focus {
+    transition: all .3s ease;
+    background-color: lighten($controls-default-color, 5);
+  }
 }
 
 ::-webkit-input-placeholder {

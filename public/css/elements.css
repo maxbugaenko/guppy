@@ -251,22 +251,21 @@ $info: #08bf55;*/
 .center {
   text-align: center; }
 
-.v-middle {
-  vertical-align: baseline; }
-
 .large {
   font-size: 100px;
   line-height: 80px; }
 
 .big {
-  font-size: 40px; }
+  font-size: 40px;
+  line-height: 44px; }
 
 .medium {
   font-size: 30px;
   line-height: 34px; }
 
 .standard {
-  font-size: 20px; }
+  font-size: 20px;
+  line-height: 22px; }
 
 .small {
   font-size: 28.57143px; }
@@ -312,17 +311,27 @@ h5 {
     margin-right: 20px; }
 
 .lighten-background {
-  background-color: white; }
+  background-color: #f2f2f2; }
 
 .vertical-padding {
   padding-top: 1em;
   padding-bottom: 1em; }
 
+.vertical-padding-large {
+  padding-top: 5em;
+  padding-bottom: 5em; }
+
 .padding-bottom {
   padding-bottom: 1em; }
 
+.padding-bottom-large {
+  padding-bottom: 5em; }
+
 .padding-top {
   padding-top: 1em; }
+
+.padding-top-large {
+  padding-top: 5em; }
 
 .margin-bottom {
   margin-bottom: 1em; }
@@ -357,6 +366,9 @@ h5 {
 
 .default {
   color: #bfbfbf; }
+
+.background-color {
+  background-color: white; }
 
 .controls-text-color {
   color: #ecf0f1; }
@@ -764,6 +776,42 @@ label {
     border-radius: 0; }
   .separator-squares:after {
     border-radius: 0; }
+
+.separator-arrow-down {
+  position: relative; }
+  .separator-arrow-down:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    width: 80px;
+    height: 80px;
+    background-color: inherit;
+    -webkit-transform: rotate(45deg);
+    z-index: 1; }
+
+.separator-diagonal {
+  position: relative; }
+  .separator-diagonal:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 40px;
+    background-color: inherit;
+    -webkit-transform: rotate(-1deg);
+    z-index: 1; }
+  .separator-diagonal:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -40px;
+    width: 100%;
+    height: 80px;
+    background-color: inherit;
+    -webkit-transform: rotate(-1deg);
+    z-index: 1; }
 
 * {
   padding: 0;

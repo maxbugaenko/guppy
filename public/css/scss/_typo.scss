@@ -10,10 +10,6 @@
   text-align: center;
 }
 
-.v-middle {
-  vertical-align: baseline;
-}
-
 .large {
   font-size: $base-font-size*5;
   line-height: $base-font-size*4
@@ -21,15 +17,17 @@
 
 .big {
   font-size: $base-font-size*2;
+  line-height: $base-font-size*2.2;
 }
 
 .medium {
   font-size: $base-font-size*1.5;
-  line-height: $base-font-size*1.7
+  line-height: $base-font-size*1.7;
 }
 
 .standard {
   font-size: $base-font-size;
+  line-height: $base-font-size*1.1;
 }
 
 .small {
@@ -88,12 +86,25 @@ h5 {
   padding-bottom: 1em;
 }
 
+.vertical-padding-large {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
 .padding-bottom {
   padding-bottom: 1em;
 }
 
+.padding-bottom-large {
+  padding-bottom: 5em;
+}
+
 .padding-top {
   padding-top: 1em;
+}
+
+.padding-top-large {
+  padding-top: 5em;
 }
 
 .margin-bottom {
@@ -103,7 +114,6 @@ h5 {
 .margin-top {
   margin-top: 1em;
 }
-
 
 .horizontal-padding {
   padding-right: 1em;
@@ -120,6 +130,10 @@ h5 {
   .#{nth($control-kind, 1)} {
     color: nth($control-kind, 2);
   }
+}
+
+.background-color {
+  background-color: $background-color;
 }
 
 .controls-text-color {

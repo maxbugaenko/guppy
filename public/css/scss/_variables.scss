@@ -50,12 +50,14 @@ $warning: #e16b0b;
 $info: #703e9d;
 
 
-$lighten-background-color: lighten($background-color, 5%);
+$lighten-background-color: null;
 $text-color: null;
 @if $scheme == light {
   $text-color: darken($background-color, 50%);
+  $lighten-background-color: darken($background-color, 5%);
 } @else {
   $text-color: #ecf0f1;
+  $lighten-background-color: lighten($background-color, 5%);
 }
 
 // colors for different kinds of controls

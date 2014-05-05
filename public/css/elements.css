@@ -226,15 +226,15 @@ $info: #08bf55;*/
 .span12 {
   width: calc(100%/12 * 12); }
 
-.two-column, .three-column, .four-column, .five-column {
+.two-column, .three-column, .four-column, .five-column, .six-column {
   width: 70%;
   margin: 0 auto;
   box-sizing: border-box; }
-  .two-column > div, .three-column > div, .four-column > div, .five-column > div {
+  .two-column > div, .three-column > div, .four-column > div, .five-column > div, .six-column > div {
     margin: 0;
     padding: 1em;
     float: left; }
-  .two-column:after, .three-column:after, .four-column:after, .five-column:after {
+  .two-column:after, .three-column:after, .four-column:after, .five-column:after, .six-column:after {
     content: "";
     display: block;
     clear: both; }
@@ -250,6 +250,11 @@ $info: #08bf55;*/
 
 .five-column > div {
   width: calc(100% / 5); }
+
+.six-column {
+  width: 80%; }
+  .six-column > div {
+    width: calc(100% / 6); }
 
 .left {
   text-align: left; }

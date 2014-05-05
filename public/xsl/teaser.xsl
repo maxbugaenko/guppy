@@ -24,48 +24,46 @@
         </p>
       </div>
     </div>
-    <div class="five-column teasers right">
+    <div class="six-column teasers right">
+      <div>
+        <h2>Compact Styler</h2>
+        <button class="button button-warning f-span8 control-medium">купить</button>
+      </div>
       <div>
         <img src="../images/teaser/teaser1.jpg"/>
-        <button class="button button-success f-span8 control-small">купить</button>
       </div>
       <div>
         <img src="../images/teaser/teaser2.jpg"/>
-        <button class="button button-success f-span8 control-small">купить</button>
       </div>
       <div>
         <img src="../images/teaser/teaser3.jpg"/>
-        <button class="button button-success f-span8 control-small">купить</button>
       </div>
       <div>
         <img src="../images/teaser/teaser4.jpg"/>
-        <button class="button button-success f-span8 control-small">купить</button>
       </div>
       <div>
         <img src="../images/teaser/teaser5.jpg"/>
-        <button class="button button-success f-span8 control-small">купить</button>
       </div>
     </div>
-    <div class="five-column margin-bottom-large teasers right">
+    <div class="six-column margin-bottom-large teasers right">
+      <div>
+        <h2>Salon Elite</h2>
+        <button class="button button-warning f-span8 control-medium">купить</button>
+      </div>
       <div>
         <img src="../images/teaser/teaser6.jpg"/>
-        <button class="button button-success f-span8 control-small">купить</button>
       </div>
       <div>
         <img src="../images/teaser/teaser7.jpg"/>
-        <button class="button button-success f-span8 control-small">купить</button>
       </div>
       <div>
         <img src="../images/teaser/teaser8.jpg"/>
-        <button class="button button-success f-span8 control-small">купить</button>
       </div>
       <div>
         <img src="../images/teaser/teaser9.jpg"/>
-        <button class="button button-success f-span8 control-small">купить</button>
       </div>
       <div>
         <img src="../images/teaser/teaser10.jpg"/>
-        <button class="button button-success f-span8 control-small">купить</button>
       </div>
     </div>
     <div class="container background-success controls-text-color">

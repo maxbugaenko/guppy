@@ -69,3 +69,12 @@
     width: calc(100% / 5);
   }
 }
+
+.six-column {
+  @extend %column-container;
+  width: 80%;
+
+  & > div {
+    width: calc(100% / 6);
+  }
+}

@@ -25,17 +25,17 @@
         </p>
       </div>
     </div>
-    <div class="four-column">
-      <div><img src="../images/teaser/teaser1.png"/></div>
-      <div><img src="../images/teaser/teaser2.png"/></div>
-      <div><img src="../images/teaser/teaser3.png"/></div>
-      <div><img src="../images/teaser/teaser4.png"/></div>
+    <div class="four-column teasers">
+      <div><img src="../images/teaser/teaser1.jpg"/></div>
+      <div><img src="../images/teaser/teaser2.jpg"/></div>
+      <div><img src="../images/teaser/teaser3.jpg"/></div>
+      <div><img src="../images/teaser/teaser4.jpg"/></div>
     </div>
-    <div class="four-column">
-      <div><img src="../images/teaser/teaser5.png"/></div>
-      <div><img src="../images/teaser/teaser6.png"/></div>
-      <div><img src="../images/teaser/teaser7.png"/></div>
-      <div><img src="../images/teaser/teaser8.png"/></div>
+    <div class="four-column margin-bottom-large teasers">
+      <div><img src="../images/teaser/teaser5.jpg"/></div>
+      <div><img src="../images/teaser/teaser6.jpg"/></div>
+      <div><img src="../images/teaser/teaser7.jpg"/></div>
+      <div><img src="../images/teaser/teaser8.jpg"/></div>
     </div>
     <div class="container background-success controls-text-color">
       <div class="span1"></div>
@@ -45,8 +45,9 @@
       <div class="span3 left medium">бесплатная доставка по Украине</div>
       <div class="span1"></div>
     </div>
-    <div class="container vertical-padding lighten-background darker">
-      <div class="two-column vertical-padding">
+    <div class="container center vertical-padding lighten-background darker padding-top-large">
+      <h1>отзывы экспертов</h1>
+      <div class="two-column vertical-padding left">
         <div>
           <div class="span4">
             <img src="../images/chick1.jpg" class="photo"/>
@@ -61,12 +62,12 @@
             <img src="../images/chick2.jpg" class="photo"/>
           </div>
           <div class="span8">
-            <h3 class="tight padding-bottom">Ольга Киреева г. Тверь дизайнер, маркетолог</h3>
+            <h3 class="tight padding-bottom">Ольга Киреева г. Хмельницкий дизайнер, маркетолог</h3>
             Тангл заменил мне все расчески! Очень редко, когда иду с маленькой сумкой, беру туда деревянную малюську, а так я собой постоянно ношу Тангл. Такая расческа просто незаменимый аксессуар и помощник. Я настоятельно рекомендую Вам иметь что то подобное в своем уходе.
           </div>
         </div>
       </div>
-      <div class="two-column vertical-padding">
+      <div class="two-column padding-top left">
         <div>
           <div class="span4">
             <img src="../images/chick4.jpg" class="photo"/>
@@ -81,27 +82,33 @@
             <img src="../images/chick6.jpg" class="photo"/>
           </div>
           <div class="span8">
-            <h3 class="tight padding-bottom">Ольга г. Москва студентка
+            <h3 class="tight padding-bottom">Ангелина Розальская г. Виница парикмахер салон "Мадмуазель"
             </h3>
-            Волосы заметно разглаживаются и становятся гладкими и блестящими. Зимой меньше электризуются. И самое главное, я заметила что у меня начали быстрее расти волосы, подозреваю в этом именно расческу, потому что она дает легкий массаж головы, что очень приятно! Стали меньше сечься и обламываться на концах.
+            легко РАСПУТЫВАЕТ ВОЛОСЫ НЕ ВЫРЫВАЯ ИХ! в каком бы они не были состоянии (влажные, сухие);
+            для выравнивания волос достаточно иметь фен и TANGLE TEEZER;
+            расческа легко моется, быстро сохнет;
+            не электризует волосы!
+            массаж, что улучшает циркуляции крови кожи головы.... зубчики плотные, поэтому может показаться, что для массажа они жестковатые, но это не так!
+            удобна в использовании (из рук не выскальзывает);
           </div>
         </div>
       </div>
     </div>
-    <div class="container lighten-background">
+    <div class="container lighten-background padding-bottom-large">
+      <div class="span12 center">
+        <button class="button button-success control-medium f-span4">добавить коментарий<i class="fa fa-plus"></i></button>
+      </div>
+    </div>
+    <div class="container background-success center controls-text-color padding-top-large">
+      <h1>Видеообзоры</h1>
       <div class="two-column controls-text-color vertical-padding">
         <div>
-          <iframe width="100%" height="350px" src="//www.youtube.com/embed/1NZLh9gRXsw" frameborder="0" allowfullscreen="1">
+          <iframe style="box-shadow: 0 0 50px white" width="100%" height="350px" src="//www.youtube.com/embed/1NZLh9gRXsw" frameborder="0" allowfullscreen="1">
           </iframe>
         </div>
         <div>
-          <iframe width="100%" height="350px" src="//www.youtube.com/embed/isZyGn_hO2s" frameborder="0" allowfullscreen="1">
+          <iframe style="box-shadow: 0 0 50px white" width="100%" height="350px" src="//www.youtube.com/embed/isZyGn_hO2s" frameborder="0" allowfullscreen="1">
           </iframe>
-        </div>
-      </div>
-      <div class="container">
-        <div class="span12 center">
-          <button class="button button-success f-span4">добавить коментарий<i class="fa fa-plus"></i></button>
         </div>
       </div>
     </div>

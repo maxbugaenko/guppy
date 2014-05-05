@@ -252,7 +252,7 @@ $info: #08bf55;*/
   width: calc(100% / 5); }
 
 .six-column {
-  width: 80%; }
+  width: 90%; }
   .six-column > div {
     width: calc(100% / 6); }
 

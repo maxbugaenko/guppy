@@ -26,7 +26,7 @@
     </div>
     <div class="six-column teasers right">
       <div>
-        <h2>Compact Styler</h2>
+        <h1>Compact Styler</h1>
       </div>
       <div>
         <a href="#" class="small">увеличить</a>
@@ -56,7 +56,7 @@
     </div>
     <div class="six-column margin-bottom-large teasers right">
       <div>
-        <h2>Salon Elite</h2>
+        <h1>Salon Elite</h1>
       </div>
       <div>
         <a href="#" class="small">увеличить</a>

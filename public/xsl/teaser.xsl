@@ -17,27 +17,56 @@
         <p class="upper medium darker">
           Сто пятьдесят причин купить эту расческу. Еще пять причин купить ее
         </p>
-        <button class="button-warning f-span8" onclick="location.href='controls'">заказать<i class="fa fa-rocket"></i></button>
-        <span class="big bolder warning">190грн</span>
+        <span class="large code bolder warning">190грн</span>
         <p class="vertical-padding darker">
           Сто пятьдесят причин купить эту расческу. Еще пять причин купить ее.
           Еще немного причин не покупать это гавно
         </p>
       </div>
     </div>
-    <div class="five-column teasers">
-      <div><img src="../images/teaser/teaser1.jpg"/></div>
-      <div><img src="../images/teaser/teaser2.jpg"/></div>
-      <div><img src="../images/teaser/teaser3.jpg"/></div>
-      <div><img src="../images/teaser/teaser4.jpg"/></div>
-      <div><img src="../images/teaser/teaser5.jpg"/></div>
+    <div class="five-column teasers right">
+      <div>
+        <img src="../images/teaser/teaser1.jpg"/>
+        <button class="button button-success f-span8 control-small">купить</button>
+      </div>
+      <div>
+        <img src="../images/teaser/teaser2.jpg"/>
+        <button class="button button-success f-span8 control-small">купить</button>
+      </div>
+      <div>
+        <img src="../images/teaser/teaser3.jpg"/>
+        <button class="button button-success f-span8 control-small">купить</button>
+      </div>
+      <div>
+        <img src="../images/teaser/teaser4.jpg"/>
+        <button class="button button-success f-span8 control-small">купить</button>
+      </div>
+      <div>
+        <img src="../images/teaser/teaser5.jpg"/>
+        <button class="button button-success f-span8 control-small">купить</button>
+      </div>
     </div>
-    <div class="five-column margin-bottom-large teasers">
-      <div><img src="../images/teaser/teaser6.jpg"/></div>
-      <div><img src="../images/teaser/teaser7.jpg"/></div>
-      <div><img src="../images/teaser/teaser8.jpg"/></div>
-      <div><img src="../images/teaser/teaser9.jpg"/></div>
-      <div><img src="../images/teaser/teaser10.jpg"/></div>
+    <div class="five-column margin-bottom-large teasers right">
+      <div>
+        <img src="../images/teaser/teaser6.jpg"/>
+        <button class="button button-success f-span8 control-small">купить</button>
+      </div>
+      <div>
+        <img src="../images/teaser/teaser7.jpg"/>
+        <button class="button button-success f-span8 control-small">купить</button>
+      </div>
+      <div>
+        <img src="../images/teaser/teaser8.jpg"/>
+        <button class="button button-success f-span8 control-small">купить</button>
+      </div>
+      <div>
+        <img src="../images/teaser/teaser9.jpg"/>
+        <button class="button button-success f-span8 control-small">купить</button>
+      </div>
+      <div>
+        <img src="../images/teaser/teaser10.jpg"/>
+        <button class="button button-success f-span8 control-small">купить</button>
+      </div>
     </div>
     <div class="container background-success controls-text-color">
       <div class="span1"></div>

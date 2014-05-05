@@ -13,6 +13,9 @@
 @font-face {
   font-family: 'Aller-Light';
   src: url("http://img.twentytags.com/fonts/Aller/Aller-Lt.ttf") format("truetype"); }
+@font-face {
+  font-family: 'fontello';
+  src: url("../../fonts/fontello.ttf") format("opentype"); }
 /*$scheme: dark;
 $controls-depth: 4px;
 $controls-text-color: #ecf0f1;
@@ -223,15 +226,15 @@ $info: #08bf55;*/
 .span12 {
   width: calc(100%/12 * 12); }
 
-.two-column, .three-column {
+.two-column, .three-column, .four-column {
   width: 70%;
   margin: 0 auto;
   box-sizing: border-box; }
-  .two-column > div, .three-column > div {
+  .two-column > div, .three-column > div, .four-column > div {
     margin: 0;
     padding: 1em;
     float: left; }
-  .two-column:after, .three-column:after {
+  .two-column:after, .three-column:after, .four-column:after {
     content: "";
     display: block;
     clear: both; }
@@ -241,6 +244,9 @@ $info: #08bf55;*/
 
 .three-column > div {
   width: calc(100% / 3); }
+
+.four-column > div {
+  width: calc(100% / 4); }
 
 .left {
   text-align: left; }
@@ -372,6 +378,9 @@ h5 {
 
 .controls-text-color {
   color: #ecf0f1; }
+
+.code {
+  font-family: "Source Code Pro"; }
 
 .control-medium, .control-small, .dropdown, .dropdown-success, .dropdown-warning, .dropdown-info, .dropdown-default, .button, .button-success, .button-warning, .button-info, .button-default, .badge, .badge-success, .badge-warning, .badge-info, .badge-default {
   position: relative;
@@ -845,3 +854,8 @@ img {
   opacity: .9;
   z-index: 100;
   background-color: #cccccc; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px dashed; }

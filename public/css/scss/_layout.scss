@@ -53,3 +53,11 @@
     width: calc(100% / 3);
   }
 }
+
+.four-column {
+  @extend %column-container;
+
+  & > div {
+    width: calc(100% / 4);
+  }
+}

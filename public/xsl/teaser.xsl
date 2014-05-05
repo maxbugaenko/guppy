@@ -25,17 +25,19 @@
         </p>
       </div>
     </div>
-    <div class="four-column teasers">
+    <div class="five-column teasers">
       <div><img src="../images/teaser/teaser1.jpg"/></div>
       <div><img src="../images/teaser/teaser2.jpg"/></div>
       <div><img src="../images/teaser/teaser3.jpg"/></div>
       <div><img src="../images/teaser/teaser4.jpg"/></div>
-    </div>
-    <div class="four-column margin-bottom-large teasers">
       <div><img src="../images/teaser/teaser5.jpg"/></div>
+    </div>
+    <div class="five-column margin-bottom-large teasers">
       <div><img src="../images/teaser/teaser6.jpg"/></div>
       <div><img src="../images/teaser/teaser7.jpg"/></div>
       <div><img src="../images/teaser/teaser8.jpg"/></div>
+      <div><img src="../images/teaser/teaser9.jpg"/></div>
+      <div><img src="../images/teaser/teaser10.jpg"/></div>
     </div>
     <div class="container background-success controls-text-color">
       <div class="span1"></div>

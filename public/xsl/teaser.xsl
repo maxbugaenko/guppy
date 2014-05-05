@@ -31,18 +31,23 @@
       </div>
       <div>
         <img src="../images/teaser/teaser1.jpg"/>
+        <a href="#" class="small">увеличить</a>
       </div>
       <div>
         <img src="../images/teaser/teaser2.jpg"/>
+        <a href="#" class="small">увеличить</a>
       </div>
       <div>
         <img src="../images/teaser/teaser3.jpg"/>
+        <a href="#" class="small">увеличить</a>
       </div>
       <div>
         <img src="../images/teaser/teaser4.jpg"/>
+        <a href="#" class="small">увеличить</a>
       </div>
       <div>
         <img src="../images/teaser/teaser5.jpg"/>
+        <a href="#" class="small">увеличить</a>
       </div>
     </div>
     <div class="six-column margin-bottom-large teasers right">
@@ -52,18 +57,23 @@
       </div>
       <div>
         <img src="../images/teaser/teaser6.jpg"/>
+        <a href="#" class="small">увеличить</a>
       </div>
       <div>
         <img src="../images/teaser/teaser7.jpg"/>
+        <a href="#" class="small">увеличить</a>
       </div>
       <div>
         <img src="../images/teaser/teaser8.jpg"/>
+        <a href="#" class="small">увеличить</a>
       </div>
       <div>
         <img src="../images/teaser/teaser9.jpg"/>
+        <a href="#" class="small">увеличить</a>
       </div>
       <div>
         <img src="../images/teaser/teaser10.jpg"/>
+        <a href="#" class="small">увеличить</a>
       </div>
     </div>
     <div class="container background-success controls-text-color">

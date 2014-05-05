@@ -121,3 +121,11 @@
   font-weight: 700;
   letter-spacing: -5px;
   font-size: 60px; }
+
+.teasers div {
+  cursor: pointer; }
+.teasers div:hover {
+  background-color: lightgray; }
+.teasers div:active {
+  color: white;
+  background-color: #00a2d3; }

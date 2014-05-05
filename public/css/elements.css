@@ -409,7 +409,8 @@ h5 {
   font-size: 0.76923em !important; }
 
 .control-small {
-  font-size: 0.58824em !important; }
+  font-size: 0.58824em !important;
+  padding: 0.5em !important; }
 
 .dropdown div, .dropdown-success div, .dropdown-warning div, .dropdown-info div, .dropdown-default div {
   width: 100%;

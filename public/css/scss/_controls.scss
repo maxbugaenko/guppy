@@ -16,4 +16,5 @@
 .control-small {
   @extend %control;
   font-size: $controls-font-size/1.7 !important;
+  padding: $controls-padding/2 !important;
 }

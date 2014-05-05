@@ -27,53 +27,61 @@
     <div class="six-column teasers right">
       <div>
         <h2>Compact Styler</h2>
-        <button class="button button-warning f-span8 control-medium">купить</button>
       </div>
       <div>
+        <a href="#" class="small">увеличить</a>
         <img src="../images/teaser/teaser1.jpg"/>
-        <a href="#" class="small">увеличить</a>
+        <button class="button button-warning f-span8 control-small">заказать</button>
       </div>
       <div>
+        <a href="#" class="small">увеличить</a>
         <img src="../images/teaser/teaser2.jpg"/>
-        <a href="#" class="small">увеличить</a>
+        <button class="button button-warning f-span8 control-small">заказать</button>
       </div>
       <div>
+        <a href="#" class="small">увеличить</a>
         <img src="../images/teaser/teaser3.jpg"/>
-        <a href="#" class="small">увеличить</a>
+        <button class="button button-warning f-span8 control-small">заказать</button>
       </div>
       <div>
+        <a href="#" class="small">увеличить</a>
         <img src="../images/teaser/teaser4.jpg"/>
-        <a href="#" class="small">увеличить</a>
+        <button class="button button-warning f-span8 control-small">заказать</button>
       </div>
       <div>
-        <img src="../images/teaser/teaser5.jpg"/>
         <a href="#" class="small">увеличить</a>
+        <img src="../images/teaser/teaser5.jpg"/>
+        <button class="button button-warning f-span8 control-small">заказать</button>
       </div>
     </div>
     <div class="six-column margin-bottom-large teasers right">
       <div>
         <h2>Salon Elite</h2>
-        <button class="button button-warning f-span8 control-medium">купить</button>
       </div>
       <div>
+        <a href="#" class="small">увеличить</a>
         <img src="../images/teaser/teaser6.jpg"/>
-        <a href="#" class="small">увеличить</a>
+        <button class="button button-warning f-span8 control-small">заказать</button>
       </div>
       <div>
+        <a href="#" class="small">увеличить</a>
         <img src="../images/teaser/teaser7.jpg"/>
-        <a href="#" class="small">увеличить</a>
+        <button class="button button-warning f-span8 control-small">заказать</button>
       </div>
       <div>
+        <a href="#" class="small">увеличить</a>
         <img src="../images/teaser/teaser8.jpg"/>
-        <a href="#" class="small">увеличить</a>
+        <button class="button button-warning f-span8 control-small">заказать</button>
       </div>
       <div>
+        <a href="#" class="small">увеличить</a>
         <img src="../images/teaser/teaser9.jpg"/>
-        <a href="#" class="small">увеличить</a>
+        <button class="button button-warning f-span8 control-small">заказать</button>
       </div>
       <div>
-        <img src="../images/teaser/teaser10.jpg"/>
         <a href="#" class="small">увеличить</a>
+        <img src="../images/teaser/teaser10.jpg"/>
+        <button class="button button-warning f-span8 control-small">заказать</button>
       </div>
     </div>
     <div class="container background-success controls-text-color">

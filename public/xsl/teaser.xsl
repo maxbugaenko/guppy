@@ -146,8 +146,26 @@
         <button class="button button-success control-medium f-span4">добавить коментарий<i class="fa fa-plus"></i></button>
       </div>
     </div>
-    <div class="container background-success center controls-text-color padding-top-large">
-      <h1>Видеообзоры</h1>
+    <div class="container background-success controls-text-color vertical-padding center">
+      <h1>Tangle Teaser в журналах</h1>
+    </div>
+    <div class="container vertical-padding center">
+      <img src="../images/teaser/mag1.jpg" height="170px"/>
+      <img src="../images/teaser/mag2.jpg" height="170px"/>
+      <img src="../images/teaser/mag3.jpg" height="170px"/>
+      <img src="../images/teaser/mag4.jpg" height="170px"/>
+      <img src="../images/teaser/mag5.jpg" height="170px"/>
+      <img src="../images/teaser/mag6.jpg" height="170px"/>
+      <img src="../images/teaser/mag7.jpg" height="170px"/>
+      <img src="../images/teaser/mag8.jpg" height="170px"/>
+      <img src="../images/teaser/mag9.jpg" height="170px"/>
+      <img src="../images/teaser/mag10.jpg" height="170px"/>
+      <img src="../images/teaser/mag11.jpg" height="170px"/>
+    </div>
+    <div class="container background-success controls-text-color vertical-padding center">
+      <h1>видеообзоры на youtube</h1>
+    </div>
+    <div class="container center controls-text-color ">
       <div class="two-column controls-text-color vertical-padding">
         <div>
           <iframe style="box-shadow: 0 0 50px white" width="100%" height="350px" src="//www.youtube.com/embed/1NZLh9gRXsw" frameborder="0" allowfullscreen="1">

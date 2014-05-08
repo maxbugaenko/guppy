@@ -27,7 +27,19 @@
         </p>
       </div>
     </div>
-    <div class="six-column teasers right">
+    <div class="container kate vertical-padding">
+      <div class="span6">
+      </div>
+      <div class="span6 qoutes">
+        <div class="kate-quote code">
+          Никому не советую это китайское гавно
+          <div>
+            Кейт Мидлтон
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="six-column teasers right padding-top-large">
       <div>
         <h1>Compact Styler</h1>
       </div>

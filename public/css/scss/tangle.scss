@@ -95,3 +95,24 @@
     background-color: lighten(#2a80b9, 10);
   }
 }
+
+.kate {
+  background: url("../../images/teaser/kate.jpg") no-repeat;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.kate-quote {
+  font-size: 2.5em;
+  line-height: 1em;
+  letter-spacing: -2px;
+  background: rgba(0, 0, 0, .3);
+  color: #fff;
+  padding: .5em;
+
+  div {
+    font-size: .5em;
+  }
+}

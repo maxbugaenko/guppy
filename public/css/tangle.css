@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,cyrillic);
 @font-face {
   font-family: 'fontello';
   src: url("../../fonts/fontello.eot?50306926");
@@ -136,7 +137,11 @@
   background-size: cover;
   background-position: 50%; }
 
+.label {
+  font-family: "Roboto Slab"; }
+
 .kate-quote {
+  font-family: "Roboto Slab";
   font-size: 45px;
   line-height: 1em;
   letter-spacing: -2px;
@@ -150,5 +155,6 @@
   background: rgba(0, 0, 0, 0.3);
   padding: .5em;
   line-height: 2.5em;
+  letter-spacing: -2px;
   color: #fff;
   font-size: 30px; }

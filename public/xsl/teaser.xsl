@@ -5,11 +5,11 @@
     <div class="two-column background-color">
       <div class="right">
         <img src="../images/teaser.jpeg"/>
-        <p class="code success">
+        <p class="label success">
           Украина, Днепропетровск<br/>
           <a href="mailto:support@buildstar.com.ua">support@topsales.sx</a>
           <div class="phone success">800 890 770</div>
-          <div class="code success medium">звонки бесплатны</div>
+          <div class="label success medium">звонки бесплатны</div>
         </p>
       </div>
       <div>
@@ -20,7 +20,7 @@
           айфон среди расчесок<br/>
           легенда в сша
         </p>
-        <span class="large code bolder warning">190грн</span>
+        <span class="large label bolder warning">190грн</span>
         <p class="vertical-padding darker">
           Сто пятьдесят причин купить эту расческу. Еще пять причин купить ее.
           Еще немного причин не покупать это гавно
@@ -28,19 +28,19 @@
       </div>
     </div>
     <div class="container kate vertical-padding">
-      <div class="span7 padding-top-large">
+      <div class="span7 padding-top-large label">
         <span class="why">
           Нежная красивая расческа
         </span><br/>
-        <span class="why">
+        &#160;&#160;<span class="why">
           Никакая она не китайская
         </span><br/>
-        <span class="why">
+        &#160;&#160;&#160;&#160;&#160;&#160;<span class="why">
           Мы не хотим просто нажиться
         </span>
       </div>
       <div class="span5 qoutes right">
-        <div class="kate-quote code">
+        <div class="kate-quote">
           Никому не советую это китайское гавно
           <div>
             Кейт Мидлтон

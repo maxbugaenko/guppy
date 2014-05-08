@@ -8,7 +8,7 @@
         <p class="label success">
           Украина, Днепропетровск<br/>
           <a href="mailto:support@buildstar.com.ua">support@topsales.sx</a>
-          <div class="phone success">800 890 770</div>
+          <div class="phone label success">800 890 770</div>
           <div class="label success medium">звонки бесплатны</div>
         </p>
       </div>
@@ -39,7 +39,7 @@
           Мы не хотим просто нажиться
         </span>
       </div>
-      <div class="span5 qoutes right">
+      <div class="span5 qoutes right label controls-text-color">
         <div class="kate-quote">
           Никому не советую это китайское гавно
           <div>
@@ -48,6 +48,8 @@
         </div>
         <br/>
         <button style="box-shadow: 0 0 50px #000" class="button button-warning f-span6">заказать</button>
+        <br/>
+        при заказе одной одна в подарок
       </div>
     </div>
     <div class="six-column teasers right padding-top-large">
@@ -115,11 +117,11 @@
       </div>
       <div class="span5">
         <div class="container right">
-          <div class="span8 medium">полный возврат денег в течение 30 дней</div>
+          <div class="span8 medium label">полный возврат денег в течение 30 дней</div>
           <div class="span4"><i class="icon-money large"></i></div>
         </div>
         <div class="container right">
-          <div class="span8 medium">бесплатная доставка по Украине</div>
+          <div class="span8 medium label">бесплатная доставка по Украине</div>
           <div class="span4"><i class="icon-truck large"></i></div>
         </div>
       </div>
@@ -186,7 +188,7 @@
       </div>
     </div>
     <div class="container background-success controls-text-color vertical-padding center">
-      <h1>Tangle Teaser в журналах</h1>
+      <h1 class="label">Tangle Teaser в журналах</h1>
     </div>
     <div class="container vertical-padding center">
       <img src="../images/teaser/mag1.jpg" height="170px"/>
@@ -202,7 +204,7 @@
       <img src="../images/teaser/mag11.jpg" height="170px"/>
     </div>
     <div class="container background-success controls-text-color vertical-padding center">
-      <h1>видеообзоры на youtube</h1>
+      <h1 class="label">видеообзоры на youtube</h1>
     </div>
     <div class="container center controls-text-color ">
       <div class="two-column controls-text-color vertical-padding">
@@ -216,16 +218,16 @@
         </div>
       </div>
     </div>
-    <div class="container background-success controls-text-color padding-top">
+    <div class="container background-success controls-text-color vertical-padding-large">
       <div class="span1">
       </div>
       <div class="span5">
         <div class="container right">
-          <div class="span8 medium">полный возврат денег в течение 30 дней</div>
+          <div class="span8 medium label">полный возврат денег в течение 30 дней</div>
           <div class="span4"><i class="icon-money large"></i></div>
         </div>
         <div class="container right">
-          <div class="span8 medium">бесплатная доставка по Украине</div>
+          <div class="span8 medium label">бесплатная доставка по Украине</div>
           <div class="span4"><i class="icon-truck large"></i></div>
         </div>
       </div>
@@ -236,6 +238,12 @@
       </div>
       <div class="span1">
       </div>
+    </div>
+    <div class="container background-success controls-text-color padding-top center vertical-padding-large label">
+      <div class="phone label">800 890 770</div>
+      <div class="label medium">звонки бесплатны</div>
+      Украина, Днепропетровск<br/>
+      <a href="mailto:support@buildstar.com.ua">support@topsales.sx</a>
     </div>
   </xsl:template>
 </xsl:stylesheet>

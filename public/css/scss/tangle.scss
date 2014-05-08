@@ -84,5 +84,14 @@
 }
 
 .teasers {
+}
 
+.text-field-teaser {
+  color: white;
+  background-color: lighten(#2a80b9, 20);
+  border: 0;
+
+  &:focus {
+    background-color: lighten(#2a80b9, 10);
+  }
 }

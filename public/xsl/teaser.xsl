@@ -9,13 +9,16 @@
           Украина, Днепропетровск<br/>
           <a href="mailto:support@buildstar.com.ua">support@topsales.sx</a>
           <div class="phone success">800 890 770</div>
+          <div class="code success medium">звонки бесплатны</div>
         </p>
       </div>
       <div>
         <div class="big darker tight">Tangle Teaser</div>
         <div class="large success tight">Крутая Расческа</div>
         <p class="upper medium darker">
-          Сто пятьдесят причин купить эту расческу. Еще пять причин купить ее
+          культовая расческа<br/>
+          айфон среди расчесок<br/>
+          легенда в сша
         </p>
         <span class="large code bolder warning">190грн</span>
         <p class="vertical-padding darker">
@@ -84,13 +87,26 @@
         <button class="button button-warning f-span8 control-small">заказать</button>
       </div>
     </div>
-    <div class="container background-success controls-text-color">
-      <div class="span1"></div>
-      <div class="span3 right medium">полный возврат денег в течение 30 дней</div>
-      <div class="span2 right"><i class="icon-money large"></i></div>
-      <div class="span2 left"><i class="icon-truck large"></i></div>
-      <div class="span3 left medium">бесплатная доставка по Украине</div>
-      <div class="span1"></div>
+    <div class="container background-success controls-text-color padding-top">
+      <div class="span1">
+      </div>
+      <div class="span5">
+        <div class="container right">
+          <div class="span8 medium">полный возврат денег в течение 30 дней</div>
+          <div class="span4"><i class="icon-money large"></i></div>
+        </div>
+        <div class="container right">
+          <div class="span8 medium">бесплатная доставка по Украине</div>
+          <div class="span4"><i class="icon-truck large"></i></div>
+        </div>
+      </div>
+      <div class="span5">
+        <input type="text" class="text-field text-field-teaser f-span12" placeholder="Ваше имя"></input><br/>
+        <input type="text" class="text-field text-field-teaser f-span12" placeholder="Ваш телефон"></input><br/>
+        <button class="button button-warning f-span6">заказать</button>
+      </div>
+      <div class="span1">
+      </div>
     </div>
     <div class="container center vertical-padding lighten-background darker padding-top-large">
       <h1>отзывы экспертов</h1>
@@ -175,6 +191,27 @@
           <iframe style="box-shadow: 0 0 50px white" width="100%" height="350px" src="//www.youtube.com/embed/isZyGn_hO2s" frameborder="0" allowfullscreen="1">
           </iframe>
         </div>
+      </div>
+    </div>
+    <div class="container background-success controls-text-color padding-top">
+      <div class="span1">
+      </div>
+      <div class="span5">
+        <div class="container right">
+          <div class="span8 medium">полный возврат денег в течение 30 дней</div>
+          <div class="span4"><i class="icon-money large"></i></div>
+        </div>
+        <div class="container right">
+          <div class="span8 medium">бесплатная доставка по Украине</div>
+          <div class="span4"><i class="icon-truck large"></i></div>
+        </div>
+      </div>
+      <div class="span5">
+        <input type="text" class="text-field f-span12" placeholder="Ваше имя"></input><br/>
+        <input type="text" class="text-field f-span12" placeholder="Ваш телефон"></input><br/>
+        <button class="button button-warning f-span6">заказать</button>
+      </div>
+      <div class="span1">
       </div>
     </div>
   </xsl:template>

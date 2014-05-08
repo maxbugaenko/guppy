@@ -121,3 +121,10 @@
   font-weight: 700;
   letter-spacing: -5px;
   font-size: 60px; }
+
+.text-field-teaser {
+  color: white;
+  background-color: #6bb0de;
+  border: 0; }
+  .text-field-teaser:focus {
+    background-color: #429ad4; }

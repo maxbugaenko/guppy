@@ -137,11 +137,11 @@
   background-position: 50%; }
 
 .kate-quote {
-  font-size: 2.5em;
+  font-size: 45px;
   line-height: 1em;
   letter-spacing: -2px;
   background: rgba(0, 0, 0, 0.3);
   color: #fff;
   padding: .5em; }
   .kate-quote div {
-    font-size: .5em; }
+    font-size: 20px; }

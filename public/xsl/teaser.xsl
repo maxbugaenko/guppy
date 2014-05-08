@@ -28,15 +28,17 @@
       </div>
     </div>
     <div class="container kate vertical-padding">
-      <div class="span6">
+      <div class="span7">
       </div>
-      <div class="span6 qoutes">
+      <div class="span5 qoutes right">
         <div class="kate-quote code">
           Никому не советую это китайское гавно
           <div>
             Кейт Мидлтон
           </div>
         </div>
+        <br/>
+        <button style="box-shadow: 0 0 50px #000" class="button button-warning f-span6">заказать</button>
       </div>
     </div>
     <div class="six-column teasers right padding-top-large">

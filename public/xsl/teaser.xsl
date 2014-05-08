@@ -207,8 +207,8 @@
         </div>
       </div>
       <div class="span5">
-        <input type="text" class="text-field f-span12" placeholder="Ваше имя"></input><br/>
-        <input type="text" class="text-field f-span12" placeholder="Ваш телефон"></input><br/>
+        <input type="text" class="text-field text-field-teaser f-span12" placeholder="Ваше имя"></input><br/>
+        <input type="text" class="text-field text-field-teaser f-span12" placeholder="Ваш телефон"></input><br/>
         <button class="button button-warning f-span6">заказать</button>
       </div>
       <div class="span1">

@@ -28,7 +28,16 @@
       </div>
     </div>
     <div class="container kate vertical-padding">
-      <div class="span7">
+      <div class="span7 padding-top-large">
+        <span class="why">
+          Нежная красивая расческа
+        </span><br/>
+        <span class="why">
+          Никакая она не китайская
+        </span><br/>
+        <span class="why">
+          Мы не хотим просто нажиться
+        </span>
       </div>
       <div class="span5 qoutes right">
         <div class="kate-quote code">

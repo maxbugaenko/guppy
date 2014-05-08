@@ -396,6 +396,12 @@ h5 {
 .code {
   font-family: "Source Code Pro"; }
 
+.to-top {
+  vertical-align: top; }
+
+.to-bottom {
+  vertical-align: bottom; }
+
 .control-medium, .control-small, .dropdown, .dropdown-success, .dropdown-warning, .dropdown-info, .dropdown-default, .button, .button-success, .button-warning, .button-info, .button-default, .badge, .badge-success, .badge-warning, .badge-info, .badge-default {
   position: relative;
   border-radius: 5px;

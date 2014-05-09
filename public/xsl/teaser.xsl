@@ -13,8 +13,8 @@
         </p>
       </div>
       <div>
-        <div class="big darker tight">Tangle Teaser</div>
-        <div class="large success tight">Крутая Расческа</div>
+        <div class="big darker tight label">Tangle Teaser</div>
+        <div class="large success tight label">Крутая Расческа</div>
         <p class="upper medium darker">
           культовая расческа<br/>
           айфон среди расчесок<br/>
@@ -194,11 +194,6 @@
             удобна в использовании (из рук не выскальзывает);
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container lighten-background padding-bottom-large">
-      <div class="span12 center">
-        <button class="button button-success control-medium f-span4">добавить коментарий<i class="fa fa-plus"></i></button>
       </div>
     </div>
     <div class="container el vertical-padding">

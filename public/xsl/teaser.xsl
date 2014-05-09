@@ -52,6 +52,17 @@
         при заказе одной одна в подарок
       </div>
     </div>
+    <div class="container background-success vertical-padding controls-text-color label middle">
+      <div class="span1">
+      </div>
+      <div class="span2 info-icon">
+        <i class="fa fa-info-circle"></i>
+      </div>
+      <div class="span7">
+        Tangle Teezer- Всемирно известная расческа, от которой все женщины мира в восторге, теперь в Украине! Расческа Tangle Teezer это уникальная запатентованная авторская разработка личного парикмахера и стилиста Кейт Миддлтон- Шона П. Для Tangle Teezer в мире расчесок будет справедлива такая же аналогия, как для Iphonе в мире телефонов или Mercedes в среде автопрома.  Не секрет что новинки в Украину попадают намного позже чем в более продвинутые страны. В Великобритании и США Tagle Teezer разметается прекрасной половиной с полок магазинов быстрее чем гарячие пирожки еще с далекого 2008 года, а до нас это чудо инженерной мысли докатилось только сейчас. Чем же так особенна эта расческа?
+      </div>
+      <div class="span2"></div>
+    </div>
     <div class="six-column teasers right padding-top-large">
       <div>
         <h1>Compact Styler</h1>
@@ -185,6 +196,31 @@
     <div class="container lighten-background padding-bottom-large">
       <div class="span12 center">
         <button class="button button-success control-medium f-span4">добавить коментарий<i class="fa fa-plus"></i></button>
+      </div>
+    </div>
+    <div class="container el vertical-padding">
+      <div class="span7 padding-top-large label">
+        <span class="why">
+          Нежная красивая расческа
+        </span><br/>
+        &#160;&#160;<span class="why">
+        Никакая она не китайская
+      </span><br/>
+        &#160;&#160;&#160;&#160;&#160;&#160;<span class="why">
+        Мы не хотим просто нажиться
+      </span>
+      </div>
+      <div class="span5 qoutes right label controls-text-color">
+        <div class="kate-quote">
+          Никому не советую это китайское гавно
+          <div>
+            Кейт Мидлтон
+          </div>
+        </div>
+        <br/>
+        <button style="box-shadow: 0 0 50px #000" class="button button-warning f-span6">заказать</button>
+        <br/>
+        при заказе одной одна в подарок
       </div>
     </div>
     <div class="container background-success controls-text-color vertical-padding center">

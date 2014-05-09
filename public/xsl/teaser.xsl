@@ -65,7 +65,7 @@
     </div>
     <div class="six-column teasers right padding-top-large">
       <div>
-        <h1>Compact Styler</h1>
+        <h1 class="label">Compact Styler</h1>
       </div>
       <div>
         <a href="#" class="small">увеличить</a>
@@ -95,7 +95,7 @@
     </div>
     <div class="six-column margin-bottom-large teasers right">
       <div>
-        <h1>Salon Elite</h1>
+        <h1 class="label">Salon Elite</h1>
       </div>
       <div>
         <a href="#" class="small">увеличить</a>
@@ -123,7 +123,10 @@
         <button class="button button-warning f-span8 control-small">заказать</button>
       </div>
     </div>
-    <div class="container background-success controls-text-color padding-top">
+    <div class="center container background-success controls-text-color vertical-padding">
+      <div class="vertical-padding">
+        <h1 class="label">форма заказа</h1>
+      </div>
       <div class="span1">
       </div>
       <div class="span5">
@@ -254,7 +257,10 @@
         </div>
       </div>
     </div>
-    <div class="container background-success controls-text-color vertical-padding-large">
+    <div class="container background-success controls-text-color vertical-padding-large center">
+      <div class="vertical-padding">
+        <h1 class="label">форма заказа</h1>
+      </div>
       <div class="span1">
       </div>
       <div class="span5">

@@ -21,7 +21,6 @@
 }
 
 %column-container {
-  width: 70%;
   margin: 0 auto;
   box-sizing: border-box;
 
@@ -38,43 +37,18 @@
   }
 }
 
-.two-column {
-  @extend %column-container;
+@for $i from 1 through 12 {
+  .column#{$i} {
+    @extend %column-container;
 
-  & > div {
-    width: 50%;
+    & > div {
+      width: calc(100% / #{$i});
+    }
   }
 }
 
-.three-column {
-  @extend %column-container;
-
-  & > div {
-    width: calc(100% / 3);
-  }
-}
-
-.four-column {
-  @extend %column-container;
-
-  & > div {
-    width: calc(100% / 4);
-  }
-}
-
-.five-column {
-  @extend %column-container;
-
-  & > div {
-    width: calc(100% / 5);
-  }
-}
-
-.six-column {
-  @extend %column-container;
-  width: 90%;
-
-  & > div {
-    width: calc(100% / 6);
+@for $i from 1 through 5 {
+  .shift#{$i} {
+    width: calc(100% - (100%/12 * #{$i})*2);
   }
 }

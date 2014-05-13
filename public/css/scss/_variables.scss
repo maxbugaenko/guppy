@@ -25,7 +25,7 @@ $base-font-size: 20px;
 // main variables to define the whole color scheme
 // $scheme = dark | light
 // $background-color = choose any color
-/*$scheme: dark;
+$scheme: dark;
 $controls-depth: 4px;
 $controls-text-color: #ecf0f1;
 $controls-font-size: 1em;
@@ -35,20 +35,7 @@ $controls-border-radius: 15px;
 $background-color: #34495e;
 $success: #2a80b9;
 $warning: #ef7820;
-$info: #08bf55;*/
-
-$scheme: light;
-$controls-depth: 3px;
-$controls-text-color: #ecf0f1;
-$controls-font-size: 1em;
-$controls-icon-size: 1.3em;
-$controls-padding: 1em;
-$controls-border-radius: 5px;
-$background-color: #fff;
-$success: #2a80b9;
-$warning: #ed8836;
-$info: #703e9d;
-
+$info: #08bf55;
 
 $lighten-background-color: null;
 $text-color: null;

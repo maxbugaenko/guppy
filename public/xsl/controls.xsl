@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:include href="page.xsl"/>
   <xsl:template match="page" mode="body">
-    <div class="two-column vertical-padding">
+    <div class="column2 shift2 vertical-padding">
       <div class="right">
         <img src="../images/cog.svg"/>
         <h1 class="tight">dropdowns</h1>
@@ -76,8 +76,7 @@
         </pre>
       </div>
     </div>
-    <div class="separator-squares"></div>
-    <div class="two-column vertical-padding">
+    <div class="column2 shift2 vertical-padding-large">
       <div class="right">
         <img src="../images/bike.svg"/>
         <h1 class="tight">buttons</h1>
@@ -141,8 +140,7 @@
         </pre>
       </div>
     </div>
-    <div class="separator-squares"></div>
-    <div class="two-column vertical-padding">
+    <div class="column2 shift2 vertical-padding-large">
       <div class="right">
         <img src="../images/car.svg"/>
         <h1 class="tight">button groups</h1>
@@ -212,7 +210,7 @@
         </pre>
       </div>
     </div>
-    <div class="two-column vertical-padding">
+    <div class="column2 shift2 vertical-padding-large">
       <div class="right">
         <img src="../images/arrow.svg"/>
         <h1 class="tight">web forms</h1>
@@ -248,6 +246,156 @@
   &lt;label <span class="k">for</span><span class="o">=</span><span class="s2">"checkbox1" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"darker"</span>&gt;Let me know about updates&lt;/label&gt;
 &lt;/form&gt;
         </pre>
+      </div>
+    </div>
+    <div class="container lighten-background center">
+      <h1 class="tight vertical-padding">layouts</h1>
+      <h2 class="tight vertical-padding code">spans in container</h2>
+      <div class="container background-color code">
+        <div class="span1 background-success">
+          span1
+        </div>
+        <div class="span1 background-warning">
+          span1
+        </div>
+        <div class="span1 background-info">
+          span1
+        </div>
+        <div class="span1 background-success">
+          span1
+        </div>
+        <div class="span1 background-info">
+          span1
+        </div>
+        <div class="span1 background-warning">
+          span1
+        </div>
+        <div class="span1 background-success">
+          span1
+        </div>
+        <div class="span1 background-warning">
+          span1
+        </div>
+        <div class="span1 background-info">
+          span1
+        </div>
+        <div class="span1 background-warning">
+          span1
+        </div>
+        <div class="span1 background-success">
+          span1
+        </div>
+        <div class="span1 background-info">
+          span1
+        </div>
+      </div>
+      <div class="container background-color code">
+        <div class="span2 background-success">
+          span2
+        </div>
+        <div class="span2 background-warning">
+          span2
+        </div>
+        <div class="span3 background-info">
+          span3
+        </div>
+        <div class="span5 background-warning">
+          span5
+        </div>
+      </div>
+      <div class="container background-color code">
+        <div class="span3 background-warning">
+          span3
+        </div>
+        <div class="span3 background-info">
+          span3
+        </div>
+        <div class="span3 background-success">
+          span3
+        </div>
+        <div class="span3 background-warning">
+          span3
+        </div>
+      </div>
+      <div class="container background-color code">
+        <div class="span6 background-warning">
+          span6
+        </div>
+        <div class="span2 background-info">
+          span2
+        </div>
+        <div class="span4 background-success">
+          span4
+        </div>
+      </div>
+      <h2 class="tight vertical-padding code">column2 shift1</h2>
+      <div class="column2 shift1 background-color code">
+        <div class="background-warning">
+          div
+        </div>
+        <div class="sbackground-info">
+          div
+        </div>
+      </div>
+      <h2 class="tight vertical-padding code">column2 shift3</h2>
+      <div class="column2 shift3 background-color code">
+        <div class="background-warning">
+          div
+        </div>
+        <div class="sbackground-info">
+          div
+        </div>
+      </div>
+      <h2 class="tight vertical-padding code">column3 shift2</h2>
+      <div class="column3 shift2 background-color code">
+        <div class="background-warning">
+          div
+        </div>
+        <div class="background-success">
+          div
+        </div>
+        <div class="sbackground-info">
+          div
+        </div>
+      </div>
+      <h2 class="tight vertical-padding code">column5 shift4</h2>
+      <div class="column5 shift4 background-color code">
+        <div class="background-warning">
+          div
+        </div>
+        <div class="background-success">
+          div
+        </div>
+        <div class="background-info">
+          div
+        </div>
+        <div class="background-success">
+          div
+        </div>
+        <div class="sbackground-info">
+          div
+        </div>
+      </div>
+      <h2 class="tight vertical-padding code">column6 shift1</h2>
+      <div class="column6 shift1 background-color code">
+        <div class="background-warning">
+          div
+        </div>
+        <div class="background-info">
+          div
+        </div>
+        <div class="background-success">
+          div
+        </div>
+        <div class="background-info">
+          div
+        </div>
+        <div class="background-success">
+          div
+        </div>
+        <div class="sbackground-info">
+          div
+        </div>
       </div>
     </div>
   </xsl:template>

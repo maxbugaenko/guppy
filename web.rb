@@ -10,7 +10,3 @@ end
 get '/controls' do
   erb :controls
 end
-
-get '/teaser' do
-  erb :teaser
-end

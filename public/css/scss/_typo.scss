@@ -100,32 +100,37 @@ h5 {
 }
 
 .padding-top {
-  padding-top: 1em;
+  padding-top: $background-color;
 }
 
 .padding-top-large {
-  padding-top: 5em;
+  padding-top: $background-color*5;
 }
 
 .margin-bottom {
-  margin-bottom: 1em;
+  margin-bottom: $background-color;
 }
 
 .margin-top {
-  margin-top: 1em;
+  margin-top: $background-color;
 }
 
 .margin-bottom-large {
-  margin-bottom: 5em;
+  margin-bottom: $background-color*5;
 }
 
 .margin-top-large {
-  margin-top: 5em;
+  margin-top: $background-color*5;
 }
 
 .horizontal-padding {
-  padding-right: 1em;
-  padding-left: 1em;
+  padding-right: $background-color;
+  padding-left: $background-color;
+}
+
+.horizontal-padding-large {
+  padding-right: $background-color*5;
+  padding-left: $background-color*5;
 }
 
 @each $control-kind in $controls-color-list {

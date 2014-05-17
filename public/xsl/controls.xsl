@@ -76,68 +76,70 @@
         </pre>
       </div>
     </div>
-    <div class="column2 shift2 vertical-padding-large">
-      <div class="right">
-        <img src="../images/bike.svg"/>
-        <h1 class="tight">buttons</h1>
-        <p class="darker">
-          Usually, colors with the same hue are
-          distinguished with adjectives referring to
-        </p>
-      </div>
-      <div>
-        <div class="container">
-          <span class="span6">
-            <button class="button-success right">pound<i class="fa fa-gbp"></i></button>
-          </span>
-          <span class="span6">
-            <button class="button-default">euro<i class="fa fa-eur"></i></button>
-          </span>
+    <div class="container lighten-background">
+      <div class="column2 shift2 vertical-padding-large">
+        <div class="right">
+          <img src="../images/bike.svg"/>
+          <h1 class="tight">buttons</h1>
+          <p class="darker">
+            Usually, colors with the same hue are
+            distinguished with adjectives referring to
+          </p>
         </div>
-        <div class="container">
-          <span class="span4">
-            <button class="button-warning">dollar</button>
-          </span>
-          <span class="span4">
-            <button class="button-info">euro</button>
-          </span>
-          <span class="span4">
-            <button class="button-success">pound</button>
-          </span>
+        <div>
+          <div class="container">
+            <span class="span6">
+              <button class="button-success right">pound<i class="fa fa-gbp"></i></button>
+            </span>
+            <span class="span6">
+              <button class="button-default">euro<i class="fa fa-eur"></i></button>
+            </span>
+          </div>
+          <div class="container">
+            <span class="span4">
+              <button class="button-warning">dollar</button>
+            </span>
+            <span class="span4">
+              <button class="button-info">euro</button>
+            </span>
+            <span class="span4">
+              <button class="button-success">pound</button>
+            </span>
+          </div>
+          <div class="container">
+            <span class="span8">
+              <button class="button-warning control-medium">dollar</button>
+            </span>
+            <span class="span4">
+              <button class="button-success control-medium">pound</button>
+            </span>
+          </div>
+          <div class="container">
+            <span class="span2">
+              <button class="button-warning control-small"><i class="fa fa-btc"></i></button>
+            </span>
+            <span class="span2">
+              <button class="button-info control-small"><i class="fa fa-dollar"></i></button>
+            </span>
+            <span class="span2">
+              <button class="button-success control-small"><i class="fa fa-eur"></i></button>
+            </span>
+            <span class="span2">
+              <button class="button-info control-small"><i class="fa fa-gbp"></i></button>
+            </span>
+            <span class="span2">
+              <button class="button-warning control-small"><i class="fa fa-jpy"></i></button>
+            </span>
+            <span class="span2">
+              <button class="button-success control-small"><i class="fa fa-try"></i></button>
+            </span>
+          </div>
+          <pre class="highlight vertical-padding left">
+  &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-default control-medium"</span>&gt;
+    default&lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-eur"</span>&gt;&lt;/i&gt;
+  &lt;/button&gt;
+          </pre>
         </div>
-        <div class="container">
-          <span class="span8">
-            <button class="button-warning control-medium">dollar</button>
-          </span>
-          <span class="span4">
-            <button class="button-success control-medium">pound</button>
-          </span>
-        </div>
-        <div class="container">
-          <span class="span2">
-            <button class="button-warning control-small"><i class="fa fa-btc"></i></button>
-          </span>
-          <span class="span2">
-            <button class="button-info control-small"><i class="fa fa-dollar"></i></button>
-          </span>
-          <span class="span2">
-            <button class="button-success control-small"><i class="fa fa-eur"></i></button>
-          </span>
-          <span class="span2">
-            <button class="button-info control-small"><i class="fa fa-gbp"></i></button>
-          </span>
-          <span class="span2">
-            <button class="button-warning control-small"><i class="fa fa-jpy"></i></button>
-          </span>
-          <span class="span2">
-            <button class="button-success control-small"><i class="fa fa-try"></i></button>
-          </span>
-        </div>
-        <pre class="highlight vertical-padding left">
-&lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-default control-medium"</span>&gt;
-  default&lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-eur"</span>&gt;&lt;/i&gt;
-&lt;/button&gt;
-        </pre>
       </div>
     </div>
     <div class="column2 shift2 vertical-padding-large">
@@ -150,47 +152,50 @@
         </p>
       </div>
       <div>
-        <div class="button-group padding-bottom">
-          <button class="button button-info">
-            <i class="fa fa-eur"></i>
-          </button>
-          <button class="button button-info">
-            <i class="fa fa-rub"></i>
-          </button>
-          <button class="button button-info">
-            <i class="fa fa-usd"></i>
-          </button>
-          <button class="button button-info">
-            <i class="fa fa-gbp"></i>
-          </button>
+        <div class="column4 button-group">
+          <div>
+            <button class="button button-success"><i class="fa fa-eur"></i></button>
+          </div>
+          <div>
+            <button class="button button-success"><i class="fa fa-usd"></i></button>
+          </div>
+          <div>
+            <button class="button button-success"><i class="fa fa-jpy"></i></button>
+          </div>
+          <div>
+            <button class="button button-success"><i class="fa fa-gbp"></i></button>
+          </div>
         </div>
-        <div class="button-group padding-bottom">
-          <button class="button button-warning control-medium">
-            <i class="fa fa-eur"></i>
-          </button>
-          <button class="button button-warning control-medium">
-            <i class="fa fa-rub"></i>
-          </button>
-          <button class="button button-warning control-medium">
-            <i class="fa fa-usd"></i>
-          </button>
-          <button class="button button-warning control-medium">
-            <i class="fa fa-gbp"></i>
-          </button>
+        <div class="column4 button-group">
+          <div>
+            <button class="button button-warning control-medium"><i class="fa fa-eur"></i></button>
+          </div>
+          <div>
+            <button class="button button-warning control-medium"><i class="fa fa-btc"></i></button>
+          </div>
+          <div>
+            <button class="button button-warning control-medium"><i class="fa fa-gbp"></i></button>
+          </div>
+          <div>
+            <button class="button button-warning control-medium"><i class="fa fa-rub"></i></button>
+          </div>
         </div>
-        <div class="button-group padding-bottom">
-          <button class="button button-success control-small">
-            <i class="fa fa-eur"></i>
-          </button>
-          <button class="button button-success control-small">
-            <i class="fa fa-rub"></i>
-          </button>
-          <button class="button button-success control-small">
-            <i class="fa fa-usd"></i>
-          </button>
-          <button class="button button-success control-small">
-            <i class="fa fa-gbp"></i>
-          </button>
+        <div class="column5 button-group">
+          <div>
+            <button class="button button-info control-small"><i class="fa fa-eur"></i></button>
+          </div>
+          <div>
+            <button class="button button-info control-small"><i class="fa fa-rub"></i></button>
+          </div>
+          <div>
+            <button class="button button-info control-small"><i class="fa fa-usd"></i></button>
+          </div>
+          <div>
+            <button class="button button-info control-small"><i class="fa fa-jpy"></i></button>
+          </div>
+          <div>
+            <button class="button button-info control-small"><i class="fa fa-btc"></i></button>
+          </div>
         </div>
         <pre class="highlight vertical-padding">
 &lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"button-group"</span>&gt;
@@ -333,7 +338,7 @@
         <div class="background-warning">
           div
         </div>
-        <div class="sbackground-info">
+        <div class="background-info">
           div
         </div>
       </div>
@@ -342,7 +347,7 @@
         <div class="background-warning">
           div
         </div>
-        <div class="sbackground-info">
+        <div class="background-info">
           div
         </div>
       </div>
@@ -354,7 +359,7 @@
         <div class="background-success">
           div
         </div>
-        <div class="sbackground-info">
+        <div class="background-info">
           div
         </div>
       </div>
@@ -372,12 +377,12 @@
         <div class="background-success">
           div
         </div>
-        <div class="sbackground-info">
+        <div class="background-info">
           div
         </div>
       </div>
       <h2 class="tight vertical-padding code">column6 shift1</h2>
-      <div class="column6 shift1 background-color code">
+      <div class="column6 shift1 code padding-bottom-large">
         <div class="background-warning">
           div
         </div>
@@ -393,9 +398,33 @@
         <div class="background-success">
           div
         </div>
-        <div class="sbackground-info">
+        <div class="background-info">
           div
         </div>
+      </div>
+    </div>
+    <h1 class="tight center vertical-padding">badges</h1>
+    <div class="column3 shift2 vertical-padding-large">
+      <div>
+        <h2>small</h2>
+        <p class="small darken-text">
+          Usually, <span class="badge-default">colors</span> with the same hue are distinguished with adjectives <span class="badge-warning">referring</span> to
+          Usually, colors with the same hue are <span class="badge-success">distinguished</span> with adjectives referring to
+        </p>
+      </div>
+      <div>
+        <h2>normal</h2>
+        <p class="darken-text">
+          Usually, colors with the <span class="badge-warning">same</span> hue are distinguished with adjectives referring to
+          Usually, colors with the same hue are <span class="badge-success">distinguished</span> with adjectives referring to
+        </p>
+      </div>
+      <div>
+        <h1>medium</h1>
+        <p class="medium darken-text">
+          Usually, colors with the same hue are <span class="badge-success">distinguished</span> with adjectives referring to
+          Usually, colors with the same hue are distinguished with adjectives referring to
+        </p>
       </div>
     </div>
   </xsl:template>

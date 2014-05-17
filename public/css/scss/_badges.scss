@@ -2,9 +2,7 @@
   @extend %control;
   cursor: auto;
   font-size: $controls-font-size;
-  padding: $controls-padding;
-  text-transform: uppercase;
-  transition: all .3s ease;
+  padding: .1em .4em;
 }
 
 @each $control-kind in $controls-color-list {
@@ -12,5 +10,7 @@
     @extend .badge;
     background-color: lighten(nth($control-kind, 2), 10);
     color: $controls-text-color;
+    border-left: $controls-depth solid nth($control-kind, 2);
+    border-right: $controls-depth solid nth($control-kind, 2);
   }
 }

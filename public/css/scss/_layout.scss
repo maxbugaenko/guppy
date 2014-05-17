@@ -17,6 +17,12 @@
   .span#{$i} {
     @extend %span-column;
     width: calc(100%/12 * #{$i});
+    transition: all .3s ease;
+
+    @media all and (max-width: $switch-orientation-point-mobile) {
+      transition: all .3s ease;
+      width: 100%;
+    }
   }
 }
 
@@ -43,6 +49,12 @@
 
     & > div {
       width: calc(100% / #{$i});
+      transition: all .3s ease;
+
+      @media all and (max-width: $switch-orientation-point-mobile) {
+        transition: all .3s ease;
+        width: 100%;
+      }
     }
   }
 }
@@ -50,5 +62,11 @@
 @for $i from 1 through 5 {
   .shift#{$i} {
     width: calc(100% - (100%/12 * #{$i})*2);
+    transition: all .3s ease;
+
+    @media all and (max-width: $switch-orientation-point-medium) {
+      transition: all .3s ease;
+      width: 100%;
+    }
   }
 }

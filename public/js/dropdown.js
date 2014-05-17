@@ -1,7 +1,8 @@
 (function($) {
     $.fn.DropDown = function() {
-        var dropDownElement = $(this);
         $(this).on("click", function(event) {
+            $(".dropdown").
+                removeClass("active");
             $(event.target).
                 parent().
                 toggleClass("active");
@@ -19,7 +20,24 @@
               removeClass("active");
         })
     }
+
+    $.fn.DropDownMenu = function() {
+        $(this).find("a").on("click", function(event) {
+            $(".dropdown-menu").
+                removeClass("active");
+            $(event.target).
+                parent().
+                toggleClass("active");
+            event.stopPropagation();
+        })
+        $(document).on("click", function() {
+            $(".dropdown-menu").
+                removeClass("active");
+        })
+    }
+
     $(document).ready(function() {
         $(".dropdown").DropDown();
+        $(".dropdown-menu").DropDownMenu();
     })
 }(jQuery));

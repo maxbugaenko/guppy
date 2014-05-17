@@ -1,19 +1,25 @@
 .menu {
   list-style: none;
   @include h-font();
+  transition: all .3s ease;
 
   li {
     letter-spacing: inherit;
     display: inline-block;
     margin: 0 $base-font-size*2;
+    transition: all .3s ease;
+
+    @media all and (max-width: $switch-orientation-point-mobile) {
+      transition: all .3s ease;
+      display: block;
+      margin: $base-font-size*2 0;
+    }
 
     a {
-      transition: all .3s ease;
       text-decoration: none;
       color: inherit;
 
       &:hover {
-        transition: all .3s ease;
         border-bottom: 2px solid;
       }
     }

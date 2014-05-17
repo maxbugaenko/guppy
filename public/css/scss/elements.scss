@@ -1,9 +1,8 @@
-@import "fonts";
 @import "variables";
 @import "highlight";
 @import "layout";
-@import "typo";
 @import "controls";
+@import "typography";
 @import "dropdowns";
 @import "buttons";
 @import "inputs";
@@ -11,7 +10,6 @@
 @import "checkradio";
 @import "form";
 @import "menus";
-@import "separators";
 
 * {
   padding: 0;
@@ -19,18 +17,12 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   background: $background-color;
   @include light-font();
   color: $text-color;
   font-size: $base-font-size;
-}
-
-.brand {
-  font-family: $brand-font;
-  font-weight: 600;
-  white-space: nowrap;
-  letter-spacing: -.1em;
 }
 
 img {
@@ -48,10 +40,4 @@ img {
   opacity: .9;
   z-index: 100;
   background-color: darken($background-color, 20);
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  border-bottom: 1px dashed;
 }

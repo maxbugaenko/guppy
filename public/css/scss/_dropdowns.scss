@@ -1,3 +1,86 @@
+.dropdown-menu {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+
+  & > a {
+    &:after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      right: -$controls-icon-size;
+      top: 50%;
+      margin-top: -$controls-icon-size/3;
+      border-top: $controls-icon-size/3 solid transparent;
+      border-bottom: $controls-icon-size/3 solid transparent;
+      border-left: $controls-icon-size/3 solid $controls-default-color;
+      pointer-events: none;
+    }
+  }
+
+  ul {
+    opacity: 0;
+    list-style: none;
+    position: absolute;
+    top: -50%;
+    z-index: -1;
+    background-color: fade-out(darken($controls-default-color, 20), .05);
+    left: -50%;
+    white-space: nowrap;
+    border-radius: $controls-border-radius;
+    padding: $base-font-size 0;
+
+    li {
+      margin: 0;
+      display: block;
+      cursor: pointer;
+      padding: $base-font-size $base-font-size*4;
+      transition: all .2s ease;
+
+      &:hover {
+        background-color: fade-out(darken($controls-default-color, 17), .05);
+        transition: all .2s ease;
+      }
+
+      &:active {
+        background-color: fade-out(darken($background-color, 5), .8);
+        transition: all .2s ease;
+      }
+
+      a {
+
+        &:hover {
+          border: 0;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-menu.active {
+
+  ul {
+    -webkit-animation-name: showMenu;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-fill-mode: forwards;
+    z-index: 10;
+  }
+}
+
+@-webkit-keyframes showMenu {
+
+  from  {
+    -webkit-transform: translateY(20%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .dropdown {
   @extend %control;
 

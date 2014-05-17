@@ -1,0 +1,203 @@
+.left {
+  text-align: left;
+}
+
+.right{
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.large {
+  font-size: $base-font-size*5;
+  line-height: $base-font-size*6;
+}
+
+.big {
+  font-size: $base-font-size*2;
+  line-height: $base-font-size*2.7;
+}
+
+.medium {
+  font-size: $base-font-size*1.5;
+  line-height: $base-font-size*2;
+}
+
+.small {
+  font-size: $base-font-size*0.7;
+  line-height: $base-font-size*1.1;
+}
+
+.tight {
+  letter-spacing: -.05em;
+}
+
+.spread {
+  letter-spacing: .05em;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.lighten-text {
+  color: lighten($text-color, 25);
+}
+
+.darken-text {
+  color: darken($text-color, 25);
+}
+
+.lighten-background {
+  background-color: lighten($background-color, 5);
+}
+
+.darken-background {
+  background-color: darken($background-color, 5);
+}
+
+p {
+  margin-top: $base-font-size;
+  margin-bottom: $base-font-size;
+  line-height: $base-font-size*1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @include h-font();
+}
+
+.vertical-padding {
+  padding-top: $base-font-size;
+  padding-bottom: $base-font-size;
+}
+
+.vertical-padding-medium {
+  padding-top: $base-font-size*3;
+  padding-bottom: $base-font-size*3;
+}
+
+.vertical-padding-large {
+  padding-top: $base-font-size*5;
+  padding-bottom: $base-font-size*5;
+}
+
+.padding-bottom {
+  padding-bottom: $base-font-size;
+}
+
+.padding-bottom-medium {
+  padding-bottom: $base-font-size*3;
+}
+
+.padding-bottom-large {
+  padding-bottom: $base-font-size*5;
+}
+
+.padding-top {
+  padding-top: $base-font-size;
+}
+
+.padding-top-medium {
+  padding-top: $base-font-size*3;
+}
+
+.padding-top-large {
+  padding-top: $base-font-size*5;
+}
+
+.vertical-margin {
+  margin-top: $base-font-size;
+  margin-bottom: $base-font-size;
+}
+
+.vertical-margin-medium {
+  margin-top: $base-font-size*3;
+  margin-bottom: $base-font-size*3;
+}
+
+.vertical-margin-large {
+  margin-top: $base-font-size*5;
+  margin-bottom: $base-font-size*5;
+}
+
+.margin-bottom {
+  margin-bottom: $base-font-size;
+}
+
+.margin-bottom-medium {
+  margin-bottom: $base-font-size*3;
+}
+
+.margin-bottom-large {
+  margin-bottom: $base-font-size*5;
+}
+
+.margin-top {
+  margin-top: $background-color;
+}
+
+.margin-top-medium {
+  margin-bottom: $background-color*3;
+}
+
+.margin-top-large {
+  margin-bottom: $background-color*5;
+}
+
+.no-horizontal-padding {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.horizontal-padding {
+  padding-right: $background-color;
+  padding-left: $background-color;
+}
+
+.horizontal-padding-medium {
+  padding-right: $background-color*3;
+  padding-left: $background-color*3;
+}
+
+.horizontal-padding-large {
+  padding-right: $background-color*5;
+  padding-left: $background-color*5;
+}
+
+@each $control-kind in $controls-color-list {
+  .background-#{nth($control-kind, 1)} {
+    background-color: nth($control-kind, 2);
+  }
+}
+
+@each $control-kind in $controls-color-list {
+  .#{nth($control-kind, 1)} {
+    color: nth($control-kind, 2);
+  }
+}
+
+.background-color {
+  background-color: $background-color;
+}
+
+.controls-text-color {
+  color: $controls-text-color;
+}
+
+.code {
+ font-family: $code-font;
+}
+
+.round-borders {
+  border-radius: $controls-border-radius;
+}

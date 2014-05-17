@@ -6,17 +6,46 @@
       <body>
         <xsl:apply-templates match="." mode="head"/>
         <div class="container vertical-padding lighten-background center">
-            <span class="brand big">
-              &lt;reusable&gt;
+            <span class="spread big code">
+              grains
             </span>
         </div>
         <div class="container vertical-padding lighten-background center">
-          <ul class="menu darker">
+          <ul class="menu darker upper">
             <li>
-              <a href="">controls</a>
+              <div class="dropdown-menu left">
+                <a>controls</a>
+                <ul>
+                  <li>
+                    <a href="">buttons</a>
+                  </li>
+                  <li>
+                    <a href="">button groups</a>
+                  </li>
+                  <li>
+                    <a href="">web forms</a>
+                  </li>
+                  <li>
+                    <a href="">tabs</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
-              <a href="">tabs</a>
+              <div class="dropdown-menu left">
+                <a>readme</a>
+                <ul class="big">
+                  <li>
+                    <a href="">get started</a>
+                  </li>
+                  <li>
+                    <a href="">html</a>
+                  </li>
+                  <li>
+                    <a href="">sass</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
               <a href="">tables</a>

@@ -33,21 +33,23 @@
 }
 
 .button-group {
-  white-space: nowrap;
-  width: 100%;
 
-  & > button {
-    width: auto;
+  & > div {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  & > div > button {
     border-radius: 0;
   }
 
-  & > button:first-child {
-    border-top-left-radius: $controls-border-radius;;
-    border-bottom-left-radius: $controls-border-radius;;
+  & > div:first-child button {
+    border-top-left-radius: $controls-border-radius;
+    border-bottom-left-radius: $controls-border-radius;
   }
 
-  & > button:last-child {
-    border-top-right-radius: $controls-border-radius;;
-    border-bottom-right-radius: $controls-border-radius;;
+  & > div:last-child button {
+    border-top-right-radius: $controls-border-radius;
+    border-bottom-right-radius: $controls-border-radius;
   }
 }

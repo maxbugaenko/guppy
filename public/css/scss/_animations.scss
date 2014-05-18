@@ -1,0 +1,56 @@
+.animate-show-slow {
+  -webkit-animation-name: showSlow;
+  -webkit-animation-duration: .3s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes showSlow {
+
+  from  {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slide-left-to-right {
+  -webkit-animation-name: slideLeftToRight;
+  -webkit-animation-duration: .6s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slideLeftToRight {
+
+  from  {
+    -webkit-transform: translateX(-20%);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animate-slide-right-to-left {
+  -webkit-animation-name: slideRightToLeft;
+  -webkit-animation-duration: .6s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slideRightToLeft {
+
+  from  {
+    -webkit-transform: translateX(20%);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+

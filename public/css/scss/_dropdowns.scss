@@ -14,8 +14,6 @@
       margin-top: -$controls-icon-size/3;
       border-top: $controls-icon-size/3 solid transparent;
       border-bottom: $controls-icon-size/3 solid transparent;
-      border-left: $controls-icon-size/3 solid $controls-default-color;
-      pointer-events: none;
     }
   }
 
@@ -25,26 +23,24 @@
     position: absolute;
     top: -50%;
     z-index: -1;
-    background-color: fade-out(darken($controls-default-color, 20), .05);
     left: -50%;
     white-space: nowrap;
     border-radius: $controls-border-radius;
     padding: $base-font-size 0;
+    color: $controls-text-color;
 
     li {
       margin: 0;
       display: block;
       cursor: pointer;
-      padding: $base-font-size $base-font-size*4;
+      padding: 1em 4em;
       transition: all .2s ease;
 
       &:hover {
-        background-color: fade-out(darken($controls-default-color, 17), .05);
         transition: all .2s ease;
       }
 
       &:active {
-        background-color: fade-out(darken($background-color, 5), .8);
         transition: all .2s ease;
       }
 
@@ -53,6 +49,10 @@
         &:hover {
           border: 0;
         }
+      }
+
+      i {
+        padding: 0 $base-font-size 0 0;
       }
     }
   }
@@ -64,7 +64,7 @@
     -webkit-animation-name: showMenu;
     -webkit-animation-duration: .3s;
     -webkit-animation-fill-mode: forwards;
-    z-index: 10;
+    z-index: 100;
   }
 }
 
@@ -78,6 +78,34 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@each $control-kind in $controls-color-list {
+  .dropdown-menu-#{nth($control-kind, 1)} {
+    @extend .dropdown-menu;
+
+    & > a {
+      &:after {
+        border-left: $controls-icon-size/3 solid lighten(nth($control-kind, 2), 20);
+      }
+    }
+
+    ul {
+      background-color: nth($control-kind, 2);
+      @include shadow(nth($control-kind, 2));
+
+      li {
+
+        &:hover {
+          @include hover(nth($control-kind, 2));
+        }
+
+        &:active {
+          @include active(nth($control-kind, 2));
+        }
+      }
+    }
   }
 }
 
@@ -101,7 +129,7 @@
     z-index: 2;
     opacity: 0;
     list-style: none;
-    padding: $controls-font-size 0 $controls-font-size 0; // padding for the whole list
+    padding: 1em 0 1em 0; // padding for the whole list
     white-space: nowrap;
     pointer-events: none;
 
@@ -112,22 +140,20 @@
     }
 
     li {
-      padding: .5em 2em .5em 2em; // padding for each item
+      padding: .5em 2em .5em 2em;
       cursor: pointer;
       transition: all .2s ease;
 
       &:hover {
         transition: all .2s ease;
-        background-color: $hover;
       }
 
       &:active {
         transition: all .2s ease;
-        background-color: $active;
       }
 
       i {
-        padding: 0 1em 0 0;
+        padding: 0 $base-font-size 0 0;
       }
     }
   }
@@ -182,22 +208,22 @@
 @each $control-kind in $controls-color-list {
   .dropdown-#{nth($control-kind, 1)} {
     @extend .dropdown;
+    @include shadow(nth($control-kind, 2));
     background-color: nth($control-kind, 2);
-    border-bottom: $controls-depth solid darken(nth($control-kind, 2), 15%);
     color: $controls-text-color;
 
     ul {
       background-color: #{nth($control-kind, 2)};
-      border-bottom: $controls-depth solid darken(nth($control-kind, 2), 15%);
+      @include shadow(nth($control-kind, 2));
 
       li {
 
         &:hover {
-          background-color: lighten(nth($control-kind, 2), 5%);
+          @include hover(nth($control-kind, 2));
         }
 
         &:active {
-          background-color: lighten(nth($control-kind, 2), 10%);
+          @include active(nth($control-kind, 2));
         }
       }
     }

@@ -1,7 +1,7 @@
 (function($) {
     $.fn.DropDown = function() {
         $(this).on("click", function(event) {
-            $(".dropdown").
+            $(".dropdown, .dropdown-menu").
                 removeClass("active");
             $(event.target).
                 parent().
@@ -23,7 +23,7 @@
 
     $.fn.DropDownMenu = function() {
         $(this).find("a").on("click", function(event) {
-            $(".dropdown-menu").
+            $(".dropdown-menu, .dropdown").
                 removeClass("active");
             $(event.target).
                 parent().

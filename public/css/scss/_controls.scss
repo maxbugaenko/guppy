@@ -4,8 +4,6 @@ $controls-color-list: (
         info $info,
         default $controls-default-color
 );
-$hover: lighten($controls-default-color, 20);
-$active: lighten($controls-default-color, 10);
 $controls-font-size: 1em;
 $controls-icon-size: 1.3em;
 $controls-padding: 1em;

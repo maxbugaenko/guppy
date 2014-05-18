@@ -1,4 +1,5 @@
 .container {
+  margin: 0 auto;
 
   &:after {
     content: "";
@@ -16,11 +17,11 @@
 @for $i from 1 through 12 {
   .span#{$i} {
     @extend %span-column;
+    @include transition();
     width: calc(100%/12 * #{$i});
-    transition: all .3s ease;
 
     @media all and (max-width: $switch-orientation-point-mobile) {
-      transition: all .3s ease;
+      @include transition();
       width: 100%;
     }
   }
@@ -49,10 +50,10 @@
 
     & > div {
       width: calc(100% / #{$i});
-      transition: all .3s ease;
+      @include transition();
 
       @media all and (max-width: $switch-orientation-point-mobile) {
-        transition: all .3s ease;
+        @include transition();
         width: 100%;
       }
     }
@@ -70,3 +71,21 @@
     }
   }
 }
+
+.mobile-only {
+  display: none;
+
+  @media all and (max-width: $switch-orientation-point-mobile) {
+    display: inherit;
+    @include transition();
+  }
+}
+
+.desktop-only {
+  display: inherit;
+
+  @media all and (max-width: $switch-orientation-point-mobile) {
+    display: none;
+  }
+}
+

@@ -5,36 +5,36 @@
     <html lang="en">
       <body>
         <xsl:apply-templates match="." mode="head"/>
-        <div class="container vertical-padding lighten-background center">
+        <div class="container vertical-padding lighten-background center mobile-only">
             <span class="spread big code">
               grains
             </span>
         </div>
-        <div class="container vertical-padding lighten-background center">
+        <div class="container vertical-padding lighten-background center animate-show-slow">
           <ul class="menu darker upper">
             <li>
-              <div class="dropdown-menu left">
+              <div class="dropdown-menu dropdown-menu-warning left">
                 <a>controls</a>
                 <ul>
                   <li>
-                    <a href="">buttons</a>
+                    <i class="fa fa-eur"></i><a href="">buttons</a>
                   </li>
                   <li>
-                    <a href="">button groups</a>
+                    <i class="fa fa-rub"></i><a href="">button groups</a>
                   </li>
                   <li>
-                    <a href="">web forms</a>
+                    <i class="fa fa-jpy"></i><a href="">web forms</a>
                   </li>
                   <li>
-                    <a href="">tabs</a>
+                    <i class="fa fa-usd"></i><a href="">tabs</a>
                   </li>
                 </ul>
               </div>
             </li>
             <li>
-              <div class="dropdown-menu left">
+              <div class="dropdown-menu dropdown-menu-success left">
                 <a>readme</a>
-                <ul class="big">
+                <ul class="small">
                   <li>
                     <a href="">get started</a>
                   </li>

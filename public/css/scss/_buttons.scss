@@ -22,12 +22,12 @@
 @each $control-kind in $controls-color-list {
   .button-#{nth($control-kind, 1)} {
     @extend .button;
+    @include shadow(nth($control-kind, 2));
     background-color: nth($control-kind, 2);
-    border-bottom: $controls-depth solid darken(nth($control-kind, 2), 15%);
     color: $controls-text-color;
 
     &:hover {
-      background-color: lighten(nth($control-kind, 2), 5%);
+      @include hover(nth($control-kind, 2));
     }
   }
 }

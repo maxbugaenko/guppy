@@ -3,7 +3,7 @@
   <xsl:include href="page.xsl"/>
   <xsl:template match="page" mode="body">
     <div class="column2 shift2 vertical-padding">
-      <div class="right">
+      <div class="right animate-slide-left-to-right">
         <img src="../images/cog.svg"/>
         <h1 class="tight">dropdowns</h1>
         <p class="darker">
@@ -11,7 +11,7 @@
           distinguished with adjectives referring to
         </p>
       </div>
-      <div>
+      <div class="animate-slide-right-to-left">
         <div class="dropdown dropdown-default">
           <div>Default</div>
           <ul>

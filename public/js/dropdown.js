@@ -39,5 +39,13 @@
     $(document).ready(function() {
         $(".dropdown").DropDown();
         $(".dropdown-menu").DropDownMenu();
+        $("#opens-menu-sliding, #overlay").on("click", function() {
+            $("#overlay").toggleClass("active");
+            if ($(".menu-sliding").hasClass("active")) {
+                $(".menu-sliding").toggleClass("inactive");
+            } else {
+                $(".menu-sliding").toggleClass("active");
+            }
+        });
     })
 }(jQuery));

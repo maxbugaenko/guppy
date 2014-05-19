@@ -4,9 +4,6 @@ $controls-color-list: (
         info $info,
         default $controls-default-color
 );
-$controls-font-size: 1em;
-$controls-icon-size: 1.3em;
-$controls-padding: 1em;
 
 %control {
   position: relative;
@@ -16,14 +13,5 @@ $controls-padding: 1em;
   width: 100%;
   outline: none;
   white-space: nowrap;
-}
-
-.control-medium {
-  @extend %control;
-  font-size: $controls-font-size/1.3 !important;
-}
-
-.control-small {
-  @extend %control;
-  font-size: $controls-font-size/1.7 !important;
+  line-height: 1em;
 }

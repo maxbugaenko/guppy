@@ -3,7 +3,7 @@
   <xsl:include href="page.xsl"/>
   <xsl:template match="page" mode="body">
     <div class="column2 shift2 vertical-padding">
-      <div class="right animate-slide-left-to-right">
+      <div class="right animate-slide-children-left-to-right">
         <img src="../images/cog.svg"/>
         <h1 class="tight">dropdowns</h1>
         <p class="darker">
@@ -11,7 +11,7 @@
           distinguished with adjectives referring to
         </p>
       </div>
-      <div class="animate-slide-right-to-left">
+      <div class="animate-slide-children-right-to-left">
         <div class="dropdown dropdown-default">
           <div>Default</div>
           <ul>
@@ -86,7 +86,7 @@
             distinguished with adjectives referring to
           </p>
         </div>
-        <div>
+        <div class="animate-slide-children-right-to-left">
           <div class="container">
             <span class="span6">
               <button class="button-success right">pound<i class="fa fa-gbp"></i></button>
@@ -108,30 +108,30 @@
           </div>
           <div class="container">
             <span class="span8">
-              <button class="button-warning control-medium">dollar</button>
+              <button class="button-warning button-medium">dollar</button>
             </span>
             <span class="span4">
-              <button class="button-success control-medium">pound</button>
+              <button class="button-success button-medium">pound</button>
             </span>
           </div>
           <div class="container">
             <span class="span2">
-              <button class="button-warning control-small"><i class="fa fa-btc"></i></button>
+              <button class="button-warning button-small"><i class="fa fa-btc"></i></button>
             </span>
             <span class="span2">
-              <button class="button-info control-small"><i class="fa fa-dollar"></i></button>
+              <button class="button-info button-small"><i class="fa fa-dollar"></i></button>
             </span>
             <span class="span2">
-              <button class="button-success control-small"><i class="fa fa-eur"></i></button>
+              <button class="button-success button-small"><i class="fa fa-eur"></i></button>
             </span>
             <span class="span2">
-              <button class="button-info control-small"><i class="fa fa-gbp"></i></button>
+              <button class="button-info button-small"><i class="fa fa-gbp"></i></button>
             </span>
             <span class="span2">
-              <button class="button-warning control-small"><i class="fa fa-jpy"></i></button>
+              <button class="button-warning button-small"><i class="fa fa-jpy"></i></button>
             </span>
             <span class="span2">
-              <button class="button-success control-small"><i class="fa fa-try"></i></button>
+              <button class="button-success button-small"><i class="fa fa-try"></i></button>
             </span>
           </div>
           <pre class="highlight vertical-padding left">
@@ -251,6 +251,23 @@
   &lt;label <span class="k">for</span><span class="o">=</span><span class="s2">"checkbox1" </span> <span class="nv">class</span><span class="o">=</span><span class="s2">"darker"</span>&gt;Let me know about updates&lt;/label&gt;
 &lt;/form&gt;
         </pre>
+      </div>
+    </div>
+    <div class="column2 shift2 vertical-padding">
+      <div class="right">
+        <h1 class="tight code">social logins</h1>
+        <p class="darken-text">
+          Usually, colors with the same hue are
+          distinguished with adjectives referring to
+        </p>
+      </div>
+      <div>
+        <form action="#" method="GET">
+          <input type="input" class="text-field f-span6" placeholder="email"/>
+          <input type="input" class="text-field f-span6" placeholder="password"/>
+          <button class="button-warning f-span5">login</button>
+          <button class="button-default f-span4">cancel</button>
+        </form>
       </div>
     </div>
     <div class="container lighten-background center">

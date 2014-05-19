@@ -5,13 +5,26 @@
     <html lang="en">
       <body>
         <xsl:apply-templates match="." mode="head"/>
+        <div id="overlay"></div>
+        <ul class="menu-sliding upper">
+          <li class="code big lower tight item-no-hover"><img src="images/grains.svg"/></li>
+          <li><i class="fa fa-eur success"></i>controls</li>
+          <li><i class="fa fa-jpy warning"></i>readme</li>
+          <li><i class="fa fa-rub info"></i>tables</li>
+          <li class="small darken-text item-no-hover">
+              Usually, colors with the same hue are distinguished
+          </li>
+          <li class="small darken-text item-no-hover">
+            <button class="button button-medium button-default">login</button>
+          </li>
+        </ul>
         <div class="container vertical-padding lighten-background center mobile-only">
-            <span class="spread big code">
+            <span class="big code spread">
               grains
             </span>
         </div>
         <div class="container vertical-padding lighten-background center animate-show-slow">
-          <ul class="menu darker upper">
+          <ul class="menu darker upper animate-slide-children-top-to-bottom">
             <li>
               <div class="dropdown-menu dropdown-menu-warning left">
                 <a>controls</a>
@@ -48,13 +61,10 @@
               </div>
             </li>
             <li>
-              <a href="">tables</a>
+              <a id="opens-menu-sliding">tables</a>
             </li>
             <li>
-              <a href="">layouts</a>
-            </li>
-            <li>
-              <a href="">build own</a>
+              <button class="button button-medium button-default code" id="opens-menu-sliding">login</button>
             </li>
           </ul>
         </div>

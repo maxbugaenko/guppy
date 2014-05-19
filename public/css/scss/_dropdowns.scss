@@ -1,3 +1,5 @@
+$controls-icon-size: 1.3em;
+
 .dropdown-menu {
   position: relative;
   cursor: pointer;
@@ -23,6 +25,7 @@
     position: absolute;
     top: -50%;
     z-index: -1;
+    display: none;
     left: -50%;
     white-space: nowrap;
     border-radius: $controls-border-radius;
@@ -61,6 +64,7 @@
 .dropdown-menu.active {
 
   ul {
+    display: block;
     -webkit-animation-name: showMenu;
     -webkit-animation-duration: .3s;
     -webkit-animation-fill-mode: forwards;
@@ -111,17 +115,15 @@
 
 .dropdown {
   @extend %control;
+  font-size: $base-font-size;
 
   div {
-    width: 100%;
-    padding: $controls-padding $controls-padding*5 $controls-padding $controls-padding;
-    font-size: $controls-font-size;
-    font-family: $main-font;
-    display: inline-block;
+    padding: $base-font-size/1.2 $base-font-size*6 $base-font-size/1.2 $base-font-size/1.2;
   }
 
   ul {
     width: 100%;
+    padding: .5em 0 .5em 0;
     position: absolute;
     border-radius: 0 0 $controls-border-radius $controls-border-radius;
     top: 100%;
@@ -129,7 +131,6 @@
     z-index: 2;
     opacity: 0;
     list-style: none;
-    padding: 1em 0 1em 0; // padding for the whole list
     white-space: nowrap;
     pointer-events: none;
 
@@ -141,6 +142,8 @@
 
     li {
       padding: .5em 2em .5em 2em;
+      width: 100%;
+      margin: 0;
       cursor: pointer;
       transition: all .2s ease;
 
@@ -163,22 +166,22 @@
     width: 0;
     height: 0;
     position: absolute;
-    right: $controls-icon-size;
     top: 50%;
-    margin-top: -$controls-icon-size/3;
-    border-top: $controls-icon-size/3 solid transparent;
-    border-bottom: $controls-icon-size/3 solid transparent;
-    border-left: $controls-icon-size/3 solid $controls-text-color;
+    right: 1em;
+    margin-top: -.4em;
+    border-top: .4em solid transparent;
+    border-bottom: .4em solid transparent;
+    border-left: .4em solid $controls-text-color;
     pointer-events: none;
   }
 
   &:before {
     transition: all .3s ease;
     content: "";
-    width: $controls-icon-size*2.5;
     height: 100%;
     position: absolute;
     border-radius: $controls-border-radius;
+    width: 2.6em;
     right: 0;
     top: 0;
     pointer-events: none;
@@ -189,14 +192,32 @@
   }
 }
 
+.dropdown-small {
+  @extend .dropdown;
+  font-size: $base-font-size/1.5;
+
+  div {
+    padding: $base-font-size/5 $base-font-size*5 $base-font-size/5 $base-font-size/2;
+  }
+}
+
+.dropdown-medium {
+  @extend .dropdown;
+  font-size: $base-font-size/1.2;
+
+  div {
+    padding: $base-font-size/3 $base-font-size*4 $base-font-size/3 $base-font-size/3;
+  }
+}
+
 .dropdown.active {
   border-radius: $controls-border-radius $controls-border-radius 0 0;
 
   &:after {
-    margin-top: -$controls-icon-size/4;
-    border-left: $controls-icon-size/3 solid transparent;
-    border-right: $controls-icon-size/3 solid transparent;
-    border-top: $controls-icon-size/3 solid $controls-text-color;
+    margin-top: -.2em;
+    border-left: .4em solid transparent;
+    border-right: .4em solid transparent;
+    border-top: .4em solid $controls-text-color;
   }
 
   ul {

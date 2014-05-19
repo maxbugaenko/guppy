@@ -1,7 +1,5 @@
 .text-field {
   border: 0;
-  padding: $controls-padding;
-  font-size: inherit;
   border-radius: $controls-border-radius;
   outline: none;
   color: darken($controls-default-color, 20);
@@ -9,6 +7,8 @@
   border-bottom: $controls-depth solid darken($controls-default-color, 18);
   transition: all .3s ease;
   text-align: center;
+  font-size: $base-font-size;
+  padding: $base-font-size/1.2 $base-font-size/1.2 $base-font-size/1.2 $base-font-size/1.2;
 
   &:focus {
     transition: all .3s ease;

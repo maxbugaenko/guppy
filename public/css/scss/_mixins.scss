@@ -1,0 +1,19 @@
+@mixin hover($color) {
+  background-color: darken($color, 5);
+}
+
+@mixin active($color) {
+  background-color: darken($color, 10);
+}
+
+@mixin shadow($color, $depth: $controls-depth) {
+  border-bottom: $depth solid darken($color, 5);
+}
+
+@mixin transition($duration: .3s) {
+  transition: all $duration ease;
+}
+
+@function calc-duration($n, $duration: 400) {
+  @return $n * $duration + ms;
+}

@@ -1,10 +1,11 @@
 .menu {
   list-style: none;
-  @include h-font();
   transition: all .3s ease;
+  position: relative; // for animation
 
   li {
-    letter-spacing: inherit;
+    position: relative; // for animation
+    cursor: pointer;
     display: inline-block;
     margin: 0 $base-font-size*2;
     transition: all .3s ease;
@@ -61,5 +62,65 @@
       text-decoration: none;
       color: inherit;
     }
+  }
+}
+
+.menu-sliding {
+  @extend .menu-vertical;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  left: -100%;
+  display: none;
+  z-index: 100001;
+  font-size: inherit !important;
+  height: 100%;
+  width: 350px;
+  padding: 2em 0 2em 0;
+  background-color: fade-out(darken($controls-default-color, 15), .2);
+
+  li {
+    padding: 1em $base-font-size*4;
+
+    &:hover {
+      @include hover(lighten(fade-out($controls-default-color, .7), 20));
+    }
+
+    &:active {
+      @include active(lighten(fade-out($controls-default-color, .7), 20));
+    }
+
+    i {
+      padding: 0 1em 0 0;
+      font-size: 1.5em;
+    }
+  }
+}
+
+.menu-sliding.active {
+  display: block;
+  -webkit-animation-name: slideMenuSlidingRight;
+  -webkit-animation-duration: .2s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.menu-sliding.inactive {
+  -webkit-animation-name: slideMenuSlidingLeft;
+  -webkit-animation-duration: .4s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@each $control-kind in $controls-color-list {
+  li.item-#{nth($control-kind, 1)} {
+    border-left: $controls-depth*2 solid nth($control-kind, 2);
+  }
+}
+
+li.item-no-hover {
+  cursor: default;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
   }
 }

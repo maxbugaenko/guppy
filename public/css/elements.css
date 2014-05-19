@@ -425,7 +425,9 @@ $text-color: #e3ecf2;*/
 .span1 {
   transition: all 0.3s ease;
   border: 1px solid red;
-  width: calc(100%/12 * 1); }
+  width: calc(100%/12 * 1);
+  width: -webkit-calc(100%/12 * 1);
+  width: -moz-calc(100%/12 * 1); }
   @media all and (max-width: 600px) {
     .span1 {
       transition: all 0.3s ease;
@@ -434,7 +436,9 @@ $text-color: #e3ecf2;*/
 .span2 {
   transition: all 0.3s ease;
   border: 1px solid red;
-  width: calc(100%/12 * 2); }
+  width: calc(100%/12 * 2);
+  width: -webkit-calc(100%/12 * 2);
+  width: -moz-calc(100%/12 * 2); }
   @media all and (max-width: 600px) {
     .span2 {
       transition: all 0.3s ease;
@@ -443,7 +447,9 @@ $text-color: #e3ecf2;*/
 .span3 {
   transition: all 0.3s ease;
   border: 1px solid red;
-  width: calc(100%/12 * 3); }
+  width: calc(100%/12 * 3);
+  width: -webkit-calc(100%/12 * 3);
+  width: -moz-calc(100%/12 * 3); }
   @media all and (max-width: 600px) {
     .span3 {
       transition: all 0.3s ease;
@@ -452,7 +458,9 @@ $text-color: #e3ecf2;*/
 .span4 {
   transition: all 0.3s ease;
   border: 1px solid red;
-  width: calc(100%/12 * 4); }
+  width: calc(100%/12 * 4);
+  width: -webkit-calc(100%/12 * 4);
+  width: -moz-calc(100%/12 * 4); }
   @media all and (max-width: 600px) {
     .span4 {
       transition: all 0.3s ease;
@@ -461,7 +469,9 @@ $text-color: #e3ecf2;*/
 .span5 {
   transition: all 0.3s ease;
   border: 1px solid red;
-  width: calc(100%/12 * 5); }
+  width: calc(100%/12 * 5);
+  width: -webkit-calc(100%/12 * 5);
+  width: -moz-calc(100%/12 * 5); }
   @media all and (max-width: 600px) {
     .span5 {
       transition: all 0.3s ease;
@@ -470,7 +480,9 @@ $text-color: #e3ecf2;*/
 .span6 {
   transition: all 0.3s ease;
   border: 1px solid red;
-  width: calc(100%/12 * 6); }
+  width: calc(100%/12 * 6);
+  width: -webkit-calc(100%/12 * 6);
+  width: -moz-calc(100%/12 * 6); }
   @media all and (max-width: 600px) {
     .span6 {
       transition: all 0.3s ease;
@@ -479,7 +491,9 @@ $text-color: #e3ecf2;*/
 .span7 {
   transition: all 0.3s ease;
   border: 1px solid red;
-  width: calc(100%/12 * 7); }
+  width: calc(100%/12 * 7);
+  width: -webkit-calc(100%/12 * 7);
+  width: -moz-calc(100%/12 * 7); }
   @media all and (max-width: 600px) {
     .span7 {
       transition: all 0.3s ease;
@@ -488,7 +502,9 @@ $text-color: #e3ecf2;*/
 .span8 {
   transition: all 0.3s ease;
   border: 1px solid red;
-  width: calc(100%/12 * 8); }
+  width: calc(100%/12 * 8);
+  width: -webkit-calc(100%/12 * 8);
+  width: -moz-calc(100%/12 * 8); }
   @media all and (max-width: 600px) {
     .span8 {
       transition: all 0.3s ease;
@@ -497,7 +513,9 @@ $text-color: #e3ecf2;*/
 .span9 {
   transition: all 0.3s ease;
   border: 1px solid red;
-  width: calc(100%/12 * 9); }
+  width: calc(100%/12 * 9);
+  width: -webkit-calc(100%/12 * 9);
+  width: -moz-calc(100%/12 * 9); }
   @media all and (max-width: 600px) {
     .span9 {
       transition: all 0.3s ease;
@@ -506,7 +524,9 @@ $text-color: #e3ecf2;*/
 .span10 {
   transition: all 0.3s ease;
   border: 1px solid red;
-  width: calc(100%/12 * 10); }
+  width: calc(100%/12 * 10);
+  width: -webkit-calc(100%/12 * 10);
+  width: -moz-calc(100%/12 * 10); }
   @media all and (max-width: 600px) {
     .span10 {
       transition: all 0.3s ease;
@@ -515,7 +535,9 @@ $text-color: #e3ecf2;*/
 .span11 {
   transition: all 0.3s ease;
   border: 1px solid red;
-  width: calc(100%/12 * 11); }
+  width: calc(100%/12 * 11);
+  width: -webkit-calc(100%/12 * 11);
+  width: -moz-calc(100%/12 * 11); }
   @media all and (max-width: 600px) {
     .span11 {
       transition: all 0.3s ease;
@@ -524,7 +546,9 @@ $text-color: #e3ecf2;*/
 .span12 {
   transition: all 0.3s ease;
   border: 1px solid red;
-  width: calc(100%/12 * 12); }
+  width: calc(100%/12 * 12);
+  width: -webkit-calc(100%/12 * 12);
+  width: -moz-calc(100%/12 * 12); }
   @media all and (max-width: 600px) {
     .span12 {
       transition: all 0.3s ease;
@@ -640,6 +664,8 @@ $text-color: #e3ecf2;*/
 
 .shift1 {
   width: calc(100% - (100%/12 * 1)*2);
+  width: -moz-calc(100% - (100%/12 * 1)*2);
+  width: -webkit-calc(100% - (100%/12 * 1)*2);
   transition: all .3s ease; }
   @media all and (max-width: 1100px) {
     .shift1 {
@@ -648,6 +674,8 @@ $text-color: #e3ecf2;*/
 
 .shift2 {
   width: calc(100% - (100%/12 * 2)*2);
+  width: -moz-calc(100% - (100%/12 * 2)*2);
+  width: -webkit-calc(100% - (100%/12 * 2)*2);
   transition: all .3s ease; }
   @media all and (max-width: 1100px) {
     .shift2 {
@@ -656,6 +684,8 @@ $text-color: #e3ecf2;*/
 
 .shift3 {
   width: calc(100% - (100%/12 * 3)*2);
+  width: -moz-calc(100% - (100%/12 * 3)*2);
+  width: -webkit-calc(100% - (100%/12 * 3)*2);
   transition: all .3s ease; }
   @media all and (max-width: 1100px) {
     .shift3 {
@@ -664,6 +694,8 @@ $text-color: #e3ecf2;*/
 
 .shift4 {
   width: calc(100% - (100%/12 * 4)*2);
+  width: -moz-calc(100% - (100%/12 * 4)*2);
+  width: -webkit-calc(100% - (100%/12 * 4)*2);
   transition: all .3s ease; }
   @media all and (max-width: 1100px) {
     .shift4 {
@@ -672,6 +704,8 @@ $text-color: #e3ecf2;*/
 
 .shift5 {
   width: calc(100% - (100%/12 * 5)*2);
+  width: -moz-calc(100% - (100%/12 * 5)*2);
+  width: -webkit-calc(100% - (100%/12 * 5)*2);
   transition: all .3s ease; }
   @media all and (max-width: 1100px) {
     .shift5 {

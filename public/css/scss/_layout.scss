@@ -23,6 +23,8 @@
     @include transition();
     border: 1px solid red;
     width: calc(100%/12 * #{$i});
+    width: -webkit-calc(100%/12 * #{$i});
+    width: -moz-calc(100%/12 * #{$i});
 
     @media all and (max-width: $switch-orientation-point-mobile) {
       @include transition();
@@ -67,6 +69,8 @@
 @for $i from 1 through 5 {
   .shift#{$i} {
     width: calc(100% - (100%/12 * #{$i})*2);
+    width: -moz-calc(100% - (100%/12 * #{$i})*2);
+    width: -webkit-calc(100% - (100%/12 * #{$i})*2);
     transition: all .3s ease;
 
     @media all and (max-width: $switch-orientation-point-medium) {

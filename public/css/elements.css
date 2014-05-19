@@ -410,6 +410,7 @@ $text-color: #e3ecf2;*/
 .container {
   margin: 0 auto;
   position: relative;
+  border: 1px solid yellow;
   z-index: 1000; }
   .container:after {
     content: "";
@@ -423,6 +424,7 @@ $text-color: #e3ecf2;*/
 
 .span1 {
   transition: all 0.3s ease;
+  border: 1px solid red;
   width: calc(100%/12 * 1); }
   @media all and (max-width: 600px) {
     .span1 {
@@ -431,6 +433,7 @@ $text-color: #e3ecf2;*/
 
 .span2 {
   transition: all 0.3s ease;
+  border: 1px solid red;
   width: calc(100%/12 * 2); }
   @media all and (max-width: 600px) {
     .span2 {
@@ -439,6 +442,7 @@ $text-color: #e3ecf2;*/
 
 .span3 {
   transition: all 0.3s ease;
+  border: 1px solid red;
   width: calc(100%/12 * 3); }
   @media all and (max-width: 600px) {
     .span3 {
@@ -447,6 +451,7 @@ $text-color: #e3ecf2;*/
 
 .span4 {
   transition: all 0.3s ease;
+  border: 1px solid red;
   width: calc(100%/12 * 4); }
   @media all and (max-width: 600px) {
     .span4 {
@@ -455,6 +460,7 @@ $text-color: #e3ecf2;*/
 
 .span5 {
   transition: all 0.3s ease;
+  border: 1px solid red;
   width: calc(100%/12 * 5); }
   @media all and (max-width: 600px) {
     .span5 {
@@ -463,6 +469,7 @@ $text-color: #e3ecf2;*/
 
 .span6 {
   transition: all 0.3s ease;
+  border: 1px solid red;
   width: calc(100%/12 * 6); }
   @media all and (max-width: 600px) {
     .span6 {
@@ -471,6 +478,7 @@ $text-color: #e3ecf2;*/
 
 .span7 {
   transition: all 0.3s ease;
+  border: 1px solid red;
   width: calc(100%/12 * 7); }
   @media all and (max-width: 600px) {
     .span7 {
@@ -479,6 +487,7 @@ $text-color: #e3ecf2;*/
 
 .span8 {
   transition: all 0.3s ease;
+  border: 1px solid red;
   width: calc(100%/12 * 8); }
   @media all and (max-width: 600px) {
     .span8 {
@@ -487,6 +496,7 @@ $text-color: #e3ecf2;*/
 
 .span9 {
   transition: all 0.3s ease;
+  border: 1px solid red;
   width: calc(100%/12 * 9); }
   @media all and (max-width: 600px) {
     .span9 {
@@ -495,6 +505,7 @@ $text-color: #e3ecf2;*/
 
 .span10 {
   transition: all 0.3s ease;
+  border: 1px solid red;
   width: calc(100%/12 * 10); }
   @media all and (max-width: 600px) {
     .span10 {
@@ -503,6 +514,7 @@ $text-color: #e3ecf2;*/
 
 .span11 {
   transition: all 0.3s ease;
+  border: 1px solid red;
   width: calc(100%/12 * 11); }
   @media all and (max-width: 600px) {
     .span11 {
@@ -511,6 +523,7 @@ $text-color: #e3ecf2;*/
 
 .span12 {
   transition: all 0.3s ease;
+  border: 1px solid red;
   width: calc(100%/12 * 12); }
   @media all and (max-width: 600px) {
     .span12 {

@@ -56,6 +56,8 @@
 
     & > div {
       width: calc(100% / #{$i});
+      width: -webkit-calc(100% / #{$i});
+      width: -moz-calc(100% / #{$i});
       @include transition();
 
       @media all and (max-width: $switch-orientation-point-mobile) {

@@ -1,7 +1,6 @@
 .container {
   margin: 0 auto;
   position: relative;
-  border: 1px solid yellow;
   z-index: 1000; // todo: need to check what's going on here
 
   &:after {
@@ -21,7 +20,6 @@
   .span#{$i} {
     @extend %span-column;
     @include transition();
-    border: 1px solid red;
     width: calc(100%/12 * #{$i});
     width: -webkit-calc(100%/12 * #{$i});
     width: -moz-calc(100%/12 * #{$i});

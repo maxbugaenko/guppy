@@ -410,7 +410,6 @@ $text-color: #e3ecf2;*/
 .container {
   margin: 0 auto;
   position: relative;
-  border: 1px solid yellow;
   z-index: 1000; }
   .container:after {
     content: "";
@@ -424,7 +423,6 @@ $text-color: #e3ecf2;*/
 
 .span1 {
   transition: all 0.3s ease;
-  border: 1px solid red;
   width: calc(100%/12 * 1);
   width: -webkit-calc(100%/12 * 1);
   width: -moz-calc(100%/12 * 1); }
@@ -435,7 +433,6 @@ $text-color: #e3ecf2;*/
 
 .span2 {
   transition: all 0.3s ease;
-  border: 1px solid red;
   width: calc(100%/12 * 2);
   width: -webkit-calc(100%/12 * 2);
   width: -moz-calc(100%/12 * 2); }
@@ -446,7 +443,6 @@ $text-color: #e3ecf2;*/
 
 .span3 {
   transition: all 0.3s ease;
-  border: 1px solid red;
   width: calc(100%/12 * 3);
   width: -webkit-calc(100%/12 * 3);
   width: -moz-calc(100%/12 * 3); }
@@ -457,7 +453,6 @@ $text-color: #e3ecf2;*/
 
 .span4 {
   transition: all 0.3s ease;
-  border: 1px solid red;
   width: calc(100%/12 * 4);
   width: -webkit-calc(100%/12 * 4);
   width: -moz-calc(100%/12 * 4); }
@@ -468,7 +463,6 @@ $text-color: #e3ecf2;*/
 
 .span5 {
   transition: all 0.3s ease;
-  border: 1px solid red;
   width: calc(100%/12 * 5);
   width: -webkit-calc(100%/12 * 5);
   width: -moz-calc(100%/12 * 5); }
@@ -479,7 +473,6 @@ $text-color: #e3ecf2;*/
 
 .span6 {
   transition: all 0.3s ease;
-  border: 1px solid red;
   width: calc(100%/12 * 6);
   width: -webkit-calc(100%/12 * 6);
   width: -moz-calc(100%/12 * 6); }
@@ -490,7 +483,6 @@ $text-color: #e3ecf2;*/
 
 .span7 {
   transition: all 0.3s ease;
-  border: 1px solid red;
   width: calc(100%/12 * 7);
   width: -webkit-calc(100%/12 * 7);
   width: -moz-calc(100%/12 * 7); }
@@ -501,7 +493,6 @@ $text-color: #e3ecf2;*/
 
 .span8 {
   transition: all 0.3s ease;
-  border: 1px solid red;
   width: calc(100%/12 * 8);
   width: -webkit-calc(100%/12 * 8);
   width: -moz-calc(100%/12 * 8); }
@@ -512,7 +503,6 @@ $text-color: #e3ecf2;*/
 
 .span9 {
   transition: all 0.3s ease;
-  border: 1px solid red;
   width: calc(100%/12 * 9);
   width: -webkit-calc(100%/12 * 9);
   width: -moz-calc(100%/12 * 9); }
@@ -523,7 +513,6 @@ $text-color: #e3ecf2;*/
 
 .span10 {
   transition: all 0.3s ease;
-  border: 1px solid red;
   width: calc(100%/12 * 10);
   width: -webkit-calc(100%/12 * 10);
   width: -moz-calc(100%/12 * 10); }
@@ -534,7 +523,6 @@ $text-color: #e3ecf2;*/
 
 .span11 {
   transition: all 0.3s ease;
-  border: 1px solid red;
   width: calc(100%/12 * 11);
   width: -webkit-calc(100%/12 * 11);
   width: -moz-calc(100%/12 * 11); }
@@ -545,7 +533,6 @@ $text-color: #e3ecf2;*/
 
 .span12 {
   transition: all 0.3s ease;
-  border: 1px solid red;
   width: calc(100%/12 * 12);
   width: -webkit-calc(100%/12 * 12);
   width: -moz-calc(100%/12 * 12); }

@@ -410,7 +410,8 @@ $text-color: #e3ecf2;*/
 .container {
   margin: 0 auto;
   position: relative;
-  z-index: 1000; }
+  z-index: 1000;
+  padding: .5em; }
   .container:after {
     content: "";
     display: block;
@@ -944,8 +945,13 @@ h5 {
     left: -50%;
     white-space: nowrap;
     border-radius: 2px;
-    padding: 20px 0;
+    padding: 0 0 20px 0;
     color: #ecf0f1; }
+    @media all and (max-width: 600px) {
+      .dropdown-menu ul, .dropdown-menu-success ul, .dropdown-menu-warning ul, .dropdown-menu-info ul, .dropdown-menu-default ul {
+        position: static;
+        width: 100%;
+        text-align: center; } }
     .dropdown-menu ul li, .dropdown-menu-success ul li, .dropdown-menu-warning ul li, .dropdown-menu-info ul li, .dropdown-menu-default ul li {
       margin: 0;
       display: block;
@@ -985,6 +991,9 @@ h5 {
     background-color: #2572a4; }
   .dropdown-menu-success ul li:active {
     background-color: #21638f; }
+  .dropdown-menu-success ul li.item-header {
+    background-color: #226998;
+    pointer-events: none; }
 
 .dropdown-menu-warning > a:after {
   border-left: 0.43333em solid #f6b27f; }
@@ -995,6 +1004,9 @@ h5 {
     background-color: #e56b10; }
   .dropdown-menu-warning ul li:active {
     background-color: #cd600f; }
+  .dropdown-menu-warning ul li.item-header {
+    background-color: #d7640f;
+    pointer-events: none; }
 
 .dropdown-menu-info > a:after {
   border-left: 0.43333em solid #36f787; }
@@ -1005,6 +1017,9 @@ h5 {
     background-color: #07a74a; }
   .dropdown-menu-info ul li:active {
     background-color: #068e3f; }
+  .dropdown-menu-info ul li.item-header {
+    background-color: #069844;
+    pointer-events: none; }
 
 .dropdown-menu-default > a:after {
   border-left: 0.43333em solid #88a2bd; }
@@ -1015,6 +1030,9 @@ h5 {
     background-color: #46627f; }
   .dropdown-menu-default ul li:active {
     background-color: #3d566e; }
+  .dropdown-menu-default ul li.item-header {
+    background-color: #415b75;
+    pointer-events: none; }
 
 .dropdown, .dropdown-small, .dropdown-medium, .dropdown-success, .dropdown-warning, .dropdown-info, .dropdown-default {
   font-size: 20px; }

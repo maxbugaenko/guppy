@@ -2,6 +2,7 @@
   margin: 0 auto;
   position: relative;
   z-index: 1000; // todo: need to check what's going on here
+  padding: .5em;
 
   &:after {
     content: "";

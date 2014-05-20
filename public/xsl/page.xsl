@@ -18,9 +18,9 @@
             <button class="button button-medium button-default">login</button>
           </li>
         </ul>
-        <div class="container vertical-padding lighten-background center mobile-only">
-            <span class="big code spread">
-              grains
+        <div class="container vertical-padding lighten-background center">
+            <span class="medium code">
+              doctype
             </span>
         </div>
         <div class="container vertical-padding lighten-background center animate-show-slow">
@@ -29,6 +29,9 @@
               <div class="dropdown-menu dropdown-menu-warning left">
                 <a>controls</a>
                 <ul>
+                  <li class="item-header">
+                    <a href="">controls</a>
+                  </li>
                   <li>
                     <i class="fa fa-eur"></i><a href="">buttons</a>
                   </li>
@@ -48,6 +51,9 @@
               <div class="dropdown-menu dropdown-menu-success left">
                 <a>readme</a>
                 <ul class="small">
+                  <li class="item-header">
+                    <a href="">readme</a>
+                  </li>
                   <li>
                     <a href="">get started</a>
                   </li>

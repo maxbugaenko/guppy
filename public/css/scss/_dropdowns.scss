@@ -29,10 +29,16 @@ $controls-icon-size: 1.3em;
     left: -50%;
     white-space: nowrap;
     border-radius: $controls-border-radius;
-    padding: $base-font-size 0;
+    padding: 0 0 $base-font-size 0;
     color: $controls-text-color;
 
-    li {
+    @media all and (max-width: $switch-orientation-point-mobile) {
+      position: static;
+      width: 100%;
+      text-align: center;
+    }
+
+      li {
       margin: 0;
       display: block;
       cursor: pointer;
@@ -108,6 +114,11 @@ $controls-icon-size: 1.3em;
         &:active {
           @include active(nth($control-kind, 2));
         }
+      }
+
+      li.item-header {
+        background-color: darken(nth($control-kind, 2), 8);
+        pointer-events: none;
       }
     }
   }

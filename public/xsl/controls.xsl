@@ -76,6 +76,89 @@
         </pre>
       </div>
     </div>
+    <div class="container shift2">
+      <div class="unit30">
+        <ul class="menu-vertical menu-vertical-spread upper right animate-slide-children-top-to-bottom">
+          <li>
+            <div class="dropdown-menu dropdown-menu-info left">
+              <a>controls</a>
+              <ul class="medium">
+                <li class="item-header">
+                  <a href="">controls</a>
+                </li>
+                <li>
+                  <i class="fa fa-eur"></i><a href="">buttons</a>
+                </li>
+                <li>
+                  <i class="fa fa-jpy"></i><a href="">web forms</a>
+                </li>
+                <li>
+                  <i class="fa fa-usd"></i><a href="">tabs</a>
+                </li>
+              </ul>
+            </div>
+            <p class="darken-text small">
+              Usually, colors with the same hue are with the same hue are
+            </p>
+          </li>
+          <li>
+            tables
+            <p class="darken-text small">
+              Usually, colors with the same hue are with the same hue are
+            </p>
+          </li>
+          <li>
+            panels
+            <p class="darken-text small">
+              Usually, colors with the same hue are with the same hue are
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="unit40 padding-medium center darken-text small">
+        <img src="../images/bike.svg"/>
+        Usually, colors with the same hue are
+        distinguished with <a id="opens-menu-sliding">adjectives</a> to
+      </div>
+      <div class="unit30">
+        <ul class="menu-vertical menu-vertical-spread upper animate-slide-children-top-to-bottom">
+          <li>
+            <div class="dropdown-menu dropdown-menu-default left">
+              <a>controls</a>
+              <ul class="small">
+                <li class="item-header">
+                  <a href="">controls</a>
+                </li>
+                <li>
+                  <i class="fa fa-eur"></i><a href="">buttons</a>
+                </li>
+                <li>
+                  <i class="fa fa-rub"></i><a href="">button groups</a>
+                </li>
+                <li>
+                  <i class="fa fa-jpy"></i><a href="">web forms</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            tables
+          </li>
+          <li>
+            panels
+          </li>
+          <li>
+            sliders
+          </li>
+          <li>
+            dropdowns
+          </li>
+          <li>
+            readme
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="container lighten-background">
       <div class="column2 shift2 vertical-padding-large">
         <div class="right">

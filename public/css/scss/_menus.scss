@@ -19,6 +19,7 @@
     a {
       text-decoration: none;
       color: inherit;
+      border: 0;
 
       &:hover {
         border-bottom: 2px solid;
@@ -30,9 +31,22 @@
 .menu-vertical {
   @extend .menu;
 
+  @media all and (max-width: $switch-orientation-point-medium) {
+    text-align: center;
+  }
+
+
   li {
     display: block;
     margin: 0;
+  }
+}
+
+.menu-vertical-spread {
+  @extend .menu-vertical;
+
+  li {
+    padding: $base-font-size 0 $base-font-size 0;
   }
 }
 

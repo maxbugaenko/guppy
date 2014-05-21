@@ -36,7 +36,7 @@
   margin: 0 auto;
   box-sizing: border-box;
 
-  & > div {
+  & > * {
     margin: 0;
     padding: 1em;
     float: left;
@@ -80,6 +80,19 @@
     }
   }
 }
+
+@for $i from 1 through 10 {
+  .unit#{$i}0 {
+    @extend %span-column;
+    width: #{$i}0 * 1%;
+
+    @media all and (max-width: $switch-orientation-point-medium) {
+      @include transition();
+      width: 100%;
+    }
+  }
+}
+
 
 .mobile-only {
   display: none;

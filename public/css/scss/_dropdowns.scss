@@ -32,12 +32,6 @@ $controls-icon-size: 1.3em;
     padding: 0 0 $base-font-size 0;
     color: $controls-text-color;
 
-    @media all and (max-width: $switch-orientation-point-mobile) {
-      position: static;
-      width: 100%;
-      text-align: center;
-    }
-
       li {
       margin: 0;
       display: block;

@@ -19,8 +19,8 @@
           </li>
         </ul>
         <div class="container vertical-padding lighten-background center">
-            <span class="medium code">
-              doctype
+            <span class="large code tight">
+              guppy
             </span>
         </div>
         <div class="container vertical-padding lighten-background center animate-show-slow">

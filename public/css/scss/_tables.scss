@@ -1,0 +1,50 @@
+table {
+  width: 100%;
+  border-spacing: 0;
+  text-align: left;
+
+  thead {
+    background-color: darken($controls-default-color, 12);
+
+    th {
+      @include h-font();
+    }
+
+    th:first-child {
+      border-top-left-radius: $controls-border-radius;
+    }
+
+    th:last-child {
+      border-top-right-radius: $controls-border-radius;
+    }
+  }
+
+  td,
+  th {
+    padding: $base-font-size;
+  }
+
+  tbody {
+
+    tr:nth-child(odd) {
+      background-color: darken($controls-default-color, 8);
+    }
+
+    tr:nth-child(even) {
+      background-color: darken($controls-default-color, 9);
+    }
+
+    tr:last-child > td:first-child {
+      border-bottom-left-radius: $controls-border-radius;
+      @include shadow($controls-default-color);
+    }
+
+    tr:last-child > td {
+      @include shadow($controls-default-color);
+    }
+
+    tr:last-child > td:last-child {
+      border-bottom-right-radius: $controls-border-radius;
+    }
+  }
+}

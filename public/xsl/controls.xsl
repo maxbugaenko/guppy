@@ -76,7 +76,78 @@
         </pre>
       </div>
     </div>
-    <div class="container shift2">
+    <div class="container">
+      <div class="tabs center shift1">
+        <input name="controls" type="radio" id="controls-tab" checked="true"/>
+        <label for="controls-tab" class="tab30 upper tab-label background-default"><i class="fa fa-rub"></i><span class="desktop-only">&#160;controls</span></label>
+        <input name="controls" type="radio" id="panels-tab"/>
+        <label for="panels-tab" class="tab30 upper tab-label background-default"><i class="fa fa-btc"></i><span class="desktop-only">&#160;panels</span></label>
+        <input name="controls" type="radio" id="readme-tab"/>
+        <label for="readme-tab" class="tab30 upper tab-label background-success"><i class="fa fa-gbp"></i><span class="desktop-only">&#160;readme</span></label>
+        <div class="content darken-background round-borders">
+          <div class="tab padding-medium">
+            <div class="column2 shift2">
+              <div>
+                <img src="../images/bike.svg"/>
+              </div>
+              <div class="left">
+                <h1 class="code">controls</h1>
+                <p class="darken-text">
+                  Usually, colors with the same hue are with the same hue are
+                </p>
+                <h3 class="code">usually colors</h3>
+                <p class="darken-text small">
+                  Usually, colors with the same hue are with the same hue are. Colors with the same hue are with the same hue are
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab padding-medium">
+            <div class="column3 shift2">
+              <div class="right">
+                <h1 class="code">controls</h1>
+                <p class="darken-text">
+                  Usually, colors with the same hue are with the same hue are. Hue are with the same hue are
+                </p>
+              </div>
+              <div class="center">
+                <h1 class="code">readme</h1>
+                <p class="darken-text">
+                  Usually, colors with the same hue are with the same hue are
+                </p>
+              </div>
+              <div class="left">
+                <h1 class="code">dropdowns</h1>
+                <p class="darken-text">
+                  Usually, colors with the same hue are with the same hue are
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab padding-medium">
+            <div class="column2 shift1 vertical-padding">
+              <div class="right">
+                <h1 class="tight code">social logins</h1>
+                <p class="darken-text">
+                  Usually, colors with the same hue are
+                  distinguished with adjectives referring to
+                </p>
+              </div>
+              <div class="left">
+                <form action="#" method="GET">
+                  <input type="input" class="text-field f-span6" placeholder="email"/>
+                  <input type="input" class="text-field f-span6" placeholder="password"/>
+                  <button class="button-warning f-span5">login</button>
+                  <button class="button-default f-span4">cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container shift2 center padding-top-medium">
+      <h1 class="tight">vertical menu</h1>
       <div class="unit30">
         <ul class="menu-vertical menu-vertical-spread upper right animate-slide-children-top-to-bottom">
           <li>
@@ -120,7 +191,7 @@
         Usually, colors with the same hue are
         distinguished with <a id="opens-menu-sliding">adjectives</a> to
       </div>
-      <div class="unit30">
+      <div class="unit30 left">
         <ul class="menu-vertical menu-vertical-spread upper animate-slide-children-top-to-bottom">
           <li>
             <div class="dropdown-menu dropdown-menu-default left">
@@ -190,10 +261,10 @@
             </span>
           </div>
           <div class="container">
-            <span class="span8">
+            <span class="span6">
               <button class="button-warning button-medium">dollar</button>
             </span>
-            <span class="span4">
+            <span class="span6">
               <button class="button-success button-medium">pound</button>
             </span>
           </div>
@@ -317,7 +388,7 @@
           <input type="input" class="text-field f-span3" placeholder="zip"/>
           <input type="submit" class="button-success f-span7" value="submit"/>
           <button class="button-warning f-span5">cancel</button>
-          <input type="checkbox" id="checkbox1"/><label for="checkbox1" class="darker">Let me know about updates</label>
+          <input type="checkbox" id="checkbox1"/><label for="checkbox1" class="form-label darker">Let me know about updates</label>
         </form>
         <pre class="highlight vertical-padding">
 
@@ -526,6 +597,82 @@
           Usually, colors with the same hue are distinguished with adjectives referring to
         </p>
       </div>
+    </div>
+    <h1 class="center spread">tables</h1>
+    <div class="column1 shift2 vertical-padding-medium center">
+      <table class="medium">
+        <thead>
+          <th>
+            elements
+          </th>
+          <th>
+          </th>
+          <th>
+            kind
+          </th>
+          <th>
+            status
+          </th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              dropdowns
+            </td>
+            <td>
+              <button class="button-warning button-small">down</button>
+            </td>
+            <td>
+              uppercase
+            </td>
+            <td>
+              <span class="badge-default">unknown</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              buttons
+            </td>
+            <td>
+              <button class="button-info button-small">up</button>
+            </td>
+            <td>
+              uppercase
+            </td>
+            <td>
+              <span class="badge-success">active</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              button groups
+            </td>
+            <td>
+              <button class="button-success button-small">right</button>
+            </td>
+            <td>
+              lowercase
+            </td>
+            <td>
+              <span class="badge-warning">inactive</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              dropdowns
+            </td>
+            <td>
+              <button class="button-default button-small">left</button>
+            </td>
+            <td>
+              capitalize
+            </td>
+            <td>
+              <span class="badge-default">unknown</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </xsl:template>
 </xsl:stylesheet>

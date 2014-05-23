@@ -1,10 +1,9 @@
 @import "variables";
 @import "mixins";
-@import "animations";
-@import "highlight";
-@import "layout";
 @import "controls";
 @import "typography";
+@import "animations";
+@import "layout";
 @import "dropdowns";
 @import "buttons";
 @import "inputs";
@@ -12,6 +11,8 @@
 @import "checkradio";
 @import "form";
 @import "menus";
+@import "tabs";
+@import "tables";
 
 * {
   padding: 0;
@@ -22,7 +23,7 @@
 body,
 html {
   background: $background-color;
-  @include light-font();
+  @include main-font();
   color: $text-color;
   font-size: $base-font-size;
 }

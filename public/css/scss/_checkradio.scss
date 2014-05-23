@@ -4,7 +4,7 @@ input[type="checkbox"] {
   transition: all .2s ease;
 }
 
-input[type="checkbox"]:checked + label {
+input[type="checkbox"]:checked + label.form-label {
 
   &:before {
     transition: all .2s ease;
@@ -12,7 +12,7 @@ input[type="checkbox"]:checked + label {
   }
 }
 
-label {
+label.form-label {
   cursor: pointer;
   position: relative;
   top: .5em;

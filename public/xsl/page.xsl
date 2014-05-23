@@ -7,7 +7,7 @@
         <xsl:apply-templates match="." mode="head"/>
         <div id="overlay"></div>
         <ul class="menu-sliding upper">
-          <li class="code big lower tight item-no-hover"><img src="images/grains.svg"/></li>
+          <li class="big lower tight item-no-hover"><img src="images/grains.svg"/></li>
           <li><i class="fa fa-eur success"></i>controls</li>
           <li><i class="fa fa-jpy warning"></i>readme</li>
           <li><i class="fa fa-rub info"></i>tables</li>
@@ -18,20 +18,15 @@
             <button class="button button-medium button-default">login</button>
           </li>
         </ul>
-        <div class="container vertical-padding lighten-background center">
-            <span class="large code tight">
-              guppy
-            </span>
+        <div class="container vertical-padding lighten-background center mobile-only">
+              <span class="upper large code spread">guppy</span>
         </div>
         <div class="container vertical-padding lighten-background center animate-show-slow">
-          <ul class="menu darker upper animate-slide-children-top-to-bottom">
+          <ul class="menu darken-text upper animate-slide-children-top-to-bottom">
             <li>
               <div class="dropdown-menu dropdown-menu-warning left">
                 <a>controls</a>
                 <ul>
-                  <li class="item-header">
-                    <a href="">controls</a>
-                  </li>
                   <li>
                     <i class="fa fa-eur"></i><a href="">buttons</a>
                   </li>
@@ -70,7 +65,7 @@
               <a id="opens-menu-sliding">tables</a>
             </li>
             <li>
-              <button class="button button-medium button-default code" id="opens-menu-sliding">login</button>
+              <button class="button button-medium button-default" id="opens-menu-sliding">login</button>
             </li>
           </ul>
         </div>

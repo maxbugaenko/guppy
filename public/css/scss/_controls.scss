@@ -6,6 +6,7 @@ $controls-color-list: (
 );
 
 %control {
+  font-family: inherit;
   position: relative;
   border-radius: $controls-border-radius;
   cursor: pointer;

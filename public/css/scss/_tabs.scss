@@ -1,0 +1,51 @@
+.tabs {
+  margin: 0 auto;
+
+  input[type=radio] {
+    display: none;
+
+    @for $i from 1 through 12 {
+
+      &:nth-of-type(#{$i}):checked ~ .content .tab:nth-child(#{$i}) {
+        display: block;
+        -webkit-animation-name: showSlow;
+        -webkit-animation-duration: .6s;
+        -webkit-animation-fill-mode: forwards;
+      }
+    }
+
+    &:checked + label {
+      background-color: darken($controls-default-color, 10);
+    }
+  }
+
+  label.tab-label {
+    cursor: pointer;
+    display: inline-block;
+    padding: $base-font-size;
+    border-radius: 0;
+
+    &:first-of-type {
+      border-top-left-radius: $controls-border-radius;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: $controls-border-radius;
+    }
+
+    &:hover {
+      background-color: darken($controls-default-color, 10);
+    }
+  }
+
+  @for $t from 1 through 12 {
+
+    label.tab#{$t}0 {
+      width: #{$t}0 * 1%;
+    }
+  }
+
+  .tab {
+    display: none;
+  }
+}

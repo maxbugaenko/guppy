@@ -32,7 +32,7 @@ $controls-icon-size: 1.3em;
     padding: 0 0 $base-font-size 0;
     color: $controls-text-color;
 
-      li {
+    li {
       margin: 0;
       display: block;
       cursor: pointer;
@@ -57,6 +57,11 @@ $controls-icon-size: 1.3em;
       i {
         padding: 0 $base-font-size 0 0;
       }
+    }
+
+    li:not(.item-header):first-child,
+    li.item-header:first-child + li {
+      margin-top: $base-font-size;
     }
   }
 }
@@ -90,6 +95,7 @@ $controls-icon-size: 1.3em;
     @extend .dropdown-menu;
 
     & > a {
+
       &:after {
         border-left: $controls-icon-size/3 solid lighten(nth($control-kind, 2), 20);
       }
@@ -112,6 +118,8 @@ $controls-icon-size: 1.3em;
 
       li.item-header {
         background-color: darken(nth($control-kind, 2), 8);
+        border-top-left-radius: $controls-border-radius;
+        border-top-right-radius: $controls-border-radius;
         pointer-events: none;
       }
     }
@@ -143,6 +151,7 @@ $controls-icon-size: 1.3em;
       text-decoration: none;
       color: inherit;
       pointer-events: none;
+      border: 0;
     }
 
     li {

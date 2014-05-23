@@ -8,9 +8,7 @@
 
       &:nth-of-type(#{$i}):checked ~ .content .tab:nth-child(#{$i}) {
         display: block;
-        -webkit-animation-name: showSlow;
-        -webkit-animation-duration: .6s;
-        -webkit-animation-fill-mode: forwards;
+        @include animation(showSlow, .6s)
       }
     }
 

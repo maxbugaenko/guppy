@@ -1,7 +1,8 @@
 (function($) {
+
     $.fn.DropDown = function() {
         $(this).on("click", function(event) {
-            $(".dropdown, .dropdown-menu").
+            $("[class^=dropdown], .dropdown-menu").
                 removeClass("active");
             $(event.target).
                 parent().
@@ -16,7 +17,7 @@
                 text($(this).text());
         })
         $(document).on("click", function() {
-          $(".dropdown").
+          $("[class^=dropdown]").
               removeClass("active");
         })
     }
@@ -37,27 +38,32 @@
     }
 
     $.fn.ModalWindow = function() {
-        $(this).on("click", function(event) {
-            $("#modal-overlay").toggleClass("active");
-            $("#" + $(this).attr("data")).toggleClass("active");
+        $(this).on("click", function() {
+            $("#overlay").toggleClass("active");
+            $("#" + $(this).attr("modal")).toggleClass("active");
         })
     }
 
+    $.fn.MenuSliding = function() {
+        $(this).on("click", function() {
+            $("#overlay").toggleClass("active");
+            $(".menu-sliding").toggleClass("active");
+        });
+    }
+
+    $.fn.ReleaseBrowser = function() {
+        $(this).on("click", function() {
+            $("#overlay").removeClass("active");
+            $(".modal-window").removeClass("active");
+            $(".menu-sliding").removeClass("active");
+        });
+    }
+
     $(document).ready(function() {
-        $(".dropdown").DropDown();
+        $("[class^=dropdown]").DropDown();
         $(".dropdown-menu").DropDownMenu();
         $(".opens-modal").ModalWindow();
-        $("#opens-menu-sliding, #overlay").on("click", function() {
-            $("#overlay").toggleClass("active");
-            if ($(".menu-sliding").hasClass("active")) {
-                $(".menu-sliding").toggleClass("inactive");
-            } else {
-                $(".menu-sliding").toggleClass("active");
-            }
-        });
-        $("#modal-overlay").on("click", function() {
-            $(this).toggleClass("active");
-            $(".modal-window").toggleClass("active");
-        });
+        $("#opens-menu-sliding").MenuSliding();
+        $("#overlay, .close-button").ReleaseBrowser();
     })
 }(jQuery));

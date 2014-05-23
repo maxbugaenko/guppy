@@ -1,12 +1,10 @@
 .animate-show-slow {
-  -webkit-animation-name: showSlow;
-  -webkit-animation-duration: .3s;
-  -webkit-animation-fill-mode: forwards;
+  @include animation(showSlow, .3s)
 }
 
-@-webkit-keyframes showSlow {
+@include keyframes(showSlow) {
 
-  from  {
+  from {
     opacity: 0;
   }
 
@@ -16,14 +14,12 @@
 }
 
 .animate-slide-left-to-right {
-  -webkit-animation-name: slideLeftToRight;
-  -webkit-animation-duration: .6s;
-  -webkit-animation-fill-mode: forwards;
+  @include animation(slideLeftToRight, .6s)
 }
 
-@-webkit-keyframes slideLeftToRight {
+@include keyframes (slideLeftToRight) {
 
-  from  {
+  from {
     -webkit-transform: translateX(-20%);
   }
 
@@ -33,18 +29,14 @@
 }
 
 .animate-slide-right-to-left {
-  -webkit-animation-name: slideRightToLeft;
-  -webkit-animation-duration: .6s;
-  -webkit-animation-fill-mode: forwards;
+  @include animation(slideRightToLeft, .6s)
 }
 
 .animate-slide-children-top-to-bottom {
 
   @for $i from 1 through 12 {
     & > *:nth-child(#{$i}) {
-      -webkit-animation-name: slideTopToBottom;
-      -webkit-animation-duration: calc-duration($i, 100);
-      -webkit-animation-fill-mode: forwards;
+      @include animation(slideTopToBottom, calc-duration($i, 100));
       z-index: 130 - $i;
     }
   }
@@ -54,9 +46,7 @@
 
   @for $i from 1 through 12 {
     & > *:nth-child(#{$i}) {
-      -webkit-animation-name: slideLeftToRight;
-      -webkit-animation-duration: calc-duration($i);
-      -webkit-animation-fill-mode: forwards;
+      @include animation(slideLeftToRight, calc-duration($i));
       z-index: 12 - $i;
     }
   }
@@ -66,17 +56,15 @@
 
   @for $i from 1 through 12 {
     & > *:nth-child(#{$i}) {
-      -webkit-animation-name: slideRightToLeft;
-      -webkit-animation-duration: calc-duration($i);
-      -webkit-animation-fill-mode: forwards;
+      @include animation(slideRightToLeft, calc-duration($i));
       z-index: 12 - $i;
     }
   }
 }
 
-@-webkit-keyframes slideLeftToRight {
+@include keyframes(slideLeftToRight) {
 
-  from  {
+  from {
     -webkit-transform: translateX(-20%);
   }
 
@@ -85,9 +73,9 @@
   }
 }
 
-@-webkit-keyframes slideRightToLeft {
+@include keyframes(slideRightToLeft) {
 
-  from  {
+  from {
     -webkit-transform: translateX(20%);
   }
 
@@ -96,9 +84,9 @@
   }
 }
 
-@-webkit-keyframes slideTopToBottom {
+@include keyframes(slideTopToBottom) {
 
-  from  {
+  from {
     -webkit-transform: translateY(-100%);
   }
 
@@ -107,9 +95,20 @@
   }
 }
 
-@-webkit-keyframes slideMenuSlidingRight {
+@include keyframes(slideBottomToTop) {
 
-  from  {
+  from {
+    -webkit-transform: translateY(0);
+  }
+
+  to {
+    -webkit-transform: translateY(-100%);
+  }
+}
+
+@include keyframes(slideMenuSlidingRight) {
+
+  from {
     opacity: 0;
     left: -20%;
   }
@@ -120,9 +119,9 @@
   }
 }
 
-@-webkit-keyframes slideMenuSlidingLeft {
+@include keyframes(slideMenuSlidingLeft) {
 
-  from  {
+  from {
     opacity: 1;
     left: 0;
   }

@@ -9,10 +9,10 @@ $success: #c5bf14;
 $warning: #ca5656;
 $info: #08bf55;
 $text-color: #e3ecf2;*/
-.dropdown, .dropdown-small, .dropdown-medium, .dropdown-success, .dropdown-warning, .dropdown-info, .dropdown-default, .button, .button-medium, .button-small, .button-success, .button-warning, .button-info, .button-default, .text-field, .badge, .badge-success, .badge-warning, .badge-info, .badge-default {
+.dropdown-small, .dropdown-medium, .dropdown-success, .dropdown-warning, .dropdown-info, .dropdown-default, .button-medium, .button-small, .button-success, .button-warning, .button-info, .button-default, .text-field, .badge-success, .badge-warning, .badge-info, .badge-default {
   font-family: inherit;
   position: relative;
-  border-radius: 3px;
+  border-radius: 9px;
   cursor: pointer;
   border: 0;
   width: 100%;
@@ -198,12 +198,21 @@ h5 {
   color: #ecf0f1; }
 
 .round-borders {
-  border-radius: 3px; }
+  border-radius: 9px; }
 
 .animate-show-slow {
   -webkit-animation-name: showSlow;
-  -webkit-animation-duration: .3s;
-  -webkit-animation-fill-mode: forwards; }
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: showSlow;
+  -moz-animation-duration: 0.3s;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: showSlow;
+  -o-animation-duration: 0.3s;
+  -o-animation-fill-mode: forwards;
+  animation-name: showSlow;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards; }
 
 @-webkit-keyframes showSlow {
   from {
@@ -211,10 +220,37 @@ h5 {
 
   to {
     opacity: 1; } }
+@-moz-keyframes showSlow {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+@-ms-keyframes showSlow {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+@keyframes showSlow {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
 .animate-slide-left-to-right {
   -webkit-animation-name: slideLeftToRight;
-  -webkit-animation-duration: .6s;
-  -webkit-animation-fill-mode: forwards; }
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideLeftToRight;
+  -moz-animation-duration: 0.6s;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideLeftToRight;
+  -o-animation-duration: 0.6s;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideLeftToRight;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards; }
 
 @-webkit-keyframes slideLeftToRight {
   from {
@@ -222,195 +258,564 @@ h5 {
 
   to {
     -webkit-transform: translateX(0%); } }
+@-moz-keyframes slideLeftToRight {
+  from {
+    -webkit-transform: translateX(-20%); }
+
+  to {
+    -webkit-transform: translateX(0%); } }
+@-ms-keyframes slideLeftToRight {
+  from {
+    -webkit-transform: translateX(-20%); }
+
+  to {
+    -webkit-transform: translateX(0%); } }
+@keyframes slideLeftToRight {
+  from {
+    -webkit-transform: translateX(-20%); }
+
+  to {
+    -webkit-transform: translateX(0%); } }
 .animate-slide-right-to-left {
   -webkit-animation-name: slideRightToLeft;
-  -webkit-animation-duration: .6s;
-  -webkit-animation-fill-mode: forwards; }
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideRightToLeft;
+  -moz-animation-duration: 0.6s;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideRightToLeft;
+  -o-animation-duration: 0.6s;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideRightToLeft;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards; }
 
 .animate-slide-children-top-to-bottom > *:nth-child(1) {
   -webkit-animation-name: slideTopToBottom;
   -webkit-animation-duration: 100ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideTopToBottom;
+  -moz-animation-duration: 100ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideTopToBottom;
+  -o-animation-duration: 100ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideTopToBottom;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards;
   z-index: 129; }
 .animate-slide-children-top-to-bottom > *:nth-child(2) {
   -webkit-animation-name: slideTopToBottom;
   -webkit-animation-duration: 200ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideTopToBottom;
+  -moz-animation-duration: 200ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideTopToBottom;
+  -o-animation-duration: 200ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideTopToBottom;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
   z-index: 128; }
 .animate-slide-children-top-to-bottom > *:nth-child(3) {
   -webkit-animation-name: slideTopToBottom;
   -webkit-animation-duration: 300ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideTopToBottom;
+  -moz-animation-duration: 300ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideTopToBottom;
+  -o-animation-duration: 300ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideTopToBottom;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
   z-index: 127; }
 .animate-slide-children-top-to-bottom > *:nth-child(4) {
   -webkit-animation-name: slideTopToBottom;
   -webkit-animation-duration: 400ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideTopToBottom;
+  -moz-animation-duration: 400ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideTopToBottom;
+  -o-animation-duration: 400ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideTopToBottom;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
   z-index: 126; }
 .animate-slide-children-top-to-bottom > *:nth-child(5) {
   -webkit-animation-name: slideTopToBottom;
   -webkit-animation-duration: 500ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideTopToBottom;
+  -moz-animation-duration: 500ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideTopToBottom;
+  -o-animation-duration: 500ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideTopToBottom;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
   z-index: 125; }
 .animate-slide-children-top-to-bottom > *:nth-child(6) {
   -webkit-animation-name: slideTopToBottom;
   -webkit-animation-duration: 600ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideTopToBottom;
+  -moz-animation-duration: 600ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideTopToBottom;
+  -o-animation-duration: 600ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideTopToBottom;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
   z-index: 124; }
 .animate-slide-children-top-to-bottom > *:nth-child(7) {
   -webkit-animation-name: slideTopToBottom;
   -webkit-animation-duration: 700ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideTopToBottom;
+  -moz-animation-duration: 700ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideTopToBottom;
+  -o-animation-duration: 700ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideTopToBottom;
+  animation-duration: 700ms;
+  animation-fill-mode: forwards;
   z-index: 123; }
 .animate-slide-children-top-to-bottom > *:nth-child(8) {
   -webkit-animation-name: slideTopToBottom;
   -webkit-animation-duration: 800ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideTopToBottom;
+  -moz-animation-duration: 800ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideTopToBottom;
+  -o-animation-duration: 800ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideTopToBottom;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
   z-index: 122; }
 .animate-slide-children-top-to-bottom > *:nth-child(9) {
   -webkit-animation-name: slideTopToBottom;
   -webkit-animation-duration: 900ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideTopToBottom;
+  -moz-animation-duration: 900ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideTopToBottom;
+  -o-animation-duration: 900ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideTopToBottom;
+  animation-duration: 900ms;
+  animation-fill-mode: forwards;
   z-index: 121; }
 .animate-slide-children-top-to-bottom > *:nth-child(10) {
   -webkit-animation-name: slideTopToBottom;
   -webkit-animation-duration: 1000ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideTopToBottom;
+  -moz-animation-duration: 1000ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideTopToBottom;
+  -o-animation-duration: 1000ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideTopToBottom;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
   z-index: 120; }
 .animate-slide-children-top-to-bottom > *:nth-child(11) {
   -webkit-animation-name: slideTopToBottom;
   -webkit-animation-duration: 1100ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideTopToBottom;
+  -moz-animation-duration: 1100ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideTopToBottom;
+  -o-animation-duration: 1100ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideTopToBottom;
+  animation-duration: 1100ms;
+  animation-fill-mode: forwards;
   z-index: 119; }
 .animate-slide-children-top-to-bottom > *:nth-child(12) {
   -webkit-animation-name: slideTopToBottom;
   -webkit-animation-duration: 1200ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideTopToBottom;
+  -moz-animation-duration: 1200ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideTopToBottom;
+  -o-animation-duration: 1200ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideTopToBottom;
+  animation-duration: 1200ms;
+  animation-fill-mode: forwards;
   z-index: 118; }
 
 .animate-slide-children-left-to-right > *:nth-child(1) {
   -webkit-animation-name: slideLeftToRight;
   -webkit-animation-duration: 400ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideLeftToRight;
+  -moz-animation-duration: 400ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideLeftToRight;
+  -o-animation-duration: 400ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideLeftToRight;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
   z-index: 11; }
 .animate-slide-children-left-to-right > *:nth-child(2) {
   -webkit-animation-name: slideLeftToRight;
   -webkit-animation-duration: 800ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideLeftToRight;
+  -moz-animation-duration: 800ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideLeftToRight;
+  -o-animation-duration: 800ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideLeftToRight;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
   z-index: 10; }
 .animate-slide-children-left-to-right > *:nth-child(3) {
   -webkit-animation-name: slideLeftToRight;
   -webkit-animation-duration: 1200ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideLeftToRight;
+  -moz-animation-duration: 1200ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideLeftToRight;
+  -o-animation-duration: 1200ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideLeftToRight;
+  animation-duration: 1200ms;
+  animation-fill-mode: forwards;
   z-index: 9; }
 .animate-slide-children-left-to-right > *:nth-child(4) {
   -webkit-animation-name: slideLeftToRight;
   -webkit-animation-duration: 1600ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideLeftToRight;
+  -moz-animation-duration: 1600ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideLeftToRight;
+  -o-animation-duration: 1600ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideLeftToRight;
+  animation-duration: 1600ms;
+  animation-fill-mode: forwards;
   z-index: 8; }
 .animate-slide-children-left-to-right > *:nth-child(5) {
   -webkit-animation-name: slideLeftToRight;
   -webkit-animation-duration: 2000ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideLeftToRight;
+  -moz-animation-duration: 2000ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideLeftToRight;
+  -o-animation-duration: 2000ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideLeftToRight;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
   z-index: 7; }
 .animate-slide-children-left-to-right > *:nth-child(6) {
   -webkit-animation-name: slideLeftToRight;
   -webkit-animation-duration: 2400ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideLeftToRight;
+  -moz-animation-duration: 2400ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideLeftToRight;
+  -o-animation-duration: 2400ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideLeftToRight;
+  animation-duration: 2400ms;
+  animation-fill-mode: forwards;
   z-index: 6; }
 .animate-slide-children-left-to-right > *:nth-child(7) {
   -webkit-animation-name: slideLeftToRight;
   -webkit-animation-duration: 2800ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideLeftToRight;
+  -moz-animation-duration: 2800ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideLeftToRight;
+  -o-animation-duration: 2800ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideLeftToRight;
+  animation-duration: 2800ms;
+  animation-fill-mode: forwards;
   z-index: 5; }
 .animate-slide-children-left-to-right > *:nth-child(8) {
   -webkit-animation-name: slideLeftToRight;
   -webkit-animation-duration: 3200ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideLeftToRight;
+  -moz-animation-duration: 3200ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideLeftToRight;
+  -o-animation-duration: 3200ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideLeftToRight;
+  animation-duration: 3200ms;
+  animation-fill-mode: forwards;
   z-index: 4; }
 .animate-slide-children-left-to-right > *:nth-child(9) {
   -webkit-animation-name: slideLeftToRight;
   -webkit-animation-duration: 3600ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideLeftToRight;
+  -moz-animation-duration: 3600ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideLeftToRight;
+  -o-animation-duration: 3600ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideLeftToRight;
+  animation-duration: 3600ms;
+  animation-fill-mode: forwards;
   z-index: 3; }
 .animate-slide-children-left-to-right > *:nth-child(10) {
   -webkit-animation-name: slideLeftToRight;
   -webkit-animation-duration: 4000ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideLeftToRight;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideLeftToRight;
+  -o-animation-duration: 4000ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideLeftToRight;
+  animation-duration: 4000ms;
+  animation-fill-mode: forwards;
   z-index: 2; }
 .animate-slide-children-left-to-right > *:nth-child(11) {
   -webkit-animation-name: slideLeftToRight;
   -webkit-animation-duration: 4400ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideLeftToRight;
+  -moz-animation-duration: 4400ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideLeftToRight;
+  -o-animation-duration: 4400ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideLeftToRight;
+  animation-duration: 4400ms;
+  animation-fill-mode: forwards;
   z-index: 1; }
 .animate-slide-children-left-to-right > *:nth-child(12) {
   -webkit-animation-name: slideLeftToRight;
   -webkit-animation-duration: 4800ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideLeftToRight;
+  -moz-animation-duration: 4800ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideLeftToRight;
+  -o-animation-duration: 4800ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideLeftToRight;
+  animation-duration: 4800ms;
+  animation-fill-mode: forwards;
   z-index: 0; }
 
 .animate-slide-children-right-to-left > *:nth-child(1) {
   -webkit-animation-name: slideRightToLeft;
   -webkit-animation-duration: 400ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideRightToLeft;
+  -moz-animation-duration: 400ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideRightToLeft;
+  -o-animation-duration: 400ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideRightToLeft;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
   z-index: 11; }
 .animate-slide-children-right-to-left > *:nth-child(2) {
   -webkit-animation-name: slideRightToLeft;
   -webkit-animation-duration: 800ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideRightToLeft;
+  -moz-animation-duration: 800ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideRightToLeft;
+  -o-animation-duration: 800ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideRightToLeft;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
   z-index: 10; }
 .animate-slide-children-right-to-left > *:nth-child(3) {
   -webkit-animation-name: slideRightToLeft;
   -webkit-animation-duration: 1200ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideRightToLeft;
+  -moz-animation-duration: 1200ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideRightToLeft;
+  -o-animation-duration: 1200ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideRightToLeft;
+  animation-duration: 1200ms;
+  animation-fill-mode: forwards;
   z-index: 9; }
 .animate-slide-children-right-to-left > *:nth-child(4) {
   -webkit-animation-name: slideRightToLeft;
   -webkit-animation-duration: 1600ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideRightToLeft;
+  -moz-animation-duration: 1600ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideRightToLeft;
+  -o-animation-duration: 1600ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideRightToLeft;
+  animation-duration: 1600ms;
+  animation-fill-mode: forwards;
   z-index: 8; }
 .animate-slide-children-right-to-left > *:nth-child(5) {
   -webkit-animation-name: slideRightToLeft;
   -webkit-animation-duration: 2000ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideRightToLeft;
+  -moz-animation-duration: 2000ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideRightToLeft;
+  -o-animation-duration: 2000ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideRightToLeft;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
   z-index: 7; }
 .animate-slide-children-right-to-left > *:nth-child(6) {
   -webkit-animation-name: slideRightToLeft;
   -webkit-animation-duration: 2400ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideRightToLeft;
+  -moz-animation-duration: 2400ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideRightToLeft;
+  -o-animation-duration: 2400ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideRightToLeft;
+  animation-duration: 2400ms;
+  animation-fill-mode: forwards;
   z-index: 6; }
 .animate-slide-children-right-to-left > *:nth-child(7) {
   -webkit-animation-name: slideRightToLeft;
   -webkit-animation-duration: 2800ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideRightToLeft;
+  -moz-animation-duration: 2800ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideRightToLeft;
+  -o-animation-duration: 2800ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideRightToLeft;
+  animation-duration: 2800ms;
+  animation-fill-mode: forwards;
   z-index: 5; }
 .animate-slide-children-right-to-left > *:nth-child(8) {
   -webkit-animation-name: slideRightToLeft;
   -webkit-animation-duration: 3200ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideRightToLeft;
+  -moz-animation-duration: 3200ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideRightToLeft;
+  -o-animation-duration: 3200ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideRightToLeft;
+  animation-duration: 3200ms;
+  animation-fill-mode: forwards;
   z-index: 4; }
 .animate-slide-children-right-to-left > *:nth-child(9) {
   -webkit-animation-name: slideRightToLeft;
   -webkit-animation-duration: 3600ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideRightToLeft;
+  -moz-animation-duration: 3600ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideRightToLeft;
+  -o-animation-duration: 3600ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideRightToLeft;
+  animation-duration: 3600ms;
+  animation-fill-mode: forwards;
   z-index: 3; }
 .animate-slide-children-right-to-left > *:nth-child(10) {
   -webkit-animation-name: slideRightToLeft;
   -webkit-animation-duration: 4000ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideRightToLeft;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideRightToLeft;
+  -o-animation-duration: 4000ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideRightToLeft;
+  animation-duration: 4000ms;
+  animation-fill-mode: forwards;
   z-index: 2; }
 .animate-slide-children-right-to-left > *:nth-child(11) {
   -webkit-animation-name: slideRightToLeft;
   -webkit-animation-duration: 4400ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideRightToLeft;
+  -moz-animation-duration: 4400ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideRightToLeft;
+  -o-animation-duration: 4400ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideRightToLeft;
+  animation-duration: 4400ms;
+  animation-fill-mode: forwards;
   z-index: 1; }
 .animate-slide-children-right-to-left > *:nth-child(12) {
   -webkit-animation-name: slideRightToLeft;
   -webkit-animation-duration: 4800ms;
   -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: slideRightToLeft;
+  -moz-animation-duration: 4800ms;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: slideRightToLeft;
+  -o-animation-duration: 4800ms;
+  -o-animation-fill-mode: forwards;
+  animation-name: slideRightToLeft;
+  animation-duration: 4800ms;
+  animation-fill-mode: forwards;
   z-index: 0; }
 
 @-webkit-keyframes slideLeftToRight {
+  from {
+    -webkit-transform: translateX(-20%); }
+
+  to {
+    -webkit-transform: translateX(0%); } }
+@-moz-keyframes slideLeftToRight {
+  from {
+    -webkit-transform: translateX(-20%); }
+
+  to {
+    -webkit-transform: translateX(0%); } }
+@-ms-keyframes slideLeftToRight {
+  from {
+    -webkit-transform: translateX(-20%); }
+
+  to {
+    -webkit-transform: translateX(0%); } }
+@keyframes slideLeftToRight {
   from {
     -webkit-transform: translateX(-20%); }
 
@@ -422,12 +827,72 @@ h5 {
 
   to {
     -webkit-transform: translateX(0%); } }
+@-moz-keyframes slideRightToLeft {
+  from {
+    -webkit-transform: translateX(20%); }
+
+  to {
+    -webkit-transform: translateX(0%); } }
+@-ms-keyframes slideRightToLeft {
+  from {
+    -webkit-transform: translateX(20%); }
+
+  to {
+    -webkit-transform: translateX(0%); } }
+@keyframes slideRightToLeft {
+  from {
+    -webkit-transform: translateX(20%); }
+
+  to {
+    -webkit-transform: translateX(0%); } }
 @-webkit-keyframes slideTopToBottom {
   from {
     -webkit-transform: translateY(-100%); }
 
   to {
     -webkit-transform: translateY(0%); } }
+@-moz-keyframes slideTopToBottom {
+  from {
+    -webkit-transform: translateY(-100%); }
+
+  to {
+    -webkit-transform: translateY(0%); } }
+@-ms-keyframes slideTopToBottom {
+  from {
+    -webkit-transform: translateY(-100%); }
+
+  to {
+    -webkit-transform: translateY(0%); } }
+@keyframes slideTopToBottom {
+  from {
+    -webkit-transform: translateY(-100%); }
+
+  to {
+    -webkit-transform: translateY(0%); } }
+@-webkit-keyframes slideBottomToTop {
+  from {
+    -webkit-transform: translateY(0); }
+
+  to {
+    -webkit-transform: translateY(-100%); } }
+@-moz-keyframes slideBottomToTop {
+  from {
+    -webkit-transform: translateY(0); }
+
+  to {
+    -webkit-transform: translateY(-100%); } }
+@-ms-keyframes slideBottomToTop {
+  from {
+    -webkit-transform: translateY(0); }
+
+  to {
+    -webkit-transform: translateY(-100%); } }
+@keyframes slideBottomToTop {
+  from {
+    -webkit-transform: translateY(0); }
+
+  to {
+    -webkit-transform: translateY(-100%); } }
 @-webkit-keyframes slideMenuSlidingRight {
   from {
     opacity: 0;
@@ -436,7 +901,58 @@ h5 {
   to {
     opacity: 1;
     left: 0; } }
+@-moz-keyframes slideMenuSlidingRight {
+  from {
+    opacity: 0;
+    left: -20%; }
+
+  to {
+    opacity: 1;
+    left: 0; } }
+@-ms-keyframes slideMenuSlidingRight {
+  from {
+    opacity: 0;
+    left: -20%; }
+
+  to {
+    opacity: 1;
+    left: 0; } }
+@keyframes slideMenuSlidingRight {
+  from {
+    opacity: 0;
+    left: -20%; }
+
+  to {
+    opacity: 1;
+    left: 0; } }
 @-webkit-keyframes slideMenuSlidingLeft {
+  from {
+    opacity: 1;
+    left: 0; }
+
+  to {
+    opacity: 0;
+    left: -30%;
+    z-index: -1; } }
+@-moz-keyframes slideMenuSlidingLeft {
+  from {
+    opacity: 1;
+    left: 0; }
+
+  to {
+    opacity: 0;
+    left: -30%;
+    z-index: -1; } }
+@-ms-keyframes slideMenuSlidingLeft {
+  from {
+    opacity: 1;
+    left: 0; }
+
+  to {
+    opacity: 0;
+    left: -30%;
+    z-index: -1; } }
+@keyframes slideMenuSlidingLeft {
   from {
     opacity: 1;
     left: 0; }
@@ -461,122 +977,194 @@ h5 {
 
 .span1 {
   transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   width: calc(100%/12 * 1);
   width: -webkit-calc(100%/12 * 1);
   width: -moz-calc(100%/12 * 1); }
   @media all and (max-width: 600px) {
     .span1 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .span2 {
   transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   width: calc(100%/12 * 2);
   width: -webkit-calc(100%/12 * 2);
   width: -moz-calc(100%/12 * 2); }
   @media all and (max-width: 600px) {
     .span2 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .span3 {
   transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   width: calc(100%/12 * 3);
   width: -webkit-calc(100%/12 * 3);
   width: -moz-calc(100%/12 * 3); }
   @media all and (max-width: 600px) {
     .span3 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .span4 {
   transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   width: calc(100%/12 * 4);
   width: -webkit-calc(100%/12 * 4);
   width: -moz-calc(100%/12 * 4); }
   @media all and (max-width: 600px) {
     .span4 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .span5 {
   transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   width: calc(100%/12 * 5);
   width: -webkit-calc(100%/12 * 5);
   width: -moz-calc(100%/12 * 5); }
   @media all and (max-width: 600px) {
     .span5 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .span6 {
   transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   width: calc(100%/12 * 6);
   width: -webkit-calc(100%/12 * 6);
   width: -moz-calc(100%/12 * 6); }
   @media all and (max-width: 600px) {
     .span6 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .span7 {
   transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   width: calc(100%/12 * 7);
   width: -webkit-calc(100%/12 * 7);
   width: -moz-calc(100%/12 * 7); }
   @media all and (max-width: 600px) {
     .span7 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .span8 {
   transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   width: calc(100%/12 * 8);
   width: -webkit-calc(100%/12 * 8);
   width: -moz-calc(100%/12 * 8); }
   @media all and (max-width: 600px) {
     .span8 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .span9 {
   transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   width: calc(100%/12 * 9);
   width: -webkit-calc(100%/12 * 9);
   width: -moz-calc(100%/12 * 9); }
   @media all and (max-width: 600px) {
     .span9 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .span10 {
   transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   width: calc(100%/12 * 10);
   width: -webkit-calc(100%/12 * 10);
   width: -moz-calc(100%/12 * 10); }
   @media all and (max-width: 600px) {
     .span10 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .span11 {
   transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   width: calc(100%/12 * 11);
   width: -webkit-calc(100%/12 * 11);
   width: -moz-calc(100%/12 * 11); }
   @media all and (max-width: 600px) {
     .span11 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .span12 {
   transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
   width: calc(100%/12 * 12);
   width: -webkit-calc(100%/12 * 12);
   width: -moz-calc(100%/12 * 12); }
   @media all and (max-width: 600px) {
     .span12 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9, .column10, .column11, .column12 {
@@ -591,174 +1179,276 @@ h5 {
     display: block;
     clear: both; }
 
-.column1 > div {
+.column1 > * {
   width: calc(100% / 1);
   width: -webkit-calc(100% / 1);
   width: -moz-calc(100% / 1);
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 600px) {
-    .column1 > div {
+    .column1 > * {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
-.column2 > div {
+.column2 > * {
   width: calc(100% / 2);
   width: -webkit-calc(100% / 2);
   width: -moz-calc(100% / 2);
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 600px) {
-    .column2 > div {
+    .column2 > * {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
-.column3 > div {
+.column3 > * {
   width: calc(100% / 3);
   width: -webkit-calc(100% / 3);
   width: -moz-calc(100% / 3);
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 600px) {
-    .column3 > div {
+    .column3 > * {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
-.column4 > div {
+.column4 > * {
   width: calc(100% / 4);
   width: -webkit-calc(100% / 4);
   width: -moz-calc(100% / 4);
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 600px) {
-    .column4 > div {
+    .column4 > * {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
-.column5 > div {
+.column5 > * {
   width: calc(100% / 5);
   width: -webkit-calc(100% / 5);
   width: -moz-calc(100% / 5);
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 600px) {
-    .column5 > div {
+    .column5 > * {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
-.column6 > div {
+.column6 > * {
   width: calc(100% / 6);
   width: -webkit-calc(100% / 6);
   width: -moz-calc(100% / 6);
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 600px) {
-    .column6 > div {
+    .column6 > * {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
-.column7 > div {
+.column7 > * {
   width: calc(100% / 7);
   width: -webkit-calc(100% / 7);
   width: -moz-calc(100% / 7);
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 600px) {
-    .column7 > div {
+    .column7 > * {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
-.column8 > div {
+.column8 > * {
   width: calc(100% / 8);
   width: -webkit-calc(100% / 8);
   width: -moz-calc(100% / 8);
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 600px) {
-    .column8 > div {
+    .column8 > * {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
-.column9 > div {
+.column9 > * {
   width: calc(100% / 9);
   width: -webkit-calc(100% / 9);
   width: -moz-calc(100% / 9);
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 600px) {
-    .column9 > div {
+    .column9 > * {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
-.column10 > div {
+.column10 > * {
   width: calc(100% / 10);
   width: -webkit-calc(100% / 10);
   width: -moz-calc(100% / 10);
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 600px) {
-    .column10 > div {
+    .column10 > * {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
-.column11 > div {
+.column11 > * {
   width: calc(100% / 11);
   width: -webkit-calc(100% / 11);
   width: -moz-calc(100% / 11);
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 600px) {
-    .column11 > div {
+    .column11 > * {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
-.column12 > div {
+.column12 > * {
   width: calc(100% / 12);
   width: -webkit-calc(100% / 12);
   width: -moz-calc(100% / 12);
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 600px) {
-    .column12 > div {
+    .column12 > * {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .shift1 {
   width: calc(100% - (100%/12 * 1)*2);
   width: -moz-calc(100% - (100%/12 * 1)*2);
   width: -webkit-calc(100% - (100%/12 * 1)*2);
-  transition: all .3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 1100px) {
     .shift1 {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .shift2 {
   width: calc(100% - (100%/12 * 2)*2);
   width: -moz-calc(100% - (100%/12 * 2)*2);
   width: -webkit-calc(100% - (100%/12 * 2)*2);
-  transition: all .3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 1100px) {
     .shift2 {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .shift3 {
   width: calc(100% - (100%/12 * 3)*2);
   width: -moz-calc(100% - (100%/12 * 3)*2);
   width: -webkit-calc(100% - (100%/12 * 3)*2);
-  transition: all .3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 1100px) {
     .shift3 {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .shift4 {
   width: calc(100% - (100%/12 * 4)*2);
   width: -moz-calc(100% - (100%/12 * 4)*2);
   width: -webkit-calc(100% - (100%/12 * 4)*2);
-  transition: all .3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 1100px) {
     .shift4 {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .shift5 {
   width: calc(100% - (100%/12 * 5)*2);
   width: -moz-calc(100% - (100%/12 * 5)*2);
   width: -webkit-calc(100% - (100%/12 * 5)*2);
-  transition: all .3s ease; }
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease; }
   @media all and (max-width: 1100px) {
     .shift5 {
-      transition: all .3s ease;
+      transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .unit10 {
@@ -766,6 +1456,9 @@ h5 {
   @media all and (max-width: 1100px) {
     .unit10 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .unit20 {
@@ -773,6 +1466,9 @@ h5 {
   @media all and (max-width: 1100px) {
     .unit20 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .unit30 {
@@ -780,6 +1476,9 @@ h5 {
   @media all and (max-width: 1100px) {
     .unit30 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .unit40 {
@@ -787,6 +1486,9 @@ h5 {
   @media all and (max-width: 1100px) {
     .unit40 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .unit50 {
@@ -794,6 +1496,9 @@ h5 {
   @media all and (max-width: 1100px) {
     .unit50 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .unit60 {
@@ -801,6 +1506,9 @@ h5 {
   @media all and (max-width: 1100px) {
     .unit60 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .unit70 {
@@ -808,6 +1516,9 @@ h5 {
   @media all and (max-width: 1100px) {
     .unit70 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .unit80 {
@@ -815,6 +1526,9 @@ h5 {
   @media all and (max-width: 1100px) {
     .unit80 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .unit90 {
@@ -822,6 +1536,9 @@ h5 {
   @media all and (max-width: 1100px) {
     .unit90 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .unit100 {
@@ -829,6 +1546,9 @@ h5 {
   @media all and (max-width: 1100px) {
     .unit100 {
       transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
       width: 100%; } }
 
 .mobile-only {
@@ -836,7 +1556,10 @@ h5 {
   @media all and (max-width: 600px) {
     .mobile-only {
       display: inherit;
-      transition: all 0.3s ease; } }
+      transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease; } }
 
 .desktop-only {
   display: inherit; }
@@ -844,12 +1567,14 @@ h5 {
     .desktop-only {
       display: none; } }
 
-.dropdown-menu, .dropdown-menu-success, .dropdown-menu-warning, .dropdown-menu-info, .dropdown-menu-default {
+.dropdown-menu-success, .dropdown-menu-warning, .dropdown-menu-info, .dropdown-menu-default {
   position: relative;
   cursor: pointer;
   display: inline-block; }
-  .dropdown-menu > a:after, .dropdown-menu-success > a:after, .dropdown-menu-warning > a:after, .dropdown-menu-info > a:after, .dropdown-menu-default > a:after {
-    content: "";
+  .dropdown-menu-success i, .dropdown-menu-warning i, .dropdown-menu-info i, .dropdown-menu-default i {
+    padding: 0 20px 0 0; }
+  .dropdown-menu-success > a:after, .dropdown-menu-warning > a:after, .dropdown-menu-info > a:after, .dropdown-menu-default > a:after {
+    content: '';
     width: 0;
     height: 0;
     position: absolute;
@@ -858,7 +1583,7 @@ h5 {
     margin-top: -0.43333em;
     border-top: 0.43333em solid transparent;
     border-bottom: 0.43333em solid transparent; }
-  .dropdown-menu ul, .dropdown-menu-success ul, .dropdown-menu-warning ul, .dropdown-menu-info ul, .dropdown-menu-default ul {
+  .dropdown-menu-success ul, .dropdown-menu-warning ul, .dropdown-menu-info ul, .dropdown-menu-default ul {
     opacity: 0;
     list-style: none;
     position: absolute;
@@ -867,39 +1592,55 @@ h5 {
     display: none;
     left: -50%;
     white-space: nowrap;
-    border-radius: 3px;
-    padding: 0 0 20px 0;
+    border-radius: 9px;
+    padding: 0 0 20px;
     color: #ecf0f1; }
-    .dropdown-menu ul li, .dropdown-menu-success ul li, .dropdown-menu-warning ul li, .dropdown-menu-info ul li, .dropdown-menu-default ul li {
+    .dropdown-menu-success ul li, .dropdown-menu-warning ul li, .dropdown-menu-info ul li, .dropdown-menu-default ul li {
       margin: 0;
       display: block;
       cursor: pointer;
       padding: 1em 4em;
       transition: all .2s ease; }
-      .dropdown-menu ul li:hover, .dropdown-menu-success ul li:hover, .dropdown-menu-warning ul li:hover, .dropdown-menu-info ul li:hover, .dropdown-menu-default ul li:hover {
+      .dropdown-menu-success ul li:hover, .dropdown-menu-warning ul li:hover, .dropdown-menu-info ul li:hover, .dropdown-menu-default ul li:hover {
         transition: all .2s ease; }
-      .dropdown-menu ul li:active, .dropdown-menu-success ul li:active, .dropdown-menu-warning ul li:active, .dropdown-menu-info ul li:active, .dropdown-menu-default ul li:active {
+      .dropdown-menu-success ul li:active, .dropdown-menu-warning ul li:active, .dropdown-menu-info ul li:active, .dropdown-menu-default ul li:active {
         transition: all .2s ease; }
-      .dropdown-menu ul li a:hover, .dropdown-menu-success ul li a:hover, .dropdown-menu-warning ul li a:hover, .dropdown-menu-info ul li a:hover, .dropdown-menu-default ul li a:hover {
+      .dropdown-menu-success ul li:not(.item-header):first-child, .dropdown-menu-warning ul li:not(.item-header):first-child, .dropdown-menu-info ul li:not(.item-header):first-child, .dropdown-menu-default ul li:not(.item-header):first-child, .dropdown-menu-success ul li.item-header:first-child + li, .dropdown-menu-warning ul li.item-header:first-child + li, .dropdown-menu-info ul li.item-header:first-child + li, .dropdown-menu-default ul li.item-header:first-child + li {
+        margin-top: 20px; }
+      .dropdown-menu-success ul li a:hover, .dropdown-menu-warning ul li a:hover, .dropdown-menu-info ul li a:hover, .dropdown-menu-default ul li a:hover {
         border: 0; }
-      .dropdown-menu ul li i, .dropdown-menu-success ul li i, .dropdown-menu-warning ul li i, .dropdown-menu-info ul li i, .dropdown-menu-default ul li i {
-        padding: 0 20px 0 0; }
-    .dropdown-menu ul li:not(.item-header):first-child, .dropdown-menu-success ul li:not(.item-header):first-child, .dropdown-menu-warning ul li:not(.item-header):first-child, .dropdown-menu-info ul li:not(.item-header):first-child, .dropdown-menu-default ul li:not(.item-header):first-child,
-    .dropdown-menu ul li.item-header:first-child + li,
-    .dropdown-menu-success ul li.item-header:first-child + li,
-    .dropdown-menu-warning ul li.item-header:first-child + li,
-    .dropdown-menu-info ul li.item-header:first-child + li,
-    .dropdown-menu-default ul li.item-header:first-child + li {
-      margin-top: 20px; }
-
-.dropdown-menu.active ul, .active.dropdown-menu-success ul, .active.dropdown-menu-warning ul, .active.dropdown-menu-info ul, .active.dropdown-menu-default ul {
-  display: block;
-  -webkit-animation-name: showMenu;
-  -webkit-animation-duration: .3s;
-  -webkit-animation-fill-mode: forwards;
-  z-index: 100; }
+  .active.dropdown-menu-success ul, .active.dropdown-menu-warning ul, .active.dropdown-menu-info ul, .active.dropdown-menu-default ul {
+    display: block;
+    -webkit-animation-name: showMenu;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-fill-mode: forwards;
+    z-index: 100; }
 
 @-webkit-keyframes showMenu {
+  from {
+    -webkit-transform: translateY(20%);
+    opacity: 0; }
+
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+@-moz-keyframes showMenu {
+  from {
+    -webkit-transform: translateY(20%);
+    opacity: 0; }
+
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+@-ms-keyframes showMenu {
+  from {
+    -webkit-transform: translateY(20%);
+    opacity: 0; }
+
+  to {
+    transform: translateY(0);
+    opacity: 1; } }
+@keyframes showMenu {
   from {
     -webkit-transform: translateY(20%);
     opacity: 0; }
@@ -911,71 +1652,71 @@ h5 {
   border-left: 0.43333em solid #b6d784; }
 .dropdown-menu-success ul {
   background-color: #87b93c;
-  border-bottom: 0px solid #79a636; }
+  border-bottom: 1px solid #79a636; }
   .dropdown-menu-success ul li:hover {
     background-color: #79a636; }
   .dropdown-menu-success ul li:active {
     background-color: #6b9330; }
   .dropdown-menu-success ul li.item-header {
     background-color: #709b32;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
     pointer-events: none; }
 
 .dropdown-menu-warning > a:after {
   border-left: 0.43333em solid #ffbe45; }
 .dropdown-menu-warning ul {
   background-color: #de9100;
-  border-bottom: 0px solid #c58000; }
+  border-bottom: 1px solid #c58000; }
   .dropdown-menu-warning ul li:hover {
     background-color: #c58000; }
   .dropdown-menu-warning ul li:active {
     background-color: #ab6f00; }
   .dropdown-menu-warning ul li.item-header {
     background-color: #b57600;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
     pointer-events: none; }
 
 .dropdown-menu-info > a:after {
   border-left: 0.43333em solid #9ac3da; }
 .dropdown-menu-info ul {
   background-color: #5097be;
-  border-bottom: 0px solid #428ab3; }
+  border-bottom: 1px solid #428ab3; }
   .dropdown-menu-info ul li:hover {
     background-color: #428ab3; }
   .dropdown-menu-info ul li:active {
     background-color: #3b7ca0; }
   .dropdown-menu-info ul li.item-header {
     background-color: #3e82a7;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
     pointer-events: none; }
 
 .dropdown-menu-default > a:after {
   border-left: 0.43333em solid #929292; }
 .dropdown-menu-default ul {
   background-color: #5f5f5f;
-  border-bottom: 0px solid #535353; }
+  border-bottom: 1px solid #535353; }
   .dropdown-menu-default ul li:hover {
     background-color: #535353; }
   .dropdown-menu-default ul li:active {
     background-color: #464646; }
   .dropdown-menu-default ul li.item-header {
     background-color: #4b4b4b;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
     pointer-events: none; }
 
-.dropdown, .dropdown-small, .dropdown-medium, .dropdown-success, .dropdown-warning, .dropdown-info, .dropdown-default {
+.dropdown-small, .dropdown-medium, .dropdown-success, .dropdown-warning, .dropdown-info, .dropdown-default {
   font-size: 20px; }
-  .dropdown div, .dropdown-small div, .dropdown-medium div, .dropdown-success div, .dropdown-warning div, .dropdown-info div, .dropdown-default div {
+  .dropdown-small div, .dropdown-medium div, .dropdown-success div, .dropdown-warning div, .dropdown-info div, .dropdown-default div {
     padding: 16.66667px 120px 16.66667px 16.66667px; }
-  .dropdown ul, .dropdown-small ul, .dropdown-medium ul, .dropdown-success ul, .dropdown-warning ul, .dropdown-info ul, .dropdown-default ul {
+  .dropdown-small ul, .dropdown-medium ul, .dropdown-success ul, .dropdown-warning ul, .dropdown-info ul, .dropdown-default ul {
     width: 100%;
-    padding: .5em 0 .5em 0;
+    padding: .5em 0;
     position: absolute;
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 9px 9px;
     top: 100%;
     margin: 0;
     z-index: 2;
@@ -983,25 +1724,25 @@ h5 {
     list-style: none;
     white-space: nowrap;
     pointer-events: none; }
-    .dropdown ul a, .dropdown-small ul a, .dropdown-medium ul a, .dropdown-success ul a, .dropdown-warning ul a, .dropdown-info ul a, .dropdown-default ul a {
+    .dropdown-small ul i, .dropdown-medium ul i, .dropdown-success ul i, .dropdown-warning ul i, .dropdown-info ul i, .dropdown-default ul i {
+      padding: 0 20px 0 0; }
+    .dropdown-small ul a, .dropdown-medium ul a, .dropdown-success ul a, .dropdown-warning ul a, .dropdown-info ul a, .dropdown-default ul a {
       text-decoration: none;
       color: inherit;
       pointer-events: none;
       border: 0; }
-    .dropdown ul li, .dropdown-small ul li, .dropdown-medium ul li, .dropdown-success ul li, .dropdown-warning ul li, .dropdown-info ul li, .dropdown-default ul li {
-      padding: .5em 2em .5em 2em;
+    .dropdown-small ul li, .dropdown-medium ul li, .dropdown-success ul li, .dropdown-warning ul li, .dropdown-info ul li, .dropdown-default ul li {
+      padding: .5em 2em;
       width: 100%;
       margin: 0;
       cursor: pointer;
       transition: all .2s ease; }
-      .dropdown ul li:hover, .dropdown-small ul li:hover, .dropdown-medium ul li:hover, .dropdown-success ul li:hover, .dropdown-warning ul li:hover, .dropdown-info ul li:hover, .dropdown-default ul li:hover {
+      .dropdown-small ul li:hover, .dropdown-medium ul li:hover, .dropdown-success ul li:hover, .dropdown-warning ul li:hover, .dropdown-info ul li:hover, .dropdown-default ul li:hover {
         transition: all .2s ease; }
-      .dropdown ul li:active, .dropdown-small ul li:active, .dropdown-medium ul li:active, .dropdown-success ul li:active, .dropdown-warning ul li:active, .dropdown-info ul li:active, .dropdown-default ul li:active {
+      .dropdown-small ul li:active, .dropdown-medium ul li:active, .dropdown-success ul li:active, .dropdown-warning ul li:active, .dropdown-info ul li:active, .dropdown-default ul li:active {
         transition: all .2s ease; }
-      .dropdown ul li i, .dropdown-small ul li i, .dropdown-medium ul li i, .dropdown-success ul li i, .dropdown-warning ul li i, .dropdown-info ul li i, .dropdown-default ul li i {
-        padding: 0 20px 0 0; }
-  .dropdown:after, .dropdown-small:after, .dropdown-medium:after, .dropdown-success:after, .dropdown-warning:after, .dropdown-info:after, .dropdown-default:after {
-    content: "";
+  .dropdown-small:after, .dropdown-medium:after, .dropdown-success:after, .dropdown-warning:after, .dropdown-info:after, .dropdown-default:after {
+    content: '';
     width: 0;
     height: 0;
     position: absolute;
@@ -1012,18 +1753,28 @@ h5 {
     border-bottom: .4em solid transparent;
     border-left: 0.4em solid #ecf0f1;
     pointer-events: none; }
-  .dropdown:before, .dropdown-small:before, .dropdown-medium:before, .dropdown-success:before, .dropdown-warning:before, .dropdown-info:before, .dropdown-default:before {
+  .dropdown-small:before, .dropdown-medium:before, .dropdown-success:before, .dropdown-warning:before, .dropdown-info:before, .dropdown-default:before {
     transition: all .3s ease;
-    content: "";
+    content: '';
     height: 100%;
     position: absolute;
-    border-radius: 3px;
+    border-radius: 9px;
     width: 2.6em;
     right: 0;
     top: 0;
     pointer-events: none; }
-  .dropdown:hover:before, .dropdown-small:hover:before, .dropdown-medium:hover:before, .dropdown-success:hover:before, .dropdown-warning:hover:before, .dropdown-info:hover:before, .dropdown-default:hover:before {
+  .dropdown-small:hover:before, .dropdown-medium:hover:before, .dropdown-success:hover:before, .dropdown-warning:hover:before, .dropdown-info:hover:before, .dropdown-default:hover:before {
     transition: all .3s ease; }
+  .active.dropdown-small, .active.dropdown-medium, .active.dropdown-success, .active.dropdown-warning, .active.dropdown-info, .active.dropdown-default {
+    border-radius: 9px 9px 0 0; }
+    .active.dropdown-small:after, .active.dropdown-medium:after, .active.dropdown-success:after, .active.dropdown-warning:after, .active.dropdown-info:after, .active.dropdown-default:after {
+      margin-top: -.2em;
+      border-left: .4em solid transparent;
+      border-right: .4em solid transparent;
+      border-top: 0.4em solid #ecf0f1; }
+    .active.dropdown-small ul, .active.dropdown-medium ul, .active.dropdown-success ul, .active.dropdown-warning ul, .active.dropdown-info ul, .active.dropdown-default ul {
+      opacity: 1;
+      pointer-events: auto; }
 
 .dropdown-small {
   font-size: 13.33333px; }
@@ -1035,24 +1786,13 @@ h5 {
   .dropdown-medium div {
     padding: 6.66667px 80px 6.66667px 6.66667px; }
 
-.dropdown.active, .active.dropdown-small, .active.dropdown-medium, .active.dropdown-success, .active.dropdown-warning, .active.dropdown-info, .active.dropdown-default {
-  border-radius: 3px 3px 0 0; }
-  .dropdown.active:after, .active.dropdown-small:after, .active.dropdown-medium:after, .active.dropdown-success:after, .active.dropdown-warning:after, .active.dropdown-info:after, .active.dropdown-default:after {
-    margin-top: -.2em;
-    border-left: .4em solid transparent;
-    border-right: .4em solid transparent;
-    border-top: 0.4em solid #ecf0f1; }
-  .dropdown.active ul, .active.dropdown-small ul, .active.dropdown-medium ul, .active.dropdown-success ul, .active.dropdown-warning ul, .active.dropdown-info ul, .active.dropdown-default ul {
-    opacity: 1;
-    pointer-events: auto; }
-
 .dropdown-success {
-  border-bottom: 0px solid #79a636;
+  border-bottom: 1px solid #79a636;
   background-color: #87b93c;
   color: #ecf0f1; }
   .dropdown-success ul {
     background-color: #87b93c;
-    border-bottom: 0px solid #79a636; }
+    border-bottom: 1px solid #79a636; }
     .dropdown-success ul li:hover {
       background-color: #79a636; }
     .dropdown-success ul li:active {
@@ -1063,12 +1803,12 @@ h5 {
     background-color: #9ecb5e; }
 
 .dropdown-warning {
-  border-bottom: 0px solid #c58000;
+  border-bottom: 1px solid #c58000;
   background-color: #de9100;
   color: #ecf0f1; }
   .dropdown-warning ul {
     background-color: #de9100;
-    border-bottom: 0px solid #c58000; }
+    border-bottom: 1px solid #c58000; }
     .dropdown-warning ul li:hover {
       background-color: #c58000; }
     .dropdown-warning ul li:active {
@@ -1079,12 +1819,12 @@ h5 {
     background-color: #ffac12; }
 
 .dropdown-info {
-  border-bottom: 0px solid #428ab3;
+  border-bottom: 1px solid #428ab3;
   background-color: #5097be;
   color: #ecf0f1; }
   .dropdown-info ul {
     background-color: #5097be;
-    border-bottom: 0px solid #428ab3; }
+    border-bottom: 1px solid #428ab3; }
     .dropdown-info ul li:hover {
       background-color: #428ab3; }
     .dropdown-info ul li:active {
@@ -1095,12 +1835,12 @@ h5 {
     background-color: #75adcc; }
 
 .dropdown-default {
-  border-bottom: 0px solid #535353;
+  border-bottom: 1px solid #535353;
   background-color: #5f5f5f;
   color: #ecf0f1; }
   .dropdown-default ul {
     background-color: #5f5f5f;
-    border-bottom: 0px solid #535353; }
+    border-bottom: 1px solid #535353; }
     .dropdown-default ul li:hover {
       background-color: #535353; }
     .dropdown-default ul li:active {
@@ -1110,16 +1850,16 @@ h5 {
   .dropdown-default:hover:before {
     background-color: #797979; }
 
-.button, .button-medium, .button-small, .button-success, .button-warning, .button-info, .button-default {
+.button-medium, .button-small, .button-success, .button-warning, .button-info, .button-default {
   text-transform: uppercase;
   transition: all .3s ease;
   font-size: 20px;
-  padding: 16.66667px 16.66667px 16.66667px 16.66667px; }
-  .button:hover, .button-medium:hover, .button-small:hover, .button-success:hover, .button-warning:hover, .button-info:hover, .button-default:hover {
+  padding: 16.66667px; }
+  .button-medium:hover, .button-small:hover, .button-success:hover, .button-warning:hover, .button-info:hover, .button-default:hover {
     transition: all .3s ease; }
-  .button:active, .button-medium:active, .button-small:active, .button-success:active, .button-warning:active, .button-info:active, .button-default:active {
+  .button-medium:active, .button-small:active, .button-success:active, .button-warning:active, .button-info:active, .button-default:active {
     top: 2px; }
-  .button i, .button-medium i, .button-small i, .button-success i, .button-warning i, .button-info i, .button-default i {
+  .button-medium i, .button-small i, .button-success i, .button-warning i, .button-info i, .button-default i {
     margin: 0 20px;
     font-size: 1.5em; }
 
@@ -1132,28 +1872,28 @@ h5 {
   padding: 6.66667px; }
 
 .button-success {
-  border-bottom: 0px solid #79a636;
+  border-bottom: 1px solid #79a636;
   background-color: #87b93c;
   color: #ecf0f1; }
   .button-success:hover {
     background-color: #79a636; }
 
 .button-warning {
-  border-bottom: 0px solid #c58000;
+  border-bottom: 1px solid #c58000;
   background-color: #de9100;
   color: #ecf0f1; }
   .button-warning:hover {
     background-color: #c58000; }
 
 .button-info {
-  border-bottom: 0px solid #428ab3;
+  border-bottom: 1px solid #428ab3;
   background-color: #5097be;
   color: #ecf0f1; }
   .button-info:hover {
     background-color: #428ab3; }
 
 .button-default {
-  border-bottom: 0px solid #535353;
+  border-bottom: 1px solid #535353;
   background-color: #5f5f5f;
   color: #ecf0f1; }
   .button-default:hover {
@@ -1162,19 +1902,19 @@ h5 {
 .button-group > div {
   padding-right: 0;
   padding-left: 0; }
-.button-group > div > button {
-  border-radius: 0; }
+  .button-group > div > button {
+    border-radius: 0; }
 .button-group > div:first-child button {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px; }
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px; }
 .button-group > div:last-child button {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px; }
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px; }
 
 .text-field {
   color: #2c2c2c;
   background-color: #5f5f5f;
-  border-bottom: 0px solid #313131;
+  border-bottom: 1px solid #313131;
   transition: all .3s ease;
   cursor: text;
   text-align: center;
@@ -1203,7 +1943,7 @@ input:-moz-placeholder {
   text-align: center;
   color: #393939; }
 
-.badge, .badge-success, .badge-warning, .badge-info, .badge-default {
+.badge-success, .badge-warning, .badge-info, .badge-default {
   cursor: auto;
   padding: .1em .4em; }
 
@@ -1238,13 +1978,13 @@ label.form-label {
   top: .5em;
   left: 50px; }
   label.form-label:before {
-    content: "";
+    content: '';
     position: absolute;
     height: 20px;
     width: 20px;
     background-color: #5f5f5f;
     border: 10px solid #5f5f5f;
-    border-radius: 3px;
+    border-radius: 9px;
     top: -10px;
     left: -60px; }
   label.form-label:hover:before {
@@ -1386,8 +2126,10 @@ label.form-label {
 .menu, .menu-vertical, .menu-vertical-spread, .menu-sliding {
   list-style: none;
   transition: all .3s ease;
-  position: relative; }
+  position: relative;
+  pointer-events: none; }
   .menu li, .menu-vertical li, .menu-vertical-spread li, .menu-sliding li {
+    pointer-events: auto;
     position: relative;
     cursor: pointer;
     display: inline-block;
@@ -1472,16 +2214,16 @@ label.form-label {
   -webkit-animation-fill-mode: forwards; }
 
 li.item-success {
-  border-left: 0px solid #87b93c; }
+  border-left: 2px solid #87b93c; }
 
 li.item-warning {
-  border-left: 0px solid #de9100; }
+  border-left: 2px solid #de9100; }
 
 li.item-info {
-  border-left: 0px solid #5097be; }
+  border-left: 2px solid #5097be; }
 
 li.item-default {
-  border-left: 0px solid #5f5f5f; }
+  border-left: 2px solid #5f5f5f; }
 
 li.item-no-hover {
   cursor: default; }
@@ -1495,63 +2237,171 @@ li.item-no-hover {
     .tabs input[type=radio]:nth-of-type(1):checked ~ .content .tab:nth-child(1) {
       display: block;
       -webkit-animation-name: showSlow;
-      -webkit-animation-duration: .6s;
-      -webkit-animation-fill-mode: forwards; }
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-name: showSlow;
+      -moz-animation-duration: 0.6s;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-name: showSlow;
+      -o-animation-duration: 0.6s;
+      -o-animation-fill-mode: forwards;
+      animation-name: showSlow;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards; }
     .tabs input[type=radio]:nth-of-type(2):checked ~ .content .tab:nth-child(2) {
       display: block;
       -webkit-animation-name: showSlow;
-      -webkit-animation-duration: .6s;
-      -webkit-animation-fill-mode: forwards; }
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-name: showSlow;
+      -moz-animation-duration: 0.6s;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-name: showSlow;
+      -o-animation-duration: 0.6s;
+      -o-animation-fill-mode: forwards;
+      animation-name: showSlow;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards; }
     .tabs input[type=radio]:nth-of-type(3):checked ~ .content .tab:nth-child(3) {
       display: block;
       -webkit-animation-name: showSlow;
-      -webkit-animation-duration: .6s;
-      -webkit-animation-fill-mode: forwards; }
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-name: showSlow;
+      -moz-animation-duration: 0.6s;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-name: showSlow;
+      -o-animation-duration: 0.6s;
+      -o-animation-fill-mode: forwards;
+      animation-name: showSlow;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards; }
     .tabs input[type=radio]:nth-of-type(4):checked ~ .content .tab:nth-child(4) {
       display: block;
       -webkit-animation-name: showSlow;
-      -webkit-animation-duration: .6s;
-      -webkit-animation-fill-mode: forwards; }
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-name: showSlow;
+      -moz-animation-duration: 0.6s;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-name: showSlow;
+      -o-animation-duration: 0.6s;
+      -o-animation-fill-mode: forwards;
+      animation-name: showSlow;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards; }
     .tabs input[type=radio]:nth-of-type(5):checked ~ .content .tab:nth-child(5) {
       display: block;
       -webkit-animation-name: showSlow;
-      -webkit-animation-duration: .6s;
-      -webkit-animation-fill-mode: forwards; }
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-name: showSlow;
+      -moz-animation-duration: 0.6s;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-name: showSlow;
+      -o-animation-duration: 0.6s;
+      -o-animation-fill-mode: forwards;
+      animation-name: showSlow;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards; }
     .tabs input[type=radio]:nth-of-type(6):checked ~ .content .tab:nth-child(6) {
       display: block;
       -webkit-animation-name: showSlow;
-      -webkit-animation-duration: .6s;
-      -webkit-animation-fill-mode: forwards; }
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-name: showSlow;
+      -moz-animation-duration: 0.6s;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-name: showSlow;
+      -o-animation-duration: 0.6s;
+      -o-animation-fill-mode: forwards;
+      animation-name: showSlow;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards; }
     .tabs input[type=radio]:nth-of-type(7):checked ~ .content .tab:nth-child(7) {
       display: block;
       -webkit-animation-name: showSlow;
-      -webkit-animation-duration: .6s;
-      -webkit-animation-fill-mode: forwards; }
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-name: showSlow;
+      -moz-animation-duration: 0.6s;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-name: showSlow;
+      -o-animation-duration: 0.6s;
+      -o-animation-fill-mode: forwards;
+      animation-name: showSlow;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards; }
     .tabs input[type=radio]:nth-of-type(8):checked ~ .content .tab:nth-child(8) {
       display: block;
       -webkit-animation-name: showSlow;
-      -webkit-animation-duration: .6s;
-      -webkit-animation-fill-mode: forwards; }
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-name: showSlow;
+      -moz-animation-duration: 0.6s;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-name: showSlow;
+      -o-animation-duration: 0.6s;
+      -o-animation-fill-mode: forwards;
+      animation-name: showSlow;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards; }
     .tabs input[type=radio]:nth-of-type(9):checked ~ .content .tab:nth-child(9) {
       display: block;
       -webkit-animation-name: showSlow;
-      -webkit-animation-duration: .6s;
-      -webkit-animation-fill-mode: forwards; }
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-name: showSlow;
+      -moz-animation-duration: 0.6s;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-name: showSlow;
+      -o-animation-duration: 0.6s;
+      -o-animation-fill-mode: forwards;
+      animation-name: showSlow;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards; }
     .tabs input[type=radio]:nth-of-type(10):checked ~ .content .tab:nth-child(10) {
       display: block;
       -webkit-animation-name: showSlow;
-      -webkit-animation-duration: .6s;
-      -webkit-animation-fill-mode: forwards; }
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-name: showSlow;
+      -moz-animation-duration: 0.6s;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-name: showSlow;
+      -o-animation-duration: 0.6s;
+      -o-animation-fill-mode: forwards;
+      animation-name: showSlow;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards; }
     .tabs input[type=radio]:nth-of-type(11):checked ~ .content .tab:nth-child(11) {
       display: block;
       -webkit-animation-name: showSlow;
-      -webkit-animation-duration: .6s;
-      -webkit-animation-fill-mode: forwards; }
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-name: showSlow;
+      -moz-animation-duration: 0.6s;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-name: showSlow;
+      -o-animation-duration: 0.6s;
+      -o-animation-fill-mode: forwards;
+      animation-name: showSlow;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards; }
     .tabs input[type=radio]:nth-of-type(12):checked ~ .content .tab:nth-child(12) {
       display: block;
       -webkit-animation-name: showSlow;
-      -webkit-animation-duration: .6s;
-      -webkit-animation-fill-mode: forwards; }
+      -webkit-animation-duration: 0.6s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-name: showSlow;
+      -moz-animation-duration: 0.6s;
+      -moz-animation-fill-mode: forwards;
+      -o-animation-name: showSlow;
+      -o-animation-duration: 0.6s;
+      -o-animation-fill-mode: forwards;
+      animation-name: showSlow;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards; }
     .tabs input[type=radio]:checked + label {
       background-color: #464646; }
   .tabs label.tab-label {
@@ -1560,12 +2410,15 @@ li.item-no-hover {
     padding: 20px;
     border-radius: 0; }
     .tabs label.tab-label:first-of-type {
-      border-top-left-radius: 3px; }
+      border-top-left-radius: 9px; }
     .tabs label.tab-label:last-of-type {
-      border-top-right-radius: 3px; }
+      border-top-right-radius: 9px; }
     .tabs label.tab-label:hover {
       background-color: #464646;
-      transition: all 0.3s ease; }
+      transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease; }
   .tabs label.tab10 {
     width: 10%; }
   .tabs label.tab20 {
@@ -1603,9 +2456,9 @@ table {
       font-family: "Roboto";
       font-weight: 300; }
     table thead th:first-child {
-      border-top-left-radius: 3px; }
+      border-top-left-radius: 9px; }
     table thead th:last-child {
-      border-top-right-radius: 3px; }
+      border-top-right-radius: 9px; }
   table td,
   table th {
     padding: 20px; }
@@ -1614,20 +2467,31 @@ table {
   table tbody tr:nth-child(even) {
     background-color: #484848; }
   table tbody tr:last-child > td:first-child {
-    border-bottom-left-radius: 3px;
-    border-bottom: 0px solid #535353; }
+    border-bottom-left-radius: 9px;
+    border-bottom: 1px solid #535353; }
   table tbody tr:last-child > td {
-    border-bottom: 0px solid #535353; }
+    border-bottom: 1px solid #535353; }
   table tbody tr:last-child > td:last-child {
-    border-bottom-right-radius: 3px; }
+    border-bottom-right-radius: 9px; }
 
 .modal-window {
   position: fixed;
-  top: 25%;
+  top: 15%;
   left: 25%;
   width: 50%;
   z-index: 100000001;
-  display: none; }
+  display: none;
+  border-radius: 9px; }
+  @media all and (max-width: 1100px) {
+    .modal-window {
+      top: 15%;
+      left: 10%;
+      width: 80%; } }
+  @media all and (max-width: 600px) {
+    .modal-window {
+      top: 0;
+      left: 0;
+      width: 100%; } }
 
 .modal-window.active {
   display: block;
@@ -1636,9 +2500,9 @@ table {
   -webkit-animation-fill-mode: forwards; }
 
 * {
+  box-sizing: border-box;
   padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
+  margin: 0; }
 
 body,
 html {
@@ -1653,7 +2517,7 @@ img {
   max-width: 100%;
   max-height: 100%; }
 
-#overlay, #modal-overlay {
+#overlay {
   position: fixed;
   display: none;
   top: 0;
@@ -1662,11 +2526,9 @@ img {
   height: 100%;
   opacity: 0;
   z-index: 10000;
-  background-color: #060606;
-  transition: all 2s ease; }
+  background-color: #060606; }
 
-#overlay.active, .active#modal-overlay {
-  transition: all 2s ease;
+#overlay.active {
   display: block;
   opacity: .9; }
 

@@ -12,7 +12,7 @@
         </p>
       </div>
       <div class="animate-slide-children-right-to-left">
-        <div class="dropdown dropdown-default">
+        <div class="dropdown-default">
           <div>Default</div>
           <ul>
             <li>
@@ -22,7 +22,7 @@
             </li>
           </ul>
         </div>
-        <div class="dropdown dropdown-success">
+        <div class="dropdown-success">
           <div>Succesful life</div>
           <ul>
             <li>
@@ -37,7 +37,7 @@
             </li>
           </ul>
         </div>
-        <div class="dropdown dropdown-info">
+        <div class="dropdown-info">
           <div>Important information</div>
           <ul>
             <li>
@@ -47,7 +47,7 @@
             </li>
           </ul>
         </div>
-        <div class="dropdown dropdown-warning">
+        <div class="dropdown-warning">
           <div>Nuclear warning</div>
           <ul>
             <li>
@@ -145,6 +145,47 @@
           </div>
         </div>
       </div>
+    </div>
+    <h1 class="center code spread padding-top-large">pricing</h1>
+    <div class="container padding">
+      <section class="column3 shift2">
+        <section class="center padding-top-large">
+          <div class="padding-medium darken-background ">
+            <h1 class="large tight">$5/m</h1>
+            <p class="code">
+              monthly membership
+            </p>
+            <p class="small">
+              colors with usually distinguished with adjectives referring to with usually
+            </p>
+            <button class="button-success">buy</button>
+          </div>
+        </section>
+        <section class="darken-background center padding-top-large">
+          <div class="padding-medium darken-background ">
+            <h1 class="large tight">&#162;1/d</h1>
+            <p class="code">
+              daily membership
+            </p>
+            <p class="small">
+              colors with usually distinguished with adjectives referring to with usually
+            </p>
+            <button class="button-info">buy</button>
+          </div>
+        </section>
+        <section class="center padding-top-large">
+          <div class="padding-medium darken-background ">
+            <h1 class="large tight">$10/y</h1>
+            <p class="code">
+              yearly membership
+            </p>
+            <p class="small">
+              colors with usually distinguished with adjectives referring to with usually
+            </p>
+            <button class="button-warning">buy</button>
+          </div>
+        </section>
+      </section>
     </div>
     <div class="container shift2 center padding-top-medium">
       <h1 class="tight">vertical menu</h1>

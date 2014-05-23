@@ -1,4 +1,4 @@
-.badge {
+%badge {
   @extend %control;
   cursor: auto;
   padding: .1em .4em;
@@ -7,7 +7,7 @@
 @each $control-kind in $controls-color-list {
 
   .badge-#{nth($control-kind, 1)} {
-    @extend .badge;
+    @extend %badge;
     background-color: lighten(nth($control-kind, 2), 5);
     color: $controls-text-color;
   }

@@ -12,8 +12,42 @@
 
 @mixin transition($duration: .3s) {
   transition: all $duration ease;
+  -moz-transition: all $duration ease;
+  -o-transition: all $duration ease;
+  -webkit-transition: all $duration ease;
 }
 
 @function calc-duration($n, $duration: 400) {
   @return $n * $duration + ms;
+}
+
+@mixin animation($name, $duration: .3s) {
+  -webkit-animation-name: $name;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: $name;
+  -moz-animation-duration: $duration;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: $name;
+  -o-animation-duration: $duration;
+  -o-animation-fill-mode: forwards;
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-fill-mode: forwards;
+
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
 }

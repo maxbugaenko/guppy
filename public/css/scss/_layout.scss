@@ -52,7 +52,7 @@
   .column#{$i} {
     @extend %column-container;
 
-    & > div {
+    & > * {
       width: calc(100% / #{$i});
       width: -webkit-calc(100% / #{$i});
       width: -moz-calc(100% / #{$i});
@@ -71,10 +71,10 @@
     width: calc(100% - (100%/12 * #{$i})*2);
     width: -moz-calc(100% - (100%/12 * #{$i})*2);
     width: -webkit-calc(100% - (100%/12 * #{$i})*2);
-    transition: all .3s ease;
+    @include transition();
 
     @media all and (max-width: $switch-orientation-point-medium) {
-      transition: all .3s ease;
+      @include transition();
       width: 100%;
     }
   }

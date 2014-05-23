@@ -1,9 +1,9 @@
-.button {
+%button {
   @extend %control;
   text-transform: uppercase;
   transition: all .3s ease;
   font-size: $base-font-size;
-  padding: $base-font-size/1.2 $base-font-size/1.2 $base-font-size/1.2 $base-font-size/1.2;
+  padding: $base-font-size/1.2;
 
   &:hover {
     transition: all .3s ease;
@@ -20,13 +20,13 @@
 }
 
 .button-medium {
-  @extend .button;
+  @extend %button;
   font-size: $base-font-size/1.2;
   padding: $base-font-size/2;
 }
 
 .button-small {
-  @extend .button;
+  @extend %button;
   font-size: $base-font-size/1.7;
   padding: $base-font-size/3;
 }
@@ -34,7 +34,7 @@
 
 @each $control-kind in $controls-color-list {
   .button-#{nth($control-kind, 1)} {
-    @extend .button;
+    @extend %button;
     @include shadow(nth($control-kind, 2));
     background-color: nth($control-kind, 2);
     color: $controls-text-color;
@@ -50,10 +50,10 @@
   & > div {
     padding-right: 0;
     padding-left: 0;
-  }
 
-  & > div > button {
-    border-radius: 0;
+    & > button {
+      border-radius: 0;
+    }
   }
 
   & > div:first-child button {

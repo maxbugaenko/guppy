@@ -13,7 +13,7 @@
       <link type="text/css" href="../css/guppy.css" rel="stylesheet"/>
       <link type="text/css" href="../css/guppy-blog.css" rel="stylesheet"/>
       <script src="../js/jquery.js"></script>
-      <script src="../js/dropdown.js"></script>
+      <script src="../js/guppy.js"></script>
     </head>
   </xsl:template>
 </xsl:stylesheet>

@@ -1,24 +1,24 @@
-@import "variables";
-@import "mixins";
-@import "controls";
-@import "typography";
-@import "animations";
-@import "layout";
-@import "dropdowns";
-@import "buttons";
-@import "inputs";
-@import "badges";
-@import "checkradio";
-@import "form";
-@import "menus";
-@import "tabs";
-@import "tables";
-@import "modals";
+@import 'variables';
+@import 'mixins';
+@import 'controls';
+@import 'typography';
+@import 'animations';
+@import 'layout';
+@import 'dropdowns';
+@import 'buttons';
+@import 'inputs';
+@import 'badges';
+@import 'checkradio';
+@import 'form';
+@import 'menus';
+@import 'tabs';
+@import 'tables';
+@import 'modals';
 
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body,
@@ -46,11 +46,9 @@ img {
   opacity: 0;
   z-index: 10000;
   background-color: darken($background-color, 20);
-  @include transition(2s);
 }
 
 #overlay.active {
-  @include transition(2s);
   display: block;
   opacity: .9;
 }

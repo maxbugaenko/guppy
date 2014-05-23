@@ -1,14 +1,23 @@
-#modal-overlay {
-  @extend #overlay;
-}
-
 .modal-window {
   position: fixed;
-  top: 25%;
+  top: 15%;
   left: 25%;
   width: 50%;
   z-index: 100000001;
   display: none;
+  border-radius: $controls-border-radius;
+
+  @media all and (max-width: $switch-orientation-point-medium) {
+    top: 15%;
+    left: 10%;
+    width: 80%;
+  }
+
+  @media all and (max-width: $switch-orientation-point-mobile) {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 
 .modal-window.active {

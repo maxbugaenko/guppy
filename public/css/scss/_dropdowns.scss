@@ -1,13 +1,17 @@
 $controls-icon-size: 1.3em;
 
-.dropdown-menu {
+%dropdown-menu {
   position: relative;
   cursor: pointer;
   display: inline-block;
 
+  i {
+    padding: 0 $base-font-size 0 0;
+  }
+
   & > a {
     &:after {
-      content: "";
+      content: '';
       width: 0;
       height: 0;
       position: absolute;
@@ -29,7 +33,7 @@ $controls-icon-size: 1.3em;
     left: -50%;
     white-space: nowrap;
     border-radius: $controls-border-radius;
-    padding: 0 0 $base-font-size 0;
+    padding: 0 0 $base-font-size;
     color: $controls-text-color;
 
     li {
@@ -47,6 +51,11 @@ $controls-icon-size: 1.3em;
         transition: all .2s ease;
       }
 
+      &:not(.item-header):first-child,
+      &.item-header:first-child + li {
+        margin-top: $base-font-size;
+      }
+
       a {
 
         &:hover {
@@ -54,32 +63,26 @@ $controls-icon-size: 1.3em;
         }
       }
 
-      i {
-        padding: 0 $base-font-size 0 0;
-      }
-    }
-
-    li:not(.item-header):first-child,
-    li.item-header:first-child + li {
-      margin-top: $base-font-size;
     }
   }
-}
 
-.dropdown-menu.active {
+  &.active {
 
-  ul {
-    display: block;
-    -webkit-animation-name: showMenu;
-    -webkit-animation-duration: .3s;
-    -webkit-animation-fill-mode: forwards;
-    z-index: 100;
+    ul {
+      display: block;
+      -webkit-animation-name: showMenu;
+      -webkit-animation-duration: .3s;
+      -webkit-animation-fill-mode: forwards;
+      z-index: 100;
+    }
   }
+
 }
 
-@-webkit-keyframes showMenu {
 
-  from  {
+@include keyframes(showMenu) {
+
+  from {
     -webkit-transform: translateY(20%);
     opacity: 0;
   }
@@ -92,7 +95,7 @@ $controls-icon-size: 1.3em;
 
 @each $control-kind in $controls-color-list {
   .dropdown-menu-#{nth($control-kind, 1)} {
-    @extend .dropdown-menu;
+    @extend %dropdown-menu;
 
     & > a {
 
@@ -114,19 +117,19 @@ $controls-icon-size: 1.3em;
         &:active {
           @include active(nth($control-kind, 2));
         }
-      }
 
-      li.item-header {
-        background-color: darken(nth($control-kind, 2), 8);
-        border-top-left-radius: $controls-border-radius;
-        border-top-right-radius: $controls-border-radius;
-        pointer-events: none;
+        &.item-header {
+          background-color: darken(nth($control-kind, 2), 8);
+          border-top-left-radius: $controls-border-radius;
+          border-top-right-radius: $controls-border-radius;
+          pointer-events: none;
+        }
       }
     }
   }
 }
 
-.dropdown {
+%dropdown {
   @extend %control;
   font-size: $base-font-size;
 
@@ -136,7 +139,7 @@ $controls-icon-size: 1.3em;
 
   ul {
     width: 100%;
-    padding: .5em 0 .5em 0;
+    padding: .5em 0;
     position: absolute;
     border-radius: 0 0 $controls-border-radius $controls-border-radius;
     top: 100%;
@@ -147,6 +150,10 @@ $controls-icon-size: 1.3em;
     white-space: nowrap;
     pointer-events: none;
 
+    i {
+      padding: 0 $base-font-size 0 0;
+    }
+
     a {
       text-decoration: none;
       color: inherit;
@@ -155,7 +162,7 @@ $controls-icon-size: 1.3em;
     }
 
     li {
-      padding: .5em 2em .5em 2em;
+      padding: .5em 2em;
       width: 100%;
       margin: 0;
       cursor: pointer;
@@ -168,15 +175,11 @@ $controls-icon-size: 1.3em;
       &:active {
         transition: all .2s ease;
       }
-
-      i {
-        padding: 0 $base-font-size 0 0;
-      }
     }
   }
 
   &:after {
-    content: "";
+    content: '';
     width: 0;
     height: 0;
     position: absolute;
@@ -191,7 +194,7 @@ $controls-icon-size: 1.3em;
 
   &:before {
     transition: all .3s ease;
-    content: "";
+    content: '';
     height: 100%;
     position: absolute;
     border-radius: $controls-border-radius;
@@ -204,10 +207,26 @@ $controls-icon-size: 1.3em;
   &:hover:before {
     transition: all .3s ease;
   }
+
+  &.active {
+    border-radius: $controls-border-radius $controls-border-radius 0 0;
+
+    &:after {
+      margin-top: -.2em;
+      border-left: .4em solid transparent;
+      border-right: .4em solid transparent;
+      border-top: .4em solid $controls-text-color;
+    }
+
+    ul {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
 }
 
 .dropdown-small {
-  @extend .dropdown;
+  @extend %dropdown;
   font-size: $base-font-size/1.5;
 
   div {
@@ -216,7 +235,7 @@ $controls-icon-size: 1.3em;
 }
 
 .dropdown-medium {
-  @extend .dropdown;
+  @extend %dropdown;
   font-size: $base-font-size/1.2;
 
   div {
@@ -224,25 +243,9 @@ $controls-icon-size: 1.3em;
   }
 }
 
-.dropdown.active {
-  border-radius: $controls-border-radius $controls-border-radius 0 0;
-
-  &:after {
-    margin-top: -.2em;
-    border-left: .4em solid transparent;
-    border-right: .4em solid transparent;
-    border-top: .4em solid $controls-text-color;
-  }
-
-  ul {
-    opacity: 1;
-    pointer-events: auto;
-  }
-}
-
 @each $control-kind in $controls-color-list {
   .dropdown-#{nth($control-kind, 1)} {
-    @extend .dropdown;
+    @extend %dropdown;
     @include shadow(nth($control-kind, 2));
     background-color: nth($control-kind, 2);
     color: $controls-text-color;

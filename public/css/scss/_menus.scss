@@ -2,8 +2,10 @@
   list-style: none;
   transition: all .3s ease;
   position: relative; // for animation
+  pointer-events: none;
 
   li {
+    pointer-events: auto;
     position: relative; // for animation
     cursor: pointer;
     display: inline-block;

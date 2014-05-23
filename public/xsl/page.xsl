@@ -6,6 +6,17 @@
       <body>
         <xsl:apply-templates match="." mode="head"/>
         <div id="overlay"></div>
+        <div id="modal-overlay"></div>
+        <div class="modal-window lighten-background" id="modal-1">
+          <div class="container padding-medium">
+            <h1 class="code">modal dialog</h1>
+            <p>
+              Usually, colors with the same hue are distinguished. With the same hue are distinguished.
+              Are distinguished with the same
+            </p>
+            <button class="button-success f-span6">subdcribe</button>
+          </div>
+        </div>
         <ul class="menu-sliding upper">
           <li class="big lower tight item-no-hover"><img src="images/grains.svg"/></li>
           <li><i class="fa fa-eur success"></i>controls</li>
@@ -62,7 +73,7 @@
               </div>
             </li>
             <li>
-              <a id="opens-menu-sliding">tables</a>
+              <a class="opens-modal" data="modal-1">tables</a>
             </li>
             <li>
               <button class="button button-medium button-default" id="opens-menu-sliding">login</button>

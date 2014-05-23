@@ -35,6 +35,7 @@
 
     &:hover {
       background-color: darken($controls-default-color, 10);
+      @include transition();
     }
   }
 

@@ -1,0 +1,19 @@
+#modal-overlay {
+  @extend #overlay;
+}
+
+.modal-window {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  z-index: 100000001;
+  display: none;
+}
+
+.modal-window.active {
+  display: block;
+  -webkit-animation-name: slideTopToBottom;
+  -webkit-animation-duration: .3s;
+  -webkit-animation-fill-mode: forwards;
+}

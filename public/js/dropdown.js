@@ -36,9 +36,17 @@
         })
     }
 
+    $.fn.ModalWindow = function() {
+        $(this).on("click", function(event) {
+            $("#modal-overlay").toggleClass("active");
+            $("#" + $(this).attr("data")).toggleClass("active");
+        })
+    }
+
     $(document).ready(function() {
         $(".dropdown").DropDown();
         $(".dropdown-menu").DropDownMenu();
+        $(".opens-modal").ModalWindow();
         $("#opens-menu-sliding, #overlay").on("click", function() {
             $("#overlay").toggleClass("active");
             if ($(".menu-sliding").hasClass("active")) {
@@ -46,6 +54,10 @@
             } else {
                 $(".menu-sliding").toggleClass("active");
             }
+        });
+        $("#modal-overlay").on("click", function() {
+            $(this).toggleClass("active");
+            $(".modal-window").toggleClass("active");
         });
     })
 }(jQuery));

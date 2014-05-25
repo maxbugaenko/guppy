@@ -66,7 +66,7 @@
             </li>
             <li>
               <div class="dropdown-menu dropdown-menu-success left">
-                <a>readme</a>
+                <a class="tooltip-default tooltip-bottom" title="get started with guppy">readme</a>
                 <ul class="small">
                   <li class="item-header">
                     <a href="">readme</a>
@@ -90,7 +90,7 @@
               <a class="opens-modal" modal="modal-docs">docs</a>
             </li>
             <li>
-              <button class="button button-medium button-default" id="opens-menu-sliding">login</button>
+              <button class="button button-medium button-default opens-menu-sliding">login</button>
             </li>
           </ul>
         </div>

@@ -46,22 +46,6 @@
   text-transform: lowercase;
 }
 
-.lighten-text {
-  color: lighten($text-color, 25);
-}
-
-.darken-text {
-  color: darken($text-color, 25);
-}
-
-.lighten-background {
-  background-color: lighten($background-color, 5);
-}
-
-.darken-background {
-  background-color: darken($background-color, 5);
-}
-
 p {
   margin-top: $base-font-size;
   margin-bottom: $base-font-size;
@@ -76,119 +60,61 @@ h5 {
   @include h-font();
 }
 
-.padding {
-  padding: $base-font-size;
+.no-padding {
+  padding: 0 !important;
 }
 
-.padding-medium {
-  padding: $base-font-size*3;
+$sizes: (
+  small 0.7,
+  base 1,
+  medium 2,
+  big 4,
+  large 3,
+);
+
+$padding-or-margin: (
+  padding (
+          around: (top, right, bottom, left),
+          vertical: (top, bottom),
+          horizontal: (left, right)
+  ),
+  margin (
+          around: (top, right, bottom, left),
+          vertical: (top, bottom),
+          horizontal: (left, right)
+  )
+);
+
+@each $kind in $padding-or-margin {
+  @each $direction in nth($kind, 2) {
+    @each $size in $sizes {
+      .#{nth($kind, 1)}-#{nth($direction, 1)}-#{nth($size, 1)} {
+        @each $side in nth($direction, 2) {
+          @include calc-prefixed(#{nth($kind, 1)}-#{nth($side, 1)}, #{$base-font-size} * nth($size, 2), !important);
+        }
+      }
+    }
+  }
 }
 
-.padding-large {
-  padding: $base-font-size*5;
-}
-
-.vertical-padding {
-  padding-top: $base-font-size;
-  padding-bottom: $base-font-size;
-}
-
-.vertical-padding-medium {
-  padding-top: $base-font-size*3;
-  padding-bottom: $base-font-size*3;
-}
-
-.vertical-padding-large {
-  padding-top: $base-font-size*5;
-  padding-bottom: $base-font-size*5;
-}
-
-.padding-bottom {
-  padding-bottom: $base-font-size;
-}
-
-.padding-bottom-medium {
-  padding-bottom: $base-font-size*3;
-}
-
-.padding-bottom-large {
-  padding-bottom: $base-font-size*5;
-}
-
-.padding-top {
-  padding-top: $base-font-size;
-}
-
-.padding-top-medium {
-  padding-top: $base-font-size*3;
-}
-
-.padding-top-large {
-  padding-top: $base-font-size*5;
-}
-
-.vertical-margin {
-  margin-top: $base-font-size;
-  margin-bottom: $base-font-size;
-}
-
-.vertical-margin-medium {
-  margin-top: $base-font-size*3;
-  margin-bottom: $base-font-size*3;
-}
-
-.vertical-margin-large {
-  margin-top: $base-font-size*5;
-  margin-bottom: $base-font-size*5;
-}
-
-.margin-bottom {
-  margin-bottom: $base-font-size;
-}
-
-.margin-bottom-medium {
-  margin-bottom: $base-font-size*3;
-}
-
-.margin-bottom-large {
-  margin-bottom: $base-font-size*5;
-}
-
-.margin-top {
-  margin-top: $background-color;
-}
-
-.margin-top-medium {
-  margin-bottom: $background-color*3;
-}
-
-.margin-top-large {
-  margin-bottom: $background-color*5;
-}
-
-.no-horizontal-padding {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.horizontal-padding {
-  padding-right: $background-color;
-  padding-left: $background-color;
-}
-
-.horizontal-padding-medium {
-  padding-right: $background-color*3;
-  padding-left: $background-color*3;
-}
-
-.horizontal-padding-large {
-  padding-right: $background-color*5;
-  padding-left: $background-color*5;
-}
+$controls-color-list: (
+        success $success,
+        warning $warning,
+        info $info,
+        default $controls-default-color
+);
 
 @each $control-kind in $controls-color-list {
   .background-#{nth($control-kind, 1)} {
     background-color: nth($control-kind, 2);
+  }
+
+  .darken-background-#{nth($control-kind, 1)} {
+    color: darken(nth($control-kind, 2), 10);
+  }
+
+  .lighten-background-#{nth($control-kind, 1)} {
+    color: lighten(nth($control-kind, 2), 10);
   }
 }
 
@@ -196,6 +122,18 @@ h5 {
   .#{nth($control-kind, 1)} {
     color: nth($control-kind, 2);
   }
+
+  .darken-#{nth($control-kind, 1)} {
+    color: darken(nth($control-kind, 2), 10);
+  }
+
+  .lighten-#{nth($control-kind, 1)} {
+    color: lighten(nth($control-kind, 2), 10);
+  }
+}
+
+.light {
+  color: #ecf0f1;
 }
 
 .background-color {
@@ -206,6 +144,34 @@ h5 {
   color: $controls-text-color;
 }
 
+.background-controls-text-color {
+  background-color: $controls-default-color;
+}
+
 .round-borders {
   border-radius: $controls-border-radius;
+}
+
+.lighten-text {
+  color: lighten($text-color, 25);
+}
+
+.darken-text {
+  color: darken($text-color, 25);
+}
+
+.lighten-background {
+  background-color: lighten($background-color, 5);
+}
+
+.double-lighten-background {
+  background-color: lighten($background-color, 10);
+}
+
+.darken-background {
+  background-color: darken($background-color, 5);
+}
+
+.double-darken-background {
+  background-color: darken($background-color, 10);
 }

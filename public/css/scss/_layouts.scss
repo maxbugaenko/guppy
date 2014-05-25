@@ -20,14 +20,18 @@
   .span#{$i} {
     @extend %span-column;
     @include transition();
-    width: calc(100%/12 * #{$i});
-    width: -webkit-calc(100%/12 * #{$i});
-    width: -moz-calc(100%/12 * #{$i});
+    @include calc-prefixed(width, 100%/12 * $i);
 
     @media all and (max-width: $switch-orientation-point-mobile) {
       @include transition();
       width: 100%;
     }
+  }
+
+  .mobile-span#{$i} {
+    @extend %span-column;
+    @include transition();
+    @include calc-prefixed(width, 100%/12 * $i);
   }
 }
 
@@ -53,9 +57,7 @@
     @extend %column-container;
 
     & > * {
-      width: calc(100% / #{$i});
-      width: -webkit-calc(100% / #{$i});
-      width: -moz-calc(100% / #{$i});
+      @include calc-prefixed(width, 100% / $i);
       @include transition();
 
       @media all and (max-width: $switch-orientation-point-mobile) {
@@ -68,9 +70,7 @@
 
 @for $i from 1 through 5 {
   .shift#{$i} {
-    width: calc(100% - (100%/12 * #{$i})*2);
-    width: -moz-calc(100% - (100%/12 * #{$i})*2);
-    width: -webkit-calc(100% - (100%/12 * #{$i})*2);
+    @include calc-prefixed(width, 100% - (100%/12 * $i)*2);
     @include transition();
 
     @media all and (max-width: $switch-orientation-point-medium) {
@@ -80,16 +80,18 @@
   }
 }
 
-@for $i from 1 through 10 {
-  .unit#{$i}0 {
+$i: 5;
+@while $i < 105 {
+  .unit#{$i} {
     @extend %span-column;
-    width: #{$i}0 * 1%;
+    @include calc-prefixed(width, $i * 1%);
 
-    @media all and (max-width: $switch-orientation-point-medium) {
+    @media all and (max-width: $switch-orientation-point-mobile) {
       @include transition();
       width: 100%;
     }
   }
+  $i: $i + 5;
 }
 
 
@@ -105,8 +107,26 @@
 .desktop-only {
   display: inherit;
 
+  @media all and (max-width: $switch-orientation-point-medium) {
+    display: none;
+  }
+
   @media all and (max-width: $switch-orientation-point-mobile) {
     display: none;
+  }
+}
+
+.mobile-and-medium-only {
+  display: none;
+
+  @media all and (max-width: $switch-orientation-point-medium) {
+    display: inherit;
+    @include transition();
+  }
+
+  @media all and (max-width: $switch-orientation-point-mobile) {
+    display: inherit;
+    @include transition();
   }
 }
 

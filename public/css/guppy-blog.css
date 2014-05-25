@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Orienta);
 /*$background-color: #2a7ab0;
 $controls-depth: 4px;
 $controls-text-color: #ecf0f1;
@@ -11,7 +12,7 @@ $warning: #ca5656;
 $info: #08bf55;
 $text-color: #e3ecf2;*/
 .highlight {
-  color: #ecf0f1;
+  color: #4e4e4e;
   font-family: "Source Code Pro";
   font-weight: 300; }
 
@@ -36,7 +37,7 @@ $text-color: #e3ecf2;*/
   background-color: #cc0000; }
 
 .highlight .o, .highlight .ow {
-  color: #ecf0f1; }
+  color: #4e4e4e; }
 
 .highlight .p, .highlight .pi {
   color: #4df4ff; }
@@ -130,7 +131,7 @@ $text-color: #e3ecf2;*/
   font-weight: bold; }
 
 .highlight .s, .highlight .sb, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .sr, .highlight .s1 {
-  color: #de9100; }
+  color: #87c25b; }
 
 .highlight .se {
   color: #4df4ff;
@@ -161,8 +162,22 @@ $text-color: #e3ecf2;*/
   color: #a8e1fe; }
 
 .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi {
-  color: #87b93c; }
+  color: #e58d51; }
 
 .code {
   font-family: "Source Code Pro";
   font-weight: 300; }
+
+.search-bar {
+  background-color: #4590ba !important;
+  text-align: left !important;
+  color: #367091 !important;
+  padding: 20px;
+  border: 0;
+  outline: 0;
+  font-size: inherit;
+  position: relative; }
+
+.search-bar::-webkit-input-placeholder {
+  color: #3b7ca0 !important;
+  text-align: left !important; }

@@ -66,3 +66,19 @@
     border-bottom-right-radius: $controls-border-radius;
   }
 }
+
+
+.button-iconed {
+  position: relative;
+
+  i {
+    position: absolute;
+    z-index: 10;
+    top: 25%;
+    left: $base-font-size;
+  }
+
+  & > input {
+    padding-left: $base-font-size*3;
+  }
+}

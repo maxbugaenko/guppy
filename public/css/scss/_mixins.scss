@@ -21,6 +21,13 @@
   @return $n * $duration + ms;
 }
 
+@mixin calc-prefixed($expression, $value, $additional: "") {
+  #{$expression}: -webkit-calc(#{$value}) #{$additional};
+  #{$expression}: -moz-calc(#{$value}) #{$additional};
+  #{$expression}: -o-calc(#{$value}) #{$additional};
+  #{$expression}: calc(#{$value}) #{$additional};
+}
+
 @mixin animation($name, $duration: .3s) {
   -webkit-animation-name: $name;
   -webkit-animation-duration: $duration;

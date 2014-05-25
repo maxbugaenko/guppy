@@ -46,8 +46,13 @@
 
     $.fn.MenuSliding = function() {
         $(this).on("click", function() {
+            if ($(".menu-sliding").attr("assign")) {
+                $(".menu-sliding").toggleClass("active");
+                $(".menu-sliding").css({left: $("#" + $(".menu-sliding").attr("assign")).width()});
+            } else {
+                $(".menu-sliding").toggleClass("active");
+            }
             $("#overlay").toggleClass("active");
-            $(".menu-sliding").toggleClass("active");
         });
     }
 
@@ -63,7 +68,7 @@
         $("[class^=dropdown]").DropDown();
         $(".dropdown-menu").DropDownMenu();
         $(".opens-modal").ModalWindow();
-        $("#opens-menu-sliding").MenuSliding();
+        $(".opens-menu-sliding").MenuSliding();
         $("#overlay, .close-button").ReleaseBrowser();
     })
 }(jQuery));

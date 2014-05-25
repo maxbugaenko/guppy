@@ -150,7 +150,7 @@
     <div class="container padding">
       <section class="column3 shift2">
         <section class="center padding-top-large">
-          <div class="padding-medium darken-background ">
+          <div class="padding-medium darken-background round-borders">
             <h1 class="large tight">$5/m</h1>
             <p class="code">
               monthly membership
@@ -161,20 +161,20 @@
             <button class="button-success">buy</button>
           </div>
         </section>
-        <section class="darken-background center padding-top-large">
-          <div class="padding-medium darken-background ">
-            <h1 class="large tight">&#162;1/d</h1>
+        <section class="darken-background center padding-top-large round-borders">
+          <div class="padding-medium darken-background">
+            <h1 class="large tight info">free</h1>
             <p class="code">
               daily membership
             </p>
             <p class="small">
               colors with usually distinguished with adjectives referring to with usually
             </p>
-            <button class="button-info">buy</button>
+            <button class="button-info">order</button>
           </div>
         </section>
         <section class="center padding-top-large">
-          <div class="padding-medium darken-background ">
+          <div class="padding-medium darken-background round-borders">
             <h1 class="large tight">$10/y</h1>
             <p class="code">
               yearly membership
@@ -182,7 +182,7 @@
             <p class="small">
               colors with usually distinguished with adjectives referring to with usually
             </p>
-            <button class="button-warning">buy</button>
+            <button class="button-success">buy</button>
           </div>
         </section>
       </section>
@@ -230,7 +230,7 @@
       <div class="unit40 padding-medium center darken-text small">
         <img src="../images/bike.svg"/>
         Usually, colors with the same hue are
-        distinguished with <a id="opens-menu-sliding">adjectives</a> to
+        distinguished with <a class="opens-menu-sliding">adjectives</a> to
       </div>
       <div class="unit30 left">
         <ul class="menu-vertical menu-vertical-spread upper animate-slide-children-top-to-bottom">
@@ -254,13 +254,13 @@
             </div>
           </li>
           <li>
-            tables
+            <a class="tooltip-success tooltip-right" title="some tables">tables</a>
           </li>
           <li>
-            panels
+            <a class="tooltip-warning tooltip-right" title="some tables">panels</a>
           </li>
           <li>
-            sliders
+            <a class="tooltip-default tooltip-right" title="some tables">sliders</a>
           </li>
           <li>
             dropdowns

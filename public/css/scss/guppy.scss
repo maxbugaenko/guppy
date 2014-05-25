@@ -3,17 +3,18 @@
 @import 'controls';
 @import 'typography';
 @import 'animations';
-@import 'layout';
+@import 'layouts';
 @import 'dropdowns';
 @import 'buttons';
 @import 'inputs';
 @import 'badges';
-@import 'checkradio';
+@import 'checkradios';
 @import 'form';
 @import 'menus';
 @import 'tabs';
 @import 'tables';
 @import 'modals';
+@import 'tooltips';
 
 * {
   box-sizing: border-box;
@@ -45,7 +46,7 @@ img {
   height: 100%;
   opacity: 0;
   z-index: 10000;
-  background-color: darken($background-color, 20);
+  background-color: lighten(#000, 10);
 }
 
 #overlay.active {
@@ -54,6 +55,11 @@ img {
 }
 
 a {
-  border-bottom: 1px solid;
+  text-decoration: none;
   cursor: pointer;
+  color: inherit !important;
+
+  &:hover {
+    border-bottom: 1px dotted;
+  }
 }

@@ -1,6 +1,6 @@
 .menu {
   list-style: none;
-  transition: all .3s ease;
+  @include transition();
   position: relative; // for animation
   pointer-events: none;
 
@@ -10,10 +10,10 @@
     cursor: pointer;
     display: inline-block;
     margin: 0 $base-font-size*2;
-    transition: all .3s ease;
+    @include transition();
 
     @media all and (max-width: $switch-orientation-point-mobile) {
-      transition: all .3s ease;
+      @include transition();
       display: block;
       margin: $base-font-size*2 0;
     }
@@ -58,20 +58,15 @@
   left: 0;
   list-style: none;
   height: 100%;
-  background-color: darken($background-color, 10);
   overflow-y: scroll;
   z-index: 1000011;
 
   li {
     cursor: pointer;
-    color: $text-color;
-    padding: $base-font-size $base-font-size*2;
-    font-size: $base-font-size*3;
-    //border-bottom: 1px solid darken($background-color, 5%);
-    transition: all .3s ease;
+    @include transition();
 
     &:hover {
-      transition: all .3s ease;
+      @include transition();
       background-color: darken($background-color, 5);
     }
 
@@ -85,20 +80,19 @@
 
 .menu-sliding {
   @extend .menu-vertical;
+  @include transition(.1s);
   position: fixed;
   top: 0;
   opacity: 0;
-  left: -100%;
   display: none;
+  left: -100%;
   z-index: 100001;
-  font-size: inherit !important;
   height: 100%;
-  width: 350px;
-  padding: 2em 0 2em 0;
-  background-color: fade-out(darken($controls-default-color, 15), .2);
+//  width: 350px;
 
   li {
-    padding: 1em $base-font-size*4;
+    padding: $base-font-size $base-font-size*4;
+    cursor: pointer;
 
     &:hover {
       @include hover(lighten(fade-out($controls-default-color, .7), 20));
@@ -116,16 +110,10 @@
 }
 
 .menu-sliding.active {
+  @include transition(.1s);
+  left: 0;
   display: block;
-  -webkit-animation-name: slideMenuSlidingRight;
-  -webkit-animation-duration: .2s;
-  -webkit-animation-fill-mode: forwards;
-}
-
-.menu-sliding.inactive {
-  -webkit-animation-name: slideMenuSlidingLeft;
-  -webkit-animation-duration: .4s;
-  -webkit-animation-fill-mode: forwards;
+  opacity: 1;
 }
 
 @each $control-kind in $controls-color-list {

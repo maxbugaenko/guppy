@@ -7,3 +7,22 @@ $code-font: "Source Code Pro";
   font-family: $code-font;
   font-weight: 300;
 }
+
+.search-bar {
+  background-color: darken($info, 3) !important;
+  //border-bottom: 1px dashed darken($info, 10) !important;
+//  border-radius: 0 !important;
+  text-align: left !important;
+  color: darken($info, 14) !important;
+  padding: $base-font-size;
+  border: 0;
+  outline: 0;
+  font-size: inherit;
+  position: relative;
+}
+
+
+.search-bar::-webkit-input-placeholder {
+  color: darken($info, 10) !important;
+  text-align: left !important;
+}

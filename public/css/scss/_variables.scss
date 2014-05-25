@@ -1,9 +1,10 @@
 //@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic&subset=latin,cyrillic);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Orienta);
 
-$main-font: "Roboto";
-$h-font: "Roboto";
+$main-font: "Orienta";
+$h-font: "Orienta";
 $base-font-size: 20px;
 
 $switch-orientation-point-medium: "1100px";
@@ -19,6 +20,7 @@ $switch-orientation-point-mobile: "600px";
   font-weight: 300;
 }
 
+// dark blue theme
 $background-color: #34495e;
 $controls-depth: 4px;
 $controls-text-color: #ecf0f1;
@@ -29,6 +31,7 @@ $warning: #ef7820;
 $info: #08bf55;
 $text-color: #ecf0f1;
 
+// brown theme
 $background-color: #393939;
 $controls-depth: 1px;
 $controls-text-color: #ecf0f1;
@@ -39,8 +42,19 @@ $warning: darken(#ffd078, 30);
 $info: darken(#75adcc, 10);
 $text-color: #ecf0f1;
 
+// twentytags theme
+$background-color: #fff;
+$controls-depth: 3px;
+$controls-text-color: #ecf0f1;
+$controls-border-radius: 9px;
+$controls-default-color: darken($background-color, 25);
+$success: #e58d51;
+$warning: #87c25b;
+$info: darken(#75adcc, 10);
+$text-color: #4e4e4e;
 
 
+// ukrainian theme
 /*$background-color: #2a7ab0;
 $controls-depth: 4px;
 $controls-text-color: #ecf0f1;

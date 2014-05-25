@@ -3,7 +3,7 @@
   <xsl:include href="main.xsl"/>
   <xsl:template match="page" mode="body">
     <div id="overlay"></div>
-    <ul class="menu-sliding modal-window background-info medium controls-text-color" assign="left-menu" id="modal-menu">
+    <ul class="menu-sliding background-info medium controls-text-color upper" assign="left-menu">
       <li class="padding-horizontal-medium padding-vertical-big item-no-hover">
         <div class="button-iconed darken-info">
           <i class="fa fa-search"></i>
@@ -28,7 +28,7 @@
         <img src="../images/twentytags.svg" width="100px"/>
       </div>
       <div class="mobile-span9 right padding-horizontal-base">
-        <i class="big info fa fa-bars opens-modal" modal="modal-menu"></i>
+        <i class="big info fa fa-bars opens-menu-sliding" modal="modal-menu"></i>
       </div>
     </nav>
     <div class="container shift2 padding-around-medium">

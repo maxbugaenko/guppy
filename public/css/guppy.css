@@ -2602,7 +2602,7 @@ h5 {
   .button-iconed i {
     position: absolute;
     z-index: 10;
-    top: 25%;
+    top: 20%;
     left: 20px; }
   .button-iconed > input {
     padding-left: 60px; }

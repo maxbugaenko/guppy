@@ -2603,7 +2603,8 @@ h5 {
     position: absolute;
     z-index: 10;
     top: 20%;
-    left: 20px; }
+    left: 20px;
+    font-size: 30px; }
   .button-iconed > input {
     padding-left: 60px; }
 
@@ -2895,15 +2896,14 @@ label.form-label {
   z-index: 100001;
   height: 100%; }
   .menu-sliding li {
-    padding: 20px 80px;
+    padding: 20px 20px;
     cursor: pointer; }
     .menu-sliding li:hover {
       background-color: rgba(230, 230, 230, 0.3); }
     .menu-sliding li:active {
       background-color: rgba(217, 217, 217, 0.3); }
     .menu-sliding li i {
-      padding: 0 1em 0 0;
-      font-size: 1.5em; }
+      padding: 0 1em 0 0; }
 
 .menu-sliding.active {
   transition: all 0.1s ease;

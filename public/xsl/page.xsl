@@ -28,13 +28,13 @@
             <button class="button-default f-span3 close-button">cancel</button>
           </div>
         </div>
-        <ul class="menu-sliding upper">
-          <li class="big lower tight item-no-hover"><img src="images/grains.svg"/></li>
+        <ul class="menu-sliding upper lighten-background">
+          <li class="big lower tight item-no-hover"><img src="images/grains.svg" width="130px"/></li>
           <li><i class="fa fa-eur success"></i>controls</li>
           <li><i class="fa fa-jpy warning"></i>readme</li>
           <li><i class="fa fa-rub info"></i>tables</li>
           <li class="small darken-text item-no-hover">
-              Usually, colors with the same hue are distinguished
+            Usually, colors with the same hue are distinguished
           </li>
           <li class="small darken-text item-no-hover">
             <button class="button button-medium button-default">login</button>

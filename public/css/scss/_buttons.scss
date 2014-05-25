@@ -67,7 +67,6 @@
   }
 }
 
-
 .button-iconed {
   position: relative;
 
@@ -76,6 +75,7 @@
     z-index: 10;
     top: 20%;
     left: $base-font-size;
+    font-size: $base-font-size*1.5;
   }
 
   & > input {

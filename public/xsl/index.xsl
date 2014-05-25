@@ -3,8 +3,8 @@
   <xsl:include href="main.xsl"/>
   <xsl:template match="page" mode="body">
     <div id="overlay"></div>
-    <ul class="menu-sliding background-info medium controls-text-color upper" assign="left-menu">
-      <li class="padding-horizontal-medium padding-vertical-big item-no-hover">
+    <ul class="menu-sliding background-info controls-text-color upper" assign="left-menu">
+      <li class="item-no-hover">
         <div class="button-iconed darken-info">
           <i class="fa fa-search"></i>
           <input type="text" class="search-bar f-span12" placeholder="search"/>

@@ -1,10 +1,8 @@
 @for $i from 1 through 12 {
   .f-span#{$i} {
     margin: 0 .5em .5em 0;
-    width: calc(100%/12 * #{$i} - .5em);
-    width: -moz-calc(100%/12 * #{$i} - .5em);
-    width: -webkit-calc(100%/12 * #{$i} - .5em);
-    transition: all .3s ease;
+    @include calc-prefixed(width, 100%/12 * #{$i} - .5em);
+    @include transition();
 
     @media all and (max-width: $switch-orientation-point-mobile) {
       transition: all .3s ease;

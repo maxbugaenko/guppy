@@ -44,15 +44,30 @@
         })
     }
 
-    $.fn.MenuSliding = function() {
+    $.fn.MenuInner = function() {
         $(this).on("click", function() {
-            if ($(".menu-sliding").attr("assign")) {
-                $(".menu-sliding").toggleClass("active");
-                $(".menu-sliding").css({left: $("#" + $(".menu-sliding").attr("assign")).width()});
+            if ($(".menu-aside").attr("assign")) {
+                $(".menu-aside").toggleClass("active");
+                $(".menu-aside").css({left: $("#" + $(".menu-aside").attr("assign")).width()});
             } else {
-                $(".menu-sliding").toggleClass("active");
+                $(".menu-aside").toggleClass("active");
             }
             $("#overlay").toggleClass("active");
+        });
+    }
+
+    $.fn.MenuOutter = function() {
+        $(this).on("click", function(){
+            $("#overlay").toggleClass("active");
+            $("[class^=menu-icon]").toggleClass("menu-icon-slide-right");
+            $(".page-container").toggleClass("page-container-slide-right");
+            $(".menu-aside").toggleClass("active");
+            if ($(".menu-aside").hasClass("active")) {
+                $(".menu-aside").css({left: 0});
+            } else {
+                $(".menu-aside").css({left: -$(".menu-aside").width()});
+            }
+            $("body, html").toggleClass("hidden");
         });
     }
 
@@ -60,7 +75,11 @@
         $(this).on("click", function() {
             $("#overlay").removeClass("active");
             $(".modal-window").removeClass("active");
-            $(".menu-sliding").removeClass("active");
+            $(".menu-aside").removeClass("active");
+            $(".menu-aside").css({left: -$(".menu-aside").width()});
+            $("[class^=menu-icon]").removeClass("menu-icon-slide-right");
+            $(".page-container").removeClass("page-container-slide-right");
+            $("body, html").removeClass("hidden");
         });
     }
 
@@ -68,7 +87,11 @@
         $("[class^=dropdown]").DropDown();
         $(".dropdown-menu").DropDownMenu();
         $(".opens-modal").ModalWindow();
-        $(".opens-menu-sliding").MenuSliding();
+        $(".opens-menu-inner").MenuInner();
+        $(".opens-menu-outter").MenuOutter()
         $("#overlay, .close-button").ReleaseBrowser();
+        if ($(".opens-menu-inner").length && $(".opens-menu-outter").length) {
+            alert("Both outter and inner menus \ncannot be used on the same page");
+        }
     })
 }(jQuery));

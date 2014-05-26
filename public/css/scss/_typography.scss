@@ -110,11 +110,19 @@ $controls-color-list: (
   }
 
   .darken-background-#{nth($control-kind, 1)} {
-    color: darken(nth($control-kind, 2), 10);
+    background-color: darken(nth($control-kind, 2), 10);
+  }
+
+  .double-darken-background-#{nth($control-kind, 1)} {
+    background-color: darken(nth($control-kind, 2), 15);
   }
 
   .lighten-background-#{nth($control-kind, 1)} {
-    color: lighten(nth($control-kind, 2), 10);
+    background-color: lighten(nth($control-kind, 2), 10);
+  }
+
+  .double-lighten-background-#{nth($control-kind, 1)} {
+    background-color: lighten(nth($control-kind, 2), 15);
   }
 }
 

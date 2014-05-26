@@ -171,11 +171,14 @@ $text-color: #e3ecf2;*/
 .search-bar {
   background-color: #4590ba !important;
   text-align: left !important;
+  box-sizing: border-box;
   color: #367091 !important;
+  width: 100%;
+  border-radius: 9px;
   padding: 20px;
   border: 0;
   outline: 0;
-  font-size: inherit;
+  font-size: 20px;
   position: relative; }
 
 .search-bar::-webkit-input-placeholder {

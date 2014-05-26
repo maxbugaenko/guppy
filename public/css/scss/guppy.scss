@@ -28,6 +28,10 @@ html {
   @include main-font();
   color: $text-color;
   font-size: $base-font-size;
+
+  &.hidden {
+    overflow-x: hidden;
+  }
 }
 
 img {
@@ -47,9 +51,11 @@ img {
   opacity: 0;
   z-index: 10000;
   background-color: lighten(#000, 10);
+  @include transition(.5s);
 }
 
 #overlay.active {
+  @include transition(.5s);
   display: block;
   opacity: .9;
 }

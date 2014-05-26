@@ -1,13 +1,12 @@
 .text-field {
   @extend %control;
+  @include transition();
   color: darken($controls-default-color, 20);
   background-color: $controls-default-color;
-  //border-bottom: $controls-depth solid darken($controls-default-color, 18);
-  transition: all .3s ease;
   cursor: text;
   text-align: center;
   font-size: $base-font-size;
-  padding: $base-font-size/1.2 $base-font-size/1.2 $base-font-size/1.2 $base-font-size/1.2;
+  padding: $base-font-size/1.2;
 
   &:hover {
     transition: all .3s ease;

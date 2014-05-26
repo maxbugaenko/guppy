@@ -13,7 +13,7 @@
       <li class="padding-horizontal-medium">browse</li>
       <li class="padding-horizontal-medium">following</li>
       <li class="padding-horizontal-medium">add tag</li>
-      <li class="item-no-hover"><button class="button-success button-medium f-span12">sign in</button></li>
+      <li class="item-no-hover padding-vertical-big"><button class="button-success button-medium f-span12">sign in</button></li>
     </ul>
     <div class="page-container">
       <nav class="menu-icon-info background-info desktop-only" id="menu-icons">
@@ -28,7 +28,8 @@
         <div class="mobile-span3">
           <img src="../images/twentytags.svg" width="100px"/>
         </div>
-        <div class="mobile-span9 right padding-horizontal-base">
+        <div class="mobile-span9 right ">
+          <i class="big info fa fa-repeat"></i>&#160;&#160;&#160;
           <i class="big info fa fa-bars opens-menu-outter"></i>
         </div>
       </nav>

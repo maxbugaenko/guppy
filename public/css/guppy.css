@@ -2944,7 +2944,6 @@ label.form-label {
   left: 0;
   list-style: none;
   height: 100%;
-  overflow-y: scroll;
   z-index: 1000011; }
   .menu-icon-success li, .menu-icon-warning li, .menu-icon-info li, .menu-icon-default li {
     cursor: pointer;

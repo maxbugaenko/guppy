@@ -16,12 +16,21 @@
       <li class="item-no-hover padding-vertical-big"><button class="button-success button-medium f-span12">sign in</button></li>
     </ul>
     <div class="page-container">
-      <nav class="menu-icon-info background-info desktop-only" id="menu-icons">
-        <li class="darken-background-info">
+      <nav class="menu-icon-info padding-around-base desktop-only" id="menu-icons">
+        <li class="">
           <img src="../images/twentytags.svg"/>
         </li>
-        <li class="padding-around-medium controls-text-color">
-          <i class="big fa fa-bars opens-menu-outter"></i>
+        <li class="item-no-hover padding-around-small controls-text-color">
+          <button class="button-info button-medium">лента</button>
+        </li>
+        <li class="item-no-hover padding-around-small controls-text-color">
+          <button class="button-info button-medium">мои теги</button>
+        </li>
+        <li class="item-no-hover padding-around-small controls-text-color">
+          <button class="button-success button-medium">добавить</button>
+        </li>
+        <li class="item-no-hover padding-around-small controls-text-color">
+          <button class="button-warning button-medium">войти</button>
         </li>
       </nav>
       <nav class="container mobile-and-medium-only">
@@ -29,36 +38,35 @@
           <img src="../images/twentytags.svg" width="100px"/>
         </div>
         <div class="mobile-span9 right ">
-          <i class="big info fa fa-repeat"></i>&#160;&#160;&#160;
-          <i class="big info fa fa-bars opens-menu-outter"></i>
         </div>
       </nav>
       <div class="container shift2 padding-around-medium">
-        <h1 class="info">Kim Jong-un</h1>
+        <h1 class="info lower">дмитрий ярош</h1>
+        <span class="badge-success">статей 180</span>&#160;<span class="badge-info">сегодня 7</span>
         <p class="lighten-text">
-          Kim is the supreme leader of the Democratic People's Republic of
-          Korea, commonly known as North Korea. He is the son of Kim
-          Jong-il (1941–2011) and the grandson of Kim Il-sung (1912–1994)
+          Северокорейский политический, государственный, военный и партийный деятель.
+          Высший руководитель, лидер партии, армии и народа КНДР,
+          Верховный Главнокомандующий Корейской народной армии,
+          Первый секретарь Центрального комитета Трудовой партии Кореи,
+          маршал, депутат Верховного народного собрания КНДР.
         </p>
-        <button class="button-info f-span4">follow</button>
+        <button class="button-info f-span4">подписаться</button>
         <div class="container padding-vertical-medium">
-          <div class="unit25">
+          <div class="unit25 right">
             <img src="http://twentytags.com/images/alerts/1401008999907.jpg"/>
           </div>
-          <div class="unit65">
-            <h3>
-              <a href="">kim jong-un's playboy half brother kim jong-nam enjoys spaghetti in jakarta - youtube</a>
+          <div class="unit60">
+            <h3 class="info medium">
+              <a href="">ким чен ын сжег "врага народа" заживо, обстреляв из огнемета</a>
             </h3>
-            <p class="small lighten-text">
-              playboy half brother kim jong-nam enjoys spaghetti in jakarta.kim
-              jong-un's playboy half brother enjoys spaghetti in
-              jakarta amid concerns of a...
+            <p class="lighten-text">
+              Диктатор Северной Кореи Ким Чен Ын заживо сжег министра общественной безопасности О Сон Хона, обстреляв его из огнемета.
             </p>
           </div>
-          <div class="unit5 desktop-only">
-            <i class="fa fa-play-circle-o big success"></i>
+          <div class="unit10 desktop-only">
+            <i class="fa fa-play-circle-o large lighten-info"></i>
           </div>
-          <div class="unit5 lighten-text small">
+          <div class="unit5 double-lighten-text small">
             March, 20th
           </div>
         </div>
@@ -66,18 +74,55 @@
           <div class="unit25">
             <img src="http://twentytags.com/images/alerts/14008937042730.jpg"/>
           </div>
-          <div class="unit65">
+          <div class="unit60">
             <h3>
-              <a href="">feel good friday: 22 fun photos to start your long weekend</a>
+              <a href="">Почему лидер КНДР Ким Чен Ын решился казнить своего влиятельного дядю?</a>
             </h3>
-            <p class="small lighten-text">
-              north korean leader kim jong un plays with children during a
-              visit to the taesongsan general hospital in pyongyang, in an undated photo released ...          </p>
+            <p class="lighten-text">
+              В Северной Корее по обвинению в попытке свержения государственной власти
+              был казнен Чан Сон Тхэк – бывший заместитель председателя
+              Государственного комитета обороны и дядя руководителя страны Ким Чен Ына.
+            </p>
           </div>
-          <div class="unit5 desktop-only">
-            <i class="fa fa-play-circle-o big success"></i>
+          <div class="unit10 desktop-only">
+            <i class="fa fa-play-circle-o large lighten-warning"></i>
           </div>
           <div class="unit5 lighten-text">
+            Март, 20
+          </div>
+        </div>
+        <div class="container padding-vertical-medium">
+          <div class="unit85">
+            <h3>
+              <a href="">В Северной Корее обязали мужчин стричься как Ким Чен Ын</a>
+            </h3>
+            <p class="lighten-text">
+              Своеобразную стрижку северокорейского диктатора раньше называли "прической китайского контрабандиста". Далеко не все жители страны хотят выглядеть так же.
+            </p>
+          </div>
+          <div class="unit10 desktop-only">
+            <i class="fa fa-play-circle-o large lighten-warning"></i>
+          </div>
+          <div class="unit5 lighten-text">
+            March, 20th
+          </div>
+        </div>
+        <div class="container padding-vertical-medium">
+          <div class="unit25 right">
+            <img src="http://twentytags.com/images/alerts/1401008999907.jpg"/>
+          </div>
+          <div class="unit60">
+            <h3>
+              <a href="">Ким Чен Ын сжег "врага народа" заживо, обстреляв из огнемета</a>
+            </h3>
+            <p class="lighten-text">
+              Диктатор Северной Кореи Ким Чен Ын заживо сжег министра общественной безопасности О Сон Хона, обстреляв его из огнемета.
+            </p>
+          </div>
+          <div class="unit10 desktop-only">
+            <i class="fa fa-play-circle-o large lighten-info"></i>
+          </div>
+          <div class="unit5 double-lighten-text small">
             March, 20th
           </div>
         </div>

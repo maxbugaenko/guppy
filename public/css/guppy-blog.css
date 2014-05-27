@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Orienta);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);
 /*$background-color: #2a7ab0;
 $controls-depth: 4px;
 $controls-text-color: #ecf0f1;
@@ -174,7 +175,7 @@ $text-color: #e3ecf2;*/
   box-sizing: border-box;
   color: #367091 !important;
   width: 100%;
-  border-radius: 9px;
+  border-radius: 6px;
   padding: 20px;
   border: 0;
   outline: 0;

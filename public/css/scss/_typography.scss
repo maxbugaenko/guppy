@@ -12,22 +12,18 @@
 
 .large {
   font-size: $base-font-size*3;
-  line-height: $base-font-size*2.5;
 }
 
 .big {
   font-size: $base-font-size*1.7;
-  line-height: $base-font-size*2.7;
 }
 
 .medium {
   font-size: $base-font-size*1.2;
-  line-height: $base-font-size*2;
 }
 
 .small {
   font-size: $base-font-size*0.7;
-  line-height: $base-font-size*1.1;
 }
 
 .tight {
@@ -39,11 +35,11 @@
 }
 
 .upper {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 .lower {
-  text-transform: lowercase;
+  text-transform: lowercase !important;
 }
 
 p {
@@ -74,14 +70,14 @@ $sizes: (
 
 $padding-or-margin: (
   padding (
-          around: (top, right, bottom, left),
-          vertical: (top, bottom),
-          horizontal: (left, right)
+    around: (top, right, bottom, left),
+    vertical: (top, bottom),
+    horizontal: (left, right)
   ),
   margin (
-          around: (top, right, bottom, left),
-          vertical: (top, bottom),
-          horizontal: (left, right)
+    around: (top, right, bottom, left),
+    vertical: (top, bottom),
+    horizontal: (left, right)
   )
 );
 
@@ -98,10 +94,10 @@ $padding-or-margin: (
 }
 
 $controls-color-list: (
-        success $success,
-        warning $warning,
-        info $info,
-        default $controls-default-color
+  success $success,
+  warning $warning,
+  info $info,
+  default $controls-default-color
 );
 
 @each $control-kind in $controls-color-list {
@@ -164,8 +160,16 @@ $controls-color-list: (
   color: lighten($text-color, 25);
 }
 
+.double-lighten-text {
+  color: lighten($text-color, 45);
+}
+
 .darken-text {
   color: darken($text-color, 25);
+}
+
+.double-darken-text {
+  color: darken($text-color, 45);
 }
 
 .lighten-background {

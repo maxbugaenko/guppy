@@ -2,9 +2,10 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Orienta);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);
 
-$main-font: "Orienta";
-$h-font: "Orienta";
+$main-font: "PT Sans";
+$h-font: "PT Sans";
 $base-font-size: 20px;
 
 $switch-orientation-point-medium: "1100px";
@@ -46,9 +47,9 @@ $text-color: #ecf0f1;
 // twentytags theme
 $menu-aside-width: 230px;
 $background-color: #fff;
-$controls-depth: 3px;
+$controls-depth: 0px;
 $controls-text-color: #ecf0f1;
-$controls-border-radius: 9px;
+$controls-border-radius: 6px;
 $controls-default-color: darken($background-color, 25);
 $success: #e58d51;
 $warning: #87c25b;

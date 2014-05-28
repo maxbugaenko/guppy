@@ -8,6 +8,10 @@ $code-font: "Source Code Pro";
   font-weight: 300;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .search-bar {
   background-color: darken($info, 3) !important;
   text-align: left !important;
@@ -26,4 +30,24 @@ $code-font: "Source Code Pro";
 .search-bar::-webkit-input-placeholder {
   color: darken($info, 10) !important;
   text-align: left !important;
+}
+
+.tag {
+  border-radius: 15px;
+  background-color: #fff;
+  border: 2px solid lightgray;
+  padding: .2em .5em;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.logo-image {
+  width: 150px !important;
+}
+
+.logo-image-mobile {
+  width: 75px !important;
 }

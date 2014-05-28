@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Orienta);
-@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&amp;subset=latin,cyrillic);
 /*$background-color: #2a7ab0;
 $controls-depth: 4px;
 $controls-text-color: #ecf0f1;
@@ -13,7 +13,7 @@ $warning: #ca5656;
 $info: #08bf55;
 $text-color: #e3ecf2;*/
 .highlight {
-  color: #4e4e4e;
+  color: #818181;
   font-family: "Source Code Pro";
   font-weight: 300; }
 
@@ -38,7 +38,7 @@ $text-color: #e3ecf2;*/
   background-color: #cc0000; }
 
 .highlight .o, .highlight .ow {
-  color: #4e4e4e; }
+  color: #818181; }
 
 .highlight .p, .highlight .pi {
   color: #4df4ff; }
@@ -132,7 +132,7 @@ $text-color: #e3ecf2;*/
   font-weight: bold; }
 
 .highlight .s, .highlight .sb, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .sr, .highlight .s1 {
-  color: #87c25b; }
+  color: #4abfb4; }
 
 .highlight .se {
   color: #4df4ff;
@@ -163,19 +163,22 @@ $text-color: #e3ecf2;*/
   color: #a8e1fe; }
 
 .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi {
-  color: #e58d51; }
+  color: #fd5559; }
 
 .code {
   font-family: "Source Code Pro";
   font-weight: 300; }
 
+.bold {
+  font-weight: 700; }
+
 .search-bar {
-  background-color: #4590ba !important;
+  background-color: #59799a !important;
   text-align: left !important;
   box-sizing: border-box;
-  color: #367091 !important;
+  color: #445d76 !important;
   width: 100%;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 20px;
   border: 0;
   outline: 0;
@@ -183,5 +186,21 @@ $text-color: #e3ecf2;*/
   position: relative; }
 
 .search-bar::-webkit-input-placeholder {
-  color: #3b7ca0 !important;
+  color: #4c6783 !important;
   text-align: left !important; }
+
+.tag {
+  border-radius: 15px;
+  background-color: #fff;
+  border: 2px solid lightgray;
+  padding: .2em .5em; }
+
+.profile-picture {
+  border-radius: 50%;
+  width: 50px; }
+
+.logo-image {
+  width: 150px !important; }
+
+.logo-image-mobile {
+  width: 75px !important; }

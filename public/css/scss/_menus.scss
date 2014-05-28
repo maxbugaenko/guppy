@@ -33,9 +33,9 @@
 .menu-vertical {
   @extend .menu;
 
-  @media all and (max-width: $switch-orientation-point-medium) {
-    text-align: center;
-  }
+//  @media all and (max-width: $switch-orientation-point-medium) {
+//    text-align: center;
+//  }
 
 
   li {
@@ -51,6 +51,15 @@
     padding: $base-font-size 0 $base-font-size 0;
   }
 }
+
+.menu-vertical-tight {
+  @extend .menu-vertical;
+
+  li {
+    padding: $base-font-size/2 $base-font-size $base-font-size/2 $base-font-size;
+  }
+}
+
 
 %menu-icon {
   @include transition();
@@ -100,15 +109,13 @@
   @include transition();
   position: fixed;
   top: 0;
-  //opacity: 0;
-  //display: none;
   left: -$menu-aside-width;
   z-index: 100001;
   height: 100%;
   width: $menu-aside-width;
 
   li {
-    padding: $base-font-size $base-font-size;
+//    padding: $base-font-size/2;
     cursor: pointer;
 
     &:hover {
@@ -160,4 +167,10 @@ li.item-no-hover {
     @include transition();
     left: $menu-aside-width;
   }
+}
+
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  z-index: 1000010;
 }

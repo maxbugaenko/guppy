@@ -2,131 +2,128 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:include href="main.xsl"/>
   <xsl:template match="page" mode="body">
-    <div id="overlay"></div>
-    <ul class="menu-aside double-darken-background-info controls-text-color upper">
-      <li class="item-no-hover">
+    <!--<div id="overlay"></div>-->
+    <ul class="menu-aside menu-vertical-tight darken-background-info controls-text-color capitalize">
+      <li class="item-no-hover padding-around-base">
           <div class="button-iconed">
             <i class="darken-info fa fa-search"></i>
-            <input type="text" class="search-bar" placeholder="search"/>
+            <input type="text" class="search-bar" placeholder="поиск"/>
           </div>
       </li>
-      <li class="padding-horizontal-medium">browse</li>
-      <li class="padding-horizontal-medium">following</li>
-      <li class="padding-horizontal-medium">add tag</li>
-      <li class="item-no-hover padding-vertical-big"><button class="button-success button-medium f-span12">sign in</button></li>
+      <li class="item-no-hover padding-horizontal-base padding-vertical-small"><h3>Популярное</h3></li>
+      <li>политика</li>
+      <li>известные люди</li>
+      <li>стартапы</li>
+      <li>предприниматели</li>
+      <li>тренды</li>
+      <li class="item-no-hover padding-vertical-medium">
+        <!--<h4>Максим Бугаенко</h4>-->
+        <button class="f-span6 button-warning button-medium capitalize"><i class="fa fa-power-off"></i> выйти</button>
+      </li>
+      <li class="item-no-hover padding-vertical-medium">
+        <i class="close-button lighten-info large fa fa-arrow-left"></i>
+      </li>
     </ul>
     <div class="page-container">
-      <nav class="menu-icon-info padding-around-base desktop-only" id="menu-icons">
-        <li class="">
-          <img src="../images/twentytags.svg"/>
+      <nav class="menu-icon-info padding-around-base desktop-only animate-show-slow" id="menu-icons">
+        <li class="item-no-hover">
+          <img class="logo-image" src="../images/twentytags.svg"/>
         </li>
         <li class="item-no-hover padding-around-small controls-text-color">
-          <button class="button-info button-medium">лента</button>
+          <button class="button-info button-medium capitalize">лента</button>
         </li>
         <li class="item-no-hover padding-around-small controls-text-color">
-          <button class="button-info button-medium">мои теги</button>
+          <button class="button-info button-medium capitalize">мои теги</button>
         </li>
         <li class="item-no-hover padding-around-small controls-text-color">
-          <button class="button-success button-medium">добавить</button>
+          <button class="button-warning button-medium capitalize"><i class="fa fa-plus-circle"></i> добавить</button>
         </li>
         <li class="item-no-hover padding-around-small controls-text-color">
-          <button class="button-warning button-medium">войти</button>
+          <button class="button-info button-medium opens-menu-outter capitalize"><i class="fa fa-bars"></i> меню</button>
+        </li>
+        <li class="item-no-hover padding-vertical-large center">
+          <i id="icon-to-top" class="double-lighten-text large fa fa-arrow-up"></i>
         </li>
       </nav>
-      <nav class="container mobile-and-medium-only">
-        <div class="mobile-span3">
-          <img src="../images/twentytags.svg" width="100px"/>
+      <nav class="container mobile-menu mobile-and-medium-only background-info controls-text-color medium right">
+        <div class="mobile-span2 logo-image-mobile">
+          <img  src="../images/twentytags-mobile.svg"/>
         </div>
-        <div class="mobile-span9 right ">
+        <div class="mobile-span3 padding-around-base">
+          <i class="fa fa-bars opens-menu-outter"></i>
+        </div>
+        <div class="mobile-span2 padding-around-base">
+          <i class="fa fa-repeat"></i>
+        </div>
+        <div class="mobile-span2 padding-around-base">
+          <i class="fa fa-plus"></i>
+        </div>
+        <div class="mobile-span2 padding-around-base">
+          <i class="fa fa-folder-open"></i>
         </div>
       </nav>
       <div class="container shift2 padding-around-medium">
-        <h1 class="info lower">дмитрий ярош</h1>
-        <span class="badge-success">статей 180</span>&#160;<span class="badge-info">сегодня 7</span>
-        <p class="lighten-text">
-          Северокорейский политический, государственный, военный и партийный деятель.
-          Высший руководитель, лидер партии, армии и народа КНДР,
-          Верховный Главнокомандующий Корейской народной армии,
-          Первый секретарь Центрального комитета Трудовой партии Кореи,
-          маршал, депутат Верховного народного собрания КНДР.
-        </p>
-        <button class="button-info f-span4">подписаться</button>
+        <h1 class="info lower">известные люди</h1>
         <div class="container padding-vertical-medium">
-          <div class="unit25 right">
-            <img src="http://twentytags.com/images/alerts/1401008999907.jpg"/>
+          <div class="unit20 right">
+            <img src="http://twentytags.com/images/entities/139940412727.jpg"/>
           </div>
-          <div class="unit60">
-            <h3 class="info medium">
-              <a href="">ким чен ын сжег "врага народа" заживо, обстреляв из огнемета</a>
-            </h3>
-            <p class="lighten-text">
-              Диктатор Северной Кореи Ким Чен Ын заживо сжег министра общественной безопасности О Сон Хона, обстреляв его из огнемета.
+          <div class="unit80">
+            <h2 class="info">
+              <a href="">владимир путин</a>
+            </h2>
+            <a class="lighten-text" href="">политика</a>&#160;<a class="lighten-text" href="">известные люди</a>
+            <p>
+              <span class="badge-success">статей 1802</span>&#160;
+              <span class="badge-info">сегодня 1802</span>
             </p>
-          </div>
-          <div class="unit10 desktop-only">
-            <i class="fa fa-play-circle-o large lighten-info"></i>
-          </div>
-          <div class="unit5 double-lighten-text small">
-            March, 20th
+            <p>
+              российский государственный и политический деятель, президент Российской Федерации (с 7 мая 2012 года).
+            </p>
+            <button class="button-warning button-medium f-span5 capitalize"><i class="fa fa-check"></i> подписаться</button>
           </div>
         </div>
         <div class="container padding-vertical-medium">
-          <div class="unit25">
-            <img src="http://twentytags.com/images/alerts/14008937042730.jpg"/>
+          <div class="unit20 right">
+            <img src="http://twentytags.com/images/entities/13969034343848.jpg"/>
           </div>
-          <div class="unit60">
-            <h3>
-              <a href="">Почему лидер КНДР Ким Чен Ын решился казнить своего влиятельного дядю?</a>
-            </h3>
-            <p class="lighten-text">
-              В Северной Корее по обвинению в попытке свержения государственной власти
-              был казнен Чан Сон Тхэк – бывший заместитель председателя
-              Государственного комитета обороны и дядя руководителя страны Ким Чен Ына.
+          <div class="unit80">
+            <h2 class="info">
+              <a href="">рафаель надаль</a>
+            </h2>
+            <a class="lighten-text" href="">политика</a>&#160;<a class="lighten-text" href="">известные люди</a>
+            <p>
+              <span class="badge-success">статей 1802</span>&#160;
+              <span class="badge-warning">сегодня 1802</span>
             </p>
-          </div>
-          <div class="unit10 desktop-only">
-            <i class="fa fa-play-circle-o large lighten-warning"></i>
-          </div>
-          <div class="unit5 lighten-text">
-            Март, 20
+            <p>
+              российский государственный и политический деятель, президент Российской Федерации (с 7 мая 2012 года). российский государственный и политический деятель, президент Российской Федерации (с 7 мая 2012 года).
+            </p>
+            <button class="button-info button-medium f-span5 capitalize"><i class="fa fa-check"></i> подписаться</button>
           </div>
         </div>
         <div class="container padding-vertical-medium">
-          <div class="unit85">
-            <h3>
-              <a href="">В Северной Корее обязали мужчин стричься как Ким Чен Ын</a>
-            </h3>
-            <p class="lighten-text">
-              Своеобразную стрижку северокорейского диктатора раньше называли "прической китайского контрабандиста". Далеко не все жители страны хотят выглядеть так же.
+          <div class="unit20 right">
+            <img src="http://twentytags.com/images/entities/14002693063801.jpg"/>
+          </div>
+          <div class="unit80">
+            <h2 class="info">
+              <a href="">том круз</a>
+            </h2>
+            <a class="lighten-text" href="">актеры</a>&#160;<a class="lighten-text" href="">известные люди</a>
+            <p>
+              <span class="badge-success">статей 1802</span>&#160;
+              <span class="badge-info">сегодня 1802</span>
             </p>
-          </div>
-          <div class="unit10 desktop-only">
-            <i class="fa fa-play-circle-o large lighten-warning"></i>
-          </div>
-          <div class="unit5 lighten-text">
-            March, 20th
-          </div>
-        </div>
-        <div class="container padding-vertical-medium">
-          <div class="unit25 right">
-            <img src="http://twentytags.com/images/alerts/1401008999907.jpg"/>
-          </div>
-          <div class="unit60">
-            <h3>
-              <a href="">Ким Чен Ын сжег "врага народа" заживо, обстреляв из огнемета</a>
-            </h3>
-            <p class="lighten-text">
-              Диктатор Северной Кореи Ким Чен Ын заживо сжег министра общественной безопасности О Сон Хона, обстреляв его из огнемета.
+            <p>
+              российский государственный и политический деятель, президент Российской Федерации (с 7 мая 2012 года). российский государственный и политический деятель, президент Российской Федерации (с 7 мая 2012 года).
             </p>
-          </div>
-          <div class="unit10 desktop-only">
-            <i class="fa fa-play-circle-o large lighten-info"></i>
-          </div>
-          <div class="unit5 double-lighten-text small">
-            March, 20th
           </div>
         </div>
       </div>
     </div>
+    <script>
+      $(document).ActivateScrollIcon();
+    </script>
   </xsl:template>
 </xsl:stylesheet>

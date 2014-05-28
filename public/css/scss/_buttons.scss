@@ -12,11 +12,6 @@
   &:active {
     top: 2px;
   }
-
-  i {
-    margin: 0 $base-font-size;
-    font-size: 1.5em;
-  }
 }
 
 .button-medium {
@@ -41,6 +36,20 @@
 
     &:hover {
       @include hover(nth($control-kind, 2));
+    }
+  }
+
+  .button-tag-#{nth($control-kind, 1)} {
+    @extend %button;
+    background-color: $controls-text-color;
+    color: gray;
+    border: 1px #d3d3d3 solid;
+
+    &:hover {
+      @include hover(nth($control-kind, 2));
+      @include transition(.1s);
+      border: 1px hover(nth($control-kind, 2)) solid;
+      color: #fff;
     }
   }
 }

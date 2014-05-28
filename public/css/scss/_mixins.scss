@@ -2,6 +2,10 @@
   background-color: darken($color, 5);
 }
 
+@function hover($color) {
+  @return darken($color, 5);
+}
+
 @mixin active($color) {
   background-color: darken($color, 10);
 }

@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 @import url(http://fonts.googleapis.com/css?family=Orienta);
-@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&amp;subset=latin,cyrillic);
 
 $main-font: "PT Sans";
 $h-font: "PT Sans";
@@ -13,12 +13,12 @@ $switch-orientation-point-mobile: "600px";
 
 @mixin main-font() {
   font-family: $main-font;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @mixin h-font() {
   font-family: $h-font;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 // dark blue theme
@@ -45,16 +45,16 @@ $info: darken(#75adcc, 10);
 $text-color: #ecf0f1;
 
 // twentytags theme
-$menu-aside-width: 230px;
+$menu-aside-width: 280px;
 $background-color: #fff;
-$controls-depth: 0px;
-$controls-text-color: #ecf0f1;
-$controls-border-radius: 6px;
+$controls-depth: 2px;
+$controls-text-color: #fbfbfb;
+$controls-border-radius: 4px;
 $controls-default-color: darken($background-color, 25);
-$success: #e58d51;
-$warning: #87c25b;
-$info: darken(#75adcc, 10);
-$text-color: #4e4e4e;
+$success: #fd5559;
+$warning: #4abfb4;
+$info: lighten(#394e63, 20);
+$text-color: lighten(#4e4e4e, 20);
 
 
 // ukrainian theme

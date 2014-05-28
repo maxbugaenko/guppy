@@ -3,11 +3,18 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="-132 -126 728 728" enable-background="new -132 -126 728 728" xml:space="preserve">
-<circle fill="#E58D51" cx="226.3" cy="229.2" r="227.1"/>
-<polygon fill="#BF703A" points="194.2,324.2 78.8,205.4 239.4,164.8 "/>
-<rect x="78.4" y="108.3" fill="#FFFFFF" width="96.8" height="96.8"/>
-<rect x="272" y="108.3" fill="#FFFFFF" width="96.9" height="96.8"/>
-<rect x="175.2" y="205.2" fill="#FFFFFF" width="96.8" height="96.9"/>
-<rect x="175.2" y="302" fill="#FFFFFF" width="96.8" height="96.9"/>
-<rect x="175.2" y="108.3" fill="#FFFFFF" width="96.8" height="96.8"/>
+<polygon fill="#FFFFFF" points="280.1,113.5 183.3,113.5 183.2,113.5 86.5,113.5 86.5,210.4 183.2,210.4 183.2,307.2 183.2,404.1 
+	280.1,404.1 280.1,307.2 280.1,210.4 377,210.4 377,113.5 "/>
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="232" cy="238" r="227.1"/>
+	</defs>
+	<use xlink:href="#SVGID_1_"  overflow="visible" fill="#FD5559"/>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+</g>
+<polygon opacity="0.55" fill="#6B2430" points="86.5,210.4 183.3,307.2 183.3,210.4 "/>
+<polygon fill="#FFFFFF" points="280.1,113.5 183.3,113.5 183.2,113.5 86.5,113.5 86.5,210.4 183.2,210.4 183.2,307.2 183.2,404.1 
+	280.1,404.1 280.1,307.2 280.1,210.4 377,210.4 377,113.5 "/>
 </svg>

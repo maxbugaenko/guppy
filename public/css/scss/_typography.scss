@@ -15,11 +15,11 @@
 }
 
 .big {
-  font-size: $base-font-size*1.7;
+  font-size: $base-font-size*2.3;
 }
 
 .medium {
-  font-size: $base-font-size*1.2;
+  font-size: $base-font-size*1.7;
 }
 
 .small {
@@ -41,6 +41,11 @@
 .lower {
   text-transform: lowercase !important;
 }
+
+.capitalize {
+  text-transform: capitalize !important;
+}
+
 
 p {
   margin-top: $base-font-size;
@@ -141,49 +146,49 @@ $controls-color-list: (
 }
 
 .background-color {
-  background-color: $background-color;
+  background-color: $background-color !important;
 }
 
 .controls-text-color {
-  color: $controls-text-color;
+  color: $controls-text-color !important;
 }
 
 .background-controls-text-color {
-  background-color: $controls-default-color;
+  background-color: $controls-default-color !important;
 }
 
 .round-borders {
-  border-radius: $controls-border-radius;
+  border-radius: $controls-border-radius !important;
 }
 
 .lighten-text {
-  color: lighten($text-color, 25);
+  color: lighten($text-color, 25) !important;
 }
 
 .double-lighten-text {
-  color: lighten($text-color, 45);
+  color: lighten($text-color, 45) !important;
 }
 
 .darken-text {
-  color: darken($text-color, 25);
+  color: darken($text-color, 25) !important;
 }
 
 .double-darken-text {
-  color: darken($text-color, 45);
+  color: darken($text-color, 45) !important;
 }
 
 .lighten-background {
-  background-color: lighten($background-color, 5);
+  background-color: lighten($background-color, 5) !important;
 }
 
 .double-lighten-background {
-  background-color: lighten($background-color, 10);
+  background-color: lighten($background-color, 10) !important;
 }
 
 .darken-background {
-  background-color: darken($background-color, 5);
+  background-color: darken($background-color, 5) !important;
 }
 
 .double-darken-background {
-  background-color: darken($background-color, 10);
+  background-color: darken($background-color, 10) !important;
 }

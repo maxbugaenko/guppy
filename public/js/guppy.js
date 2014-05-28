@@ -83,6 +83,21 @@
         });
     }
 
+    $.fn.ActivateScrollIcon = function() {
+        $("#icon-to-top").click(function() {
+            $('html, body').animate({ scrollTop: 0 }, 'fast');
+        });
+        $(this).scroll(function () {
+            var y = $(this).scrollTop();
+            //alert(y);
+            if (y > 200) {
+                $('#icon-to-top').show();
+            } else {
+                $('#icon-to-top').hide();
+            }
+        })
+    }
+
     $(document).ready(function() {
         $("[class^=dropdown]").DropDown();
         $(".dropdown-menu").DropDownMenu();

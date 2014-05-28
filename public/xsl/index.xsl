@@ -17,10 +17,6 @@
       <li>предприниматели</li>
       <li>тренды</li>
       <li class="item-no-hover padding-vertical-medium">
-        <!--<h4>Максим Бугаенко</h4>-->
-        <button class="f-span6 button-warning button-medium capitalize"><i class="fa fa-power-off"></i> выйти</button>
-      </li>
-      <li class="item-no-hover padding-vertical-medium">
         <i class="close-button lighten-info large fa fa-arrow-left"></i>
       </li>
     </ul>

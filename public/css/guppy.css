@@ -3100,7 +3100,8 @@ li.item-no-hover {
 .mobile-menu {
   position: fixed;
   width: 100%;
-  z-index: 1000010; }
+  z-index: 1000010;
+  height: 75px; }
 
 .tabs {
   margin: 0 auto; }

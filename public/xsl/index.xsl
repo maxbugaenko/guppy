@@ -73,9 +73,9 @@
               <a href="">владимир путин</a>
             </h2>
             <a class="lighten-text" href="">политика</a>&#160;<a class="lighten-text" href="">известные люди</a>
-            <p>
-              <span class="badge-success">статей 1802</span>&#160;
-              <span class="badge-info">сегодня 1802</span>
+            <p class="small padding-vertical-small nowrap">
+              <span class="badge-info">статей 1802</span>&#160;
+              <span class="badge-success">сегодня 1802</span>
             </p>
             <p>
               российский государственный и политический деятель, президент Российской Федерации (с 7 мая 2012 года).

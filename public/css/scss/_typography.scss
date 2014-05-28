@@ -23,7 +23,7 @@
 }
 
 .small {
-  font-size: $base-font-size*0.7;
+  font-size: $base-font-size*0.8;
 }
 
 .tight {
@@ -46,12 +46,14 @@
   text-transform: capitalize !important;
 }
 
+.nowrap {
+  white-space: nowrap !important;
+}
 
 p {
-  margin-top: $base-font-size;
-  margin-bottom: $base-font-size;
-  line-height: $base-font-size*1.4;
+  padding: $base-font-size/2 0;
 }
+
 
 h1,
 h2,
@@ -86,6 +88,7 @@ $padding-or-margin: (
   )
 );
 
+/* generate padding classes */
 @each $kind in $padding-or-margin {
   @each $direction in nth($kind, 2) {
     @each $size in $sizes {

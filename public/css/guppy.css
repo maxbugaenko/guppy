@@ -39,7 +39,7 @@ $text-color: #e3ecf2;*/
   font-size: 34px; }
 
 .small {
-  font-size: 14px; }
+  font-size: 16px; }
 
 .tight {
   letter-spacing: -.1em; }
@@ -56,10 +56,11 @@ $text-color: #e3ecf2;*/
 .capitalize {
   text-transform: capitalize !important; }
 
+.nowrap {
+  white-space: nowrap !important; }
+
 p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  line-height: 28px; }
+  padding: 10px 0; }
 
 h1,
 h2,
@@ -72,6 +73,7 @@ h5 {
 .no-padding {
   padding: 0 !important; }
 
+/* generate padding classes */
 .padding-around-small {
   padding-top: -webkit-calc(20px * 0.7) !important;
   padding-top: -moz-calc(20px * 0.7) !important;

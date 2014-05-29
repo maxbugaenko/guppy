@@ -2,12 +2,13 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:include href="main.xsl"/>
   <xsl:template match="page" mode="body">
-    <!--<div id="overlay"></div>-->
     <ul class="menu-aside menu-vertical-tight darken-background-info controls-text-color capitalize">
       <li class="item-no-hover padding-around-base">
           <div class="button-iconed">
             <i class="darken-info fa fa-search"></i>
+            <form>
             <input type="text" class="search-bar" placeholder="поиск"/>
+            </form>
           </div>
       </li>
       <li class="item-no-hover padding-horizontal-base padding-vertical-small"><h3>Популярное</h3></li>
@@ -80,7 +81,7 @@
           </div>
           <div class="unit10 center medium lighten-text">
             <i class="fa fa-chevron-up lighten-success"></i><br/>
-            <span class="small">170</span>
+            <span class="small">170</span><br/>
             <i class="fa fa-chevron-down lighten-info"></i>
           </div>
         </div>

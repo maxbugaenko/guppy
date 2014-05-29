@@ -132,15 +132,15 @@ $controls-color-list: (
 
 @each $control-kind in $controls-color-list {
   .#{nth($control-kind, 1)} {
-    color: nth($control-kind, 2);
+    color: nth($control-kind, 2) !important;
   }
 
   .darken-#{nth($control-kind, 1)} {
-    color: darken(nth($control-kind, 2), 10);
+    color: darken(nth($control-kind, 2), 10) !important;
   }
 
   .lighten-#{nth($control-kind, 1)} {
-    color: lighten(nth($control-kind, 2), 10);
+    color: lighten(nth($control-kind, 2), 10) !important;
   }
 }
 

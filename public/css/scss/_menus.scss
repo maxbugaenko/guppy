@@ -94,6 +94,7 @@
 @each $control-kind in $controls-color-list {
   .menu-icon-#{nth($control-kind, 1)} {
     @extend %menu-icon;
+    background-color: #{nth($control-kind, 2)};
 
     li {
 
@@ -152,7 +153,7 @@ li.item-no-hover {
 
   &:hover,
   &:active {
-    background-color: transparent;
+    background-color: transparent !important;
   }
 }
 
@@ -173,5 +174,5 @@ li.item-no-hover {
   position: fixed;
   width: 100%;
   z-index: 1000010;
-  height: 75px;
+//  height: 75px;
 }

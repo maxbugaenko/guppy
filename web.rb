@@ -10,7 +10,12 @@ def read_messages(lines)
       f.puts("hello chat")
     end
   end
-  IO.readlines(FILE)[1..lines]
+  content = IO.readlines(FILE)
+  if content.length < lines
+    content
+  else
+    content[-lines..-1]
+  end
 end
 
 get '/' do

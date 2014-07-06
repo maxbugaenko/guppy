@@ -1,0 +1,17 @@
+.container.shift2.padding-around-large
+  .container.messages.rounded-borders.padding-around-medium#message-container
+    - @messages.each do |message|
+      %p.no-padding.medium= message
+  .container.padding-around-medium
+    %form{:action => "send", :method => "post"}
+      %input.text-field.f-span12{:type => "text", :name => "message", :id => "message"}
+:javascript
+  setInterval(function() {
+      $.get('/messages', function(data) {
+            $("#message-container").html(data)
+          }
+      );
+  }, 5000);
+  $(document).ready(function() {
+    $("#message").focus();
+  });

@@ -2,8 +2,8 @@
   @extend %control;
   text-transform: uppercase;
   transition: all .3s ease;
-  font-size: $base-font-size;
-  padding: $base-font-size/1.2;
+  font-size: $base-font-size/1.2;
+  padding: $base-font-size/1.5 $base-font-size*1.2;
 
   &:hover {
     transition: all .3s ease;
@@ -16,14 +16,14 @@
 
 .button-medium {
   @extend %button;
-  font-size: $base-font-size/1.2;
-  padding: $base-font-size/2;
+  font-size: $base-font-size;
+  padding: $base-font-size;
 }
 
 .button-small {
   @extend %button;
-  font-size: $base-font-size/1.7;
-  padding: $base-font-size/3;
+  font-size: $base-font-size/1.5;
+  padding: $base-font-size/3 $base-font-size;
 }
 
 
@@ -55,8 +55,10 @@
 }
 
 .button-group {
+  font-size: 0;
 
   & > div {
+    display: inline-block;
     padding-right: 0;
     padding-left: 0;
 
@@ -78,17 +80,18 @@
 
 .button-iconed {
   position: relative;
+  padding: 0;
   width: 100%;
 
   i {
     position: absolute;
     z-index: 10;
-    top: 20%;
-    left: $base-font-size/1.5;
-    font-size: $base-font-size*2;
+    top: .4em;
+    left: .3em;
+    font-size: 1.5em;
   }
 
   & input {
-    padding-left: $base-font-size*3;
+    padding-left: 3.5em;
   }
 }

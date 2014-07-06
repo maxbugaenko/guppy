@@ -1,14 +1,15 @@
 input[type="checkbox"] {
   opacity: 0;
   cursor: pointer;
-  transition: all .2s ease;
+  @include transition();
 }
 
 input[type="checkbox"]:checked + label.form-label {
 
   &:before {
-    transition: all .2s ease;
-    background-color: $background-color;
+    font-family: 'fontello';
+    content: '\e838';
+    @include transition();
   }
 }
 
@@ -16,23 +17,17 @@ label.form-label {
   cursor: pointer;
   position: relative;
   top: .5em;
-  left: $base-font-size*2.5;
+  left: $base-font-size;
+  color: $text-color;
 
 
   &:before {
-    content: '';
+    font-family: 'fontello';
+    content: '\e837';
+    font-size: $base-font-size * 1.5;
     position: absolute;
-    height: $base-font-size;
-    width: $base-font-size;
-    background-color: $controls-default-color;
-    border: 10px solid $controls-default-color;
-    border-radius: $controls-border-radius;
-    top: -$base-font-size/2;
-    left: -$base-font-size*3;
+    top: -.2em;
+    left: -$base-font-size*2;
   }
 
-  &:hover:before {
-    background-color: $controls-default-color;
-    border: 10px solid lighten($controls-default-color, 15%);
-  }
 }

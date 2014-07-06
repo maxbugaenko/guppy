@@ -1,0 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700&subset=latin,cyrillic);
+
+@import "variables";
+@import "mixins";
+
+.messages {
+  height: 500px;
+  overflow-y: scroll;
+}

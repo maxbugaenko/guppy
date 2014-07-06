@@ -57,6 +57,7 @@ $controls-icon-size: 1.3em;
       }
 
       a {
+        border: 0 !important;
 
         &:hover {
           border: 0;
@@ -239,7 +240,7 @@ $controls-icon-size: 1.3em;
   font-size: $base-font-size/1.2;
 
   div {
-    padding: $base-font-size/3 $base-font-size*4 $base-font-size/3 $base-font-size/3;
+    padding: $base-font-size/3 $base-font-size*4 $base-font-size/3 $base-font-size;
   }
 }
 

@@ -1,16 +1,16 @@
 .menu {
-  @include transition();
   list-style: none;
   position: relative; // for animation
   pointer-events: none;
+  font-size: 0;
 
   li {
-    @include transition();
     pointer-events: auto;
     position: relative; // for animation
     cursor: pointer;
+    font-size: $base-font-size;
     display: inline-block;
-    margin: 0 $base-font-size*2;
+    margin: 0 $base-font-size;
 
     @media all and (max-width: $switch-orientation-point-mobile) {
       @include transition();
@@ -48,7 +48,7 @@
   @extend .menu-vertical;
 
   li {
-    padding: $base-font-size 0 $base-font-size 0;
+    padding: $base-font-size/2 0 $base-font-size/2 0;
   }
 }
 
@@ -85,7 +85,7 @@
     }
   }
 
-  &.menu-icon-slide-right {
+  &.menu-slide-right {
     @include transition();
     left: $menu-aside-width;
   }
@@ -130,10 +130,18 @@
     i {
       padding: 0 1em 0 0;
     }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        border: 0;
+      }
+    }
   }
 
   &.active {
-    @include transition();
+    @include transition(.2s);
     left: 0;
     opacity: 1;
     display: block;
@@ -165,14 +173,21 @@ li.item-no-hover {
   top: 0;
 
   &.page-container-slide-right {
-    @include transition();
+    @include transition(.2s);
     left: $menu-aside-width;
   }
 }
 
-.mobile-menu {
+.menu-mobile {
+  @include transition();
   position: fixed;
   width: 100%;
   z-index: 1000010;
-//  height: 75px;
+  top: 0;
+  left: 0;
+
+  &.menu-slide-right {
+    @include transition();
+    left: $menu-aside-width;
+  }
 }

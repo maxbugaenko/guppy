@@ -1,5 +1,6 @@
 %tooltip {
   position: relative;
+  z-index: 10001;
 
   &:hover:before {
     @include animation(showSlow);
@@ -7,7 +8,7 @@
 
   &:before {
     opacity: 0;
-    content: attr(title);
+    content: attr(tip);
     position: absolute;
     white-space: nowrap;
     padding: $base-font-size;
@@ -31,6 +32,15 @@
 
   &:before {
     top: 150%;
+    left: 0;
+  }
+}
+
+.tooltip-top {
+  @extend %tooltip;
+
+  &:before {
+    top: -120%;
     left: 0;
   }
 }

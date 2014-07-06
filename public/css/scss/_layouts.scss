@@ -91,7 +91,7 @@ $i: 5;
       width: 100%;
     }
   }
-  $i: $i + 5;
+  $i: $i + 5 !global;
 }
 
 
@@ -126,6 +126,15 @@ $i: 5;
 
   @media all and (max-width: $switch-orientation-point-mobile) {
     display: inherit;
+    @include transition();
+  }
+}
+
+.desktop-and-medium-only {
+  display: inherit;
+
+  @media all and (max-width: $switch-orientation-point-mobile) {
+    display: none;
     @include transition();
   }
 }

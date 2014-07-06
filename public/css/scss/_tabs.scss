@@ -1,8 +1,10 @@
 .tabs {
   margin: 0 auto;
+  font-size: 0; // getting rid of spaces between inline-block elements???
 
   input[type=radio] {
     display: none;
+    border: 1px solid red;
 
     @for $i from 1 through 12 {
 
@@ -20,6 +22,7 @@
   label.tab-label {
     cursor: pointer;
     display: inline-block;
+    font-size: $base-font-size;
     padding: $base-font-size;
     border-radius: 0;
 
@@ -30,6 +33,13 @@
     &:last-of-type {
       border-top-right-radius: $controls-border-radius;
     }
+
+    &:last-of-type:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
 
     &:hover {
       background-color: darken($controls-default-color, 10);
@@ -46,5 +56,9 @@
 
   .tab {
     display: none;
+  }
+
+  & > * {
+    font-size: $base-font-size;
   }
 }

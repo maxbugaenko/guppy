@@ -1,12 +1,12 @@
 @for $i from 1 through 12 {
   .f-span#{$i} {
     margin: 0 .5em .5em 0;
-    @include calc-prefixed(width, 100%/12 * #{$i} - .5em);
+    @include calc-prefixed(width, 100%/12 * #{$i} - .5em, !important);
     @include transition();
 
     @media all and (max-width: $switch-orientation-point-mobile) {
       transition: all .3s ease;
-      width: 100%;
+      width: 100% !important;
     }
   }
 }

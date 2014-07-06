@@ -10,7 +10,7 @@ def read_messages(lines)
       f.puts("hello chat")
     end
   end
-  puts IO.readlines(FILE)[-lines..-1].to_s
+  IO.readlines(FILE)[1..lines]
 end
 
 get '/' do

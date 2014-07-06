@@ -1,2 +1,5 @@
 - @messages.each do |message|
-  %p.no-padding.medium= message
+  %p.no-padding.medium{:class => message.split('.')[1]}
+    = "<b>" + message.split('.')[0] + "</b># " + message.split('.')[2]
+
+

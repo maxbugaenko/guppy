@@ -10,6 +10,10 @@
   outline: none;
   white-space: nowrap; }
 
+.hide {
+    display: none;
+}
+
 .left {
   text-align: left; }
 

@@ -7,7 +7,7 @@ FILE = '/tmp/msgs'
 def read_messages(lines)
   if !File.exist?(FILE)
     open(FILE, "w") do |f|
-      f.puts("hello chat")
+      f.puts("nobody.warning.hello chat")
     end
   end
   content = IO.readlines(FILE)
@@ -25,14 +25,17 @@ end
 
 post '/send' do
   if !params[:message].nil?
-    newcontent = read_messages(9).push(params[:message])
+    newcontent = read_messages(9).push(params[:nick] + "." + params[:class] + "." + params[:message])
     open(FILE, 'w') do |f|
       newcontent.each do |line|
         f.puts(line)
       end
     end
   end
-  redirect "/"
+  @messages = read_messages(10)
+  @nick = params[:nick]
+  @class = params[:class]
+  haml :talking, :layout => :layout
 end
 
 get '/messages' do

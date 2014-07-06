@@ -1,10 +1,14 @@
 .container.shift2.padding-around-large
   .container.messages.rounded-borders.padding-around-medium#message-container
     - @messages.each do |message|
-      %p.no-padding.medium= message
+      %p.no-padding.medium{:class => message.split('.')[1]}
+        = "<b>" + message.split('.')[0] + "</b># " + message.split('.')[2]
   .container.padding-around-medium
     %form{:action => "send", :method => "post"}
-      %input.text-field.f-span12{:type => "text", :name => "message", :id => "message"}
+      %input.text-field.f-span7{:type => "text", :name => "message", :id => "message", :autocomplete => "off"}
+      %input.text-field.f-span2{:type => "text", :name => "nick", :value => @nick}
+      %input.text-field.f-span2{:type => "text", :name => "class", :value => @class}
+      %input.hide{:type => "submit"}
 :javascript
   setInterval(function() {
       $.get('/messages', function(data) {

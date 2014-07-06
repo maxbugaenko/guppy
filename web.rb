@@ -32,7 +32,7 @@ post '/send' do
       end
     end
   end
-  redirect to("/")
+  redirect "/"
 end
 
 get '/messages' do

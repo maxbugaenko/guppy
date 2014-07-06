@@ -2,7 +2,7 @@ require 'rubygems';
 require 'sinatra';
 require 'haml'
 
-FILE = './msgs'
+FILE = '/tmp/msgs'
 
 def read_messages(lines)
   if !File.exist?(FILE)

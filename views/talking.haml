@@ -1,8 +1,6 @@
 .container.shift2.padding-around-large
   .container.messages.rounded-borders.padding-around-medium#message-container
-    - @messages.each do |message|
-      %p.no-padding.medium{:class => message.split('.')[1]}
-        = "<b>" + message.split('.')[0] + "</b># " + message.split('.')[2]
+    = partial "messages"
   .container.padding-around-medium
     %form{:action => "send", :method => "post"}
       %input.text-field.f-span7{:type => "text", :name => "message", :id => "message", :autocomplete => "off"}

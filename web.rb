@@ -24,13 +24,13 @@ helpers do
 
 end
 
+use Rack::Auth::Basic, "Restricted Area" do |username, password|
+  [username, password] == ['admin', 'getcash']
+end
+
 get '/' do
   @messages = read_messages(10)
   haml :talking, :layout => :layout
-end
-
-use Rack::Auth::Basic, "Restricted Area" do |username, password|
-  [username, password] == ['admin', 'getcash']
 end
 
 post '/send' do

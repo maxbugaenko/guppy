@@ -1,0 +1,99 @@
+@import "variables";
+
+@each $control-kind in $controls-color-list {
+  .background-#{nth($control-kind, 1)} {
+    background-color: nth($control-kind, 2);
+  }
+
+  .darken-background-#{nth($control-kind, 1)} {
+    background-color: darken(nth($control-kind, 2), 10);
+  }
+
+  .double-darken-background-#{nth($control-kind, 1)} {
+    background-color: darken(nth($control-kind, 2), 15);
+  }
+
+  .lighten-background-#{nth($control-kind, 1)} {
+    background-color: lighten(nth($control-kind, 2), 10);
+  }
+
+  .double-lighten-background-#{nth($control-kind, 1)} {
+    background-color: lighten(nth($control-kind, 2), 15);
+  }
+}
+
+@each $control-kind in $controls-color-list {
+  .#{nth($control-kind, 1)} {
+    color: nth($control-kind, 2) !important;
+  }
+
+  .darken-#{nth($control-kind, 1)} {
+    color: darken(nth($control-kind, 2), 10) !important;
+  }
+
+  .lighten-#{nth($control-kind, 1)} {
+    color: lighten(nth($control-kind, 2), 10) !important;
+  }
+}
+
+.light {
+  color: #ecf0f1;
+}
+
+.background-color {
+  background-color: $background-color !important;
+}
+
+.controls-text-color {
+  color: $controls-text-color !important;
+}
+
+.background-controls-text-color {
+  background-color: $controls-default-color !important;
+}
+
+.lighten-text {
+  color: lighten($text-color, 25) !important;
+}
+
+.double-lighten-text {
+  color: lighten($text-color, 45) !important;
+}
+
+.darken-text {
+  color: darken($text-color, 25) !important;
+}
+
+.double-darken-text {
+  color: darken($text-color, 45) !important;
+}
+
+.text-color {
+  color: $text-color !important;
+}
+
+.lighten-background {
+  background-color: lighten($background-color, 5) !important;
+}
+
+.double-lighten-background {
+  background-color: lighten($background-color, 10) !important;
+}
+
+.darken-background {
+  background-color: darken($background-color, 5) !important;
+}
+
+.double-darken-background {
+  background-color: darken($background-color, 10) !important;
+}
+
+@each $control-kind in $controls-color-list {
+  .hover-#{nth($control-kind, 1)} {
+
+    &:hover {
+      @include transition(.1s);
+      color: nth($control-kind, 2);
+    }
+  }
+}

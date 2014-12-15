@@ -1,0 +1,23 @@
+.admin-container {
+  margin-top: 0em;
+  width:100%;
+  color: black;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:2em;
+  padding-right:2em;
+  box-sizing:border-box;
+  background-color: rgba(255, 255, 255, 0.98);
+  a {
+    color:black;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-right:1em;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

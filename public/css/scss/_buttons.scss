@@ -1,0 +1,88 @@
+@import "variables";
+@import "controls";
+@import "mixins";
+
+%button {
+  @extend %control;
+  text-transform: uppercase;
+  transition: all .3s ease;
+  font-size: $base-font-size/1.2;
+  padding: $base-font-size/1.5 $base-font-size*1.2;
+
+  &:hover {
+    transition: all .3s ease;
+  }
+
+  &:active {
+    top: 2px;
+  }
+}
+
+@each $control-kind in $controls-color-list {
+  .button-#{nth($control-kind, 1)} {
+    @extend %button;
+    @include shadow(nth($control-kind, 2));
+    background-color: nth($control-kind, 2);
+    color: $controls-text-color;
+
+    &:hover {
+      @include hover(nth($control-kind, 2));
+    }
+  }
+
+  .button-tag-#{nth($control-kind, 1)} {
+    @extend %button;
+    background-color: $controls-text-color;
+    color: gray;
+    border: 1px #d3d3d3 solid;
+
+    &:hover {
+      @include hover(nth($control-kind, 2));
+      @include transition(.1s);
+      border: 1px hover(nth($control-kind, 2)) solid;
+      color: #fff;
+    }
+  }
+}
+
+.button-group {
+  font-size: 0;
+
+  & > div {
+    display: inline-block;
+    padding-right: 0;
+    padding-left: 0;
+
+    & > button {
+      border-radius: 0;
+    }
+  }
+
+  & > div:first-child button {
+    border-top-left-radius: $controls-border-radius;
+    border-bottom-left-radius: $controls-border-radius;
+  }
+
+  & > div:last-child button {
+    border-top-right-radius: $controls-border-radius;
+    border-bottom-right-radius: $controls-border-radius;
+  }
+}
+
+.button-iconed {
+  position: relative;
+  padding: 0;
+  width: 100%;
+
+  i {
+    position: absolute;
+    z-index: 10;
+    top: .4em;
+    left: .3em;
+    font-size: 1.5em;
+  }
+
+  & input {
+    padding-left: 3.5em;
+  }
+}

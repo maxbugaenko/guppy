@@ -1,0 +1,51 @@
+@import "mixins";
+@import "variables";
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-horizontal-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.no-vertical-padding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+$sizes: (
+        small 0.7,
+        base 1,
+        medium 2,
+        big 4,
+        large 3,
+);
+
+$padding-or-margin: (
+        padding (
+                around: (top, right, bottom, left),
+                vertical: (top, bottom),
+                horizontal: (left, right)
+        ),
+        margin (
+                around: (top, right, bottom, left),
+                vertical: (top, bottom),
+                horizontal: (left, right)
+        )
+);
+
+/* generate padding classes */
+@each $kind in $padding-or-margin {
+  @each $direction in nth($kind, 2) {
+    @each $size in $sizes {
+      .#{nth($kind, 1)}-#{nth($direction, 1)}-#{nth($size, 1)} {
+        @each $side in nth($direction, 2) {
+          @include calc-prefixed(#{nth($kind, 1)}-#{nth($side, 1)}, #{$base-font-size} * nth($size, 2), !important);
+        }
+      }
+    }
+  }
+}

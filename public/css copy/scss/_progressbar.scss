@@ -1,0 +1,19 @@
+.progress {
+  width: 100%;
+  background-color: darken($background-color, 2);
+  padding: 0;
+  height: $base-font-size;
+  border-radius: $controls-border-radius;
+
+  span {
+    display: block;
+    font-size: $base-font-size;
+    height: 100%;
+    border-bottom-left-radius: $controls-border-radius;
+    border-top-left-radius: $controls-border-radius;
+    border-bottom-right-radius: $controls-border-radius;
+    border-top-right-radius: $controls-border-radius;
+    background: $success;
+    @include linear-gradient(lighten($success, 10), $success);
+  }
+}

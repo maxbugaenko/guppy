@@ -1,0 +1,39 @@
+$main-font: monaco;
+$h-font: monaco;
+$base-font-size: 20px;
+
+$switch-orientation-point-medium: "1100px";
+$switch-orientation-point-mobile: "600px";
+
+@mixin main-font() {
+  font-family: $main-font;
+  font-weight: 300;
+}
+
+@mixin h-font() {
+  font-family: $h-font;
+  font-weight: 300;
+  color: $warning;
+}
+
+
+$menu-aside-width: 220px;
+$background-color: #fff;
+$controls-depth: 1px;
+$controls-text-color: #fbfbfb;
+$controls-border-radius: 4px;
+$controls-default-color: darken($background-color, 25);
+$success: #fd5559;
+//$warning: #4abfb4;
+$warning: #4e4e4e;
+$info: lighten(#394e63, 20);
+$info: #4d8cdf;
+$text-color: lighten(#4e4e4e, 20);
+$inputs-background: darken($background-color, 7);
+
+$controls-color-list: (
+        success $success,
+        warning $warning,
+        info $info,
+        default $controls-default-color
+);

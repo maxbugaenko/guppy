@@ -1,0 +1,9 @@
+@each $control-kind in $controls-color-list {
+  .alert-#{nth($control-kind, 1)} {
+    background-color: fade-out(nth($control-kind, 2), .8);
+    border-left: 4px solid nth($control-kind, 2);
+    padding: $base-font-size;
+    color: darken(nth($control-kind, 2), 20);
+    border-radius: $controls-border-radius;
+  }
+}

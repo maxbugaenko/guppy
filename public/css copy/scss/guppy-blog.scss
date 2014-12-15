@@ -1,0 +1,53 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
+$code-font: "Source Code Pro";
+@import "variables";
+@import "highlight";
+
+.code {
+  font-family: monaco;
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.search-bar {
+  background-color: darken($info, 3) !important;
+  text-align: left !important;
+  box-sizing: border-box;
+  color: darken($info, 14) !important;
+  width: 100%;
+  border-radius: $controls-border-radius;
+  padding: $base-font-size;
+  border: 0;
+  outline: 0;
+  font-size: $base-font-size;
+  position: relative;
+}
+
+
+.search-bar::-webkit-input-placeholder {
+  color: darken($info, 10) !important;
+  text-align: left !important;
+}
+
+.tag {
+  border-radius: 15px;
+  background-color: #fff;
+  border: 2px solid lightgray;
+  padding: .2em .5em;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.logo-image {
+  width: 150px !important;
+}
+
+.logo-image-mobile {
+  width: 75px !important;
+}

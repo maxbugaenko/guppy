@@ -3,7 +3,7 @@ require 'sinatra';
 require 'haml'
 require 'sass'
 
-set :views, :scss => settings.root + 'public/css/scss', :haml => 'views', :default => 'views'
+set :views, :scss => settings.root + '/public/css/scss', :haml => 'views', :default => 'views'
 
 helpers do
   def find_template(views, name, engine, &block)

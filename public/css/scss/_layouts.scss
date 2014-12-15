@@ -1,3 +1,6 @@
+@import "variables";
+@import "mixins";
+
 .container {
   margin: 0 auto;
   position: relative;
@@ -93,49 +96,3 @@ $i: 5;
   }
   $i: $i + 5 !global;
 }
-
-
-.mobile-only {
-  display: none;
-
-  @media all and (max-width: $switch-orientation-point-mobile) {
-    display: inherit;
-    @include transition();
-  }
-}
-
-.desktop-only {
-  display: inherit;
-
-  @media all and (max-width: $switch-orientation-point-medium) {
-    display: none;
-  }
-
-  @media all and (max-width: $switch-orientation-point-mobile) {
-    display: none;
-  }
-}
-
-.mobile-and-medium-only {
-  display: none;
-
-  @media all and (max-width: $switch-orientation-point-medium) {
-    display: inherit;
-    @include transition();
-  }
-
-  @media all and (max-width: $switch-orientation-point-mobile) {
-    display: inherit;
-    @include transition();
-  }
-}
-
-.desktop-and-medium-only {
-  display: inherit;
-
-  @media all and (max-width: $switch-orientation-point-mobile) {
-    display: none;
-    @include transition();
-  }
-}
-

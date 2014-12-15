@@ -1,3 +1,6 @@
+@import "variables";
+@import "mixins";
+
 .left {
   text-align: left;
 }
@@ -77,113 +80,6 @@ h5 {
   padding: $base-font-size 0;
 }
 
-.no-padding {
-  padding: 0 !important;
-}
-
-.no-horizontal-padding {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.no-vertical-padding {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-
-$sizes: (
-  small 0.7,
-  base 1,
-  medium 2,
-  big 4,
-  large 3,
-);
-
-$padding-or-margin: (
-  padding (
-    around: (top, right, bottom, left),
-    vertical: (top, bottom),
-    horizontal: (left, right)
-  ),
-  margin (
-    around: (top, right, bottom, left),
-    vertical: (top, bottom),
-    horizontal: (left, right)
-  )
-);
-
-/* generate padding classes */
-@each $kind in $padding-or-margin {
-  @each $direction in nth($kind, 2) {
-    @each $size in $sizes {
-      .#{nth($kind, 1)}-#{nth($direction, 1)}-#{nth($size, 1)} {
-        @each $side in nth($direction, 2) {
-          @include calc-prefixed(#{nth($kind, 1)}-#{nth($side, 1)}, #{$base-font-size} * nth($size, 2), !important);
-        }
-      }
-    }
-  }
-}
-
-$controls-color-list: (
-  success $success,
-  warning $warning,
-  info $info,
-  default $controls-default-color
-);
-
-@each $control-kind in $controls-color-list {
-  .background-#{nth($control-kind, 1)} {
-    background-color: nth($control-kind, 2);
-  }
-
-  .darken-background-#{nth($control-kind, 1)} {
-    background-color: darken(nth($control-kind, 2), 10);
-  }
-
-  .double-darken-background-#{nth($control-kind, 1)} {
-    background-color: darken(nth($control-kind, 2), 15);
-  }
-
-  .lighten-background-#{nth($control-kind, 1)} {
-    background-color: lighten(nth($control-kind, 2), 10);
-  }
-
-  .double-lighten-background-#{nth($control-kind, 1)} {
-    background-color: lighten(nth($control-kind, 2), 15);
-  }
-}
-
-@each $control-kind in $controls-color-list {
-  .#{nth($control-kind, 1)} {
-    color: nth($control-kind, 2) !important;
-  }
-
-  .darken-#{nth($control-kind, 1)} {
-    color: darken(nth($control-kind, 2), 10) !important;
-  }
-
-  .lighten-#{nth($control-kind, 1)} {
-    color: lighten(nth($control-kind, 2), 10) !important;
-  }
-}
-
-.light {
-  color: #ecf0f1;
-}
-
-.background-color {
-  background-color: $background-color !important;
-}
-
-.controls-text-color {
-  color: $controls-text-color !important;
-}
-
-.background-controls-text-color {
-  background-color: $controls-default-color !important;
-}
 
 .round-borders {
   border-radius: $controls-border-radius !important;
@@ -193,64 +89,10 @@ $controls-color-list: (
   border-radius: 0 !important;
 }
 
-
-.lighten-text {
-  color: lighten($text-color, 25) !important;
-}
-
-.double-lighten-text {
-  color: lighten($text-color, 45) !important;
-}
-
-.darken-text {
-  color: darken($text-color, 25) !important;
-}
-
-.double-darken-text {
-  color: darken($text-color, 45) !important;
-}
-
-.text-color {
-  color: $text-color !important;
-}
-
-.lighten-background {
-  background-color: lighten($background-color, 5) !important;
-}
-
-.double-lighten-background {
-  background-color: lighten($background-color, 10) !important;
-}
-
-.darken-background {
-  background-color: darken($background-color, 5) !important;
-}
-
-.double-darken-background {
-  background-color: darken($background-color, 10) !important;
-}
-
-@each $control-kind in $controls-color-list {
-  .hover-#{nth($control-kind, 1)} {
-
-    &:hover {
-      @include transition(.1s);
-      color: nth($control-kind, 2);
-    }
-  }
-}
-
 .no-transition {
   @include transition(0s);
 }
 
-.center-if-mobile-or-medium {
-
-  @media all and (max-width: $switch-orientation-point-medium) {
-    text-align: center !important;
-  }
-
-  @media all and (max-width: $switch-orientation-point-mobile) {
-    text-align: center !important;
-  }
+.spread-lines {
+  line-height: $base-font-size*1.5;
 }

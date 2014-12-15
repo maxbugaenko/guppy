@@ -1,32 +1,87 @@
-.container.center.padding-top-large.padding-horizontal-large
-  %p
-    %span.guppy.white.animate-show-slow guppy
+.container.padding-around-large.shift1
+  .span4.padding-around-large.right
+    %h1.success.large guppy.io
+    %span.default.medium load clean and awesome styles that you really need in your project
+    %p.small.upper
+      %a{href: 'http://github.com'} github
+      %a{href: 'http://github.com'} contact
     %br
-    %span.guppy.large.white.animate-show-slow responsive elements
-    %p.lighten-brown.big.animate-show-slow Introducing Guppy CSS elements for responsive web design like buttons, badges, animated menus, dropboxes, tabs
-.container.padding-bottom-large.center
-  .buttoned-field
-    %div
-      %input.guppy.text-field-brown.padding-around-medium.medium{:placeholder => "leave your email"}
-    %div
-      %button.button-brown.padding-around-medium.medium
-        %i.fa.fa-paper-plane.medium
-        &#160;
-.container.darken-background.padding-around-large.center
-  .span6.right.padding-around-medium
-    %button.button-modern-brown.f-span4.medium.upper.guppy
-      buttons
-    %button.button-modern-brown.f-span4.medium.upper.guppy
-      tabs
-    %button.button-modern-brown.f-span4.medium.upper.guppy
-      menus
-    %button.button-modern-brown.f-span4.medium.upper.guppy
-      layouts
-    %button.button-modern-brown.f-span5.medium.upper.guppy
-      dropdowns
-    %button.button-modern-brown.f-span5.medium.upper.guppy
-      animations
-    %button.button-modern-brown.f-span5.medium.upper.guppy
-      typography
-  .span6.left.big.lighten-brown.padding-around-medium
-    Introducing Guppy CSS elements for responsive web design like buttons, badges, animated menus, dropboxes, tabs
+    %br
+    -#%h3 variables
+    -#%textarea.text-field.f-span12.small{rows: 20}
+    -#  $background-color: #fff;
+    -#  $controls-depth: 1px;
+    -#  $controls-text-color: #fbfbfb;
+    -#  $controls-border-radius: 4px;
+    -#  $controls-default-color: darken($background-color, 25);
+    -#  $success: #fd5559;
+    -#  $warning: #4e4e4e;
+    -#  $info: lighten(#394e63, 20);
+    -#  $info: #4d8cdf;
+    -#  $text-color: lighten(#4e4e4e, 20);
+    -#  $inputs-background: darken($background-color, 7);
+  .span8
+    %p
+      %a.medium.warning{href: url('/load/typography')}
+        = "@import url(#{cloud_url('typography')})"
+      %br
+      text sizes like small, medium, big, large, text alignment classes and etc.
+      .spread-lines
+        %span.badge-warning.small .bold
+        %span.badge-warning.small .bolder
+        %span.badge-warning.small .small
+        %span.badge-warning.small .medium
+        %span.badge-warning.small .big
+        %span.badge-warning.small .large
+        %span.badge-warning.small .upper
+        %span.badge-warning.small .lower
+        %span.badge-warning.small .center
+        %span.badge-warning.small .right
+        %span.badge-warning.small .left
+        %span.badge-warning.small .left-if-mobile
+        %span.badge-warning.small .right-if-mobile
+        %span.badge-warning.small .right-if-tablet
+    %p
+      %a.medium.warning{href: url('/load/visibility')}
+        = "@import url(#{cloud_url('visibility')})"
+      %br
+      show and hide elements depending on screen sizes. various options and conditions
+      .spread-lines
+        %span.badge-warning.small .hide-if-wide
+        %span.badge-warning.small .hide-if-mobile
+        %span.badge-warning.small .hide-if-tablet
+        %span.badge-warning.small .show-if-mobile-only
+        %span.badge-warning.small .show-if-mobile-and-tablet
+        %span.badge-warning.small .show-if-wide-and-tablet
+    %p
+      %a.medium.warning{href: url('/load/paddings')}
+        = "@import url(#{cloud_url('paddings')})"
+      %br
+      lots of options to set and disable paddings. all sizes, top, bottom, horizontal, vertical, responsive, etc.
+      .spread-lines
+        %span.badge-warning.small .padding-around-small | medim | large
+        %span.badge-warning.small .padding-top-small | medium | large
+        %span.badge-warning.small .padding-bottom-small | medium | large
+        %span.badge-warning.small .no-padding
+        %span.badge-warning.small .no-padding-if-mobile
+        %span.badge-warning.small .no-padding-if-tablet
+    %p
+      %a.medium.warning{href: url('/load/layouts')}
+        = "@import url(#{cloud_url('layouts')})"
+      %br
+      responsive grid-based layouts, containers, shifts, units
+      .spread-lines
+        %span.badge-warning.small .container
+        %span.badge-warning.small .span1 .. 12
+        %span.badge-warning.small .shift1 .. 6
+        %span.badge-warning.small .unit5 .. 100
+        %span.badge-warning.small .mobile-span1..12
+    %p
+      %a.medium.warning{href: url('/load/buttons')}
+        = "@import url(#{cloud_url('buttons')})"
+      %br
+      styled and colored buttons. could be shadowed could be not. could be rounded could be not
+      .spread-lines
+        %span.badge-warning.small .button-#color
+        %span.badge-warning.small .button-modern-#color
+        %span.badge-warning.small .button-tag-#color

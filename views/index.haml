@@ -1,12 +1,19 @@
 .container.padding-around-large.shift1
   .span4.padding-around-large.right
-    %h1.success.large guppy.io
-    %span.default.medium load clean and awesome styles that you really need in your project
-    %p.small.upper
-      %a{href: 'http://github.com'} github
-      %a{href: 'http://github.com'} contact
-    %br
-    %br
+    %h1.success.base
+      %img{src: url('favicon.ico'), width: '150px'}
+    %span.default.medium easily import and use awesome pieces of CSS
+    %p.upper.big.default
+      %a{href: 'http://github.com'}
+        %i.fa.fa-git
+      %a{href: 'http://github.com'}
+        %i.fa.fa-twitter
+    %p.padding-vertical-big
+      %img{src: url('images/heroku.png'), width: '100px'}
+      %img{src: url('images/github.jpeg'), width: '100px'}
+      %img{src: url('images/haml.png'), width: '100px'}
+      %img{src: url('images/sass.png'), width: '60px'}
+      %img{src: url('images/sinatra.png'), width: '100px'}
     -#%h3 variables
     -#%textarea.text-field.f-span12.small{rows: 20}
     -#  $background-color: #fff;
@@ -41,6 +48,9 @@
         %span.badge-warning.small .left-if-mobile
         %span.badge-warning.small .right-if-mobile
         %span.badge-warning.small .right-if-tablet
+        %a{href: url('/docs')}
+          %i.fa.fa-css3
+          all classes
     %p
       %a.medium.warning{href: url('/load/visibility')}
         = "@import url(#{cloud_url('visibility')})"

@@ -13,7 +13,7 @@ helpers do
   end
 
   def cloud_url(url)
-    '//guppy.io/' + url
+    "<span class='default'>//guppy.io/#{url}</span>"
   end
 end
 

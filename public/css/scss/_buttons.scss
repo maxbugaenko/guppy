@@ -1,16 +1,15 @@
-@import "variables";
 @import "controls";
-@import "mixins";
 
 %button {
   @extend %control;
-  text-transform: uppercase;
-  transition: all .3s ease;
-  font-size: $base-font-size/1.2;
-  padding: $base-font-size/1.5 $base-font-size*1.2;
+  @if mixin-exists(transition) {
+    @include transition(.3s);
+  }
 
   &:hover {
-    transition: all .3s ease;
+    @if mixin-exists(transition) {
+      @include transition(.3s);
+    }
   }
 
   &:active {
@@ -26,7 +25,9 @@
     color: $controls-text-color;
 
     &:hover {
-      @include hover(nth($control-kind, 2));
+      @if mixin-exists(hover) {
+        @include hover(nth($control-kind, 2));
+      }
     }
   }
 
@@ -37,9 +38,15 @@
     border: 1px #d3d3d3 solid;
 
     &:hover {
-      @include hover(nth($control-kind, 2));
-      @include transition(.1s);
-      border: 1px hover(nth($control-kind, 2)) solid;
+      @if mixin-exists(hover) {
+        @include hover(nth($control-kind, 2));
+      }
+      @if mixin-exists(transition) {
+        @include transition(.1s);
+      }
+      @if mixin-exists(hover) {
+        border: 1px hover(nth($control-kind, 2)) solid;
+      }
       color: #fff;
     }
   }

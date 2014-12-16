@@ -7,6 +7,16 @@
   }
 }
 
+@mixin main-font() {
+  font-family: $main-font;
+  font-weight: 300;
+}
+
+@mixin h-font() {
+  font-family: $h-font;
+  font-weight: 300;
+}
+
 @mixin hover($color) {
   background-color: darken($color, 5);
 }
@@ -55,21 +65,6 @@
   animation-duration: $duration;
   animation-fill-mode: forwards;
 
-}
-
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content;
-  }
-  @-moz-keyframes #{$name} {
-    @content;
-  }
-  @-ms-keyframes #{$name} {
-    @content;
-  }
-  @keyframes #{$name} {
-    @content;
-  }
 }
 
 @mixin linear-gradient($fromColor, $toColor) {

@@ -3,6 +3,7 @@ GEM
   specs:
     daemons (1.1.9)
     eventmachine (1.0.3)
+    guppy (0.0.4)
     haml (4.0.5)
       tilt
     rack (1.5.2)
@@ -23,6 +24,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  guppy (= 0.0.4)
   haml
   sass
   sinatra (= 1.4.5)

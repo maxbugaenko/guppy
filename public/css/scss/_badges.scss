@@ -1,3 +1,6 @@
+@import "controls";
+@import "colors";
+
 %badge {
   @extend %control;
   cursor: auto;

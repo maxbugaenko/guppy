@@ -1,97 +1,111 @@
-.container.padding-around-large.shift1
-  .span4.padding-around-large.right
-    %h1.success.base
-      %img{src: url('favicon.ico'), width: '150px'}
-    %span.default.medium easily import and use awesome pieces of CSS
-    %p.upper.big.default
-      %a{href: 'http://github.com'}
-        %i.fa.fa-git
-      %a{href: 'http://github.com'}
-        %i.fa.fa-twitter
-    %p.padding-vertical-big
-      %img{src: url('images/heroku.png'), width: '100px'}
-      %img{src: url('images/github.jpeg'), width: '100px'}
-      %img{src: url('images/haml.png'), width: '100px'}
-      %img{src: url('images/sass.png'), width: '60px'}
-      %img{src: url('images/sinatra.png'), width: '100px'}
-    -#%h3 variables
-    -#%textarea.text-field.f-span12.small{rows: 20}
-    -#  $background-color: #fff;
-    -#  $controls-depth: 1px;
-    -#  $controls-text-color: #fbfbfb;
-    -#  $controls-border-radius: 4px;
-    -#  $controls-default-color: darken($background-color, 25);
-    -#  $success: #fd5559;
-    -#  $warning: #4e4e4e;
-    -#  $info: lighten(#394e63, 20);
-    -#  $info: #4d8cdf;
-    -#  $text-color: lighten(#4e4e4e, 20);
-    -#  $inputs-background: darken($background-color, 7);
-  .span8
-    %p
-      %a.medium.warning{href: url('/load/typography')}
-        = "@import url(#{cloud_url('typography')})"
-      %br
-      text sizes like small, medium, big, large, text alignment classes and etc.
-      .spread-lines
-        %span.badge-warning.small .bold
-        %span.badge-warning.small .bolder
-        %span.badge-warning.small .small
-        %span.badge-warning.small .medium
-        %span.badge-warning.small .big
-        %span.badge-warning.small .large
-        %span.badge-warning.small .upper
-        %span.badge-warning.small .lower
-        %span.badge-warning.small .center
-        %span.badge-warning.small .right
-        %span.badge-warning.small .left
-        %span.badge-warning.small .left-if-mobile
-        %span.badge-warning.small .right-if-mobile
-        %span.badge-warning.small .right-if-tablet
-        %a{href: url('/docs')}
-          %i.fa.fa-css3
-          all classes
-    %p
-      %a.medium.warning{href: url('/load/visibility')}
-        = "@import url(#{cloud_url('visibility')})"
-      %br
-      show and hide elements depending on screen sizes. various options and conditions
-      .spread-lines
-        %span.badge-warning.small .hide-if-wide
-        %span.badge-warning.small .hide-if-mobile
-        %span.badge-warning.small .hide-if-tablet
-        %span.badge-warning.small .show-if-mobile-only
-        %span.badge-warning.small .show-if-mobile-and-tablet
-        %span.badge-warning.small .show-if-wide-and-tablet
-    %p
-      %a.medium.warning{href: url('/load/paddings')}
-        = "@import url(#{cloud_url('paddings')})"
-      %br
-      lots of options to set and disable paddings. all sizes, top, bottom, horizontal, vertical, responsive, etc.
-      .spread-lines
-        %span.badge-warning.small .padding-around-small | medim | large
-        %span.badge-warning.small .padding-top-small | medium | large
-        %span.badge-warning.small .padding-bottom-small | medium | large
-        %span.badge-warning.small .no-padding
-        %span.badge-warning.small .no-padding-if-mobile
-        %span.badge-warning.small .no-padding-if-tablet
-    %p
-      %a.medium.warning{href: url('/load/layouts')}
-        = "@import url(#{cloud_url('layouts')})"
-      %br
-      responsive grid-based layouts, containers, shifts, units
-      .spread-lines
-        %span.badge-warning.small .container
-        %span.badge-warning.small .span1 .. 12
-        %span.badge-warning.small .shift1 .. 6
-        %span.badge-warning.small .unit5 .. 100
-        %span.badge-warning.small .mobile-span1..12
-    %p
-      %a.medium.warning{href: url('/load/buttons')}
-        = "@import url(#{cloud_url('buttons')})"
-      %br
-      styled and colored buttons. could be shadowed could be not. could be rounded could be not
-      .spread-lines
-        %span.badge-warning.small .button-#color
-        %span.badge-warning.small .button-modern-#color
-        %span.badge-warning.small .button-tag-#color
+.container.padding-horizontal-large.padding-around-medium.center.shift2
+  %h1.success.large.bold.upper.spread.no-wrap
+    %img{src: url('favicon.ico'), width: '60px'}
+    guppy
+  .default.medium.padding-horizontal-large easily import and use small awesome pieces of SCSS
+  %ul.medium.menu.padding-vertical-medium.upper
+    %li
+      %a.underlined{href: url('/readme')} readme
+    %li
+      %a.underlined{href: url('/readme')} contribute
+    %li
+      %a.underlined{href: url('/readme')} modules
+  -#%p
+  -#  %a.no-underline{href: 'http://github.com'}
+  -#    %i.fa.fa-git-square.big.warning.hover-success
+  -#  %a.no-underline{href: 'http://github.com'}
+  -#    %i.fa.fa-twitter-square.big.warning.hover-success
+  -#%p.padding-vertical-large
+  -#  %img{src: url('images/heroku.png'), width: '100px'}
+  -#  %img{src: url('images/github.jpeg'), width: '100px'}
+  -#  %img{src: url('images/haml.png'), width: '100px'}
+  -#  %img{src: url('images/sass.png'), width: '60px'}
+  -#  %img{src: url('images/sinatra.png'), width: '100px'}
+  -#%h3 variables
+  -#%textarea.text-field.f-span12.small{rows: 20}
+  -#  $background-color: #fff;
+  -#  $controls-depth: 1px;
+  -#  $controls-text-color: #fbfbfb;
+  -#  $controls-border-radius: 4px;
+  -#  $controls-default-color: darken($background-color, 25);
+  -#  $success: #fd5559;
+  -#  $warning: #4e4e4e;
+  -#  $info: lighten(#394e63, 20);
+  -#  $info: #4d8cdf;
+  -#  $text-color: lighten(#4e4e4e, 20);
+  -#  $inputs-background: darken($background-color, 7);
+.container.center.padding-around-large.shift1
+  .big.no-wrap= "@import url(//guppy.io/module)"
+  %p
+    this is a basic usage of our modules. here
+    %span.green module
+    is a scss module that contains various ready to use classes. there are plenty of modules you can take advantage of. check them out
+  %ul.menu.medium.green
+    %li.default //guppy.io/
+    %li
+      %a{href: url('/buttons')} buttons
+    %li
+      %a{href: url('/typography')} typography
+    %li
+      %a{href: url('/visibility')} visibility
+    %li
+      %a{href: url('/colors')} colors
+    %li
+      %a{href: url('/inputs')} inputs
+    %li
+      %a{href: url('/paddings')} paddings
+    %li
+      %a{href: url('/layouts')} layouts
+    %li
+      %a{href: url('/tabs')} tabs
+    %li
+      %a{href: url('/badges')} badges
+    %li
+      %a{href: url('/dropdowns')} dropdowns
+    %li
+      %a{href: url('/menus')} menus
+.container.center.padding-around-large.shift1
+  %h1 custom configuration
+  %p
+    create
+    %strong.green variables.scss
+    file and store on your own web server.
+    this file should contain all variables listed
+    at the right
+  %textarea.text-field.f-span10{rows: 20}
+    $switch-orientation-point-medium: "1100px";
+    $switch-orientation-point-mobile: "600px";
+    $background-color: #fff;
+    $controls-depth: 1px;
+    $controls-text-color: #fbfbfb;
+    $controls-border-radius: 4px;
+    $controls-default-color: darken($background-color, 25);
+    $success: #fd5559;
+    $green: #3688c2;
+    $warning: #4e4e4e;
+    $info: lighten(#394e63, 20);
+    $info: #4d8cdf;
+    $text-color: lighten(#4e4e4e, 20);
+    $inputs-background: darken($background-color, 7);
+    $main-font: monaco;
+    $h-font: monaco;
+    $base-font-size: 20px;
+  %button.button-green.base.padding-around-small.f-span3 configure
+.container.shift2.padding-around-large.center
+  -#:preserve
+  -#  <pre class="highlight default"><code>
+  -#    %html
+  -#      %head
+  -#        %title cool website
+  -#        %link<span class="o">{</span>type<span class="o">:</span> <span class="s1">'text/css'</span>,
+  -#          href<span class="o">:</span> <span class="s1">'yours.css'</span></span><span class="o">,
+  -#          <span class='default'>rel</span><span class="o">:</span> <span class="s1">'stylesheet'</span></span><span class="o">,
+  -#        }</span>
+  -#        %link<span class="o">{</span>type<span class="o">:</span> <span class="s1">'text/css'</span>,
+  -#          href<span class="o">:</span> <span class="s1 success">'//guppy.io/paddings,colors'</span></span><span class="o">,
+  -#          <span class='default'>rel</span><span class="o">:</span> <span class="s1">'stylesheet'</span></span><span class="o">,
+  -#        }</span>
+  -#    %body
+  -#      <span class="o warning">=yield</span>
+  -#      %footer
+  -#  </code></pre>

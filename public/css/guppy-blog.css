@@ -192,4 +192,13 @@
 .logo-image-mobile {
   width: 75px !important; }
 
+.underlined {
+  border-bottom: 1px solid !important; }
+
+.brown {
+  color: #784d16; }
+
+.yellow {
+  color: #ab7631; }
+
 /*# sourceMappingURL=guppy-blog.css.map */

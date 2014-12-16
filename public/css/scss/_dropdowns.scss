@@ -1,3 +1,5 @@
+@import "controls";
+
 $controls-icon-size: 1.3em;
 
 %dropdown-menu {
@@ -107,16 +109,22 @@ $controls-icon-size: 1.3em;
 
     ul {
       background-color: nth($control-kind, 2);
-      @include shadow(nth($control-kind, 2));
+      @if mixin-exists(shadow) {
+        @include shadow(nth($control-kind, 2));
+      }
 
       li {
 
         &:hover {
-          @include hover(nth($control-kind, 2));
+          @if mixin-exists(hover) {
+            @include hover(nth($control-kind, 2));
+          }
         }
 
         &:active {
-          @include active(nth($control-kind, 2));
+          @if mixin-exists(active) {
+            @include active(nth($control-kind, 2));
+          }
         }
 
         &.item-header {
@@ -247,22 +255,30 @@ $controls-icon-size: 1.3em;
 @each $control-kind in $controls-color-list {
   .dropdown-#{nth($control-kind, 1)} {
     @extend %dropdown;
-    @include shadow(nth($control-kind, 2));
+    @if mixin-exists(shadow) {
+      @include shadow(nth($control-kind, 2));
+    }
     background-color: nth($control-kind, 2);
     color: $controls-text-color;
 
     ul {
       background-color: #{nth($control-kind, 2)};
-      @include shadow(nth($control-kind, 2));
+      @if mixin-exists(shadow) {
+        @include shadow(nth($control-kind, 2));
+      }
 
       li {
 
         &:hover {
-          @include hover(nth($control-kind, 2));
+          @if mixin-exists(hover) {
+            @include hover(nth($control-kind, 2));
+          }
         }
 
         &:active {
-          @include active(nth($control-kind, 2));
+          @if mixin-exists(active) {
+            @include active(nth($control-kind, 2));
+          }
         }
       }
     }

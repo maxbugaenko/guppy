@@ -1,27 +1,33 @@
-<pre class="highlight">&lt;div <span class="nv">class</span><span class="o">=</span><span class="s2">"button-group"</span>&gt;
-    &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-default"</span>&gt;
-        &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-eur"</span>&gt;&lt;/i&gt;
-    &lt;/button&gt;
-    &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-success"</span>&gt;
-        &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-rub"</span>&gt;&lt;/i&gt;
-    &lt;/button&gt;
-    &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-warning"</span>&gt;
-        &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-usd"</span>&gt;&lt;/i&gt;
-    &lt;/button&gt;
-    &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button button-info"</span>&gt;
-        &lt;i <span class="nv">class</span><span class="o">=</span><span class="s2">"fa fa-gbp"</span>&gt;&lt;/i&gt;
-    &lt;/button&gt;
-&lt;/div&gt;
-</pre>
-<pre class="highlight">&lt;form <span class="nv">action</span><span class="o">=</span><span class="s2">"#"</span> <span class="nv">method</span><span class="o">=</span><span class="s2">"GET"</span>&gt;
-    &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span6"</span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"name"</span>/&gt;
-    &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span6"</span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"lastname"</span>/&gt;
-    &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span12"</span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"address"</span>/&gt;
-    &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span6"</span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"city"</span>/&gt;
-    &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span3"</span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"state"</span>/&gt;
-    &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"input"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"text-field f-span3"</span> <span class="nv">placeholder</span><span class="o">=</span><span class="s2">"zip"</span>/&gt;
-    &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"submit"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"button-success f-span7"</span> <span class="nv">value</span><span class="o">=</span><span class="s2">"submit"</span>&gt;&lt;/input&gt;
-    &lt;button <span class="nv">class</span><span class="o">=</span><span class="s2">"button-warning f-span5"</span>&gt;cancel&lt;/button&gt;
-    &lt;input <span class="nb">type</span><span class="o">=</span><span class="s2">"checkbox"</span> <span class="nv">id</span><span class="o">=</span><span class="s2">"checkbox1"</span>/&gt;&lt;label <span class="k">for</span><span class="o">=</span><span class="s2">"checkbox1"</span> <span class="nv">class</span><span class="o">=</span><span class="s2">"darker"</span>&gt;Let me know about updates&lt;/label&gt;
-&lt;/form&gt;
-</pre>
+<pre class="highlight"><code>%html
+%head
+%title guppy.io
+%meta<span class="o">{</span>:charset <span class="o">=</span>&gt; <span class="s1">'UTF-8'</span><span class="o">}</span>
+%meta<span class="o">{</span><span class="s1">'http-equiv'</span> <span class="o">=</span>&gt; <span class="s1">'Content-Type'</span>, :content <span class="o">=</span>&gt; <span class="s1">'text/html; charset=utf-8'</span><span class="o">}</span>
+%link<span class="o">{</span>:type <span class="o">=</span>&gt; <span class="s1">'text/css'</span>, :href <span class="o">=</span>&gt; url<span class="o">(</span><span class="s1">'../css/guppy.css'</span><span class="o">)</span>, :rel <span class="o">=</span>&gt; <span class="s1">'stylesheet'</span><span class="o">}</span>
+%link<span class="o">{</span>:type <span class="o">=</span>&gt; <span class="s1">'text/css'</span>, :href <span class="o">=</span>&gt; url<span class="o">(</span><span class="s1">'../css/guppy-blog.css'</span><span class="o">)</span>, :rel <span class="o">=</span>&gt; <span class="s1">'stylesheet'</span><span class="o">}</span>
+%link<span class="o">{</span>:type <span class="o">=</span>&gt; <span class="s1">'text/css'</span>, :href <span class="o">=</span>&gt; <span class="s1">'//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'</span>, :rel <span class="o">=</span>&gt; <span class="s1">'stylesheet'</span><span class="o">}</span>
+%script<span class="o">{</span>:src <span class="o">=</span>&gt; <span class="s1">'../js/jquery.js'</span><span class="o">}</span>
+%body
+<span class="o">=</span>yield
+</code></pre>
+<pre class="highlight"><code><span class="nv">$switch</span>-orientation-point-medium: <span class="s2">"1100px"</span>;
+<span class="nv">$switch</span>-orientation-point-mobile: <span class="s2">"600px"</span>;
+<span class="nv">$menu</span>-aside-width: 220px;
+<span class="nv">$background</span>-color: <span class="c">#fff;</span>
+<span class="nv">$controls</span>-depth: 1px;
+<span class="nv">$controls</span>-text-color: <span class="c">#fbfbfb;</span>
+<span class="nv">$controls</span>-border-radius: 4px;
+<span class="nv">$controls</span>-default-color: darken<span class="o">(</span><span class="nv">$background</span>-color, 25<span class="o">)</span>;
+<span class="nv">$success</span>: <span class="c">#fd5559;</span>
+<span class="nv">$green</span>: <span class="c">#3688c2;</span>
+<span class="nv">$warning</span>: <span class="c">#4e4e4e;</span>
+<span class="nv">$info</span>: lighten<span class="o">(</span><span class="c">#394e63, 20);</span>
+<span class="nv">$info</span>: <span class="c">#4d8cdf;</span>
+<span class="nv">$text</span>-color: lighten<span class="o">(</span><span class="c">#4e4e4e, 20);</span>
+<span class="nv">$inputs</span>-background: darken<span class="o">(</span><span class="nv">$background</span>-color, 7<span class="o">)</span>;
+</code></pre>
+<pre class="highlight"><code>
+<span class="nv">$main</span>-font: monaco;
+<span class="nv">$h</span>-font: monaco;
+<span class="nv">$base</span>-font-size: 20px;
+</code></pre>

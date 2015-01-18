@@ -3,14 +3,14 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Code+Pro");
 .hide-if-wide {
   display: none; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 500px) {
     .hide-if-wide {
       display: block; } }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .hide-if-wide {
       display: block; } }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
   .hide-if-tablet {
     transition: all 0.3s ease !important;
     -moz-transition: all 0.3s ease !important;
@@ -18,7 +18,7 @@
     -webkit-transition: all 0.3s ease !important;
     display: none !important; } }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 350px) {
   .hide-if-mobile {
     transition: all 0.3s ease !important;
     -moz-transition: all 0.3s ease !important;
@@ -28,7 +28,7 @@
 
 .show-if-tablet-only {
   display: none; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 500px) {
     .show-if-tablet-only {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -38,7 +38,7 @@
 
 .mobile-only {
   display: none; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .mobile-only {
       display: inherit;
       transition: all 0.3s ease !important;
@@ -48,23 +48,23 @@
 
 .desktop-only {
   display: inherit; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 500px) {
     .desktop-only {
       display: none; } }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .desktop-only {
       display: none; } }
 
 .mobile-and-medium-only {
   display: none; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 500px) {
     .mobile-and-medium-only {
       display: inherit;
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
       -o-transition: all 0.3s ease !important;
       -webkit-transition: all 0.3s ease !important; } }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .mobile-and-medium-only {
       display: inherit;
       transition: all 0.3s ease !important;
@@ -72,7 +72,7 @@
       -o-transition: all 0.3s ease !important;
       -webkit-transition: all 0.3s ease !important; } }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
   .medium-if-tablet {
     font-size: 80%;
     transition: all 0.3s ease !important;
@@ -80,7 +80,7 @@
     -o-transition: all 0.3s ease !important;
     -webkit-transition: all 0.3s ease !important; } }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
   .base-if-tablet {
     font-size: 25px;
     transition: all 0.3s ease !important;
@@ -88,14 +88,14 @@
     -o-transition: all 0.3s ease !important;
     -webkit-transition: all 0.3s ease !important; } }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
   .medium-if-mobile-or-tablet {
     font-size: 80%;
     transition: all 0.3s ease !important;
     -moz-transition: all 0.3s ease !important;
     -o-transition: all 0.3s ease !important;
     -webkit-transition: all 0.3s ease !important; } }
-@media all and (max-width: 400px) {
+@media all and (max-width: 350px) {
   .medium-if-mobile-or-tablet {
     font-size: 80%;
     transition: all 0.3s ease !important;
@@ -103,7 +103,7 @@
     -o-transition: all 0.3s ease !important;
     -webkit-transition: all 0.3s ease !important; } }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 350px) {
   .small-if-mobile {
     font-size: 40%;
     transition: all 0.3s ease !important;
@@ -111,7 +111,7 @@
     -o-transition: all 0.3s ease !important;
     -webkit-transition: all 0.3s ease !important; } }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 350px) {
   .tiny-if-mobile {
     font-size: 70%;
     transition: all 0.3s ease !important;
@@ -121,7 +121,7 @@
 
 .wide-and-tablet-only {
   display: inherit; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .wide-and-tablet-only {
       display: none;
       transition: all 0.3s ease !important;
@@ -129,26 +129,26 @@
       -o-transition: all 0.3s ease !important;
       -webkit-transition: all 0.3s ease !important; } }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
   .center-if-mobile-or-tablet {
     text-align: center !important; } }
-@media all and (max-width: 400px) {
+@media all and (max-width: 350px) {
   .center-if-mobile-or-tablet {
     text-align: center !important; } }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 350px) {
   .hover-warning-if-mobile:hover {
     background-color: #4e4e4e; } }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 350px) {
   .hover-success-if-mobile:hover {
-    background-color: #f2f2f2; } }
+    background-color: #5691CC; } }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
   .f-span12-if-tablet {
     width: 100% !important; } }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
   .span12-if-wide {
     width: 100% !important; } }
 
@@ -887,7 +887,7 @@ h5 {
   width: -moz-calc(8.33333%) ;
   width: -o-calc(8.33333%) ;
   width: calc(8.33333%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .span1 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -914,7 +914,7 @@ h5 {
   width: -moz-calc(16.66667%) ;
   width: -o-calc(16.66667%) ;
   width: calc(16.66667%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .span2 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -941,7 +941,7 @@ h5 {
   width: -moz-calc(25%) ;
   width: -o-calc(25%) ;
   width: calc(25%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .span3 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -968,7 +968,7 @@ h5 {
   width: -moz-calc(33.33333%) ;
   width: -o-calc(33.33333%) ;
   width: calc(33.33333%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .span4 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -995,7 +995,7 @@ h5 {
   width: -moz-calc(41.66667%) ;
   width: -o-calc(41.66667%) ;
   width: calc(41.66667%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .span5 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1022,7 +1022,7 @@ h5 {
   width: -moz-calc(50%) ;
   width: -o-calc(50%) ;
   width: calc(50%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .span6 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1049,7 +1049,7 @@ h5 {
   width: -moz-calc(58.33333%) ;
   width: -o-calc(58.33333%) ;
   width: calc(58.33333%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .span7 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1076,7 +1076,7 @@ h5 {
   width: -moz-calc(66.66667%) ;
   width: -o-calc(66.66667%) ;
   width: calc(66.66667%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .span8 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1103,7 +1103,7 @@ h5 {
   width: -moz-calc(75%) ;
   width: -o-calc(75%) ;
   width: calc(75%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .span9 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1130,7 +1130,7 @@ h5 {
   width: -moz-calc(83.33333%) ;
   width: -o-calc(83.33333%) ;
   width: calc(83.33333%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .span10 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1157,7 +1157,7 @@ h5 {
   width: -moz-calc(91.66667%) ;
   width: -o-calc(91.66667%) ;
   width: calc(91.66667%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .span11 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1184,7 +1184,7 @@ h5 {
   width: -moz-calc(100%) ;
   width: -o-calc(100%) ;
   width: calc(100%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .span12 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1223,7 +1223,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .column1 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1240,7 +1240,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .column2 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1257,7 +1257,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .column3 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1274,7 +1274,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .column4 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1291,7 +1291,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .column5 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1308,7 +1308,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .column6 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1325,7 +1325,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .column7 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1342,7 +1342,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .column8 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1359,7 +1359,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .column9 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1376,7 +1376,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .column10 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1393,7 +1393,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .column11 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1410,7 +1410,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .column12 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1427,7 +1427,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 500px) {
     .shift1 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1444,7 +1444,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 500px) {
     .shift2 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1461,7 +1461,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 500px) {
     .shift3 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1478,7 +1478,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 500px) {
     .shift4 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1495,7 +1495,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 500px) {
     .shift5 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1508,7 +1508,7 @@ h5 {
   width: -moz-calc(5%) ;
   width: -o-calc(5%) ;
   width: calc(5%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit5 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1521,7 +1521,7 @@ h5 {
   width: -moz-calc(10%) ;
   width: -o-calc(10%) ;
   width: calc(10%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit10 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1534,7 +1534,7 @@ h5 {
   width: -moz-calc(15%) ;
   width: -o-calc(15%) ;
   width: calc(15%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit15 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1547,7 +1547,7 @@ h5 {
   width: -moz-calc(20%) ;
   width: -o-calc(20%) ;
   width: calc(20%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit20 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1560,7 +1560,7 @@ h5 {
   width: -moz-calc(25%) ;
   width: -o-calc(25%) ;
   width: calc(25%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit25 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1573,7 +1573,7 @@ h5 {
   width: -moz-calc(30%) ;
   width: -o-calc(30%) ;
   width: calc(30%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit30 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1586,7 +1586,7 @@ h5 {
   width: -moz-calc(35%) ;
   width: -o-calc(35%) ;
   width: calc(35%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit35 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1599,7 +1599,7 @@ h5 {
   width: -moz-calc(40%) ;
   width: -o-calc(40%) ;
   width: calc(40%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit40 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1612,7 +1612,7 @@ h5 {
   width: -moz-calc(45%) ;
   width: -o-calc(45%) ;
   width: calc(45%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit45 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1625,7 +1625,7 @@ h5 {
   width: -moz-calc(50%) ;
   width: -o-calc(50%) ;
   width: calc(50%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit50 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1638,7 +1638,7 @@ h5 {
   width: -moz-calc(55%) ;
   width: -o-calc(55%) ;
   width: calc(55%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit55 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1651,7 +1651,7 @@ h5 {
   width: -moz-calc(60%) ;
   width: -o-calc(60%) ;
   width: calc(60%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit60 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1664,7 +1664,7 @@ h5 {
   width: -moz-calc(65%) ;
   width: -o-calc(65%) ;
   width: calc(65%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit65 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1677,7 +1677,7 @@ h5 {
   width: -moz-calc(70%) ;
   width: -o-calc(70%) ;
   width: calc(70%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit70 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1690,7 +1690,7 @@ h5 {
   width: -moz-calc(75%) ;
   width: -o-calc(75%) ;
   width: calc(75%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit75 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1703,7 +1703,7 @@ h5 {
   width: -moz-calc(80%) ;
   width: -o-calc(80%) ;
   width: calc(80%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit80 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1716,7 +1716,7 @@ h5 {
   width: -moz-calc(85%) ;
   width: -o-calc(85%) ;
   width: calc(85%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit85 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1729,7 +1729,7 @@ h5 {
   width: -moz-calc(90%) ;
   width: -o-calc(90%) ;
   width: calc(90%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit90 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1742,7 +1742,7 @@ h5 {
   width: -moz-calc(95%) ;
   width: -o-calc(95%) ;
   width: calc(95%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit95 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1755,7 +1755,7 @@ h5 {
   width: -moz-calc(100%) ;
   width: -o-calc(100%) ;
   width: calc(100%) ; }
-  @media all and (max-width: 400px) {
+  @media all and (max-width: 350px) {
     .unit100 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1764,38 +1764,38 @@ h5 {
       width: 100%; } }
 
 .background-red {
-  background-color: #fafafa; }
+  background-color: #FF5050; }
 
 .darken-background-red {
-  background-color: #e1e1e1; }
+  background-color: #ff1d1d; }
 
 .double-darken-background-red {
-  background-color: #d4d4d4; }
+  background-color: #ff0303; }
 
 .lighten-background-red {
-  background-color: white; }
+  background-color: #ff8383; }
 
 .double-lighten-background-red {
-  background-color: white; }
+  background-color: #ff9d9d; }
 
 .red {
-  color: #fafafa !important; }
+  color: #FF5050 !important; }
 
 .darken-red {
-  color: #e1e1e1 !important; }
+  color: #ff1d1d !important; }
 
 .lighten-red {
-  color: white !important; }
+  color: #ff8383 !important; }
 
 .border-bottom-red {
-  border-bottom: 1px solid #fafafa; }
+  border-bottom: 1px solid #FF5050; }
 
 .hover-red:hover {
   transition: all 0.1s ease !important;
   -moz-transition: all 0.1s ease !important;
   -o-transition: all 0.1s ease !important;
   -webkit-transition: all 0.1s ease !important;
-  color: #fafafa !important; }
+  color: #FF5050 !important; }
 
 .background-green {
   background-color: #3688c2; }
@@ -1900,38 +1900,38 @@ h5 {
   color: #717171 !important; }
 
 .background-success {
-  background-color: #f2f2f2; }
+  background-color: #5691CC; }
 
 .darken-background-success {
-  background-color: #d8d8d8; }
+  background-color: #3777b8; }
 
 .double-darken-background-success {
-  background-color: #cccccc; }
+  background-color: #316ba4; }
 
 .lighten-background-success {
-  background-color: white; }
+  background-color: #7daad8; }
 
 .double-lighten-background-success {
-  background-color: white; }
+  background-color: #91b7de; }
 
 .success {
-  color: #f2f2f2 !important; }
+  color: #5691CC !important; }
 
 .darken-success {
-  color: #d8d8d8 !important; }
+  color: #3777b8 !important; }
 
 .lighten-success {
-  color: white !important; }
+  color: #7daad8 !important; }
 
 .border-bottom-success {
-  border-bottom: 1px solid #f2f2f2; }
+  border-bottom: 1px solid #5691CC; }
 
 .hover-success:hover {
   transition: all 0.1s ease !important;
   -moz-transition: all 0.1s ease !important;
   -o-transition: all 0.1s ease !important;
   -webkit-transition: all 0.1s ease !important;
-  color: #f2f2f2 !important; }
+  color: #5691CC !important; }
 
 .background-warning {
   background-color: #4e4e4e; }
@@ -2097,22 +2097,22 @@ h5 {
     top: 2px; }
 
 .button-red {
-  border-bottom: 2px solid #d4d4d4;
-  background-color: #fafafa;
+  border-bottom: 2px solid #ff0303;
+  background-color: #FF5050;
   color: #fff; }
   .button-red:hover {
-    background-color: white; }
+    background-color: #ff6a6a; }
 
 .button-tag-red {
   color: gray;
   border: 1px #d3d3d3 solid; }
   .button-tag-red:hover {
-    background-color: #d4d4d4;
+    background-color: #ff0303;
     transition: all 0.1s ease !important;
     -moz-transition: all 0.1s ease !important;
     -o-transition: all 0.1s ease !important;
     -webkit-transition: all 0.1s ease !important;
-    border: 1px #d4d4d4 solid;
+    border: 1px #ff0303 solid;
     color: #fff; }
 
 .button-green {
@@ -2173,22 +2173,22 @@ h5 {
     color: #fff; }
 
 .button-success {
-  border-bottom: 2px solid #cccccc;
-  background-color: #f2f2f2;
+  border-bottom: 2px solid #316ba4;
+  background-color: #5691CC;
   color: #fff; }
   .button-success:hover {
-    background-color: white; }
+    background-color: #6a9ed2; }
 
 .button-tag-success {
   color: gray;
   border: 1px #d3d3d3 solid; }
   .button-tag-success:hover {
-    background-color: #cccccc;
+    background-color: #316ba4;
     transition: all 0.1s ease !important;
     -moz-transition: all 0.1s ease !important;
     -o-transition: all 0.1s ease !important;
     -webkit-transition: all 0.1s ease !important;
-    border: 1px #cccccc solid;
+    border: 1px #316ba4 solid;
     color: #fff; }
 
 .button-warning {
@@ -2277,7 +2277,7 @@ h5 {
     padding-left: 3.5em; }
 
 h1 {
-  color: #fafafa; }
+  color: #FF5050; }
 
 .code {
   font-family: Source Code Pro; }

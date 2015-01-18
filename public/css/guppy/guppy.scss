@@ -8,6 +8,15 @@
 @import "controls";
 @import "buttons";
 
+
+.logo {
+
+}
+
+.shadowed {
+  text-shadow: 0px 1px 0px lightgray;
+}
+
 h1 {
   color: yml('colors/red')
 }

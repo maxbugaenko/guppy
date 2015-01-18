@@ -1,3 +1,21 @@
-$main-font: monaco;
-$h-font: monaco;
-$base-font-size: 20px;
+@import "mixins";
+@import "responsive";
+@import "general";
+@import "text";
+@import "paddings";
+@import "margins";
+@import "layouts";
+@import "colors";
+@import "buttons";
+@import "textfields";
+
+
+.logo {
+    font-size: 3em;
+    color: #000;
+    font-weight: bold;
+
+    &:hover {
+        color: #0000ff;
+    }
+}

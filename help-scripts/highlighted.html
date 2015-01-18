@@ -1,33 +1,22 @@
-<pre class="highlight"><code>%html
-%head
-%title guppy.io
-%meta<span class="o">{</span>:charset <span class="o">=</span>&gt; <span class="s1">'UTF-8'</span><span class="o">}</span>
-%meta<span class="o">{</span><span class="s1">'http-equiv'</span> <span class="o">=</span>&gt; <span class="s1">'Content-Type'</span>, :content <span class="o">=</span>&gt; <span class="s1">'text/html; charset=utf-8'</span><span class="o">}</span>
-%link<span class="o">{</span>:type <span class="o">=</span>&gt; <span class="s1">'text/css'</span>, :href <span class="o">=</span>&gt; url<span class="o">(</span><span class="s1">'../css/guppy.css'</span><span class="o">)</span>, :rel <span class="o">=</span>&gt; <span class="s1">'stylesheet'</span><span class="o">}</span>
-%link<span class="o">{</span>:type <span class="o">=</span>&gt; <span class="s1">'text/css'</span>, :href <span class="o">=</span>&gt; url<span class="o">(</span><span class="s1">'../css/guppy-blog.css'</span><span class="o">)</span>, :rel <span class="o">=</span>&gt; <span class="s1">'stylesheet'</span><span class="o">}</span>
-%link<span class="o">{</span>:type <span class="o">=</span>&gt; <span class="s1">'text/css'</span>, :href <span class="o">=</span>&gt; <span class="s1">'//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'</span>, :rel <span class="o">=</span>&gt; <span class="s1">'stylesheet'</span><span class="o">}</span>
-%script<span class="o">{</span>:src <span class="o">=</span>&gt; <span class="s1">'../js/jquery.js'</span><span class="o">}</span>
-%body
-<span class="o">=</span>yield
-</code></pre>
-<pre class="highlight"><code><span class="nv">$switch</span>-orientation-point-medium: <span class="s2">"1100px"</span>;
-<span class="nv">$switch</span>-orientation-point-mobile: <span class="s2">"600px"</span>;
-<span class="nv">$menu</span>-aside-width: 220px;
-<span class="nv">$background</span>-color: <span class="c">#fff;</span>
-<span class="nv">$controls</span>-depth: 1px;
-<span class="nv">$controls</span>-text-color: <span class="c">#fbfbfb;</span>
-<span class="nv">$controls</span>-border-radius: 4px;
-<span class="nv">$controls</span>-default-color: darken<span class="o">(</span><span class="nv">$background</span>-color, 25<span class="o">)</span>;
-<span class="nv">$success</span>: <span class="c">#fd5559;</span>
-<span class="nv">$green</span>: <span class="c">#3688c2;</span>
-<span class="nv">$warning</span>: <span class="c">#4e4e4e;</span>
-<span class="nv">$info</span>: lighten<span class="o">(</span><span class="c">#394e63, 20);</span>
-<span class="nv">$info</span>: <span class="c">#4d8cdf;</span>
-<span class="nv">$text</span>-color: lighten<span class="o">(</span><span class="c">#4e4e4e, 20);</span>
-<span class="nv">$inputs</span>-background: darken<span class="o">(</span><span class="nv">$background</span>-color, 7<span class="o">)</span>;
-</code></pre>
-<pre class="highlight"><code>
-<span class="nv">$main</span>-font: monaco;
-<span class="nv">$h</span>-font: monaco;
-<span class="nv">$base</span>-font-size: 20px;
+<pre class="highlight"><code>@import <span class="s2">"mixins"</span>;
+@import <span class="s2">"responsive"</span>;
+@import <span class="s2">"general"</span>;
+@import <span class="s2">"text"</span>;
+@import <span class="s2">"paddings"</span>;
+@import <span class="s2">"margins"</span>;
+@import <span class="s2">"layouts"</span>;
+@import <span class="s2">"colors"</span>;
+@import <span class="s2">"buttons"</span>;
+@import <span class="s2">"textfields"</span>;
+
+
+.logo <span class="o">{</span>
+    font-size: 3em;
+    color: <span class="c">#000;</span>
+    font-weight: bold;
+
+    &amp;:hover <span class="o">{</span>
+        color: <span class="c">#0000ff;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
 </code></pre>

@@ -2276,8 +2276,13 @@ h5 {
   .button-iconed input {
     padding-left: 3.5em; }
 
+.shadowed {
+  text-shadow: 0px 1px 0px lightgray; }
+
 h1 {
   color: #FF5050; }
 
 .code {
   font-family: Source Code Pro; }
+
+/*# sourceMappingURL=guppy.css.map */

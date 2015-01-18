@@ -4,7 +4,7 @@ require 'haml'
 require 'haml/helpers'
 require 'sass'
 require 'yaml'
-require_relative 'gem/lib/guppy'
+require 'guppy'
 
 Guppy::Client.new('/code/guppy/config.yml')
 

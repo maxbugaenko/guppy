@@ -27,6 +27,25 @@
     @include animation(slideRightToLeft, .6s)
   }
 
+  @media all and (max-width: $switch-orientation-point-medium) {
+    .animate-slide-children-top-to-bottom-if-tablet-or-mobile {
+
+      @for $i from 1 through 12 {
+        & > *:nth-child(#{$i}) {
+          @include animation(slideTopToBottom, calc-duration($i, 200));
+          z-index: 130 - $i;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: $switch-orientation-point-medium - 100 + px) {
+    .animate-show-from-right-to-left-if-tablet-or-mobile {
+      @include animation(slideRightToLeft, 1s)
+    }
+  }
+
+
   .animate-slide-children-top-to-bottom {
 
     @for $i from 1 through 12 {
@@ -70,14 +89,28 @@
     }
   }
 
-  @include keyframes(slideTopToBottom) {
+  @include keyframes(slideAwayFromRightToLeft) {
 
     from {
-      -webkit-transform: translateY(-100%);
+      -webkit-transform: translateX(0%);
     }
 
     to {
+      opacity: 0;
+      -webkit-transform: translateX(-100%);
+    }
+  }
+
+
+  @include keyframes(slideTopToBottom) {
+
+    from {
       -webkit-transform: translateY(0%);
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      -webkit-transform: translateY(-50%);
     }
   }
 

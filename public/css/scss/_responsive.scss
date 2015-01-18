@@ -1,0 +1,172 @@
+.hide-if-wide {
+  display: none;
+
+  @media all and (max-width: yml('responsive/tablet')) {
+    display: block;
+  }
+
+  @media all and (max-width: yml('responsive/mobile')) {
+    display: block;
+  }
+}
+
+.hide-if-tablet {
+
+  @media all and (max-width: yml('responsive/tablet')) {
+    @include transition();
+    display: none !important;
+  }
+}
+
+.hide-if-mobile {
+
+  @media all and (max-width: yml('responsive/mobile')) {
+    @include transition();
+    display: none !important;
+  }
+}
+
+
+.show-if-tablet-only {
+  display: none;
+
+  @media all and (max-width: yml('responsive/tablet')) {
+    @include transition();
+    display: block;
+  }
+}
+
+.mobile-only {
+  display: none;
+
+  @media all and (max-width: yml('responsive/mobile')) {
+    display: inherit;
+    @include transition();
+  }
+}
+
+.desktop-only {
+  display: inherit;
+
+  @media all and (max-width: yml('responsive/tablet')) {
+    display: none;
+  }
+
+  @media all and (max-width: yml('responsive/mobile')) {
+    display: none;
+  }
+}
+
+.mobile-and-medium-only {
+  display: none;
+
+  @media all and (max-width: yml('responsive/tablet')) {
+    display: inherit;
+    @include transition();
+  }
+
+  @media all and (max-width: yml('responsive/mobile')) {
+    display: inherit;
+    @include transition();
+  }
+}
+
+.medium-if-tablet {
+
+  @media all and (max-width: yml('responsive/tablet')) {
+    font-size: 80%;
+    @include transition();
+  }
+}
+
+.base-if-tablet {
+
+  @media all and (max-width: yml('responsive/tablet')) {
+    font-size: yml('options/base-font-size');
+    @include transition();
+  }
+}
+
+
+.medium-if-mobile-or-tablet {
+
+  @media all and (max-width: yml('responsive/tablet')) {
+    font-size: 80%;
+    @include transition();
+  }
+
+  @media all and (max-width: yml('responsive/mobile')) {
+    font-size: 80%;
+    @include transition();
+  }
+}
+
+.small-if-mobile {
+
+  @media all and (max-width: yml('responsive/mobile')) {
+    font-size: 40%;
+    @include transition();
+  }
+}
+
+.tiny-if-mobile {
+
+  @media all and (max-width: yml('responsive/mobile')) {
+    font-size: 70%;
+    @include transition();
+  }
+}
+
+
+.wide-and-tablet-only {
+  display: inherit;
+
+  @media all and (max-width: yml('responsive/mobile')) {
+    display: none;
+    @include transition();
+  }
+}
+
+.center-if-mobile-or-tablet {
+
+  @media all and (max-width: yml('responsive/tablet')) {
+    text-align: center !important;
+  }
+
+  @media all and (max-width: yml('responsive/mobile')) {
+    text-align: center !important;
+  }
+}
+
+
+.hover-warning-if-mobile {
+
+  @media all and (max-width: yml('responsive/mobile')) {
+    &:hover {
+      background-color: yml('colors/warning');
+    }
+  }
+}
+
+.hover-success-if-mobile {
+
+  @media all and (max-width: yml('responsive/mobile')) {
+    &:hover {
+      background-color: yml('colors/success');
+    }
+  }
+}
+
+.f-span12-if-tablet {
+
+  @media all and (max-width: yml('responsive/tablet')) {
+    width: 100% !important;
+  }
+}
+
+.span12-if-wide {
+
+  @media all and (max-width: yml('responsive/tablet')) {
+    width: 100% !important;
+  }
+}

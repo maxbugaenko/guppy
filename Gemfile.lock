@@ -3,12 +3,14 @@ GEM
   specs:
     daemons (1.1.9)
     eventmachine (1.0.3)
-    guppy (0.0.4)
     haml (4.0.5)
       tilt
+    hashie (3.3.1)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
+    remote-sass (0.0.1)
+      sass (~> 3.2)
     sass (3.4.9)
     sinatra (1.4.5)
       rack (~> 1.4)
@@ -24,8 +26,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  guppy (= 0.0.4)
   haml
+  hashie
+  remote-sass
   sass
   sinatra (= 1.4.5)
   thin

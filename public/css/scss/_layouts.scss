@@ -1,9 +1,8 @@
-@import "mixins";
-
 .container {
   margin: 0 auto;
   position: relative;
   z-index: 1000; // todo: need to check what's going on here
+  width: 100%;
 
   &:after {
     content: "";
@@ -28,7 +27,7 @@
       @include calc-prefixed(width, 100%/12 * $i);
     }
 
-    @media all and (max-width: $switch-orientation-point-mobile) {
+    @media all and (max-width: yml('responsive/mobile')) {
       @if mixin-exists(transition) {
         @include transition();
       }
@@ -76,7 +75,7 @@
         @include transition();
       }
 
-      @media all and (max-width: $switch-orientation-point-mobile) {
+      @media all and (max-width: yml('responsive/mobile')) {
         @include transition();
         width: 100%;
       }
@@ -89,11 +88,9 @@
     @if mixin-exists(calc-prefixed) {
       @include calc-prefixed(width, 100% - (100%/12 * $i)*2);
     }
-    @if mixin-exists(transition) {
-      @include transition();
-    }
+    @include transition();
 
-    @media all and (max-width: $switch-orientation-point-medium) {
+    @media all and (max-width: yml('responsive/tablet')) {
       @include transition();
       width: 100%;
     }
@@ -108,10 +105,8 @@ $i: 5;
       @include calc-prefixed(width, $i * 1%);
     }
 
-    @media all and (max-width: $switch-orientation-point-mobile) {
-      @if mixin-exists(transition) {
-        @include transition();
-      }
+    @media all and (max-width: yml('responsive/mobile')) {
+      @include transition();
       width: 100%;
     }
   }

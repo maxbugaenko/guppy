@@ -1,0 +1,27 @@
+$fonts: yml('load-fonts');
+@each $attr, $val in $fonts {
+  @import url("#{$val}");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  background: yml('options/background-color');
+  @include main-font();
+  color: yml('options/text-color');
+  font-size: yml('options/base-font-size');
+
+  &.hidden {
+    overflow-x: hidden;
+  }
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}

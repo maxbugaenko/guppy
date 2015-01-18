@@ -1,15 +1,16 @@
 .container.padding-around-medium
   %h1.success.large.bold.upper.spread.no-wrap
     guppy exception
-  .warning.medium
-    = @message
-  -#.green.base
-  -#  = @response.to_a.to_s
-  -#.default.small
-  -#  - @more.each do |item|
-  -#    = item.to_s
-  -#    %br
-  -#%p.base
-  -#  - @backtrace.split(', ').each do |item|
-  -#    = item.to_s
-  -#    %br
+  %p.warning.medium
+    = @message + '. '
+  %p.default.base
+    - if !@more.nil?
+      - @more.each do |item|
+        = item.to_s
+        %br
+  %p.base
+    - if !@backtrace.nil?
+      - @backtrace.split(', ').each do |item|
+        = item.to_s
+        %br
+  %a.green.medium{href: url('/')} please go to main page

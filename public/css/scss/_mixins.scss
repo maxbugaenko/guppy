@@ -1,3 +1,16 @@
+@function calc-duration($n, $duration: 400) {
+  @return $n * $duration + ms;
+}
+
+@function hover($col) {
+  @return darken(unquote($col), 15)
+}
+
+@function dark_it($col) {
+  @return darken(unquote($col), 15)
+}
+
+
 @mixin clearfix() {
 
   &:after {
@@ -8,29 +21,26 @@
 }
 
 @mixin main-font() {
-  font-family: $main-font;
-  font-weight: 300;
+  font-family: yml('fonts/main-font-family');
+  font-weight: yml('fonts/main-font-weight');
 }
 
 @mixin h-font() {
-  font-family: $h-font;
-  font-weight: 300;
+  font-family: yml('fonts/h-font-family');
+  font-weight: yml('fonts/h-font-weight');
 }
 
-@mixin hover($color) {
-  background-color: darken($color, 5);
+@mixin hover($col) {
+  background-color: darken($col, 15);
 }
 
-@function hover($color) {
-  @return darken($color, 5);
-}
 
 @mixin active($color) {
   background-color: darken($color, 10);
 }
 
-@mixin shadow($color, $depth: $controls-depth) {
-  border-bottom: $depth solid darken($color, 5);
+@mixin shadow($col, $depth: yml('controls/controls-depth')) {
+  border-bottom: $depth solid dark_it($col);
 }
 
 @mixin transition($duration: .3s) {
@@ -40,10 +50,6 @@
   -webkit-transition: all $duration ease !important;
 }
 
-@function calc-duration($n, $duration: 400) {
-  @return $n * $duration + ms;
-}
-
 @mixin calc-prefixed($expression, $value, $additional: "") {
   #{$expression}: -webkit-calc(#{$value}) #{$additional};
   #{$expression}: -moz-calc(#{$value}) #{$additional};
@@ -51,17 +57,21 @@
   #{$expression}: calc(#{$value}) #{$additional};
 }
 
-@mixin animation($name, $duration: .3s) {
+@mixin animation($name, $duration: .3s, $delay: 0s) {
   -webkit-animation-name: $name;
+  -webkit-animation-delay: $delay;
   -webkit-animation-duration: $duration;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-name: $name;
+  -moz-animation-delay: $delay;
   -moz-animation-duration: $duration;
   -moz-animation-fill-mode: forwards;
   -o-animation-name: $name;
+  -o-animation-delay: $delay;
   -o-animation-duration: $duration;
   -o-animation-fill-mode: forwards;
   animation-name: $name;
+  animation-delay: $delay;
   animation-duration: $duration;
   animation-fill-mode: forwards;
 

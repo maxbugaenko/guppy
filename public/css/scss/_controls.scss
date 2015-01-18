@@ -1,6 +1,6 @@
 %control {
   position: relative;
-  border-radius: $controls-border-radius;
+  border-radius: yml('controls/border-radius');
   cursor: pointer;
   border: 0;
   width: 100%;

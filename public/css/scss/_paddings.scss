@@ -14,25 +14,29 @@
 
 
 $sizes: (
-        tiny 0.3,
-        small 0.7,
-        base 1,
-        medium 2,
-        big 3,
-        large 4,
+  tiny 0.3,
+  small 0.7,
+  base 1,
+  medium 2,
+  big 3,
+  large 4,
 );
 
 $padding-or-margin: (
-        padding (
-                around: (top, right, bottom, left),
-                vertical: (top, bottom),
-                horizontal: (left, right)
-        ),
-        margin (
-                around: (top, right, bottom, left),
-                vertical: (top, bottom),
-                horizontal: (left, right)
-        )
+  padding (
+    around: (top, right, bottom, left),
+    top: (top),
+    left: (left),
+    right: (right),
+    bottom: (bottom),
+    vertical: (top, bottom),
+    horizontal: (left, right)
+  ),
+  margin (
+    around: (top, right, bottom, left),
+    vertical: (top, bottom),
+    horizontal: (left, right)
+  )
 );
 
 /* generate padding classes */
@@ -41,7 +45,7 @@ $padding-or-margin: (
     @each $size in $sizes {
       .#{nth($kind, 1)}-#{nth($direction, 1)}-#{nth($size, 1)} {
         @each $side in nth($direction, 2) {
-          @include calc-prefixed(#{nth($kind, 1)}-#{nth($side, 1)}, #{$base-font-size} * nth($size, 2), !important);
+          @include calc-prefixed(#{nth($kind, 1)}-#{nth($side, 1)}, #{yml('options/base-font-size')} * nth($size, 2), !important);
         }
       }
     }

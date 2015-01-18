@@ -1,0 +1,17 @@
+@import "mixins";
+@import "responsive";
+@import "general";
+@import "typography";
+@import "paddings";
+@import "layouts";
+@import "colors";
+@import "controls";
+@import "buttons";
+
+h1 {
+  color: yml('colors/red')
+}
+
+.code {
+  font-family: yml('fonts/code-font-family');
+}

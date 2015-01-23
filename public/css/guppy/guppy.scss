@@ -1,5 +1,4 @@
 @import "variables";
-@import "mixins";
 @import "responsive";
 @import "general";
 @import "typography";
@@ -7,6 +6,7 @@
 @import "layouts";
 @import "colors";
 @import "buttons";
+@import "form";
 
 .shadowed {
   text-shadow: 0px 1px 0px lightgray;
@@ -16,6 +16,6 @@
   color: lookup($colors, 'light')
 }
 
-.hello {
-  color: white;
+.no-markers {
+  list-style: decimal;
 }

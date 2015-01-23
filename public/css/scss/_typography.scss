@@ -1,3 +1,5 @@
+@import "mixins";
+
 .left {
   text-align: left;
 }
@@ -88,6 +90,26 @@ h5 {
 
 .round-borders {
   border-radius: $controls-border-radius !important;
+}
+
+.round-bottom-borders {
+  border-bottom-left-radius: $controls-border-radius !important;
+  border-bottom-right-radius: $controls-border-radius !important;
+}
+
+.round-top-borders {
+  border-top-left-radius: $controls-border-radius !important;
+  border-top-right-radius: $controls-border-radius !important;
+}
+
+.round-right-borders {
+  border-top-right-radius: $controls-border-radius !important;
+  border-bottom-right-radius: $controls-border-radius !important;
+}
+
+.round-left-borders {
+  border-top-left-radius: $controls-border-radius !important;
+  border-bottom-left-radius: $controls-border-radius !important;
 }
 
 .no-round-borders {

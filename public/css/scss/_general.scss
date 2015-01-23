@@ -1,3 +1,5 @@
+@import "mixins";
+
 @each $id, $font in $fonts {
   @each $key, $value in $font {
     @if $key == "url" {

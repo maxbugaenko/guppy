@@ -1,0 +1,32 @@
+// _variables.scss must be in your scss folder
+// along with this main scss script
+@import "variables";
+
+// listed below modules are automatically loaded
+// from guppy website and then compiled to a
+// single scss file that you will link to your html
+//
+// 'sass --watch' command would compile all
+// scripts for you
+@import "responsive";
+@import "general";
+@import "typography";
+@import "paddings";
+@import "layouts";
+@import "colors";
+@import "controls";
+@import "buttons";
+@import "form";
+@import "tabs";
+
+// define whatever custom classes
+// below. they will all be compiled when you
+// run sass --watch
+.logo {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.reg {
+  font-weight: 300;
+}

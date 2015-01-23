@@ -18,22 +18,22 @@ $fonts: (
 
 $colors: (
   success red,
-  warning blue,
+  warning darken(blue, 10),
   green green,
-  info yellow,
-  light lightgray,
+  info darken(yellow, 20),
+  light darken(#fff, 5),
   default gray,
   dark darken(gray, 20)
 );
 
 $base-font-size: 20px;
-$switch-tablet: "800px";
+$switch-tablet: "1100px";
 $switch-mobile: "400px";
-$switch-wide: "1100px";
+$switch-wide: "1300px";
 $background-color: #fff;
 $controls-depth: 1px;
 $controls-text-color: #fbfbfb;
-$controls-border-radius: 4px;
+$controls-border-radius: 8px;
 $controls-default-color: darken($background-color, 25);
 $text-color: lighten(#4e4e4e, 20);
 $inputs-background: darken($background-color, 7);

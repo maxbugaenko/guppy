@@ -1,3 +1,5 @@
+@import "mixins";
+
 @each $attr, $val in $colors {
   .background-#{$attr} {
     background-color: unquote($val);
@@ -41,6 +43,16 @@
         @include transition(.1s);
       }
       color: unquote($val) !important;
+    }
+  }
+
+  .hover-background-#{$attr} {
+
+    &:hover {
+      @if mixin-exists(transition) {
+        @include transition(.1s);
+      }
+      background-color: unquote($val) !important;
     }
   }
 }

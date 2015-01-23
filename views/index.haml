@@ -1,28 +1,34 @@
 .container.big.center.padding-vertical-base.darken-background
   .container.shift1
-    .span6.base.left.padding-around-medium.large.code.shadowed
-      %p
-        %b.upper scss
-        modules as a service
-      %p.big.lighten-default
-        Import remote modules from your scss script and enjoy
-    .span6.base-if-tablet.right.center-if-mobile-or-tablet.padding-around-large
-      %img{src: url('images/guppy.svg')}
+    %img{src: url('images/guppy.svg')}
+    %p
+      %span.upper.large tiny scss modules as a service
       %br
-      [
-      %span.logo.bold guppy
-      %a.warning.no-underline.hover-green{href: ''}
-        modules,
-      %a.warning.no-underline.hover-green{href: ''}
-        read docs,
-      %a.warning.no-underline.hover-green{href: ''}
-        contribute,
-      %a.warning.no-underline.hover-green{href: ''}
-        contacts
-      ]
-  .container.shift4.padding-around-big
-    %button.button-green.medium.padding-around-base.code
+      Import remote modules from your scss script and enjoy
+    -#%a.warning.no-underline.hover-green{href: ''}
+    -#  modules
+    -#%a.warning.no-underline.hover-green{href: ''}
+    -#  read docs
+    -#%a.warning.no-underline.hover-green{href: ''}
+    -#  contribute
+    -#%a.warning.no-underline.hover-green{href: ''}
+    -#  contacts
+    .container.shift1.left
+      %ul.no-markers.font-code.medium.dark
+        %li
+          gem install 'guppy'
+        %li
+          create _variables.scss in your scss directory
+        %li
+          sass --watch /your/scss/path/:/your/css/path --require='guppy'
+        %li
+          link resulting css file to your html and enjoy
+  .container.shift2.padding-around-big.base
+    %button.button-green.medium.padding-around-base.code.f-span4
       install gem
+    %br
+    overview
+    %a.darken-dark.hover-default{href: 'https://github.com/maxbugaenko/guppy'} example project at Github
 .container.shift1
   .span6.padding-around-large
     %h1.green.code SCSS

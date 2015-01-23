@@ -1,3 +1,5 @@
+@import "mixins";
+
 .hide-if-wide {
   display: none;
 
@@ -91,12 +93,12 @@
 .medium-if-mobile-or-tablet {
 
   @media all and (max-width: $switch-tablet) {
-    font-size: 80%;
+    font-size: $base-font-size * lookup($sizes, 'medium') !important;
     @include transition();
   }
 
   @media all and (max-width: $switch-mobile) {
-    font-size: 80%;
+    font-size: $base-font-size * lookup($sizes, 'medium') !important;
     @include transition();
   }
 }
@@ -168,5 +170,29 @@
 
   @media all and (max-width: $switch-tablet) {
     width: 100% !important;
+  }
+}
+
+.tiny-padding-if-mobile {
+  @media all and (max-width: $switch-mobile) {
+    padding: $base-font-size * lookup($sizes, 'tiny') !important;
+  }
+}
+
+.base-padding-if-mobile {
+  @media all and (max-width: $switch-mobile) {
+    padding: $base-font-size * lookup($sizes, 'base') !important;
+  }
+}
+
+.tiny-padding-if-tablet {
+  @media all and (max-width: $switch-tablet) {
+    padding: $base-font-size * lookup($sizes, 'tiny') !important;
+  }
+}
+
+.base-padding-if-tablet {
+  @media all and (max-width: $switch-tablet) {
+    padding: $base-font-size * lookup($sizes, 'base') !important;
   }
 }

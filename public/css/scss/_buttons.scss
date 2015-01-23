@@ -1,3 +1,4 @@
+@import "mixins";
 @import "controls";
 
 %button {
@@ -52,6 +53,7 @@
 
 .button-group {
   font-size: 0;
+  white-space: nowrap;
 
   & > div {
     display: inline-block;
@@ -60,7 +62,12 @@
 
     & > button {
       border-radius: 0;
+      border-right: 1px solid fade_out(#fff, .9);
     }
+  }
+
+  & > div:last-child {
+    border-right: 0;
   }
 
   & > div:first-child button {

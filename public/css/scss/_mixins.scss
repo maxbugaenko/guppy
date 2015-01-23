@@ -1,3 +1,12 @@
+$sizes: (
+  tiny 0.3,
+  small 0.7,
+  base 1,
+  medium 2,
+  big 3,
+  large 4,
+);
+
 @function calc-duration($n, $duration: 400) {
   @return $n * $duration + ms;
 }
@@ -48,7 +57,7 @@
   background-color: darken($color, 10);
 }
 
-@mixin shadow($col, $depth: yml('controls/controls-depth')) {
+@mixin shadow($col, $depth: $controls-depth) {
   border-bottom: $depth solid dark_it($col);
 }
 

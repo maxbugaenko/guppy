@@ -4,7 +4,6 @@
 
   input[type=radio] {
     display: none;
-    border: 1px solid red;
 
     @for $i from 1 through 12 {
 
@@ -22,8 +21,6 @@
   label.tab-label {
     cursor: pointer;
     display: inline-block;
-    font-size: $base-font-size;
-    padding: $base-font-size;
     border-radius: 0;
 
     &:first-of-type {

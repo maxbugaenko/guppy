@@ -3,7 +3,6 @@ GEM
   specs:
     daemons (1.1.9)
     eventmachine (1.0.3)
-    guppy (1.0.5)
     haml (4.0.5)
       tilt
     hashie (3.3.1)
@@ -27,7 +26,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  guppy
   haml
   hashie
   remote-sass

@@ -6,7 +6,7 @@ require 'net/http'
 require 'time'
 require 'open-uri'
 
-RemoteSass.location =  ENV['RACK_ENV'].nil? ? 'http://localhost:4567/load2' : 'http://guppy.io/load'
+RemoteSass.location =  ENV['RACK_ENV'].nil? ? 'http://localhost:4567/load' : 'http://guppy.io/load'
 
 module Sass
 	module Importers
@@ -26,8 +26,6 @@ module Sass
 				Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
 					filename = File.basename(uri.to_s, File.extname(uri.to_s))
 					uri = "#{uri.scheme}://#{uri.host}:#{uri.port}/load/#{filename}"
-					# uri = "http://localhost:9876/load/#{filename}"
-					# puts 'uri: ' + uri.to_s
 					response = http.get uri.to_s
 					response.value
 					options[:importer] = self
@@ -35,10 +33,6 @@ module Sass
 					options[:syntax] = :scss
 					Sass::Engine.new response.body, options
 				end
-			rescue => msg
-				puts msg.class.to_s
-				puts msg.backtrace
-				puts msg.message
 			end
 		end
 	end

@@ -11,7 +11,7 @@
     display: inline-block;
     margin: 0 $base-font-size;
 
-    @media all and (max-width: $switch-orientation-point-mobile) {
+    @media all and (max-width: $switch-mobile) {
       @include transition();
       display: block;
       margin: $base-font-size*2 0;
@@ -99,7 +99,7 @@
   }
 }
 
-@each $control-kind in $controls-color-list {
+@each $control-kind in $colors {
   .menu-icon-#{nth($control-kind, 1)} {
     @extend %menu-icon;
     background-color: #{nth($control-kind, 2)};
@@ -157,7 +157,7 @@
 }
 
 
-@each $control-kind in $controls-color-list {
+@each $control-kind in $colors {
 
   li.item-#{nth($control-kind, 1)} {
     border-left: $controls-depth*2 solid nth($control-kind, 2);

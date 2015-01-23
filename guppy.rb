@@ -1,7 +1,6 @@
 require 'rubygems';
 require 'sinatra';
 require 'haml'
-require 'guppy'
 
 get '/' do
   haml :index, layout: :layout

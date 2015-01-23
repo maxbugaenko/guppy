@@ -45,7 +45,7 @@ $padding-or-margin: (
     @each $size in $sizes {
       .#{nth($kind, 1)}-#{nth($direction, 1)}-#{nth($size, 1)} {
         @each $side in nth($direction, 2) {
-          @include calc-prefixed(#{nth($kind, 1)}-#{nth($side, 1)}, #{yml('options/base-font-size')} * nth($size, 2), !important);
+          @include calc-prefixed(#{nth($kind, 1)}-#{nth($side, 1)}, $base-font-size * nth($size, 2), !important);
         }
       }
     }

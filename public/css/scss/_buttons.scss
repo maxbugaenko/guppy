@@ -1,4 +1,4 @@
-$controls-color-list: yml('colors');
+@import "controls";
 
 %button {
   @extend %control;
@@ -17,12 +17,12 @@ $controls-color-list: yml('colors');
   }
 }
 
-@each $attr, $val in $controls-color-list {
+@each $attr, $val in $colors {
   .button-#{$attr} {
     @extend %button;
     @include shadow($val);
     background-color: #{$val};
-    color: yml('controls/controls-text-color');
+    color: $controls-text-color;
 
     &:hover {
       background-color: lighten($val, 5);
@@ -31,7 +31,7 @@ $controls-color-list: yml('colors');
 
   .button-tag-#{$attr} {
     @extend %button;
-    background-color: yml('controls/text-color');
+    background-color: $text-color;
     color: gray;
     border: 1px #d3d3d3 solid;
 
@@ -64,13 +64,13 @@ $controls-color-list: yml('colors');
   }
 
   & > div:first-child button {
-    border-top-left-radius: yml('controls/border-radius');
-    border-bottom-left-radius: yml('controls/border-radius');
+    border-top-left-radius: $controls-border-radius;
+    border-bottom-left-radius: $controls-border-radius;
   }
 
   & > div:last-child button {
-    border-top-right-radius: yml('controls/border-radius');
-    border-bottom-right-radius: yml('controls/border-radius');
+    border-top-right-radius: $controls-border-radius;
+    border-bottom-right-radius: $controls-border-radius;
   }
 }
 

@@ -3,8 +3,8 @@ require 'sinatra';
 require 'haml'
 require 'guppy'
 
-get '/' do
-  haml :index, layout: :layout
+get '/test' do
+	haml :index, layout: :layout
 end
 
 get '/load/:module' do

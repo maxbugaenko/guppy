@@ -27,7 +27,7 @@
       @include calc-prefixed(width, 100%/12 * $i);
     }
 
-    @media all and (max-width: yml('responsive/mobile')) {
+    @media all and (max-width: $switch-tablet) {
       @if mixin-exists(transition) {
         @include transition();
       }
@@ -75,7 +75,7 @@
         @include transition();
       }
 
-      @media all and (max-width: yml('responsive/mobile')) {
+      @media all and (max-width: $switch-tablet) {
         @include transition();
         width: 100%;
       }
@@ -90,7 +90,7 @@
     }
     @include transition();
 
-    @media all and (max-width: yml('responsive/tablet')) {
+    @media all and (max-width: $switch-tablet) {
       @include transition();
       width: 100%;
     }
@@ -105,7 +105,7 @@ $i: 5;
       @include calc-prefixed(width, $i * 1%);
     }
 
-    @media all and (max-width: yml('responsive/mobile')) {
+    @media all and (max-width: $switch-mobile) {
       @include transition();
       width: 100%;
     }

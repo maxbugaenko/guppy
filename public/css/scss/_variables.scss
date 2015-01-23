@@ -1,25 +1,39 @@
-$main-font: monaco;
-$h-font: monaco;
+$fonts: (
+  main: (
+    url 'http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic',
+    family 'Open Sans',
+    weight 300
+  ),
+  header: (
+    url 'http://fonts.googleapis.com/css?family=Open+Sans:600&subset=latin,cyrillic',
+    family 'Open Sans',
+    weight 600
+  ),
+  code: (
+    url 'http://fonts.googleapis.com/css?family=Source+Code+Pro',
+    family 'Source Code Pro',
+    weight 600
+  )
+);
+
+$colors: (
+  success red,
+  warning blue,
+  green green,
+  info yellow,
+  light lightgray,
+  default gray
+);
+
 $base-font-size: 20px;
-$switch-orientation-point-medium: "1100px";
-$switch-orientation-point-mobile: "600px";
-$menu-aside-width: 220px;
+$switch-tablet: "800px";
+$switch-mobile: "400px";
+$switch-wide: "1100px";
 $background-color: #fff;
 $controls-depth: 1px;
 $controls-text-color: #fbfbfb;
 $controls-border-radius: 4px;
 $controls-default-color: darken($background-color, 25);
-$success: #fd5559;
-$green: #3688c2;
-$warning: #4e4e4e;
-$info: lighten(#394e63, 20);
-$info: #4d8cdf;
 $text-color: lighten(#4e4e4e, 20);
 $inputs-background: darken($background-color, 7);
-$controls-color-list: (
-  success $success,
-  warning $warning,
-  green $green,
-  info $info,
-  default $controls-default-color
-);
+

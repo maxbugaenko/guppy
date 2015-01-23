@@ -10,7 +10,6 @@
   @return darken(unquote($col), 15)
 }
 
-
 @mixin clearfix() {
 
   &:after {
@@ -20,14 +19,24 @@
   }
 }
 
-@mixin main-font() {
-  font-family: yml('fonts/main-font-family');
-  font-weight: yml('fonts/main-font-weight');
+@function lookup($list, $key) {
+  @each $row in $list {
+    $i: index($row, $key);
+    @if $i != null {
+      @return nth($row, $i + 1);
+    }
+  }
+  @return 'unknown';
 }
 
-@mixin h-font() {
-  font-family: yml('fonts/h-font-family');
-  font-weight: yml('fonts/h-font-weight');
+@each $id, $font in $fonts {
+  .font-#{nth($id, 1)} {
+    @each $key-value in $font {
+      @if nth($key-value, 1) != 'url' {
+        font-#{nth($key-value, 1)}: nth($key-value, 2);
+      }
+    }
+  }
 }
 
 @mixin hover($col) {

@@ -1,5 +1,4 @@
-$controls-color-list: yml('colors');
-@each $attr, $val in $controls-color-list {
+@each $attr, $val in $colors {
   .background-#{$attr} {
     background-color: unquote($val);
   }
@@ -47,53 +46,53 @@ $controls-color-list: yml('colors');
 }
 
 .light {
-  color: unquote(yml('colors/light'));
+  color: lookup($colors, 'light');
 }
 
 .background-color {
-  background-color: unquote(yml('options/background-color')) !important;
+  background-color: $background-color !important;
 }
 
 .controls-text-color {
-  color: unquote(yml('controls/controls-text-color')) !important;
+  color: $controls-text-color !important;
 }
 
 .background-controls-text-color {
-  background-color: yml('controls/controls-text-color') !important;
+  background-color: $controls-text-color !important;
 }
 
 .lighten-text {
-  color: lighten(yml('controls/controls-text-color'), 25) !important;
+  color: lighten($controls-text-color, 25) !important;
 }
 
 .double-lighten-text {
-  color: lighten(yml('controls/controls-text-color'), 45) !important;
+  color: lighten($controls-text-color, 45) !important;
 }
 
 .darken-text {
-  color: darken(unquote(yml('options/text-color')), 25) !important;
+  color: darken($text-color, 25) !important;
 }
 
 .double-darken-text {
-  color: darken(unquote(yml('options/text-color')), 45) !important;
+  color: darken($text-color, 45) !important;
 }
 
 .text-color {
-  color: yml('options/text-color') !important;
+  color: $text-color !important;
 }
 
 .lighten-background {
-  background-color: lighten(unquote(yml('options/background-color')), 5) !important;
+  background-color: lighten($background-color, 5) !important;
 }
 
 .double-lighten-background {
-  background-color: lighten(unquote(yml('options/background-color')), 10) !important;
+  background-color: lighten($background-color, 10) !important;
 }
 
 .darken-background {
-  background-color: darken(unquote(yml('options/background-color')), 5) !important;
+  background-color: darken($background-color, 5) !important;
 }
 
 .double-darken-background {
-  background-color: darken(unquote(yml('options/background-color')), 10) !important;
+  background-color: darken($background-color, 10) !important;
 }

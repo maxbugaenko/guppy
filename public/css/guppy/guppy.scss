@@ -1,3 +1,4 @@
+@import "variables";
 @import "mixins";
 @import "responsive";
 @import "general";
@@ -5,22 +6,16 @@
 @import "paddings";
 @import "layouts";
 @import "colors";
-@import "controls";
 @import "buttons";
-
-
-.logo {
-
-}
 
 .shadowed {
   text-shadow: 0px 1px 0px lightgray;
 }
 
-h1 {
-  color: yml('colors/red')
+.light {
+  color: lookup($colors, 'light')
 }
 
-.code {
-  font-family: yml('fonts/code-font-family');
+.hello {
+  color: white;
 }

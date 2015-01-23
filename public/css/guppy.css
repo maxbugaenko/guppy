@@ -1,16 +1,33 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,cyrillic");
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:600&subset=latin,cyrillic");
 @import url("http://fonts.googleapis.com/css?family=Source+Code+Pro");
+.font-main, body,
+html {
+  font-family: "Open Sans";
+  font-weight: 300; }
+
+.font-header, h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Open Sans";
+  font-weight: 600; }
+
+.font-code {
+  font-family: "Source Code Pro";
+  font-weight: 600; }
+
 .hide-if-wide {
   display: none; }
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 800px) {
     .hide-if-wide {
       display: block; } }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .hide-if-wide {
       display: block; } }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
   .hide-if-tablet {
     transition: all 0.3s ease !important;
     -moz-transition: all 0.3s ease !important;
@@ -18,7 +35,7 @@
     -webkit-transition: all 0.3s ease !important;
     display: none !important; } }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .hide-if-mobile {
     transition: all 0.3s ease !important;
     -moz-transition: all 0.3s ease !important;
@@ -28,7 +45,7 @@
 
 .show-if-tablet-only {
   display: none; }
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 800px) {
     .show-if-tablet-only {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -38,7 +55,7 @@
 
 .mobile-only {
   display: none; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .mobile-only {
       display: inherit;
       transition: all 0.3s ease !important;
@@ -48,23 +65,23 @@
 
 .desktop-only {
   display: inherit; }
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 800px) {
     .desktop-only {
       display: none; } }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .desktop-only {
       display: none; } }
 
 .mobile-and-medium-only {
   display: none; }
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 800px) {
     .mobile-and-medium-only {
       display: inherit;
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
       -o-transition: all 0.3s ease !important;
       -webkit-transition: all 0.3s ease !important; } }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .mobile-and-medium-only {
       display: inherit;
       transition: all 0.3s ease !important;
@@ -72,7 +89,7 @@
       -o-transition: all 0.3s ease !important;
       -webkit-transition: all 0.3s ease !important; } }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
   .medium-if-tablet {
     font-size: 80%;
     transition: all 0.3s ease !important;
@@ -80,22 +97,22 @@
     -o-transition: all 0.3s ease !important;
     -webkit-transition: all 0.3s ease !important; } }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
   .base-if-tablet {
-    font-size: 25px;
+    font-size: 20px;
     transition: all 0.3s ease !important;
     -moz-transition: all 0.3s ease !important;
     -o-transition: all 0.3s ease !important;
     -webkit-transition: all 0.3s ease !important; } }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
   .medium-if-mobile-or-tablet {
     font-size: 80%;
     transition: all 0.3s ease !important;
     -moz-transition: all 0.3s ease !important;
     -o-transition: all 0.3s ease !important;
     -webkit-transition: all 0.3s ease !important; } }
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .medium-if-mobile-or-tablet {
     font-size: 80%;
     transition: all 0.3s ease !important;
@@ -103,7 +120,7 @@
     -o-transition: all 0.3s ease !important;
     -webkit-transition: all 0.3s ease !important; } }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .small-if-mobile {
     font-size: 40%;
     transition: all 0.3s ease !important;
@@ -111,7 +128,7 @@
     -o-transition: all 0.3s ease !important;
     -webkit-transition: all 0.3s ease !important; } }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .tiny-if-mobile {
     font-size: 70%;
     transition: all 0.3s ease !important;
@@ -121,7 +138,7 @@
 
 .wide-and-tablet-only {
   display: inherit; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .wide-and-tablet-only {
       display: none;
       transition: all 0.3s ease !important;
@@ -129,26 +146,26 @@
       -o-transition: all 0.3s ease !important;
       -webkit-transition: all 0.3s ease !important; } }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
   .center-if-mobile-or-tablet {
     text-align: center !important; } }
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .center-if-mobile-or-tablet {
     text-align: center !important; } }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .hover-warning-if-mobile:hover {
-    background-color: #4e4e4e; } }
+    background-color: blue; } }
 
-@media all and (max-width: 350px) {
+@media all and (max-width: 400px) {
   .hover-success-if-mobile:hover {
-    background-color: #5691CC; } }
+    background-color: red; } }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
   .f-span12-if-tablet {
     width: 100% !important; } }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
   .span12-if-wide {
     width: 100% !important; } }
 
@@ -160,10 +177,8 @@
 body,
 html {
   background: #fff;
-  font-family: Open Sans;
-  font-weight: 300;
-  color: #4e4e4e;
-  font-size: 25px; }
+  color: #818181;
+  font-size: 20px; }
   body.hidden,
   html.hidden {
     overflow-x: hidden; }
@@ -182,19 +197,19 @@ img {
   text-align: center; }
 
 .base {
-  font-size: 25px !important; }
+  font-size: 20px !important; }
 
 .large {
-  font-size: calc(25px * 3) !important; }
+  font-size: calc(20px * 3) !important; }
 
 .big {
-  font-size: calc(25px * 2) !important; }
+  font-size: calc(20px * 2) !important; }
 
 .medium {
-  font-size: calc(25px * 1.3) !important; }
+  font-size: calc(20px * 1.3) !important; }
 
 .small {
-  font-size: calc(25px * 0.8) !important; }
+  font-size: calc(20px * 0.8) !important; }
 
 .tight {
   letter-spacing: -.1em; }
@@ -227,20 +242,18 @@ img {
     text-decoration: none; }
 
 p {
-  padding: 25px 0;
-  margin: 25px 0; }
+  padding: 20px 0;
+  margin: 20px 0; }
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: Open Sans;
-  font-weight: 600;
-  padding: 25px 0; }
+  padding: 20px 0; }
 
 .round-borders {
-  border-radius: 10px !important; }
+  border-radius: 4px !important; }
 
 .no-round-borders {
   border-radius: 0 !important; }
@@ -264,604 +277,604 @@ h5 {
 
 /* generate padding classes */
 .padding-around-tiny {
-  padding-top: -webkit-calc(25px * 0.3) !important;
-  padding-top: -moz-calc(25px * 0.3) !important;
-  padding-top: -o-calc(25px * 0.3) !important;
-  padding-top: calc(25px * 0.3) !important;
-  padding-right: -webkit-calc(25px * 0.3) !important;
-  padding-right: -moz-calc(25px * 0.3) !important;
-  padding-right: -o-calc(25px * 0.3) !important;
-  padding-right: calc(25px * 0.3) !important;
-  padding-bottom: -webkit-calc(25px * 0.3) !important;
-  padding-bottom: -moz-calc(25px * 0.3) !important;
-  padding-bottom: -o-calc(25px * 0.3) !important;
-  padding-bottom: calc(25px * 0.3) !important;
-  padding-left: -webkit-calc(25px * 0.3) !important;
-  padding-left: -moz-calc(25px * 0.3) !important;
-  padding-left: -o-calc(25px * 0.3) !important;
-  padding-left: calc(25px * 0.3) !important; }
+  padding-top: -webkit-calc(6px) !important;
+  padding-top: -moz-calc(6px) !important;
+  padding-top: -o-calc(6px) !important;
+  padding-top: calc(6px) !important;
+  padding-right: -webkit-calc(6px) !important;
+  padding-right: -moz-calc(6px) !important;
+  padding-right: -o-calc(6px) !important;
+  padding-right: calc(6px) !important;
+  padding-bottom: -webkit-calc(6px) !important;
+  padding-bottom: -moz-calc(6px) !important;
+  padding-bottom: -o-calc(6px) !important;
+  padding-bottom: calc(6px) !important;
+  padding-left: -webkit-calc(6px) !important;
+  padding-left: -moz-calc(6px) !important;
+  padding-left: -o-calc(6px) !important;
+  padding-left: calc(6px) !important; }
 
 .padding-around-small {
-  padding-top: -webkit-calc(25px * 0.7) !important;
-  padding-top: -moz-calc(25px * 0.7) !important;
-  padding-top: -o-calc(25px * 0.7) !important;
-  padding-top: calc(25px * 0.7) !important;
-  padding-right: -webkit-calc(25px * 0.7) !important;
-  padding-right: -moz-calc(25px * 0.7) !important;
-  padding-right: -o-calc(25px * 0.7) !important;
-  padding-right: calc(25px * 0.7) !important;
-  padding-bottom: -webkit-calc(25px * 0.7) !important;
-  padding-bottom: -moz-calc(25px * 0.7) !important;
-  padding-bottom: -o-calc(25px * 0.7) !important;
-  padding-bottom: calc(25px * 0.7) !important;
-  padding-left: -webkit-calc(25px * 0.7) !important;
-  padding-left: -moz-calc(25px * 0.7) !important;
-  padding-left: -o-calc(25px * 0.7) !important;
-  padding-left: calc(25px * 0.7) !important; }
+  padding-top: -webkit-calc(14px) !important;
+  padding-top: -moz-calc(14px) !important;
+  padding-top: -o-calc(14px) !important;
+  padding-top: calc(14px) !important;
+  padding-right: -webkit-calc(14px) !important;
+  padding-right: -moz-calc(14px) !important;
+  padding-right: -o-calc(14px) !important;
+  padding-right: calc(14px) !important;
+  padding-bottom: -webkit-calc(14px) !important;
+  padding-bottom: -moz-calc(14px) !important;
+  padding-bottom: -o-calc(14px) !important;
+  padding-bottom: calc(14px) !important;
+  padding-left: -webkit-calc(14px) !important;
+  padding-left: -moz-calc(14px) !important;
+  padding-left: -o-calc(14px) !important;
+  padding-left: calc(14px) !important; }
 
 .padding-around-base {
-  padding-top: -webkit-calc(25px * 1) !important;
-  padding-top: -moz-calc(25px * 1) !important;
-  padding-top: -o-calc(25px * 1) !important;
-  padding-top: calc(25px * 1) !important;
-  padding-right: -webkit-calc(25px * 1) !important;
-  padding-right: -moz-calc(25px * 1) !important;
-  padding-right: -o-calc(25px * 1) !important;
-  padding-right: calc(25px * 1) !important;
-  padding-bottom: -webkit-calc(25px * 1) !important;
-  padding-bottom: -moz-calc(25px * 1) !important;
-  padding-bottom: -o-calc(25px * 1) !important;
-  padding-bottom: calc(25px * 1) !important;
-  padding-left: -webkit-calc(25px * 1) !important;
-  padding-left: -moz-calc(25px * 1) !important;
-  padding-left: -o-calc(25px * 1) !important;
-  padding-left: calc(25px * 1) !important; }
+  padding-top: -webkit-calc(20px) !important;
+  padding-top: -moz-calc(20px) !important;
+  padding-top: -o-calc(20px) !important;
+  padding-top: calc(20px) !important;
+  padding-right: -webkit-calc(20px) !important;
+  padding-right: -moz-calc(20px) !important;
+  padding-right: -o-calc(20px) !important;
+  padding-right: calc(20px) !important;
+  padding-bottom: -webkit-calc(20px) !important;
+  padding-bottom: -moz-calc(20px) !important;
+  padding-bottom: -o-calc(20px) !important;
+  padding-bottom: calc(20px) !important;
+  padding-left: -webkit-calc(20px) !important;
+  padding-left: -moz-calc(20px) !important;
+  padding-left: -o-calc(20px) !important;
+  padding-left: calc(20px) !important; }
 
 .padding-around-medium {
-  padding-top: -webkit-calc(25px * 2) !important;
-  padding-top: -moz-calc(25px * 2) !important;
-  padding-top: -o-calc(25px * 2) !important;
-  padding-top: calc(25px * 2) !important;
-  padding-right: -webkit-calc(25px * 2) !important;
-  padding-right: -moz-calc(25px * 2) !important;
-  padding-right: -o-calc(25px * 2) !important;
-  padding-right: calc(25px * 2) !important;
-  padding-bottom: -webkit-calc(25px * 2) !important;
-  padding-bottom: -moz-calc(25px * 2) !important;
-  padding-bottom: -o-calc(25px * 2) !important;
-  padding-bottom: calc(25px * 2) !important;
-  padding-left: -webkit-calc(25px * 2) !important;
-  padding-left: -moz-calc(25px * 2) !important;
-  padding-left: -o-calc(25px * 2) !important;
-  padding-left: calc(25px * 2) !important; }
+  padding-top: -webkit-calc(40px) !important;
+  padding-top: -moz-calc(40px) !important;
+  padding-top: -o-calc(40px) !important;
+  padding-top: calc(40px) !important;
+  padding-right: -webkit-calc(40px) !important;
+  padding-right: -moz-calc(40px) !important;
+  padding-right: -o-calc(40px) !important;
+  padding-right: calc(40px) !important;
+  padding-bottom: -webkit-calc(40px) !important;
+  padding-bottom: -moz-calc(40px) !important;
+  padding-bottom: -o-calc(40px) !important;
+  padding-bottom: calc(40px) !important;
+  padding-left: -webkit-calc(40px) !important;
+  padding-left: -moz-calc(40px) !important;
+  padding-left: -o-calc(40px) !important;
+  padding-left: calc(40px) !important; }
 
 .padding-around-big {
-  padding-top: -webkit-calc(25px * 3) !important;
-  padding-top: -moz-calc(25px * 3) !important;
-  padding-top: -o-calc(25px * 3) !important;
-  padding-top: calc(25px * 3) !important;
-  padding-right: -webkit-calc(25px * 3) !important;
-  padding-right: -moz-calc(25px * 3) !important;
-  padding-right: -o-calc(25px * 3) !important;
-  padding-right: calc(25px * 3) !important;
-  padding-bottom: -webkit-calc(25px * 3) !important;
-  padding-bottom: -moz-calc(25px * 3) !important;
-  padding-bottom: -o-calc(25px * 3) !important;
-  padding-bottom: calc(25px * 3) !important;
-  padding-left: -webkit-calc(25px * 3) !important;
-  padding-left: -moz-calc(25px * 3) !important;
-  padding-left: -o-calc(25px * 3) !important;
-  padding-left: calc(25px * 3) !important; }
+  padding-top: -webkit-calc(60px) !important;
+  padding-top: -moz-calc(60px) !important;
+  padding-top: -o-calc(60px) !important;
+  padding-top: calc(60px) !important;
+  padding-right: -webkit-calc(60px) !important;
+  padding-right: -moz-calc(60px) !important;
+  padding-right: -o-calc(60px) !important;
+  padding-right: calc(60px) !important;
+  padding-bottom: -webkit-calc(60px) !important;
+  padding-bottom: -moz-calc(60px) !important;
+  padding-bottom: -o-calc(60px) !important;
+  padding-bottom: calc(60px) !important;
+  padding-left: -webkit-calc(60px) !important;
+  padding-left: -moz-calc(60px) !important;
+  padding-left: -o-calc(60px) !important;
+  padding-left: calc(60px) !important; }
 
 .padding-around-large {
-  padding-top: -webkit-calc(25px * 4) !important;
-  padding-top: -moz-calc(25px * 4) !important;
-  padding-top: -o-calc(25px * 4) !important;
-  padding-top: calc(25px * 4) !important;
-  padding-right: -webkit-calc(25px * 4) !important;
-  padding-right: -moz-calc(25px * 4) !important;
-  padding-right: -o-calc(25px * 4) !important;
-  padding-right: calc(25px * 4) !important;
-  padding-bottom: -webkit-calc(25px * 4) !important;
-  padding-bottom: -moz-calc(25px * 4) !important;
-  padding-bottom: -o-calc(25px * 4) !important;
-  padding-bottom: calc(25px * 4) !important;
-  padding-left: -webkit-calc(25px * 4) !important;
-  padding-left: -moz-calc(25px * 4) !important;
-  padding-left: -o-calc(25px * 4) !important;
-  padding-left: calc(25px * 4) !important; }
+  padding-top: -webkit-calc(80px) !important;
+  padding-top: -moz-calc(80px) !important;
+  padding-top: -o-calc(80px) !important;
+  padding-top: calc(80px) !important;
+  padding-right: -webkit-calc(80px) !important;
+  padding-right: -moz-calc(80px) !important;
+  padding-right: -o-calc(80px) !important;
+  padding-right: calc(80px) !important;
+  padding-bottom: -webkit-calc(80px) !important;
+  padding-bottom: -moz-calc(80px) !important;
+  padding-bottom: -o-calc(80px) !important;
+  padding-bottom: calc(80px) !important;
+  padding-left: -webkit-calc(80px) !important;
+  padding-left: -moz-calc(80px) !important;
+  padding-left: -o-calc(80px) !important;
+  padding-left: calc(80px) !important; }
 
 .padding-top-tiny {
-  padding-top: -webkit-calc(25px * 0.3) !important;
-  padding-top: -moz-calc(25px * 0.3) !important;
-  padding-top: -o-calc(25px * 0.3) !important;
-  padding-top: calc(25px * 0.3) !important; }
+  padding-top: -webkit-calc(6px) !important;
+  padding-top: -moz-calc(6px) !important;
+  padding-top: -o-calc(6px) !important;
+  padding-top: calc(6px) !important; }
 
 .padding-top-small {
-  padding-top: -webkit-calc(25px * 0.7) !important;
-  padding-top: -moz-calc(25px * 0.7) !important;
-  padding-top: -o-calc(25px * 0.7) !important;
-  padding-top: calc(25px * 0.7) !important; }
+  padding-top: -webkit-calc(14px) !important;
+  padding-top: -moz-calc(14px) !important;
+  padding-top: -o-calc(14px) !important;
+  padding-top: calc(14px) !important; }
 
 .padding-top-base {
-  padding-top: -webkit-calc(25px * 1) !important;
-  padding-top: -moz-calc(25px * 1) !important;
-  padding-top: -o-calc(25px * 1) !important;
-  padding-top: calc(25px * 1) !important; }
+  padding-top: -webkit-calc(20px) !important;
+  padding-top: -moz-calc(20px) !important;
+  padding-top: -o-calc(20px) !important;
+  padding-top: calc(20px) !important; }
 
 .padding-top-medium {
-  padding-top: -webkit-calc(25px * 2) !important;
-  padding-top: -moz-calc(25px * 2) !important;
-  padding-top: -o-calc(25px * 2) !important;
-  padding-top: calc(25px * 2) !important; }
+  padding-top: -webkit-calc(40px) !important;
+  padding-top: -moz-calc(40px) !important;
+  padding-top: -o-calc(40px) !important;
+  padding-top: calc(40px) !important; }
 
 .padding-top-big {
-  padding-top: -webkit-calc(25px * 3) !important;
-  padding-top: -moz-calc(25px * 3) !important;
-  padding-top: -o-calc(25px * 3) !important;
-  padding-top: calc(25px * 3) !important; }
+  padding-top: -webkit-calc(60px) !important;
+  padding-top: -moz-calc(60px) !important;
+  padding-top: -o-calc(60px) !important;
+  padding-top: calc(60px) !important; }
 
 .padding-top-large {
-  padding-top: -webkit-calc(25px * 4) !important;
-  padding-top: -moz-calc(25px * 4) !important;
-  padding-top: -o-calc(25px * 4) !important;
-  padding-top: calc(25px * 4) !important; }
+  padding-top: -webkit-calc(80px) !important;
+  padding-top: -moz-calc(80px) !important;
+  padding-top: -o-calc(80px) !important;
+  padding-top: calc(80px) !important; }
 
 .padding-left-tiny {
-  padding-left: -webkit-calc(25px * 0.3) !important;
-  padding-left: -moz-calc(25px * 0.3) !important;
-  padding-left: -o-calc(25px * 0.3) !important;
-  padding-left: calc(25px * 0.3) !important; }
+  padding-left: -webkit-calc(6px) !important;
+  padding-left: -moz-calc(6px) !important;
+  padding-left: -o-calc(6px) !important;
+  padding-left: calc(6px) !important; }
 
 .padding-left-small {
-  padding-left: -webkit-calc(25px * 0.7) !important;
-  padding-left: -moz-calc(25px * 0.7) !important;
-  padding-left: -o-calc(25px * 0.7) !important;
-  padding-left: calc(25px * 0.7) !important; }
+  padding-left: -webkit-calc(14px) !important;
+  padding-left: -moz-calc(14px) !important;
+  padding-left: -o-calc(14px) !important;
+  padding-left: calc(14px) !important; }
 
 .padding-left-base {
-  padding-left: -webkit-calc(25px * 1) !important;
-  padding-left: -moz-calc(25px * 1) !important;
-  padding-left: -o-calc(25px * 1) !important;
-  padding-left: calc(25px * 1) !important; }
+  padding-left: -webkit-calc(20px) !important;
+  padding-left: -moz-calc(20px) !important;
+  padding-left: -o-calc(20px) !important;
+  padding-left: calc(20px) !important; }
 
 .padding-left-medium {
-  padding-left: -webkit-calc(25px * 2) !important;
-  padding-left: -moz-calc(25px * 2) !important;
-  padding-left: -o-calc(25px * 2) !important;
-  padding-left: calc(25px * 2) !important; }
+  padding-left: -webkit-calc(40px) !important;
+  padding-left: -moz-calc(40px) !important;
+  padding-left: -o-calc(40px) !important;
+  padding-left: calc(40px) !important; }
 
 .padding-left-big {
-  padding-left: -webkit-calc(25px * 3) !important;
-  padding-left: -moz-calc(25px * 3) !important;
-  padding-left: -o-calc(25px * 3) !important;
-  padding-left: calc(25px * 3) !important; }
+  padding-left: -webkit-calc(60px) !important;
+  padding-left: -moz-calc(60px) !important;
+  padding-left: -o-calc(60px) !important;
+  padding-left: calc(60px) !important; }
 
 .padding-left-large {
-  padding-left: -webkit-calc(25px * 4) !important;
-  padding-left: -moz-calc(25px * 4) !important;
-  padding-left: -o-calc(25px * 4) !important;
-  padding-left: calc(25px * 4) !important; }
+  padding-left: -webkit-calc(80px) !important;
+  padding-left: -moz-calc(80px) !important;
+  padding-left: -o-calc(80px) !important;
+  padding-left: calc(80px) !important; }
 
 .padding-right-tiny {
-  padding-right: -webkit-calc(25px * 0.3) !important;
-  padding-right: -moz-calc(25px * 0.3) !important;
-  padding-right: -o-calc(25px * 0.3) !important;
-  padding-right: calc(25px * 0.3) !important; }
+  padding-right: -webkit-calc(6px) !important;
+  padding-right: -moz-calc(6px) !important;
+  padding-right: -o-calc(6px) !important;
+  padding-right: calc(6px) !important; }
 
 .padding-right-small {
-  padding-right: -webkit-calc(25px * 0.7) !important;
-  padding-right: -moz-calc(25px * 0.7) !important;
-  padding-right: -o-calc(25px * 0.7) !important;
-  padding-right: calc(25px * 0.7) !important; }
+  padding-right: -webkit-calc(14px) !important;
+  padding-right: -moz-calc(14px) !important;
+  padding-right: -o-calc(14px) !important;
+  padding-right: calc(14px) !important; }
 
 .padding-right-base {
-  padding-right: -webkit-calc(25px * 1) !important;
-  padding-right: -moz-calc(25px * 1) !important;
-  padding-right: -o-calc(25px * 1) !important;
-  padding-right: calc(25px * 1) !important; }
+  padding-right: -webkit-calc(20px) !important;
+  padding-right: -moz-calc(20px) !important;
+  padding-right: -o-calc(20px) !important;
+  padding-right: calc(20px) !important; }
 
 .padding-right-medium {
-  padding-right: -webkit-calc(25px * 2) !important;
-  padding-right: -moz-calc(25px * 2) !important;
-  padding-right: -o-calc(25px * 2) !important;
-  padding-right: calc(25px * 2) !important; }
+  padding-right: -webkit-calc(40px) !important;
+  padding-right: -moz-calc(40px) !important;
+  padding-right: -o-calc(40px) !important;
+  padding-right: calc(40px) !important; }
 
 .padding-right-big {
-  padding-right: -webkit-calc(25px * 3) !important;
-  padding-right: -moz-calc(25px * 3) !important;
-  padding-right: -o-calc(25px * 3) !important;
-  padding-right: calc(25px * 3) !important; }
+  padding-right: -webkit-calc(60px) !important;
+  padding-right: -moz-calc(60px) !important;
+  padding-right: -o-calc(60px) !important;
+  padding-right: calc(60px) !important; }
 
 .padding-right-large {
-  padding-right: -webkit-calc(25px * 4) !important;
-  padding-right: -moz-calc(25px * 4) !important;
-  padding-right: -o-calc(25px * 4) !important;
-  padding-right: calc(25px * 4) !important; }
+  padding-right: -webkit-calc(80px) !important;
+  padding-right: -moz-calc(80px) !important;
+  padding-right: -o-calc(80px) !important;
+  padding-right: calc(80px) !important; }
 
 .padding-bottom-tiny {
-  padding-bottom: -webkit-calc(25px * 0.3) !important;
-  padding-bottom: -moz-calc(25px * 0.3) !important;
-  padding-bottom: -o-calc(25px * 0.3) !important;
-  padding-bottom: calc(25px * 0.3) !important; }
+  padding-bottom: -webkit-calc(6px) !important;
+  padding-bottom: -moz-calc(6px) !important;
+  padding-bottom: -o-calc(6px) !important;
+  padding-bottom: calc(6px) !important; }
 
 .padding-bottom-small {
-  padding-bottom: -webkit-calc(25px * 0.7) !important;
-  padding-bottom: -moz-calc(25px * 0.7) !important;
-  padding-bottom: -o-calc(25px * 0.7) !important;
-  padding-bottom: calc(25px * 0.7) !important; }
+  padding-bottom: -webkit-calc(14px) !important;
+  padding-bottom: -moz-calc(14px) !important;
+  padding-bottom: -o-calc(14px) !important;
+  padding-bottom: calc(14px) !important; }
 
 .padding-bottom-base {
-  padding-bottom: -webkit-calc(25px * 1) !important;
-  padding-bottom: -moz-calc(25px * 1) !important;
-  padding-bottom: -o-calc(25px * 1) !important;
-  padding-bottom: calc(25px * 1) !important; }
+  padding-bottom: -webkit-calc(20px) !important;
+  padding-bottom: -moz-calc(20px) !important;
+  padding-bottom: -o-calc(20px) !important;
+  padding-bottom: calc(20px) !important; }
 
 .padding-bottom-medium {
-  padding-bottom: -webkit-calc(25px * 2) !important;
-  padding-bottom: -moz-calc(25px * 2) !important;
-  padding-bottom: -o-calc(25px * 2) !important;
-  padding-bottom: calc(25px * 2) !important; }
+  padding-bottom: -webkit-calc(40px) !important;
+  padding-bottom: -moz-calc(40px) !important;
+  padding-bottom: -o-calc(40px) !important;
+  padding-bottom: calc(40px) !important; }
 
 .padding-bottom-big {
-  padding-bottom: -webkit-calc(25px * 3) !important;
-  padding-bottom: -moz-calc(25px * 3) !important;
-  padding-bottom: -o-calc(25px * 3) !important;
-  padding-bottom: calc(25px * 3) !important; }
+  padding-bottom: -webkit-calc(60px) !important;
+  padding-bottom: -moz-calc(60px) !important;
+  padding-bottom: -o-calc(60px) !important;
+  padding-bottom: calc(60px) !important; }
 
 .padding-bottom-large {
-  padding-bottom: -webkit-calc(25px * 4) !important;
-  padding-bottom: -moz-calc(25px * 4) !important;
-  padding-bottom: -o-calc(25px * 4) !important;
-  padding-bottom: calc(25px * 4) !important; }
+  padding-bottom: -webkit-calc(80px) !important;
+  padding-bottom: -moz-calc(80px) !important;
+  padding-bottom: -o-calc(80px) !important;
+  padding-bottom: calc(80px) !important; }
 
 .padding-vertical-tiny {
-  padding-top: -webkit-calc(25px * 0.3) !important;
-  padding-top: -moz-calc(25px * 0.3) !important;
-  padding-top: -o-calc(25px * 0.3) !important;
-  padding-top: calc(25px * 0.3) !important;
-  padding-bottom: -webkit-calc(25px * 0.3) !important;
-  padding-bottom: -moz-calc(25px * 0.3) !important;
-  padding-bottom: -o-calc(25px * 0.3) !important;
-  padding-bottom: calc(25px * 0.3) !important; }
+  padding-top: -webkit-calc(6px) !important;
+  padding-top: -moz-calc(6px) !important;
+  padding-top: -o-calc(6px) !important;
+  padding-top: calc(6px) !important;
+  padding-bottom: -webkit-calc(6px) !important;
+  padding-bottom: -moz-calc(6px) !important;
+  padding-bottom: -o-calc(6px) !important;
+  padding-bottom: calc(6px) !important; }
 
 .padding-vertical-small {
-  padding-top: -webkit-calc(25px * 0.7) !important;
-  padding-top: -moz-calc(25px * 0.7) !important;
-  padding-top: -o-calc(25px * 0.7) !important;
-  padding-top: calc(25px * 0.7) !important;
-  padding-bottom: -webkit-calc(25px * 0.7) !important;
-  padding-bottom: -moz-calc(25px * 0.7) !important;
-  padding-bottom: -o-calc(25px * 0.7) !important;
-  padding-bottom: calc(25px * 0.7) !important; }
+  padding-top: -webkit-calc(14px) !important;
+  padding-top: -moz-calc(14px) !important;
+  padding-top: -o-calc(14px) !important;
+  padding-top: calc(14px) !important;
+  padding-bottom: -webkit-calc(14px) !important;
+  padding-bottom: -moz-calc(14px) !important;
+  padding-bottom: -o-calc(14px) !important;
+  padding-bottom: calc(14px) !important; }
 
 .padding-vertical-base {
-  padding-top: -webkit-calc(25px * 1) !important;
-  padding-top: -moz-calc(25px * 1) !important;
-  padding-top: -o-calc(25px * 1) !important;
-  padding-top: calc(25px * 1) !important;
-  padding-bottom: -webkit-calc(25px * 1) !important;
-  padding-bottom: -moz-calc(25px * 1) !important;
-  padding-bottom: -o-calc(25px * 1) !important;
-  padding-bottom: calc(25px * 1) !important; }
+  padding-top: -webkit-calc(20px) !important;
+  padding-top: -moz-calc(20px) !important;
+  padding-top: -o-calc(20px) !important;
+  padding-top: calc(20px) !important;
+  padding-bottom: -webkit-calc(20px) !important;
+  padding-bottom: -moz-calc(20px) !important;
+  padding-bottom: -o-calc(20px) !important;
+  padding-bottom: calc(20px) !important; }
 
 .padding-vertical-medium {
-  padding-top: -webkit-calc(25px * 2) !important;
-  padding-top: -moz-calc(25px * 2) !important;
-  padding-top: -o-calc(25px * 2) !important;
-  padding-top: calc(25px * 2) !important;
-  padding-bottom: -webkit-calc(25px * 2) !important;
-  padding-bottom: -moz-calc(25px * 2) !important;
-  padding-bottom: -o-calc(25px * 2) !important;
-  padding-bottom: calc(25px * 2) !important; }
+  padding-top: -webkit-calc(40px) !important;
+  padding-top: -moz-calc(40px) !important;
+  padding-top: -o-calc(40px) !important;
+  padding-top: calc(40px) !important;
+  padding-bottom: -webkit-calc(40px) !important;
+  padding-bottom: -moz-calc(40px) !important;
+  padding-bottom: -o-calc(40px) !important;
+  padding-bottom: calc(40px) !important; }
 
 .padding-vertical-big {
-  padding-top: -webkit-calc(25px * 3) !important;
-  padding-top: -moz-calc(25px * 3) !important;
-  padding-top: -o-calc(25px * 3) !important;
-  padding-top: calc(25px * 3) !important;
-  padding-bottom: -webkit-calc(25px * 3) !important;
-  padding-bottom: -moz-calc(25px * 3) !important;
-  padding-bottom: -o-calc(25px * 3) !important;
-  padding-bottom: calc(25px * 3) !important; }
+  padding-top: -webkit-calc(60px) !important;
+  padding-top: -moz-calc(60px) !important;
+  padding-top: -o-calc(60px) !important;
+  padding-top: calc(60px) !important;
+  padding-bottom: -webkit-calc(60px) !important;
+  padding-bottom: -moz-calc(60px) !important;
+  padding-bottom: -o-calc(60px) !important;
+  padding-bottom: calc(60px) !important; }
 
 .padding-vertical-large {
-  padding-top: -webkit-calc(25px * 4) !important;
-  padding-top: -moz-calc(25px * 4) !important;
-  padding-top: -o-calc(25px * 4) !important;
-  padding-top: calc(25px * 4) !important;
-  padding-bottom: -webkit-calc(25px * 4) !important;
-  padding-bottom: -moz-calc(25px * 4) !important;
-  padding-bottom: -o-calc(25px * 4) !important;
-  padding-bottom: calc(25px * 4) !important; }
+  padding-top: -webkit-calc(80px) !important;
+  padding-top: -moz-calc(80px) !important;
+  padding-top: -o-calc(80px) !important;
+  padding-top: calc(80px) !important;
+  padding-bottom: -webkit-calc(80px) !important;
+  padding-bottom: -moz-calc(80px) !important;
+  padding-bottom: -o-calc(80px) !important;
+  padding-bottom: calc(80px) !important; }
 
 .padding-horizontal-tiny {
-  padding-left: -webkit-calc(25px * 0.3) !important;
-  padding-left: -moz-calc(25px * 0.3) !important;
-  padding-left: -o-calc(25px * 0.3) !important;
-  padding-left: calc(25px * 0.3) !important;
-  padding-right: -webkit-calc(25px * 0.3) !important;
-  padding-right: -moz-calc(25px * 0.3) !important;
-  padding-right: -o-calc(25px * 0.3) !important;
-  padding-right: calc(25px * 0.3) !important; }
+  padding-left: -webkit-calc(6px) !important;
+  padding-left: -moz-calc(6px) !important;
+  padding-left: -o-calc(6px) !important;
+  padding-left: calc(6px) !important;
+  padding-right: -webkit-calc(6px) !important;
+  padding-right: -moz-calc(6px) !important;
+  padding-right: -o-calc(6px) !important;
+  padding-right: calc(6px) !important; }
 
 .padding-horizontal-small {
-  padding-left: -webkit-calc(25px * 0.7) !important;
-  padding-left: -moz-calc(25px * 0.7) !important;
-  padding-left: -o-calc(25px * 0.7) !important;
-  padding-left: calc(25px * 0.7) !important;
-  padding-right: -webkit-calc(25px * 0.7) !important;
-  padding-right: -moz-calc(25px * 0.7) !important;
-  padding-right: -o-calc(25px * 0.7) !important;
-  padding-right: calc(25px * 0.7) !important; }
+  padding-left: -webkit-calc(14px) !important;
+  padding-left: -moz-calc(14px) !important;
+  padding-left: -o-calc(14px) !important;
+  padding-left: calc(14px) !important;
+  padding-right: -webkit-calc(14px) !important;
+  padding-right: -moz-calc(14px) !important;
+  padding-right: -o-calc(14px) !important;
+  padding-right: calc(14px) !important; }
 
 .padding-horizontal-base {
-  padding-left: -webkit-calc(25px * 1) !important;
-  padding-left: -moz-calc(25px * 1) !important;
-  padding-left: -o-calc(25px * 1) !important;
-  padding-left: calc(25px * 1) !important;
-  padding-right: -webkit-calc(25px * 1) !important;
-  padding-right: -moz-calc(25px * 1) !important;
-  padding-right: -o-calc(25px * 1) !important;
-  padding-right: calc(25px * 1) !important; }
+  padding-left: -webkit-calc(20px) !important;
+  padding-left: -moz-calc(20px) !important;
+  padding-left: -o-calc(20px) !important;
+  padding-left: calc(20px) !important;
+  padding-right: -webkit-calc(20px) !important;
+  padding-right: -moz-calc(20px) !important;
+  padding-right: -o-calc(20px) !important;
+  padding-right: calc(20px) !important; }
 
 .padding-horizontal-medium {
-  padding-left: -webkit-calc(25px * 2) !important;
-  padding-left: -moz-calc(25px * 2) !important;
-  padding-left: -o-calc(25px * 2) !important;
-  padding-left: calc(25px * 2) !important;
-  padding-right: -webkit-calc(25px * 2) !important;
-  padding-right: -moz-calc(25px * 2) !important;
-  padding-right: -o-calc(25px * 2) !important;
-  padding-right: calc(25px * 2) !important; }
+  padding-left: -webkit-calc(40px) !important;
+  padding-left: -moz-calc(40px) !important;
+  padding-left: -o-calc(40px) !important;
+  padding-left: calc(40px) !important;
+  padding-right: -webkit-calc(40px) !important;
+  padding-right: -moz-calc(40px) !important;
+  padding-right: -o-calc(40px) !important;
+  padding-right: calc(40px) !important; }
 
 .padding-horizontal-big {
-  padding-left: -webkit-calc(25px * 3) !important;
-  padding-left: -moz-calc(25px * 3) !important;
-  padding-left: -o-calc(25px * 3) !important;
-  padding-left: calc(25px * 3) !important;
-  padding-right: -webkit-calc(25px * 3) !important;
-  padding-right: -moz-calc(25px * 3) !important;
-  padding-right: -o-calc(25px * 3) !important;
-  padding-right: calc(25px * 3) !important; }
+  padding-left: -webkit-calc(60px) !important;
+  padding-left: -moz-calc(60px) !important;
+  padding-left: -o-calc(60px) !important;
+  padding-left: calc(60px) !important;
+  padding-right: -webkit-calc(60px) !important;
+  padding-right: -moz-calc(60px) !important;
+  padding-right: -o-calc(60px) !important;
+  padding-right: calc(60px) !important; }
 
 .padding-horizontal-large {
-  padding-left: -webkit-calc(25px * 4) !important;
-  padding-left: -moz-calc(25px * 4) !important;
-  padding-left: -o-calc(25px * 4) !important;
-  padding-left: calc(25px * 4) !important;
-  padding-right: -webkit-calc(25px * 4) !important;
-  padding-right: -moz-calc(25px * 4) !important;
-  padding-right: -o-calc(25px * 4) !important;
-  padding-right: calc(25px * 4) !important; }
+  padding-left: -webkit-calc(80px) !important;
+  padding-left: -moz-calc(80px) !important;
+  padding-left: -o-calc(80px) !important;
+  padding-left: calc(80px) !important;
+  padding-right: -webkit-calc(80px) !important;
+  padding-right: -moz-calc(80px) !important;
+  padding-right: -o-calc(80px) !important;
+  padding-right: calc(80px) !important; }
 
 .margin-around-tiny {
-  margin-top: -webkit-calc(25px * 0.3) !important;
-  margin-top: -moz-calc(25px * 0.3) !important;
-  margin-top: -o-calc(25px * 0.3) !important;
-  margin-top: calc(25px * 0.3) !important;
-  margin-right: -webkit-calc(25px * 0.3) !important;
-  margin-right: -moz-calc(25px * 0.3) !important;
-  margin-right: -o-calc(25px * 0.3) !important;
-  margin-right: calc(25px * 0.3) !important;
-  margin-bottom: -webkit-calc(25px * 0.3) !important;
-  margin-bottom: -moz-calc(25px * 0.3) !important;
-  margin-bottom: -o-calc(25px * 0.3) !important;
-  margin-bottom: calc(25px * 0.3) !important;
-  margin-left: -webkit-calc(25px * 0.3) !important;
-  margin-left: -moz-calc(25px * 0.3) !important;
-  margin-left: -o-calc(25px * 0.3) !important;
-  margin-left: calc(25px * 0.3) !important; }
+  margin-top: -webkit-calc(6px) !important;
+  margin-top: -moz-calc(6px) !important;
+  margin-top: -o-calc(6px) !important;
+  margin-top: calc(6px) !important;
+  margin-right: -webkit-calc(6px) !important;
+  margin-right: -moz-calc(6px) !important;
+  margin-right: -o-calc(6px) !important;
+  margin-right: calc(6px) !important;
+  margin-bottom: -webkit-calc(6px) !important;
+  margin-bottom: -moz-calc(6px) !important;
+  margin-bottom: -o-calc(6px) !important;
+  margin-bottom: calc(6px) !important;
+  margin-left: -webkit-calc(6px) !important;
+  margin-left: -moz-calc(6px) !important;
+  margin-left: -o-calc(6px) !important;
+  margin-left: calc(6px) !important; }
 
 .margin-around-small {
-  margin-top: -webkit-calc(25px * 0.7) !important;
-  margin-top: -moz-calc(25px * 0.7) !important;
-  margin-top: -o-calc(25px * 0.7) !important;
-  margin-top: calc(25px * 0.7) !important;
-  margin-right: -webkit-calc(25px * 0.7) !important;
-  margin-right: -moz-calc(25px * 0.7) !important;
-  margin-right: -o-calc(25px * 0.7) !important;
-  margin-right: calc(25px * 0.7) !important;
-  margin-bottom: -webkit-calc(25px * 0.7) !important;
-  margin-bottom: -moz-calc(25px * 0.7) !important;
-  margin-bottom: -o-calc(25px * 0.7) !important;
-  margin-bottom: calc(25px * 0.7) !important;
-  margin-left: -webkit-calc(25px * 0.7) !important;
-  margin-left: -moz-calc(25px * 0.7) !important;
-  margin-left: -o-calc(25px * 0.7) !important;
-  margin-left: calc(25px * 0.7) !important; }
+  margin-top: -webkit-calc(14px) !important;
+  margin-top: -moz-calc(14px) !important;
+  margin-top: -o-calc(14px) !important;
+  margin-top: calc(14px) !important;
+  margin-right: -webkit-calc(14px) !important;
+  margin-right: -moz-calc(14px) !important;
+  margin-right: -o-calc(14px) !important;
+  margin-right: calc(14px) !important;
+  margin-bottom: -webkit-calc(14px) !important;
+  margin-bottom: -moz-calc(14px) !important;
+  margin-bottom: -o-calc(14px) !important;
+  margin-bottom: calc(14px) !important;
+  margin-left: -webkit-calc(14px) !important;
+  margin-left: -moz-calc(14px) !important;
+  margin-left: -o-calc(14px) !important;
+  margin-left: calc(14px) !important; }
 
 .margin-around-base {
-  margin-top: -webkit-calc(25px * 1) !important;
-  margin-top: -moz-calc(25px * 1) !important;
-  margin-top: -o-calc(25px * 1) !important;
-  margin-top: calc(25px * 1) !important;
-  margin-right: -webkit-calc(25px * 1) !important;
-  margin-right: -moz-calc(25px * 1) !important;
-  margin-right: -o-calc(25px * 1) !important;
-  margin-right: calc(25px * 1) !important;
-  margin-bottom: -webkit-calc(25px * 1) !important;
-  margin-bottom: -moz-calc(25px * 1) !important;
-  margin-bottom: -o-calc(25px * 1) !important;
-  margin-bottom: calc(25px * 1) !important;
-  margin-left: -webkit-calc(25px * 1) !important;
-  margin-left: -moz-calc(25px * 1) !important;
-  margin-left: -o-calc(25px * 1) !important;
-  margin-left: calc(25px * 1) !important; }
+  margin-top: -webkit-calc(20px) !important;
+  margin-top: -moz-calc(20px) !important;
+  margin-top: -o-calc(20px) !important;
+  margin-top: calc(20px) !important;
+  margin-right: -webkit-calc(20px) !important;
+  margin-right: -moz-calc(20px) !important;
+  margin-right: -o-calc(20px) !important;
+  margin-right: calc(20px) !important;
+  margin-bottom: -webkit-calc(20px) !important;
+  margin-bottom: -moz-calc(20px) !important;
+  margin-bottom: -o-calc(20px) !important;
+  margin-bottom: calc(20px) !important;
+  margin-left: -webkit-calc(20px) !important;
+  margin-left: -moz-calc(20px) !important;
+  margin-left: -o-calc(20px) !important;
+  margin-left: calc(20px) !important; }
 
 .margin-around-medium {
-  margin-top: -webkit-calc(25px * 2) !important;
-  margin-top: -moz-calc(25px * 2) !important;
-  margin-top: -o-calc(25px * 2) !important;
-  margin-top: calc(25px * 2) !important;
-  margin-right: -webkit-calc(25px * 2) !important;
-  margin-right: -moz-calc(25px * 2) !important;
-  margin-right: -o-calc(25px * 2) !important;
-  margin-right: calc(25px * 2) !important;
-  margin-bottom: -webkit-calc(25px * 2) !important;
-  margin-bottom: -moz-calc(25px * 2) !important;
-  margin-bottom: -o-calc(25px * 2) !important;
-  margin-bottom: calc(25px * 2) !important;
-  margin-left: -webkit-calc(25px * 2) !important;
-  margin-left: -moz-calc(25px * 2) !important;
-  margin-left: -o-calc(25px * 2) !important;
-  margin-left: calc(25px * 2) !important; }
+  margin-top: -webkit-calc(40px) !important;
+  margin-top: -moz-calc(40px) !important;
+  margin-top: -o-calc(40px) !important;
+  margin-top: calc(40px) !important;
+  margin-right: -webkit-calc(40px) !important;
+  margin-right: -moz-calc(40px) !important;
+  margin-right: -o-calc(40px) !important;
+  margin-right: calc(40px) !important;
+  margin-bottom: -webkit-calc(40px) !important;
+  margin-bottom: -moz-calc(40px) !important;
+  margin-bottom: -o-calc(40px) !important;
+  margin-bottom: calc(40px) !important;
+  margin-left: -webkit-calc(40px) !important;
+  margin-left: -moz-calc(40px) !important;
+  margin-left: -o-calc(40px) !important;
+  margin-left: calc(40px) !important; }
 
 .margin-around-big {
-  margin-top: -webkit-calc(25px * 3) !important;
-  margin-top: -moz-calc(25px * 3) !important;
-  margin-top: -o-calc(25px * 3) !important;
-  margin-top: calc(25px * 3) !important;
-  margin-right: -webkit-calc(25px * 3) !important;
-  margin-right: -moz-calc(25px * 3) !important;
-  margin-right: -o-calc(25px * 3) !important;
-  margin-right: calc(25px * 3) !important;
-  margin-bottom: -webkit-calc(25px * 3) !important;
-  margin-bottom: -moz-calc(25px * 3) !important;
-  margin-bottom: -o-calc(25px * 3) !important;
-  margin-bottom: calc(25px * 3) !important;
-  margin-left: -webkit-calc(25px * 3) !important;
-  margin-left: -moz-calc(25px * 3) !important;
-  margin-left: -o-calc(25px * 3) !important;
-  margin-left: calc(25px * 3) !important; }
+  margin-top: -webkit-calc(60px) !important;
+  margin-top: -moz-calc(60px) !important;
+  margin-top: -o-calc(60px) !important;
+  margin-top: calc(60px) !important;
+  margin-right: -webkit-calc(60px) !important;
+  margin-right: -moz-calc(60px) !important;
+  margin-right: -o-calc(60px) !important;
+  margin-right: calc(60px) !important;
+  margin-bottom: -webkit-calc(60px) !important;
+  margin-bottom: -moz-calc(60px) !important;
+  margin-bottom: -o-calc(60px) !important;
+  margin-bottom: calc(60px) !important;
+  margin-left: -webkit-calc(60px) !important;
+  margin-left: -moz-calc(60px) !important;
+  margin-left: -o-calc(60px) !important;
+  margin-left: calc(60px) !important; }
 
 .margin-around-large {
-  margin-top: -webkit-calc(25px * 4) !important;
-  margin-top: -moz-calc(25px * 4) !important;
-  margin-top: -o-calc(25px * 4) !important;
-  margin-top: calc(25px * 4) !important;
-  margin-right: -webkit-calc(25px * 4) !important;
-  margin-right: -moz-calc(25px * 4) !important;
-  margin-right: -o-calc(25px * 4) !important;
-  margin-right: calc(25px * 4) !important;
-  margin-bottom: -webkit-calc(25px * 4) !important;
-  margin-bottom: -moz-calc(25px * 4) !important;
-  margin-bottom: -o-calc(25px * 4) !important;
-  margin-bottom: calc(25px * 4) !important;
-  margin-left: -webkit-calc(25px * 4) !important;
-  margin-left: -moz-calc(25px * 4) !important;
-  margin-left: -o-calc(25px * 4) !important;
-  margin-left: calc(25px * 4) !important; }
+  margin-top: -webkit-calc(80px) !important;
+  margin-top: -moz-calc(80px) !important;
+  margin-top: -o-calc(80px) !important;
+  margin-top: calc(80px) !important;
+  margin-right: -webkit-calc(80px) !important;
+  margin-right: -moz-calc(80px) !important;
+  margin-right: -o-calc(80px) !important;
+  margin-right: calc(80px) !important;
+  margin-bottom: -webkit-calc(80px) !important;
+  margin-bottom: -moz-calc(80px) !important;
+  margin-bottom: -o-calc(80px) !important;
+  margin-bottom: calc(80px) !important;
+  margin-left: -webkit-calc(80px) !important;
+  margin-left: -moz-calc(80px) !important;
+  margin-left: -o-calc(80px) !important;
+  margin-left: calc(80px) !important; }
 
 .margin-vertical-tiny {
-  margin-top: -webkit-calc(25px * 0.3) !important;
-  margin-top: -moz-calc(25px * 0.3) !important;
-  margin-top: -o-calc(25px * 0.3) !important;
-  margin-top: calc(25px * 0.3) !important;
-  margin-bottom: -webkit-calc(25px * 0.3) !important;
-  margin-bottom: -moz-calc(25px * 0.3) !important;
-  margin-bottom: -o-calc(25px * 0.3) !important;
-  margin-bottom: calc(25px * 0.3) !important; }
+  margin-top: -webkit-calc(6px) !important;
+  margin-top: -moz-calc(6px) !important;
+  margin-top: -o-calc(6px) !important;
+  margin-top: calc(6px) !important;
+  margin-bottom: -webkit-calc(6px) !important;
+  margin-bottom: -moz-calc(6px) !important;
+  margin-bottom: -o-calc(6px) !important;
+  margin-bottom: calc(6px) !important; }
 
 .margin-vertical-small {
-  margin-top: -webkit-calc(25px * 0.7) !important;
-  margin-top: -moz-calc(25px * 0.7) !important;
-  margin-top: -o-calc(25px * 0.7) !important;
-  margin-top: calc(25px * 0.7) !important;
-  margin-bottom: -webkit-calc(25px * 0.7) !important;
-  margin-bottom: -moz-calc(25px * 0.7) !important;
-  margin-bottom: -o-calc(25px * 0.7) !important;
-  margin-bottom: calc(25px * 0.7) !important; }
+  margin-top: -webkit-calc(14px) !important;
+  margin-top: -moz-calc(14px) !important;
+  margin-top: -o-calc(14px) !important;
+  margin-top: calc(14px) !important;
+  margin-bottom: -webkit-calc(14px) !important;
+  margin-bottom: -moz-calc(14px) !important;
+  margin-bottom: -o-calc(14px) !important;
+  margin-bottom: calc(14px) !important; }
 
 .margin-vertical-base {
-  margin-top: -webkit-calc(25px * 1) !important;
-  margin-top: -moz-calc(25px * 1) !important;
-  margin-top: -o-calc(25px * 1) !important;
-  margin-top: calc(25px * 1) !important;
-  margin-bottom: -webkit-calc(25px * 1) !important;
-  margin-bottom: -moz-calc(25px * 1) !important;
-  margin-bottom: -o-calc(25px * 1) !important;
-  margin-bottom: calc(25px * 1) !important; }
+  margin-top: -webkit-calc(20px) !important;
+  margin-top: -moz-calc(20px) !important;
+  margin-top: -o-calc(20px) !important;
+  margin-top: calc(20px) !important;
+  margin-bottom: -webkit-calc(20px) !important;
+  margin-bottom: -moz-calc(20px) !important;
+  margin-bottom: -o-calc(20px) !important;
+  margin-bottom: calc(20px) !important; }
 
 .margin-vertical-medium {
-  margin-top: -webkit-calc(25px * 2) !important;
-  margin-top: -moz-calc(25px * 2) !important;
-  margin-top: -o-calc(25px * 2) !important;
-  margin-top: calc(25px * 2) !important;
-  margin-bottom: -webkit-calc(25px * 2) !important;
-  margin-bottom: -moz-calc(25px * 2) !important;
-  margin-bottom: -o-calc(25px * 2) !important;
-  margin-bottom: calc(25px * 2) !important; }
+  margin-top: -webkit-calc(40px) !important;
+  margin-top: -moz-calc(40px) !important;
+  margin-top: -o-calc(40px) !important;
+  margin-top: calc(40px) !important;
+  margin-bottom: -webkit-calc(40px) !important;
+  margin-bottom: -moz-calc(40px) !important;
+  margin-bottom: -o-calc(40px) !important;
+  margin-bottom: calc(40px) !important; }
 
 .margin-vertical-big {
-  margin-top: -webkit-calc(25px * 3) !important;
-  margin-top: -moz-calc(25px * 3) !important;
-  margin-top: -o-calc(25px * 3) !important;
-  margin-top: calc(25px * 3) !important;
-  margin-bottom: -webkit-calc(25px * 3) !important;
-  margin-bottom: -moz-calc(25px * 3) !important;
-  margin-bottom: -o-calc(25px * 3) !important;
-  margin-bottom: calc(25px * 3) !important; }
+  margin-top: -webkit-calc(60px) !important;
+  margin-top: -moz-calc(60px) !important;
+  margin-top: -o-calc(60px) !important;
+  margin-top: calc(60px) !important;
+  margin-bottom: -webkit-calc(60px) !important;
+  margin-bottom: -moz-calc(60px) !important;
+  margin-bottom: -o-calc(60px) !important;
+  margin-bottom: calc(60px) !important; }
 
 .margin-vertical-large {
-  margin-top: -webkit-calc(25px * 4) !important;
-  margin-top: -moz-calc(25px * 4) !important;
-  margin-top: -o-calc(25px * 4) !important;
-  margin-top: calc(25px * 4) !important;
-  margin-bottom: -webkit-calc(25px * 4) !important;
-  margin-bottom: -moz-calc(25px * 4) !important;
-  margin-bottom: -o-calc(25px * 4) !important;
-  margin-bottom: calc(25px * 4) !important; }
+  margin-top: -webkit-calc(80px) !important;
+  margin-top: -moz-calc(80px) !important;
+  margin-top: -o-calc(80px) !important;
+  margin-top: calc(80px) !important;
+  margin-bottom: -webkit-calc(80px) !important;
+  margin-bottom: -moz-calc(80px) !important;
+  margin-bottom: -o-calc(80px) !important;
+  margin-bottom: calc(80px) !important; }
 
 .margin-horizontal-tiny {
-  margin-left: -webkit-calc(25px * 0.3) !important;
-  margin-left: -moz-calc(25px * 0.3) !important;
-  margin-left: -o-calc(25px * 0.3) !important;
-  margin-left: calc(25px * 0.3) !important;
-  margin-right: -webkit-calc(25px * 0.3) !important;
-  margin-right: -moz-calc(25px * 0.3) !important;
-  margin-right: -o-calc(25px * 0.3) !important;
-  margin-right: calc(25px * 0.3) !important; }
+  margin-left: -webkit-calc(6px) !important;
+  margin-left: -moz-calc(6px) !important;
+  margin-left: -o-calc(6px) !important;
+  margin-left: calc(6px) !important;
+  margin-right: -webkit-calc(6px) !important;
+  margin-right: -moz-calc(6px) !important;
+  margin-right: -o-calc(6px) !important;
+  margin-right: calc(6px) !important; }
 
 .margin-horizontal-small {
-  margin-left: -webkit-calc(25px * 0.7) !important;
-  margin-left: -moz-calc(25px * 0.7) !important;
-  margin-left: -o-calc(25px * 0.7) !important;
-  margin-left: calc(25px * 0.7) !important;
-  margin-right: -webkit-calc(25px * 0.7) !important;
-  margin-right: -moz-calc(25px * 0.7) !important;
-  margin-right: -o-calc(25px * 0.7) !important;
-  margin-right: calc(25px * 0.7) !important; }
+  margin-left: -webkit-calc(14px) !important;
+  margin-left: -moz-calc(14px) !important;
+  margin-left: -o-calc(14px) !important;
+  margin-left: calc(14px) !important;
+  margin-right: -webkit-calc(14px) !important;
+  margin-right: -moz-calc(14px) !important;
+  margin-right: -o-calc(14px) !important;
+  margin-right: calc(14px) !important; }
 
 .margin-horizontal-base {
-  margin-left: -webkit-calc(25px * 1) !important;
-  margin-left: -moz-calc(25px * 1) !important;
-  margin-left: -o-calc(25px * 1) !important;
-  margin-left: calc(25px * 1) !important;
-  margin-right: -webkit-calc(25px * 1) !important;
-  margin-right: -moz-calc(25px * 1) !important;
-  margin-right: -o-calc(25px * 1) !important;
-  margin-right: calc(25px * 1) !important; }
+  margin-left: -webkit-calc(20px) !important;
+  margin-left: -moz-calc(20px) !important;
+  margin-left: -o-calc(20px) !important;
+  margin-left: calc(20px) !important;
+  margin-right: -webkit-calc(20px) !important;
+  margin-right: -moz-calc(20px) !important;
+  margin-right: -o-calc(20px) !important;
+  margin-right: calc(20px) !important; }
 
 .margin-horizontal-medium {
-  margin-left: -webkit-calc(25px * 2) !important;
-  margin-left: -moz-calc(25px * 2) !important;
-  margin-left: -o-calc(25px * 2) !important;
-  margin-left: calc(25px * 2) !important;
-  margin-right: -webkit-calc(25px * 2) !important;
-  margin-right: -moz-calc(25px * 2) !important;
-  margin-right: -o-calc(25px * 2) !important;
-  margin-right: calc(25px * 2) !important; }
+  margin-left: -webkit-calc(40px) !important;
+  margin-left: -moz-calc(40px) !important;
+  margin-left: -o-calc(40px) !important;
+  margin-left: calc(40px) !important;
+  margin-right: -webkit-calc(40px) !important;
+  margin-right: -moz-calc(40px) !important;
+  margin-right: -o-calc(40px) !important;
+  margin-right: calc(40px) !important; }
 
 .margin-horizontal-big {
-  margin-left: -webkit-calc(25px * 3) !important;
-  margin-left: -moz-calc(25px * 3) !important;
-  margin-left: -o-calc(25px * 3) !important;
-  margin-left: calc(25px * 3) !important;
-  margin-right: -webkit-calc(25px * 3) !important;
-  margin-right: -moz-calc(25px * 3) !important;
-  margin-right: -o-calc(25px * 3) !important;
-  margin-right: calc(25px * 3) !important; }
+  margin-left: -webkit-calc(60px) !important;
+  margin-left: -moz-calc(60px) !important;
+  margin-left: -o-calc(60px) !important;
+  margin-left: calc(60px) !important;
+  margin-right: -webkit-calc(60px) !important;
+  margin-right: -moz-calc(60px) !important;
+  margin-right: -o-calc(60px) !important;
+  margin-right: calc(60px) !important; }
 
 .margin-horizontal-large {
-  margin-left: -webkit-calc(25px * 4) !important;
-  margin-left: -moz-calc(25px * 4) !important;
-  margin-left: -o-calc(25px * 4) !important;
-  margin-left: calc(25px * 4) !important;
-  margin-right: -webkit-calc(25px * 4) !important;
-  margin-right: -moz-calc(25px * 4) !important;
-  margin-right: -o-calc(25px * 4) !important;
-  margin-right: calc(25px * 4) !important; }
+  margin-left: -webkit-calc(80px) !important;
+  margin-left: -moz-calc(80px) !important;
+  margin-left: -o-calc(80px) !important;
+  margin-left: calc(80px) !important;
+  margin-right: -webkit-calc(80px) !important;
+  margin-right: -moz-calc(80px) !important;
+  margin-right: -o-calc(80px) !important;
+  margin-right: calc(80px) !important; }
 
 .container {
   margin: 0 auto;
@@ -887,7 +900,7 @@ h5 {
   width: -moz-calc(8.33333%) ;
   width: -o-calc(8.33333%) ;
   width: calc(8.33333%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .span1 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -914,7 +927,7 @@ h5 {
   width: -moz-calc(16.66667%) ;
   width: -o-calc(16.66667%) ;
   width: calc(16.66667%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .span2 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -941,7 +954,7 @@ h5 {
   width: -moz-calc(25%) ;
   width: -o-calc(25%) ;
   width: calc(25%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .span3 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -968,7 +981,7 @@ h5 {
   width: -moz-calc(33.33333%) ;
   width: -o-calc(33.33333%) ;
   width: calc(33.33333%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .span4 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -995,7 +1008,7 @@ h5 {
   width: -moz-calc(41.66667%) ;
   width: -o-calc(41.66667%) ;
   width: calc(41.66667%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .span5 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1022,7 +1035,7 @@ h5 {
   width: -moz-calc(50%) ;
   width: -o-calc(50%) ;
   width: calc(50%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .span6 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1049,7 +1062,7 @@ h5 {
   width: -moz-calc(58.33333%) ;
   width: -o-calc(58.33333%) ;
   width: calc(58.33333%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .span7 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1076,7 +1089,7 @@ h5 {
   width: -moz-calc(66.66667%) ;
   width: -o-calc(66.66667%) ;
   width: calc(66.66667%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .span8 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1103,7 +1116,7 @@ h5 {
   width: -moz-calc(75%) ;
   width: -o-calc(75%) ;
   width: calc(75%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .span9 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1130,7 +1143,7 @@ h5 {
   width: -moz-calc(83.33333%) ;
   width: -o-calc(83.33333%) ;
   width: calc(83.33333%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .span10 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1157,7 +1170,7 @@ h5 {
   width: -moz-calc(91.66667%) ;
   width: -o-calc(91.66667%) ;
   width: calc(91.66667%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .span11 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1184,7 +1197,7 @@ h5 {
   width: -moz-calc(100%) ;
   width: -o-calc(100%) ;
   width: calc(100%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .span12 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1223,7 +1236,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .column1 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1240,7 +1253,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .column2 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1257,7 +1270,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .column3 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1274,7 +1287,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .column4 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1291,7 +1304,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .column5 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1308,7 +1321,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .column6 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1325,7 +1338,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .column7 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1342,7 +1355,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .column8 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1359,7 +1372,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .column9 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1376,7 +1389,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .column10 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1393,7 +1406,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .column11 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1410,7 +1423,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 800px) {
     .column12 > * {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1427,7 +1440,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 800px) {
     .shift1 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1444,7 +1457,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 800px) {
     .shift2 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1461,7 +1474,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 800px) {
     .shift3 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1478,7 +1491,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 800px) {
     .shift4 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1495,7 +1508,7 @@ h5 {
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 800px) {
     .shift5 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1508,7 +1521,7 @@ h5 {
   width: -moz-calc(5%) ;
   width: -o-calc(5%) ;
   width: calc(5%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit5 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1521,7 +1534,7 @@ h5 {
   width: -moz-calc(10%) ;
   width: -o-calc(10%) ;
   width: calc(10%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit10 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1534,7 +1547,7 @@ h5 {
   width: -moz-calc(15%) ;
   width: -o-calc(15%) ;
   width: calc(15%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit15 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1547,7 +1560,7 @@ h5 {
   width: -moz-calc(20%) ;
   width: -o-calc(20%) ;
   width: calc(20%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit20 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1560,7 +1573,7 @@ h5 {
   width: -moz-calc(25%) ;
   width: -o-calc(25%) ;
   width: calc(25%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit25 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1573,7 +1586,7 @@ h5 {
   width: -moz-calc(30%) ;
   width: -o-calc(30%) ;
   width: calc(30%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit30 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1586,7 +1599,7 @@ h5 {
   width: -moz-calc(35%) ;
   width: -o-calc(35%) ;
   width: calc(35%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit35 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1599,7 +1612,7 @@ h5 {
   width: -moz-calc(40%) ;
   width: -o-calc(40%) ;
   width: calc(40%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit40 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1612,7 +1625,7 @@ h5 {
   width: -moz-calc(45%) ;
   width: -o-calc(45%) ;
   width: calc(45%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit45 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1625,7 +1638,7 @@ h5 {
   width: -moz-calc(50%) ;
   width: -o-calc(50%) ;
   width: calc(50%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit50 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1638,7 +1651,7 @@ h5 {
   width: -moz-calc(55%) ;
   width: -o-calc(55%) ;
   width: calc(55%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit55 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1651,7 +1664,7 @@ h5 {
   width: -moz-calc(60%) ;
   width: -o-calc(60%) ;
   width: calc(60%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit60 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1664,7 +1677,7 @@ h5 {
   width: -moz-calc(65%) ;
   width: -o-calc(65%) ;
   width: calc(65%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit65 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1677,7 +1690,7 @@ h5 {
   width: -moz-calc(70%) ;
   width: -o-calc(70%) ;
   width: calc(70%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit70 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1690,7 +1703,7 @@ h5 {
   width: -moz-calc(75%) ;
   width: -o-calc(75%) ;
   width: calc(75%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit75 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1703,7 +1716,7 @@ h5 {
   width: -moz-calc(80%) ;
   width: -o-calc(80%) ;
   width: calc(80%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit80 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1716,7 +1729,7 @@ h5 {
   width: -moz-calc(85%) ;
   width: -o-calc(85%) ;
   width: calc(85%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit85 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1729,7 +1742,7 @@ h5 {
   width: -moz-calc(90%) ;
   width: -o-calc(90%) ;
   width: calc(90%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit90 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1742,7 +1755,7 @@ h5 {
   width: -moz-calc(95%) ;
   width: -o-calc(95%) ;
   width: calc(95%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit95 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1755,7 +1768,7 @@ h5 {
   width: -moz-calc(100%) ;
   width: -o-calc(100%) ;
   width: calc(100%) ; }
-  @media all and (max-width: 350px) {
+  @media all and (max-width: 400px) {
     .unit100 {
       transition: all 0.3s ease !important;
       -moz-transition: all 0.3s ease !important;
@@ -1763,289 +1776,221 @@ h5 {
       -webkit-transition: all 0.3s ease !important;
       width: 100%; } }
 
-.background-red {
-  background-color: #FF5050; }
-
-.darken-background-red {
-  background-color: #ff1d1d; }
-
-.double-darken-background-red {
-  background-color: #ff0303; }
-
-.lighten-background-red {
-  background-color: #ff8383; }
-
-.double-lighten-background-red {
-  background-color: #ff9d9d; }
-
-.red {
-  color: #FF5050 !important; }
-
-.darken-red {
-  color: #ff1d1d !important; }
-
-.lighten-red {
-  color: #ff8383 !important; }
-
-.border-bottom-red {
-  border-bottom: 1px solid #FF5050; }
-
-.hover-red:hover {
-  transition: all 0.1s ease !important;
-  -moz-transition: all 0.1s ease !important;
-  -o-transition: all 0.1s ease !important;
-  -webkit-transition: all 0.1s ease !important;
-  color: #FF5050 !important; }
-
-.background-green {
-  background-color: #3688c2; }
-
-.darken-background-green {
-  background-color: #2b6c9a; }
-
-.double-darken-background-green {
-  background-color: #255e86; }
-
-.lighten-background-green {
-  background-color: #5aa0d1; }
-
-.double-lighten-background-green {
-  background-color: #6eabd7; }
-
-.green {
-  color: #3688c2 !important; }
-
-.darken-green {
-  color: #2b6c9a !important; }
-
-.lighten-green {
-  color: #5aa0d1 !important; }
-
-.border-bottom-green {
-  border-bottom: 1px solid #3688c2; }
-
-.hover-green:hover {
-  transition: all 0.1s ease !important;
-  -moz-transition: all 0.1s ease !important;
-  -o-transition: all 0.1s ease !important;
-  -webkit-transition: all 0.1s ease !important;
-  color: #3688c2 !important; }
-
-.background-blue {
-  background-color: #394e63; }
-
-.darken-background-blue {
-  background-color: #263443; }
-
-.double-darken-background-blue {
-  background-color: #1d2832; }
-
-.lighten-background-blue {
-  background-color: #4c6783; }
-
-.double-lighten-background-blue {
-  background-color: #557494; }
-
-.blue {
-  color: #394e63 !important; }
-
-.darken-blue {
-  color: #263443 !important; }
-
-.lighten-blue {
-  color: #4c6783 !important; }
-
-.border-bottom-blue {
-  border-bottom: 1px solid #394e63; }
-
-.hover-blue:hover {
-  transition: all 0.1s ease !important;
-  -moz-transition: all 0.1s ease !important;
-  -o-transition: all 0.1s ease !important;
-  -webkit-transition: all 0.1s ease !important;
-  color: #394e63 !important; }
-
-.background-default {
-  background-color: #717171; }
-
-.darken-background-default {
-  background-color: #585858; }
-
-.double-darken-background-default {
-  background-color: #4b4b4b; }
-
-.lighten-background-default {
-  background-color: #8b8b8b; }
-
-.double-lighten-background-default {
-  background-color: #979797; }
-
-.default {
-  color: #717171 !important; }
-
-.darken-default {
-  color: #585858 !important; }
-
-.lighten-default {
-  color: #8b8b8b !important; }
-
-.border-bottom-default {
-  border-bottom: 1px solid #717171; }
-
-.hover-default:hover {
-  transition: all 0.1s ease !important;
-  -moz-transition: all 0.1s ease !important;
-  -o-transition: all 0.1s ease !important;
-  -webkit-transition: all 0.1s ease !important;
-  color: #717171 !important; }
-
 .background-success {
-  background-color: #5691CC; }
+  background-color: red; }
 
 .darken-background-success {
-  background-color: #3777b8; }
+  background-color: #cc0000; }
 
 .double-darken-background-success {
-  background-color: #316ba4; }
+  background-color: #b30000; }
 
 .lighten-background-success {
-  background-color: #7daad8; }
+  background-color: #ff3333; }
 
 .double-lighten-background-success {
-  background-color: #91b7de; }
+  background-color: #ff4d4d; }
 
 .success {
-  color: #5691CC !important; }
+  color: red !important; }
 
 .darken-success {
-  color: #3777b8 !important; }
+  color: #cc0000 !important; }
 
 .lighten-success {
-  color: #7daad8 !important; }
+  color: #ff3333 !important; }
 
 .border-bottom-success {
-  border-bottom: 1px solid #5691CC; }
+  border-bottom: 1px solid red; }
 
 .hover-success:hover {
   transition: all 0.1s ease !important;
   -moz-transition: all 0.1s ease !important;
   -o-transition: all 0.1s ease !important;
   -webkit-transition: all 0.1s ease !important;
-  color: #5691CC !important; }
+  color: red !important; }
 
 .background-warning {
-  background-color: #4e4e4e; }
+  background-color: blue; }
 
 .darken-background-warning {
-  background-color: #353535; }
+  background-color: #0000cc; }
 
 .double-darken-background-warning {
-  background-color: #282828; }
+  background-color: #0000b3; }
 
 .lighten-background-warning {
-  background-color: #686868; }
+  background-color: #3333ff; }
 
 .double-lighten-background-warning {
-  background-color: #747474; }
+  background-color: #4d4dff; }
 
 .warning {
-  color: #4e4e4e !important; }
+  color: blue !important; }
 
 .darken-warning {
-  color: #353535 !important; }
+  color: #0000cc !important; }
 
 .lighten-warning {
-  color: #686868 !important; }
+  color: #3333ff !important; }
 
 .border-bottom-warning {
-  border-bottom: 1px solid #4e4e4e; }
+  border-bottom: 1px solid blue; }
 
 .hover-warning:hover {
   transition: all 0.1s ease !important;
   -moz-transition: all 0.1s ease !important;
   -o-transition: all 0.1s ease !important;
   -webkit-transition: all 0.1s ease !important;
-  color: #4e4e4e !important; }
+  color: blue !important; }
+
+.background-green {
+  background-color: green; }
+
+.darken-background-green {
+  background-color: #004d00; }
+
+.double-darken-background-green {
+  background-color: #003400; }
+
+.lighten-background-green {
+  background-color: #00b300; }
+
+.double-lighten-background-green {
+  background-color: #00cc00; }
+
+.green {
+  color: green !important; }
+
+.darken-green {
+  color: #004d00 !important; }
+
+.lighten-green {
+  color: #00b300 !important; }
+
+.border-bottom-green {
+  border-bottom: 1px solid green; }
+
+.hover-green:hover {
+  transition: all 0.1s ease !important;
+  -moz-transition: all 0.1s ease !important;
+  -o-transition: all 0.1s ease !important;
+  -webkit-transition: all 0.1s ease !important;
+  color: green !important; }
 
 .background-info {
-  background-color: #4d8cdf; }
+  background-color: yellow; }
 
 .darken-background-info {
-  background-color: #2671d3; }
+  background-color: #cccc00; }
 
 .double-darken-background-info {
-  background-color: #2265bd; }
+  background-color: #b2b300; }
 
 .lighten-background-info {
-  background-color: #78a8e7; }
+  background-color: #ffff33; }
 
 .double-lighten-background-info {
-  background-color: #8eb6eb; }
+  background-color: #ffff4d; }
 
 .info {
-  color: #4d8cdf !important; }
+  color: yellow !important; }
 
 .darken-info {
-  color: #2671d3 !important; }
+  color: #cccc00 !important; }
 
 .lighten-info {
-  color: #78a8e7 !important; }
+  color: #ffff33 !important; }
 
 .border-bottom-info {
-  border-bottom: 1px solid #4d8cdf; }
+  border-bottom: 1px solid yellow; }
 
 .hover-info:hover {
   transition: all 0.1s ease !important;
   -moz-transition: all 0.1s ease !important;
   -o-transition: all 0.1s ease !important;
   -webkit-transition: all 0.1s ease !important;
-  color: #4d8cdf !important; }
+  color: yellow !important; }
 
 .background-light {
-  background-color: #fff; }
+  background-color: lightgray; }
 
 .darken-background-light {
-  background-color: #e6e6e6; }
+  background-color: #b9b9b9; }
 
 .double-darken-background-light {
-  background-color: #d9d9d9; }
+  background-color: #adadad; }
 
 .lighten-background-light {
-  background-color: white; }
+  background-color: #ececec; }
 
 .double-lighten-background-light {
-  background-color: white; }
+  background-color: #f9f9f9; }
 
 .light {
-  color: #fff !important; }
+  color: lightgray !important; }
 
 .darken-light {
-  color: #e6e6e6 !important; }
+  color: #b9b9b9 !important; }
 
 .lighten-light {
-  color: white !important; }
+  color: #ececec !important; }
 
 .border-bottom-light {
-  border-bottom: 1px solid #fff; }
+  border-bottom: 1px solid lightgray; }
 
 .hover-light:hover {
   transition: all 0.1s ease !important;
   -moz-transition: all 0.1s ease !important;
   -o-transition: all 0.1s ease !important;
   -webkit-transition: all 0.1s ease !important;
-  color: #fff !important; }
+  color: lightgray !important; }
+
+.background-default {
+  background-color: gray; }
+
+.darken-background-default {
+  background-color: #676767; }
+
+.double-darken-background-default {
+  background-color: #5a5a5a; }
+
+.lighten-background-default {
+  background-color: #9a9a9a; }
+
+.double-lighten-background-default {
+  background-color: #a6a6a6; }
+
+.default {
+  color: gray !important; }
+
+.darken-default {
+  color: #676767 !important; }
+
+.lighten-default {
+  color: #9a9a9a !important; }
+
+.border-bottom-default {
+  border-bottom: 1px solid gray; }
+
+.hover-default:hover {
+  transition: all 0.1s ease !important;
+  -moz-transition: all 0.1s ease !important;
+  -o-transition: all 0.1s ease !important;
+  -webkit-transition: all 0.1s ease !important;
+  color: gray !important; }
 
 .light {
-  color: #fff; }
+  color: lightgray; }
 
 .background-color {
   background-color: #fff !important; }
 
 .controls-text-color {
-  color: #fff !important; }
+  color: #fbfbfb !important; }
 
 .background-controls-text-color {
-  background-color: #fff !important; }
+  background-color: #fbfbfb !important; }
 
 .lighten-text {
   color: white !important; }
@@ -2054,13 +1999,13 @@ h5 {
   color: white !important; }
 
 .darken-text {
-  color: #0e0e0e !important; }
+  color: #414141 !important; }
 
 .double-darken-text {
-  color: black !important; }
+  color: #0e0e0e !important; }
 
 .text-color {
-  color: #4e4e4e !important; }
+  color: #818181 !important; }
 
 .lighten-background {
   background-color: white !important; }
@@ -2074,178 +2019,146 @@ h5 {
 .double-darken-background {
   background-color: #e6e6e6 !important; }
 
-.button-red, .button-tag-red, .button-green, .button-tag-green, .button-blue, .button-tag-blue, .button-default, .button-tag-default, .button-success, .button-tag-success, .button-warning, .button-tag-warning, .button-info, .button-tag-info, .button-light, .button-tag-light {
+.button-success, .button-tag-success, .button-warning, .button-tag-warning, .button-green, .button-tag-green, .button-info, .button-tag-info, .button-light, .button-tag-light, .button-default, .button-tag-default {
   position: relative;
-  border-radius: 10px;
+  border-radius: 4px;
   cursor: pointer;
   border: 0;
   width: 100%;
   outline: none;
   white-space: nowrap; }
 
-.button-red, .button-tag-red, .button-green, .button-tag-green, .button-blue, .button-tag-blue, .button-default, .button-tag-default, .button-success, .button-tag-success, .button-warning, .button-tag-warning, .button-info, .button-tag-info, .button-light, .button-tag-light {
+.button-success, .button-tag-success, .button-warning, .button-tag-warning, .button-green, .button-tag-green, .button-info, .button-tag-info, .button-light, .button-tag-light, .button-default, .button-tag-default {
   transition: all 0.3s ease !important;
   -moz-transition: all 0.3s ease !important;
   -o-transition: all 0.3s ease !important;
   -webkit-transition: all 0.3s ease !important; }
-  .button-red:hover, .button-tag-red:hover, .button-green:hover, .button-tag-green:hover, .button-blue:hover, .button-tag-blue:hover, .button-default:hover, .button-tag-default:hover, .button-success:hover, .button-tag-success:hover, .button-warning:hover, .button-tag-warning:hover, .button-info:hover, .button-tag-info:hover, .button-light:hover, .button-tag-light:hover {
+  .button-success:hover, .button-tag-success:hover, .button-warning:hover, .button-tag-warning:hover, .button-green:hover, .button-tag-green:hover, .button-info:hover, .button-tag-info:hover, .button-light:hover, .button-tag-light:hover, .button-default:hover, .button-tag-default:hover {
     transition: all 0.3s ease !important;
     -moz-transition: all 0.3s ease !important;
     -o-transition: all 0.3s ease !important;
     -webkit-transition: all 0.3s ease !important; }
-  .button-red:active, .button-tag-red:active, .button-green:active, .button-tag-green:active, .button-blue:active, .button-tag-blue:active, .button-default:active, .button-tag-default:active, .button-success:active, .button-tag-success:active, .button-warning:active, .button-tag-warning:active, .button-info:active, .button-tag-info:active, .button-light:active, .button-tag-light:active {
+  .button-success:active, .button-tag-success:active, .button-warning:active, .button-tag-warning:active, .button-green:active, .button-tag-green:active, .button-info:active, .button-tag-info:active, .button-light:active, .button-tag-light:active, .button-default:active, .button-tag-default:active {
     top: 2px; }
 
-.button-red {
-  border-bottom: 2px solid #ff0303;
-  background-color: #FF5050;
-  color: #fff; }
-  .button-red:hover {
-    background-color: #ff6a6a; }
-
-.button-tag-red {
-  color: gray;
-  border: 1px #d3d3d3 solid; }
-  .button-tag-red:hover {
-    background-color: #ff0303;
-    transition: all 0.1s ease !important;
-    -moz-transition: all 0.1s ease !important;
-    -o-transition: all 0.1s ease !important;
-    -webkit-transition: all 0.1s ease !important;
-    border: 1px #ff0303 solid;
-    color: #fff; }
-
-.button-green {
-  border-bottom: 2px solid #255e86;
-  background-color: #3688c2;
-  color: #fff; }
-  .button-green:hover {
-    background-color: #4694cc; }
-
-.button-tag-green {
-  color: gray;
-  border: 1px #d3d3d3 solid; }
-  .button-tag-green:hover {
-    background-color: #255e86;
-    transition: all 0.1s ease !important;
-    -moz-transition: all 0.1s ease !important;
-    -o-transition: all 0.1s ease !important;
-    -webkit-transition: all 0.1s ease !important;
-    border: 1px #255e86 solid;
-    color: #fff; }
-
-.button-blue {
-  border-bottom: 2px solid #1d2832;
-  background-color: #394e63;
-  color: #fff; }
-  .button-blue:hover {
-    background-color: #425b73; }
-
-.button-tag-blue {
-  color: gray;
-  border: 1px #d3d3d3 solid; }
-  .button-tag-blue:hover {
-    background-color: #1d2832;
-    transition: all 0.1s ease !important;
-    -moz-transition: all 0.1s ease !important;
-    -o-transition: all 0.1s ease !important;
-    -webkit-transition: all 0.1s ease !important;
-    border: 1px #1d2832 solid;
-    color: #fff; }
-
-.button-default {
-  border-bottom: 2px solid #4b4b4b;
-  background-color: #717171;
-  color: #fff; }
-  .button-default:hover {
-    background-color: #7e7e7e; }
-
-.button-tag-default {
-  color: gray;
-  border: 1px #d3d3d3 solid; }
-  .button-tag-default:hover {
-    background-color: #4b4b4b;
-    transition: all 0.1s ease !important;
-    -moz-transition: all 0.1s ease !important;
-    -o-transition: all 0.1s ease !important;
-    -webkit-transition: all 0.1s ease !important;
-    border: 1px #4b4b4b solid;
-    color: #fff; }
-
 .button-success {
-  border-bottom: 2px solid #316ba4;
-  background-color: #5691CC;
-  color: #fff; }
+  border-bottom: yml("controls/controls-depth") solid #b30000;
+  background-color: red;
+  color: #fbfbfb; }
   .button-success:hover {
-    background-color: #6a9ed2; }
+    background-color: #ff1a1a; }
 
 .button-tag-success {
+  background-color: #818181;
   color: gray;
   border: 1px #d3d3d3 solid; }
   .button-tag-success:hover {
-    background-color: #316ba4;
+    background-color: #b30000;
     transition: all 0.1s ease !important;
     -moz-transition: all 0.1s ease !important;
     -o-transition: all 0.1s ease !important;
     -webkit-transition: all 0.1s ease !important;
-    border: 1px #316ba4 solid;
+    border: 1px #b30000 solid;
     color: #fff; }
 
 .button-warning {
-  border-bottom: 2px solid #282828;
-  background-color: #4e4e4e;
-  color: #fff; }
+  border-bottom: yml("controls/controls-depth") solid #0000b3;
+  background-color: blue;
+  color: #fbfbfb; }
   .button-warning:hover {
-    background-color: #5b5b5b; }
+    background-color: #1a1aff; }
 
 .button-tag-warning {
+  background-color: #818181;
   color: gray;
   border: 1px #d3d3d3 solid; }
   .button-tag-warning:hover {
-    background-color: #282828;
+    background-color: #0000b3;
     transition: all 0.1s ease !important;
     -moz-transition: all 0.1s ease !important;
     -o-transition: all 0.1s ease !important;
     -webkit-transition: all 0.1s ease !important;
-    border: 1px #282828 solid;
+    border: 1px #0000b3 solid;
+    color: #fff; }
+
+.button-green {
+  border-bottom: yml("controls/controls-depth") solid #003400;
+  background-color: green;
+  color: #fbfbfb; }
+  .button-green:hover {
+    background-color: #009a00; }
+
+.button-tag-green {
+  background-color: #818181;
+  color: gray;
+  border: 1px #d3d3d3 solid; }
+  .button-tag-green:hover {
+    background-color: #003400;
+    transition: all 0.1s ease !important;
+    -moz-transition: all 0.1s ease !important;
+    -o-transition: all 0.1s ease !important;
+    -webkit-transition: all 0.1s ease !important;
+    border: 1px #003400 solid;
     color: #fff; }
 
 .button-info {
-  border-bottom: 2px solid #2265bd;
-  background-color: #4d8cdf;
-  color: #fff; }
+  border-bottom: yml("controls/controls-depth") solid #b2b300;
+  background-color: yellow;
+  color: #fbfbfb; }
   .button-info:hover {
-    background-color: #639ae3; }
+    background-color: #ffff1a; }
 
 .button-tag-info {
+  background-color: #818181;
   color: gray;
   border: 1px #d3d3d3 solid; }
   .button-tag-info:hover {
-    background-color: #2265bd;
+    background-color: #b2b300;
     transition: all 0.1s ease !important;
     -moz-transition: all 0.1s ease !important;
     -o-transition: all 0.1s ease !important;
     -webkit-transition: all 0.1s ease !important;
-    border: 1px #2265bd solid;
+    border: 1px #b2b300 solid;
     color: #fff; }
 
 .button-light {
-  border-bottom: 2px solid #d9d9d9;
-  background-color: #fff;
-  color: #fff; }
+  border-bottom: yml("controls/controls-depth") solid #adadad;
+  background-color: lightgray;
+  color: #fbfbfb; }
   .button-light:hover {
-    background-color: white; }
+    background-color: #e0e0e0; }
 
 .button-tag-light {
+  background-color: #818181;
   color: gray;
   border: 1px #d3d3d3 solid; }
   .button-tag-light:hover {
-    background-color: #d9d9d9;
+    background-color: #adadad;
     transition: all 0.1s ease !important;
     -moz-transition: all 0.1s ease !important;
     -o-transition: all 0.1s ease !important;
     -webkit-transition: all 0.1s ease !important;
-    border: 1px #d9d9d9 solid;
+    border: 1px #adadad solid;
+    color: #fff; }
+
+.button-default {
+  border-bottom: yml("controls/controls-depth") solid #5a5a5a;
+  background-color: gray;
+  color: #fbfbfb; }
+  .button-default:hover {
+    background-color: #8d8d8d; }
+
+.button-tag-default {
+  background-color: #818181;
+  color: gray;
+  border: 1px #d3d3d3 solid; }
+  .button-tag-default:hover {
+    background-color: #5a5a5a;
+    transition: all 0.1s ease !important;
+    -moz-transition: all 0.1s ease !important;
+    -o-transition: all 0.1s ease !important;
+    -webkit-transition: all 0.1s ease !important;
+    border: 1px #5a5a5a solid;
     color: #fff; }
 
 .button-group {
@@ -2257,11 +2170,11 @@ h5 {
     .button-group > div > button {
       border-radius: 0; }
   .button-group > div:first-child button {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px; }
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; }
   .button-group > div:last-child button {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px; }
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; }
 
 .button-iconed {
   position: relative;
@@ -2279,10 +2192,8 @@ h5 {
 .shadowed {
   text-shadow: 0px 1px 0px lightgray; }
 
-h1 {
-  color: #FF5050; }
+.light {
+  color: lightgray; }
 
-.code {
-  font-family: Source Code Pro; }
-
-/*# sourceMappingURL=guppy.css.map */
+.hello {
+  color: white; }
